@@ -1,0 +1,13 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^docs$
+^evaluation$
+^crowd-forecast$
+^rt-crowd-forecast$
+^rt-forecast$
+^submissions$
+^\.github$
+^data-raw$
+^Dockerfile$
+^\.secrets$
+^Rplots\.pdf$

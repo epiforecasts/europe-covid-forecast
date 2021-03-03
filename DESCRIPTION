@@ -1,0 +1,61 @@
+Package: covid.german.forecasts
+Type: Package
+Title: Forecasting Covid-19 related metrics for the German/Poland Forecast Hub
+Version: 0.1.0
+Authors@R: c(
+  person("Nikos", "Bosse", 
+          role = c("aut", "cre"),
+         email = "nikos.bosse@lshtm.ac.uk"),
+  person(given = "Sam Abbott",
+         role = c("aut"),
+         email = "sam.abbott@lshtm.ac.uk",
+         comment = c(ORCID = "0000-0001-8057-8037")),
+  person(given = "EpiForecasts",
+             role = c("aut")),
+  person("Sebastian", "Funk", 
+         email = "sebastian.funk@lshtm.ac.uk", 
+         role = c("aut")))
+Description: Forecasting Covid-19 related metrics for the German/Poland forecast hub.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    EpiNow2,
+    magrittr,
+    data.table,
+    dplyr,
+    tibble,
+    lubridate,
+    attempt,
+    purrr,
+    tidyr, 
+    googledrive,
+    googlesheets4,
+    here
+Suggests:
+    covidregionaldata,
+    future,
+    stringr,
+    scoringutils,
+    crowdforecastr,
+    rsconnect,
+    ggplot2,
+    readr,
+    devtools,
+    ggbump,
+    rmarkdown,
+    knitr,
+    DT,
+    blastula
+Remotes:
+  epiforecasts/EpiNow2,
+  epiforecasts/covidregionaldata,
+  epiforecasts/scoringutils@improve_plots,
+  epiforecasts/crowdforecastr,
+  tidyverse/googlesheets4,
+  tidyverse/googledrive
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Biarch: true
+Depends: 
+  R (>= 3.4.0)
