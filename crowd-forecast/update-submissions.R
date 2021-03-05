@@ -43,8 +43,12 @@ if (delete_data) {
 }
 
 # obtain raw and filtered forecasts, save raw forecasts-------------------------
+locations <- 
+  fread("https://raw.githubusercontent.com/epiforecasts/covid19-forecast-hub-europe/main/data-locations/locations_eu.csv")
+
 raw_forecasts <- forecasts %>%
-  mutate(location = ifelse(location_name == "Germany", "GM", "PL"))
+  left_join(locations, by = "location_name") %>%
+  select(-population)
 
 # use only the latest forecast from a given forecaster
 filtered_forecasts <- raw_forecasts %>%
@@ -173,74 +177,14 @@ if (median_ensemble) {
       mutate(type = "point",
       quantile = NA))
 
-# add cumulative forecasts -----------------------------------------------------
-# get latest cumulative forecast
-first_forecast_date <- forecasts %>%
-  pull(target_end_date) %>%
-  as.Date() %>%
-  unique() %>%
-  min(na.rm = TRUE)
+forecast_submission <- forecast_inc %>%
+  mutate(forecast_date = submission_date, 
+         scenario_id = "forecast") %>%
+  select(-target_type, -location_name)
 
-deaths <-
-get_truth_data(dir = here("data-raw"), range = "weekly",
-               type = "cumulative", target = "deaths", 
-               locs = c("GM", "PL")) %>%
-  group_by(location) %>%
-  dplyr::filter(target_end_date == as.Date(first_forecast_date - 7)) %>%
-  rename(case = type)
-
-cases <-
-get_truth_data(dir = here("data-raw"), range = "weekly",
-               type = "cumulative", target = "cases", 
-               locs = c("GM", "PL")) %>%
-  group_by(location) %>%
-  dplyr::filter(target_end_date == as.Date(first_forecast_date - 7)) %>%
-  rename(case = type)
-
-last_obs <- bind_rows(deaths, cases) %>%
-  select(location, value, case) %>%
-  rename(last_value = value)
-
-# make cumulative
-forecast_cum <- forecast_inc %>%
-  mutate(case = ifelse(grepl("case", target), "cases", "deaths")) %>%
-  group_by(location, quantile, case) %>%
-  mutate(value = cumsum(value),
-                target = gsub("inc", "cum", target)) %>%
-  ungroup() %>%
-  # add last observed value
-  inner_join(last_obs) %>%
-  mutate(value = value + last_value) %>%
-  select(-last_value, -case, -target_type)
-
-forecast_submission <- bind_rows(forecast_inc, forecast_cum) %>%
-  mutate(forecast_date = submission_date) %>%
-  select(-target_type)
-
-# write submission files -------------------------------------------------------
+# write submission file --------------------------------------------------------
 check_dir(here("submissions", "crowd-forecasts", submission_date))
 
 forecast_submission %>%
-  dplyr::filter(location_name %in% "Germany", 
-                grepl("death", target)) %>%
   fwrite(here("submissions", "crowd-forecasts", submission_date, 
-         paste0(submission_date, "-Germany-epiforecasts-EpiExpert.csv")))
-
-forecast_submission %>%
-  dplyr::filter(location_name %in% "Germany", 
-                grepl("case", target)) %>%
-  fwrite(here("submissions", "crowd-forecasts", submission_date, 
-         paste0(submission_date, "-Germany-epiforecasts-EpiExpert-case.csv")))
-
-forecast_submission %>%
-  dplyr::filter(location_name %in% "Poland", 
-                grepl("death", target)) %>%
-  fwrite(here("submissions", "crowd-forecasts", submission_date, 
-         paste0(submission_date, "-Poland-epiforecasts-EpiExpert.csv")))
-
-forecast_submission %>%
-  dplyr::filter(location_name %in% "Poland", 
-                grepl("case", target)) %>%
-  fwrite(here("submissions", "crowd-forecasts", submission_date, 
-         paste0(submission_date, "-Poland-epiforecasts-EpiExpert-case.csv")))
-
+         paste0(submission_date, "-epiforecasts-EpiExpert.csv")))

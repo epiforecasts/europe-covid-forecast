@@ -18,9 +18,9 @@ first_forecast_date <- submission_date + 5
 
 # load observations
 deaths_inc <- fread(here("data-raw", "weekly-incident-deaths.csv"))[
-  location %in% c("GM", "PL")][, target_type := "deaths"]
+  , target_type := "deaths"]
 cases_inc <- fread(here("data-raw", "weekly-incident-cases.csv"))[
-  location %in% c("GM", "PL")][, target_type := "cases"]
+  , target_type := "cases"]
 
 # bind together and sort according to date
 observations <- rbindlist(list(deaths_inc, cases_inc))
