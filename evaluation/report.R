@@ -56,13 +56,6 @@ load_and_copy_forecasts(
   new_board_name = "EpiNow2_secondary"
 )
 
-# also read all EpiNow2 Rt crowd forecasts, give them a board_name 
-load_and_copy_forecasts(
-  root_dir = here("submissions", "crowd-rt-forecasts"), 
-  out_file_path = here("crowd-forecast", "processed-forecast-data", 
-                       "all-crowd-rt-forecasts.csv"), 
-  new_board_name = "Crowd-Rt-Forecast")
-
 rmarkdown::render(here::here("evaluation", "report-template.Rmd"),
                   output_format = "html_document",
                   output_file = here::here("docs", "index.html"),
