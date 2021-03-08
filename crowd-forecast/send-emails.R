@@ -2,7 +2,7 @@ library(here)
 library(blastula)
 library(googledrive)
 library(googlesheets4)
-library(covid.german.forecasts)
+library(covid.ecdc.forecasts)
 library(data.table)
 
 # set up email credential if not present

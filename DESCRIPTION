@@ -1,6 +1,6 @@
-Package: covid.german.forecasts
+Package: covid.ecdc.forecasts
 Type: Package
-Title: Forecasting Covid-19 related metrics for the German/Poland Forecast Hub
+Title: Forecasting Covid-19 related metrics for the ECDC Forecast Hub
 Version: 0.1.0
 Authors@R: c(
   person("Nikos", "Bosse", 
@@ -15,7 +15,7 @@ Authors@R: c(
   person("Sebastian", "Funk", 
          email = "sebastian.funk@lshtm.ac.uk", 
          role = c("aut")))
-Description: Forecasting Covid-19 related metrics for the German/Poland forecast hub.
+Description: Forecasting Covid-19 related metrics for the ECDC forecast hub.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
