@@ -1,5 +1,5 @@
 # packages
-library(covid.german.forecasts)
+library(covid.ecdc.forecasts)
 library(here)
 library(rsconnect)
 # update data

@@ -19,8 +19,12 @@ death_from_cases_forecast <- fread(
   here("rt-forecast", "data", "samples", "deaths-from-cases",
        target_date, "samples.csv"))
 
-# Cumulative data ---------------------------------------------------------
-locations <- fread(here("data-raw"))
+# Locations ---------------------------------------------------------------
+base_url <- "https://raw.githubusercontent.com/epiforecasts/"
+locations <- fread(paste0(
+  base_url,
+ "covid19-forecast-hub-europe/main/data-locations/locations_eu.csv")
+ )
 
 # Format forecasts --------------------------------------------------------
 case_forecast <- format_forecast(case_forecast[, value := cases],
