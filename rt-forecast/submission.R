@@ -16,7 +16,7 @@ case_forecast <- suppressWarnings(
     samples = TRUE)$estimated_reported_cases$samples)
 
 death_from_cases_forecast <- fread(
-  here("rt-forecast", "data", "samples", "deaths-from-cases",
+  here("rt-forecast", "data", "samples", "deaths",
        target_date, "samples.csv"))
 
 # Locations ---------------------------------------------------------------

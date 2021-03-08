@@ -50,10 +50,10 @@ forecast <- regional_secondary(
 
 # Save results to disk ----------------------------------------------------
 samples_path <- here(
-  "rt-forecast", "data", "samples", "death", target_date
+  "rt-forecast", "data", "samples", "deaths", target_date
   )
 summarised_path <- here(
-  "rt-forecast", "data", "summary", "death", target_date
+  "rt-forecast", "data", "summary", "deaths", target_date
   )
 check_dir(samples_path)
 check_dir(summarised_path)
