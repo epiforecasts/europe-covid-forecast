@@ -37,5 +37,5 @@ gh pr create --title "$ForecastDate - EpiForecast EpiNow2 submission" --body " T
 
 # Remove local submission branch 
 git checkout main
-git branch -d submission
-cd ../covid19-forecast-hub-europe
+git branch -D submission
+cd ../europe-covid-forecast
