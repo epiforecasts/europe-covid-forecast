@@ -72,32 +72,43 @@ data <- scoringutils::merge_pred_and_obs(prediction_data, truth_data,
 
 Good to have you as a forecaster! Here is this weeks reminder and an update about what has happened lately. You're receiving this message because you gave us your email address when you registered for the [Epiforecasts Crowd Forecast App](https://cmmid-lshtm.shinyapps.io/crowd-forecast/). 
 
-If you want to lean more about this project, have a look at our [github repo](https://github.com/epiforecasts/covid.german.forecasts). If you want to learn more about the German and Polish Forecast Hub, where we submit the forecasts to, have a look [here](https://kitmetricslab.github.io/forecasthub/forecast). 
+### The European Forecast Hub
+
+On March 8th, the [European Forecast Hub](https://covid19forecasthub.eu/) will launch. We therefore have expanded our crowd forecast app which now incluedes a set of 32 countries. Given the very promising results of our forecasts in Germany and Poland, we believe the crowd forecast app will be an exciting and valuable contribution to the European Forecast Hub. For now the link to the [performance board](https://epiforecasts.io/covid.german.forecasts) stays the same, but we will update it in the near future. 
+
+For you as a forecaster, two things changes: 
+
+1. The **data now gets updated every Sunday at 8.30am CET** and the **submission deadline is Monday at 11pm CET (10pm UK time)**. 
+
+2. You now have a selection of 32 countries to forecast. We are of course happy if you do submit a forecast for every country, but you may want to make your own selection of countries to forecast. By default, all 32 countries are enabled, but you may want to change that selection in the 'Account Details' Menu item in the menu on the left side of the screen. We will store your selection and only ask you to forecast the countries you want to forecast whenever you login. 
+
 
 <br>
 
-### The European Forecast Hub
+### Updates to the app
 
-On March 8th, the [European Forecast Hub](https://covid19forecasthub.eu/) will launch. Our crowd forecast app will therefore be expanded to include a set of 32 countries. If you like you can stick to forecasting Germany and Poland, but more observations will be available. We'll send more detailed information around next week. 
+Some small updates have been made to the app. You can now see and change your user data. Simply click on 'Account Details' on the menu to the left of the screen. You can also use this to delete your email address if you don't want to receive further emails. 
+
+We also added a new Tab where you can see your current submissisons. Currently this is just a list of targets that you have submitted successfully, but we plan to replace that with plots of your submissions soon. 
 
 <br>
 
 ### Introduction video
 
-To help new forecasters get used to the user interface, we created a [short video](https://www.youtube.com/watch?v=NzZkNxXFgm8) that explains how to make a forecast. If you like, check it out. 
+In case you missed it: We created a [short video](https://www.youtube.com/watch?v=NzZkNxXFgm8) that explains how to make a forecast to help new forecasters get used to the user interface. If you like, check it out. 
 
 <br>
 
 ### Reminder for the weekly forecasts
 
-We **update our data every Saturday at 6.30pm CET**. You can then make a forecast until **2pm CET (1pm UK time) on Tuesday** using our [forecast app](https://cmmid-lshtm.shinyapps.io/crowd-forecast/). We would be very happy to have a forecast from you this week!
+We **update our data every Sunady at 8.30am CET**. You can then make a forecast until **11pm CET (1opm UK time) on Monday** using our [forecast app](https://cmmid-lshtm.shinyapps.io/crowd-forecast/). We would be very happy to have a forecast from you this week!
 
 
 <br>
 
 ### Forecast and Performance overview
 
-But now, let's have a look at last weeks forecasts and performance!
+Now, let's have a look at last weeks forecasts and performance!
 
 In the following we put together a short overview for you. You can find more detailed information on our performance board [here](https://epiforecasts.io/covid.german.forecasts). 
 
@@ -219,6 +230,5 @@ Nikos for the Epiforecasts team
 
 <br>
 
-PS: If you don't want to receive future emails simply write me a quick message. We're working on a way that allows you to unsubscribe from within the app, but that is work in progress. Baby steps, but we're getting there. 
+PS: If you don't want to receive future emails simply write me a quick message or go to the app and click on 'Account Details' in the menu to the left of the screen. You can simply delete your email address there. 
 
-PPS: We solved our quota issues. Thank you very much for your helpful comments last week!
