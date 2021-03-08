@@ -10,17 +10,18 @@ target_date <- latest_weekday(char = TRUE)
 
 # Get forecasts -----------------------------------------------------------
 case_forecast <- suppressWarnings(
-  get_regional_results(results_dir = here("rt-forecast", "data", "samples", "cases"),
-                       date = ymd(target_date), forecast = TRUE,
-                       samples = TRUE)$estimated_reported_cases$samples)
+  get_regional_results(
+    results_dir = here("rt-forecast", "data", "samples", "cases"),
+    date = ymd(target_date), forecast = TRUE,
+    samples = TRUE)$estimated_reported_cases$samples)
 
-death_from_cases_forecast <- fread(here("rt-forecast", "data", "samples", "deaths-from-cases",
-                                         target_date, "samples.csv"))
+death_from_cases_forecast <- fread(
+  here("rt-forecast", "data", "samples", "deaths-from-cases",
+       target_date, "samples.csv"))
 
 # Cumulative data ---------------------------------------------------------
-cum_cases <- fread(here("data-raw", "weekly-cumulative-cases.csv"))
-cum_deaths <- fread(here("data-raw", "weekly-cumulative-deaths.csv"))
-  
+locations <- fread(here("data-raw"))
+
 # Format forecasts --------------------------------------------------------
 case_forecast <- format_forecast(case_forecast[, value := cases],
                                  locations = locations,
@@ -43,4 +44,4 @@ forecast <- rbindlist(list(case_forecast, death_forecast))
 rt_folder <- here("submissions", "rt-forecasts", target_date)
 
 check_dir(rt_folder)
-file.path(rt_folder, paste0(target_date, "-epiforecasts-EpiExpert.csv"))
+file.path(rt_folder, paste0(target_date, "-epiforecasts-EpiNow2.csv"))
