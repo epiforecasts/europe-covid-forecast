@@ -26,7 +26,8 @@ cd ../europe-covid-forecast
 # Copy your forecast from local folder to submission folder
 cp -R -f "./submissions/rt-forecasts/$ForecastDate/." \
       "../covid19-forecast-hub-europe/data-processed/epiforecasts-EpiNow2/"
-
+cp -R -f "./submissions/crowd-forecasts/$ForecastDate/." \
+      "../covid19-forecast-hub-europe/data-processed/epiforecasts-EpiExpert/"
 # Commit submission to branch
 cd ../covid19-forecast-hub-europe
 git add --all
