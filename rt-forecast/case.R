@@ -22,7 +22,9 @@ onset_to_report <- readRDS(
 
 # Get cases  ---------------------------------------------------------------
 cases <- fread(file.path("data-raw", "daily-incidence-cases.csv"))
-cases <- cases[, .(region = as.character(location_name), date = as.Date(date), confirm = value)]
+cases <- cases[, 
+  .(region = as.character(location_name), date = as.Date(date), confirm = value
+  ]
 cases <- cases[confirm < 0, confirm := 0]
 cases <- cases[date >= (max(date) - weeks(12))]
 setorder(cases, region, date)
@@ -33,7 +35,7 @@ no_cores <- setup_future(cases)
 # Run Rt estimation -------------------------------------------------------
 rt <- opts_list(
   rt_opts(prior = list(mean = 1.0, sd = 0.1), future = "latest"), cases
-  )
+)
 
 regional_epinow(
   reported_cases = cases,
