@@ -14,11 +14,11 @@ ForecastDate=$(date +'%Y-%m-%d')
 
 # Update the hub repository
 cd ../covid19-forecast-hub-europe
-git checkout master 
+git checkout main
 git pull 
 # Switch to submission branch
 git checkout -b submission
-git merge -Xtheirs master
+git merge -Xtheirs main
 
 # Move back into forecast repository
 cd ../europe-covid-forecast
@@ -36,6 +36,6 @@ git commit -m "submission"
 gh pr create --title "$ForecastDate - EpiForecast EpiNow2 submission" --body " This is an automated submission. Hope your day has been sunshine and rainbows."
 
 # Remove local submission branch 
-git checkout master
+git checkout main
 git branch -d submission
 cd ../covid19-forecast-hub-europe
