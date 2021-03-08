@@ -49,7 +49,7 @@ regional_epinow(
   generation_time = generation_time, 
   delays = delay_opts(incubation_period, onset_to_report),
   rt = rt,
-  stan = stan_opts(samples = 2000, warmup = 250, 
+  stan = stan_opts(samples = 3000, warmup = 300,
                    chains = 4, cores = no_cores),
   obs = obs_opts(scale = list(mean = 0.2, sd = 0.025)),
   horizon = 30,
