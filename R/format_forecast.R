@@ -71,11 +71,12 @@ format_forecast<- function(forecasts,
 
   setorder(forecasts_format, location, target, horizon)
   # Set column order
-  forecasts_format <- 
+  forecasts_format <-
     setcolorder(forecasts_format,
                 c("location", "type", "quantile",  "horizon", "value",
                   "target_end_date", "forecast_date", "target"))
 
+  forecasts_format[, scenario_id := "forecast"]
   forecasts_format <-
     forecasts_format[, c("horizon", "submission_date", "location_name") := NULL]
   return(forecasts_format)
