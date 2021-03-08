@@ -24,8 +24,6 @@ git merge -Xtheirs main
 cd ../europe-covid-forecast
 
 # Copy your forecast from local folder to submission folder
-cp -R -f "./submissions/rt-forecasts/$ForecastDate/." \
-      "../covid19-forecast-hub-europe/data-processed/epiforecasts-EpiNow2/"
 cp -R -f "./submissions/crowd-forecasts/$ForecastDate/." \
       "../covid19-forecast-hub-europe/data-processed/epiforecasts-EpiExpert/"
 # Commit submission to branch
@@ -34,7 +32,7 @@ git add --all
 git commit -m "submission"
 
 # Create PR
-gh pr create --title "$ForecastDate - EpiForecast EpiNow2 submission" --body " This is an automated submission. Hope your day has been sunshine and rainbows."
+gh pr create --title "$ForecastDate - EpiForecast EpiExpert submission" --body " This is an automated submission. Hope your day has been sunshine and rainbows."
 
 # Remove local submission branch 
 git checkout main
