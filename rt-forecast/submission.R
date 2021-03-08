@@ -48,4 +48,4 @@ forecast <- rbindlist(list(case_forecast, death_forecast))
 rt_folder <- here("submissions", "rt-forecasts", target_date)
 
 check_dir(rt_folder)
-file.path(rt_folder, paste0(target_date, "-epiforecasts-EpiNow2.csv"))
+fwrite(file.path(rt_folder, paste0(target_date, "-epiforecasts-EpiNow2.csv")))

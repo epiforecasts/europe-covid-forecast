@@ -32,7 +32,7 @@ plan("multiprocess", workers = ceiling(availableCores() / 4))
 # load the prototype regional_secondary function
 source_gist("https://gist.github.com/seabbs/4dad3958ca8d83daca8f02b143d152e6")
 
-# run across Poland and Germany specifying
+# run across ECDC countries specifying
 # options for estimate_secondary (EpiNow2)
 forecast <- regional_secondary(
   observations, case_forecast,

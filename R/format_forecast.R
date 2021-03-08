@@ -14,12 +14,12 @@
 #' @export
 #' @importFrom data.table rbindlist setorder setcolorder := .N .SD
 #' @importFrom lubridate epiweek
-format_forecast<- function(forecasts,
-                           locations,
-                           forecast_date = NULL,
-                           submission_date = NULL,
-                           CrI_samples = 1,
-                           target_value = NULL) {
+format_forecast <- function(forecasts,
+                            locations,
+                            forecast_date = NULL,
+                            submission_date = NULL,
+                            CrI_samples = 1,
+                            target_value = NULL) {
 
   # Filter to full epiweeks
   forecasts <- dates_to_epiweek(forecasts)
@@ -52,7 +52,7 @@ format_forecast<- function(forecasts,
                                               location_name = region)]
 
   ## add in location from cumulative
-  forecasts_format <- 
+  forecasts_format <-
       merge(forecasts_format, locations[, .(location, location_name)],
             by = "location_name", all.x = TRUE)
 
