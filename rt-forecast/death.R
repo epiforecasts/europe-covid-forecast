@@ -1,55 +1,75 @@
 # Packages -----------------------------------------------------------------
-library(covid.german.forecasts)
+library(covid.ecdc.forecasts)
 library(EpiNow2, quietly = TRUE)
 library(data.table, quietly = TRUE)
-library(future, quietly = TRUE)
 library(here, quietly = TRUE)
+library(future, quietly = TRUE)
+library(devtools, quietly = TRUE)
 library(lubridate, quietly = TRUE)
+library(ggplot2, quietly = TRUE)
+library(purrr, quietly = TRUE)
 
 # Set target date ---------------------------------------------------------
-target_date <- latest_weekday(char = TRUE) 
+target_date <- latest_weekday(char = TRUE)
 
-# Update delays -----------------------------------------------------------
-generation_time <- readRDS(here("rt-forecast", "data", "delays", "generation_time.rds"))
-incubation_period <- readRDS(here("rt-forecast", "data", "delays", "incubation_period.rds"))
-onset_to_death <- readRDS(here("rt-forecast", "data", "delays", "onset_to_death.rds"))
+# Get observations --------------------------------------------------------
+observations <- get_observations(dir = here("data-raw"), target_date)
 
-# Get cases  ---------------------------------------------------------------
-deaths <- fread(file.path("data-raw", "daily-incidence-deaths.csv"))
-deaths <- deaths[, .(region = as.character(location_name), date = as.Date(date), confirm = value)]
-deaths <- deaths[confirm < 0, confirm := 0]
-deaths <- deaths[date >= (max(date) - lubridate::weeks(12))]
-setorder(deaths, region, date)
+# Get case forecasts ------------------------------------------------------
+case_forecast <- suppressWarnings(
+  get_regional_results(
+    results_dir = here("rt-forecast", "data", "samples", "cases"),
+    date = ymd(target_date), forecast = TRUE, samples = TRUE
+  )$estimated_reported_cases$samples
+)
+case_forecast <- case_forecast[sample <= 1000]
 
-# Set up parallel execution -----------------------------------------------
-no_cores <- setup_future(deaths)
+# Forecast deaths from cases ----------------------------------------------
+# set up parallel options
+options(mc.cores = 4)
+plan("multiprocess", workers = ceiling(availableCores() / 4))
 
-# Run Rt estimation -------------------------------------------------------
-# default Rt settings
-rt <- opts_list(rt_opts(prior = list(mean = 1.1, sd = 0.2), future = "latest"), deaths)
-# add population adjustment for each country
-loc_names <- names(rt)
-rt <- lapply(loc_names,  function(loc) {
-  rt_loc <- rt[[loc]]
-  rt_loc$pop <- locations[location_name %in% loc, ]$population
-  return(rt_loc)
+# load the prototype regional_secondary function
+source_gist("https://gist.github.com/seabbs/4dad3958ca8d83daca8f02b143d152e6")
+
+# run across ECDC countries specifying
+# options for estimate_secondary (EpiNow2)
+forecast <- regional_secondary(
+  observations, case_forecast,
+  delays = delay_opts(list(
+    mean = 2.5, mean_sd = 0.5,
+    sd = 0.47, sd_sd = 0.2, max = 30
+  )),
+  return_fit = FALSE,
+  secondary = secondary_opts(type = "incidence"),
+  obs = obs_opts(scale = list(mean = 0.01, sd = 0.05)),
+  burn_in = as.integer(max(observations$date) - min(observations$date)) - 3 * 7,
+  control = list(adapt_delta = 0.95, max_treedepth = 15),
+  verbose = TRUE
+)
+
+# Save results to disk ----------------------------------------------------
+samples_path <- here(
+  "rt-forecast", "data", "samples", "deaths", target_date
+  )
+summarised_path <- here(
+  "rt-forecast", "data", "summary", "deaths", target_date
+  )
+check_dir(samples_path)
+check_dir(summarised_path)
+
+# save summary and samples
+fwrite(forecast$samples, file.path(samples_path, "samples.csv"))
+fwrite(forecast$summarised, file.path(summarised_path, "summary.csv"))
+
+# save plots
+walk2(forecast$region, names(forecast$region), function(f, n) {
+  walk(
+    seq_len(length(f$plots)),
+    ~ suppressMessages(ggsave(
+      filename = paste0(n, "-", names(f$plots)[.], ".png"),
+      plot = f$plots[[.]],
+      path = paste0(samples_path, "/")
+    ))
+  )
 })
-names(rt) <- loc_names
-
-regional_epinow(reported_cases = deaths,
-                generation_time = generation_time, 
-                delays = delay_opts(incubation_period, onset_to_death),
-                rt = rt,
-                stan = stan_opts(samples = 2000, warmup = 250, 
-                                 chains = 4, cores = no_cores), 
-                obs = obs_opts(scale = list(mean = 0.005, sd = 0.0025)),
-                horizon = 30,
-                output = c("region", "summary", "timing", "samples", "fit"),
-                target_date = target_date,
-                target_folder = here("rt-forecast", "data", "samples", "deaths"), 
-                summary_args = list(
-                  summary_dir = here("rt-forecast", "data", "summary", "deaths", target_date)),
-                logs = "rt-forecast/logs/deaths",
-                verbose = TRUE)
-
-plan("sequential")

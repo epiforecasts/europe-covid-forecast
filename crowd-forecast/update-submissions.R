@@ -1,4 +1,4 @@
-library(covid.german.forecasts)
+library(covid.ecdc.forecasts)
 library(googledrive)
 library(googlesheets4)
 library(dplyr)
@@ -44,7 +44,7 @@ if (delete_data) {
 }
 
 # obtain raw and filtered forecasts, save raw forecasts-------------------------
-locations <- 
+locations <-
   fread("https://raw.githubusercontent.com/epiforecasts/covid19-forecast-hub-europe/main/data-locations/locations_eu.csv")
 
 raw_forecasts <- forecasts %>%
