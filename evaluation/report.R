@@ -7,6 +7,9 @@ library(scoringutils)
 library(rmarkdown)
 library(data.table)
 
+locations <-
+  fread("https://raw.githubusercontent.com/epiforecasts/covid19-forecast-hub-europe/main/data-locations/locations_eu.csv")
+
 
 # helper function to read in all past submissions from a model, bind them together
 # to one file and copy them into the crowd forecast app folder 
@@ -29,6 +32,8 @@ load_and_copy_forecasts <- function(root_dir,
                                          horizon = as.numeric(gsub("([0-9]+).*$", "\\1", target))) %>%
                                   filter(grepl("inc", target),
                                          type == "quantile"))
+  forecasts <- left_join(forecasts, locations) %>%
+    select(-population)
   fwrite(forecasts, out_file_path)
 }
 
@@ -48,13 +53,13 @@ load_and_copy_forecasts(
   new_board_name = "EpiNow2"
 )
 
-# also read all EpiNow2 secondary forecasts, give them a board_name 
-load_and_copy_forecasts(
-  root_dir = here("submissions", "deaths-from-cases"), 
-  out_file_path = here("crowd-forecast", "processed-forecast-data", 
-                       "all-epinow2_secondary-forecasts.csv"), 
-  new_board_name = "EpiNow2_secondary"
-)
+# # also read all EpiNow2 secondary forecasts, give them a board_name 
+# load_and_copy_forecasts(
+#   root_dir = here("submissions", "deaths-from-cases"), 
+#   out_file_path = here("crowd-forecast", "processed-forecast-data", 
+#                        "all-epinow2_secondary-forecasts.csv"), 
+#   new_board_name = "EpiNow2_secondary"
+# )
 
 rmarkdown::render(here::here("evaluation", "report-template.Rmd"),
                   output_format = "html_document",
