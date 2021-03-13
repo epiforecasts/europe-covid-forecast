@@ -127,7 +127,8 @@ forecast_quantiles <- filtered_forecasts %>%
         forecast_type, distribution, lower_90, upper_90)) %>%
   unnest(cols = c(quantile, value)) %>%
   ungroup() %>%
-  mutate(type = ifelse(target_type == "cases", "case", "death"), 
+  mutate(value = pmax(value, 0), # make all forecasts positive
+         type = ifelse(target_type == "cases", "case", "death"), 
          target = paste0(horizon, " wk ahead inc ", type), 
          type = "quantile")
 
@@ -145,9 +146,24 @@ forecasters_to_omit <- forecast_quantiles %>%
   dplyr::filter(!flag) %>%
   pull(forecaster_id) %>%
   unique()
-  
+
 forecast_quantiles <- forecast_quantiles %>%
   dplyr::filter(!(forecaster_id %in% forecasters_to_omit))
+
+
+# omit targets where there aren't at least two forecasts
+# targets_to_keep <- forecast_quantiles %>%
+#   select(forecaster_id, location, target_type) %>%
+#   unique() %>%
+#   group_by(location, target) %>%
+#   mutate(n = n(), flag = n >= 2) %>%
+#   dplyr::filter(flag) %>%
+#   select(location, target_type) %>%
+#   unique()
+# 
+# forecast_quantiles <- left_join(forecast_quantiles, 
+#                                 targets_to_keep)
+
   
 if (median_ensemble) {
   # make median ensemble
