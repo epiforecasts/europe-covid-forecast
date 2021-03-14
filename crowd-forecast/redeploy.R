@@ -3,7 +3,6 @@ library(covid.ecdc.forecasts)
 library(here)
 library(rsconnect)
 # update data
-source(here("data-raw", "update.R"))
 
 # copy data into app
 check_dir(here("crowd-forecast", "data-raw"))
