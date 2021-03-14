@@ -6,10 +6,7 @@ library(readr)
 library(scoringutils)
 library(rmarkdown)
 library(data.table)
-
-locations <-
-  fread("https://raw.githubusercontent.com/epiforecasts/covid19-forecast-hub-europe/main/data-locations/locations_eu.csv")
-
+library(covid.ecdc.forecasts)
 
 # helper function to read in all past submissions from a model, bind them together
 # to one file and copy them into the crowd forecast app folder 
@@ -62,7 +59,6 @@ load_and_copy_forecasts(
 # )
 
 rmarkdown::render(here::here("evaluation", "report-template.Rmd"),
-                  output_format = "html_document",
                   output_file = here::here("docs", "index.html"),
                   envir = new.env(),
                   clean = TRUE)

@@ -36,6 +36,7 @@ htmltools::tagList(
                   cvrage_dev = coverage_deviation,
                   rel_skill = relative_skill) %>%
      DT::datatable(extensions = c('FixedColumns', 'Buttons'),
+                   width = "100%",
                    options = list(
                      pageLength = 10,
                      buttons = c('csv', 'excel'),

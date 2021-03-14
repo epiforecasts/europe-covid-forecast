@@ -3,17 +3,17 @@
 for (forecast_date in forecast_dates) {
   cat(paste0("\n\n## ", forecast_date, "{.tabset} \n\n"))
   #, "{.tabset}\n\n")
-  # plot_df <- dplyr::left_join(tidyr::expand(data = data, target_type, true_value, location_name, model), 
+  # plot_df <- dplyr::left_join(tidyr::expand(data = data, target_variable, true_value, location_name, model), 
   #                             data)
   
   for (location in locations) {
     cat("\n\n###", location, "{.tabset} \n\n")
   
     
-    for (target_type in target_types) {
-      cat("\n\n####", target_type, "\n\n")
+    for (target_variable in target_variables) {
+      cat("\n\n####", target_variable, "\n\n")
       
-      filter_both <- list(paste0("target_type %in% '", target_type, "'"), 
+      filter_both <- list(paste0("target_variable %in% '", target_variable, "'"), 
                           paste0("location_name %in% '", location, "'"))
       filter_truth <- list(paste0("target_end_date > '", as.Date(forecast_date) - 7 * 10, "'"), 
                            paste0("target_end_date <= '", as.Date(forecast_date) + 7 * 4, "'"))
@@ -26,11 +26,11 @@ for (forecast_date in forecast_dates) {
                                              filter_truth = filter_truth,
                                              filter_forecasts = filter_forecasts,
                                              facet_formula = ~ model,
-                                             # facet_formula = model ~ target_type + location_name,
+                                             # facet_formula = model ~ target_variable + location_name,
                                              # facet_wrap_or_grid = "facet",
                                              allow_truth_without_pred = FALSE,
                                              scales = "free") + 
-        # ggplot2::ggtitle(paste0("Predictions for incident ", target_type,  "s")) + 
+        # ggplot2::ggtitle(paste0("Predictions for incident ", target_variable,  "s")) + 
         ggplot2::theme(legend.position = "bottom", 
                        strip.placement = "outside")
       
