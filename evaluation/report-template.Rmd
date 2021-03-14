@@ -4,7 +4,7 @@ output:
     toc: true
     toc_float: true
     toc_depth: 1
-    theme: cosmo
+    theme: journal
 title: "EpiExpert Crowd-Forecasting Evaluation - Europe"
 # toc: true
 # toc_float: true
@@ -80,9 +80,8 @@ data[, target_variable := ifelse(target_variable == "case", "inc case", "inc dea
 ```
 
 <br>
-<br>
 
---- 
+---
 
 # Forecaster ranking {.tabset}
 
@@ -105,14 +104,14 @@ out = c(out, knit_child(here::here("evaluation", "template-ranking-table.Rmd")))
 tabtitle = "Cases"
 summarise_by = c("model", "target_variable")
 filter_list = list('target_variable == "inc case"')
-out = c(out, knit_child(here::here("evaluation", "template-ranking-table.Rmd")),
-        quiet = TRUE)
+out = c(out, knit_child(here::here("evaluation", "template-ranking-table.Rmd"),
+        quiet = TRUE))
 
 tabtitle = "Deaths"
 summarise_by = c("model", "target_variable")
 filter_list = list('target_variable == "inc death"')
-out = c(out, knit_child(here::here("evaluation", "template-ranking-table.Rmd")),
-        quiet = TRUE)
+out = c(out, knit_child(here::here("evaluation", "template-ranking-table.Rmd"),
+        quiet = TRUE))
 
 # tabtitle = "Germany"
 # summarise_by = c("model", "location_name")
@@ -129,18 +128,22 @@ out = c(out, knit_child(here::here("evaluation", "template-ranking-table.Rmd")),
 tabtitle = "overall by horizon"
 summarise_by = c("model", "horizon")
 filter_list = NULL
-out = c(out, knit_child(here::here("evaluation", "template-ranking-table.Rmd")),
-        quiet = TRUE)
+out = c(out, knit_child(here::here("evaluation", "template-ranking-table.Rmd"),
+        quiet = TRUE))
 
 tabtitle = "Detailed"
 summarise_by = NULL
 filter_list = NULL
-out = c(out, knit_child(here::here("evaluation", "template-ranking-table.Rmd")),
-        quiet = TRUE)
+out = c(out, knit_child(here::here("evaluation", "template-ranking-table.Rmd"),
+        quiet = TRUE))
 
 ```
 
-`r if (render_ranking) paste(knit(text = out), collapse = '\n\n')`
+`r if (render_ranking) paste(knit(text = out), collapse = '\n\n---\n\n')`
+
+# {.unlisted .unnumbered}
+
+<br>
 
 --- 
 
@@ -151,6 +154,8 @@ out = c(out, knit_child(here::here("evaluation", "template-ranking-table.Rmd")),
  - coverage deviation is the average difference between nominal and empirical interval coverage. Say your 50 percent prediction interval covers only 20 percent of all true values, then your coverage deviation is 0.5 - 0.2 = -0.3. The coverage deviation value in the table is calculated by averaging over the coverage deviation calculated for all possible prediction intervals. If the value is negative you have covered less then you should. If it is positve, then your forecasts could be a little more confident. 
  - bias is a measure between -1 and 1 that expresses your tendency to underpredict (-1) or overpredict (1). In contrast to the over- and underprediction components of the WIS it is bound between -1 and 1 and cannot go to infinity. It is therefore less susceptible to outliers. 
  - aem is the absolute error of your median forecasts. A high aem means your median forecasts tend to be far away from the true values. 
+
+# {.unlisted .unnumbered}
 
 <br>
 
@@ -172,9 +177,11 @@ out = c(out, knit_child(here::here("evaluation", "template-plot-forecasts.Rmd"))
 
 `r paste(knit(text = out), collapse = '\n\n')`
 
+# {.unlisted .unnumbered}
+
 <br>
 
----
+--- 
 
 # Scores over time {.tabset .tabset-fade .tabset-dropdown}
 
@@ -187,9 +194,11 @@ out = c(out, knit_child(here::here("evaluation", "template-scores-and-truth-time
 
 `r paste(knit(text = out), collapse = '\n\n')`
 
+# {.unlisted .unnumbered}
+
 <br>
 
----
+--- 
 
 # Ranks over time {.tabset .tabset-fade .tabset-dropdown}
 
@@ -202,9 +211,11 @@ out = c(out, knit_child(here::here("evaluation", "template-ranking-over-time.Rmd
 
 `r paste(knit(text = out), collapse = '\n\n')`
 
+# {.unlisted .unnumbered}
+
 <br>
 
----
+--- 
  
 # WIS decomposition {.tabset .tabset-fade .tabset-dropdown}
 
@@ -217,9 +228,11 @@ out = c(out, knit_child(here::here("evaluation", "template-wis-components.Rmd"))
 
 `r paste(knit(text = out), collapse = '\n\n')`
 
+# {.unlisted .unnumbered}
+
 <br>
 
----
+--- 
 
 # Models and available forecasts
 
