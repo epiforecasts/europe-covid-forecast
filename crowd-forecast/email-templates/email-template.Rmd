@@ -74,24 +74,12 @@ Good to have you as a forecaster! Here is this weeks reminder and an update abou
 
 ### The European Forecast Hub
 
-On March 8th, the [European Forecast Hub](https://covid19forecasthub.eu/) will launch. We therefore have expanded our crowd forecast app which now incluedes a set of 32 countries. Given the very promising results of our forecasts in Germany and Poland, we believe the crowd forecast app will be an exciting and valuable contribution to the European Forecast Hub. For now the link to the [performance board](https://epiforecasts.io/covid.german.forecasts) stays the same, but we will update it in the near future. 
+On March 8th, the [European Forecast Hub](https://covid19forecasthub.eu/) launched and we expanded our crowd forecast app which now incluedes a set of 32 countries. Some things have changed with the European Forecast Hub: 
 
-For you as a forecaster, two things changes: 
+1. **data now gets updated every Sunday at 8.30am CET** and the **submission deadline is Monday at 11pm CET (10pm UK time)**
+2. The new evaluation is now at https://epiforecasts.io/europe-covid-forecast/. You can still access the old evaluation for past forecasts in Germany and Poland at https://epiforecasts.io/covid.german.forecasts. 
+3. You now need to make a choice which countries to forceast. We encourage you to keep submitting forecasts for Germany and Poland at least unitl the end of March! (That's when the official study period of the GM/PL Forecast Hub ends)
 
-1. The **data now gets updated every Sunday at 8.30am CET** and the **submission deadline is Monday at 11pm CET (10pm UK time)**. 
-
-2. You now have a selection of 32 countries to forecast. We are of course happy if you do submit a forecast for every country, but you may want to make your own selection of countries to forecast. By default, all 32 countries are enabled, but you may want to change that selection in the 'Account Details' Menu item in the menu on the left side of the screen. We will store your selection and only ask you to forecast the countries you want to forecast whenever you login. 
-
-
-<br>
-
-### Updates to the app
-
-Some small updates have been made to the app. You can now see and change your user data. Simply click on 'Account Details' on the menu to the left of the screen. You can also use this to delete your email address if you don't want to receive further emails. 
-
-We also added a new Tab where you can see your current submissisons. Currently this is just a list of targets that you have submitted successfully, but we plan to replace that with plots of your submissions soon. 
-
-<br>
 
 ### Introduction video
 
@@ -99,7 +87,7 @@ In case you missed it: We created a [short video](https://www.youtube.com/watch?
 
 <br>
 
-### Reminder for the weekly forecasts
+### Reminder: make a forecast until Monday 11pm CET
 
 We **update our data every Sunady at 8.30am CET**. You can then make a forecast until **11pm CET (1opm UK time) on Monday** using our [forecast app](https://cmmid-lshtm.shinyapps.io/crowd-forecast/). We would be very happy to have a forecast from you this week!
 
@@ -108,7 +96,7 @@ We **update our data every Sunady at 8.30am CET**. You can then make a forecast 
 
 ### Forecast and Performance overview
 
-Now, let's have a look at last weeks forecasts and performance!
+Now, let's have a look at last weeks forecasts and performance! For this week, we are still only showing forecasts for Germany and Poland, but we intend to change that in the near future. 
 
 In the following we put together a short overview for you. You can find more detailed information on our performance board [here](https://epiforecasts.io/covid.german.forecasts). 
 
@@ -220,7 +208,7 @@ print(plot)
 
 <br>
 
-If you have any further questions or feedback, please don't hesitate to reach out. You can drop us an email or submit an issue to our [github repo](https://github.com/epiforecasts/covid.german.forecasts)
+If you have any further questions or feedback, please don't hesitate to reach out. You can drop us an email or submit an issue to our [new github repo](https://github.com/epiforecasts/covid-europe-forecast)
 
 Thank you very much for your support and participation. We very much appreciate it!
 

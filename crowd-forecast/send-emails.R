@@ -51,4 +51,6 @@ for (i in seq_len(nrow(participant_data))) {
     credentials = creds_file(here(".secrets", "epiforecasts-email-creds")),
     subject = paste("EpiForecasts Crowd Forecast Update -", Sys.Date())
     )
+  print(i)
 }
+
