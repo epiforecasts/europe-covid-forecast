@@ -24,6 +24,7 @@ if ("horizon" %in% colnames(table)) {
   table[, horizon := paste("horizon", horizon)]
 }
 
+setcolorder(table, c("model", "relative_skill"))
 
 htmltools::tagList(
    table %>%

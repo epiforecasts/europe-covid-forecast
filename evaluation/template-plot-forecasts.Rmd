@@ -1,7 +1,7 @@
 ```{r prediction-plots, echo = FALSE, results='asis', fig.width = 10, fig.height=10}
 
 for (forecast_date in forecast_dates) {
-  cat(paste0("\n\n## ", forecast_date, "{.tabset} \n\n"))
+  cat(paste0("\n\n## ", forecast_date, "{.tabset .tabset-fade .tabset-dropdown} \n\n"))
   #, "{.tabset}\n\n")
   # plot_df <- dplyr::left_join(tidyr::expand(data = data, target_variable, true_value, location_name, model), 
   #                             data)
