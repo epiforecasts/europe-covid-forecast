@@ -37,8 +37,7 @@ prediction_data <- purrr::map_dfr(file_paths_forecast,
   dplyr::rename(prediction = value) %>%
   dplyr::mutate(forecast_date = as.Date(submission_date)) %>%
   dplyr::rename(model = board_name) %>%
-  dplyr::filter(type == "quantile", 
-                location_name %in% c("Germany", "Poland")) %>%
+  dplyr::filter(type == "quantile") %>%
   dplyr::select(location, location_name, forecast_date, quantile, prediction, model, target_end_date, horizon, target, target_type)
 
 # filter forecasters such that only those are kept that have submitted forecasts
@@ -58,8 +57,7 @@ names(file_paths) <- c("case", "death")
 truth_data <- purrr::map_dfr(file_paths, readr::read_csv, .id = "target_type") %>%
   dplyr::rename(true_value = value) %>%
   dplyr::mutate(target_end_date = as.Date(target_end_date)) %>%
-  dplyr::arrange(location, target_type, target_end_date) %>%
-  dplyr::filter(location_name %in% c("Germany", "Poland"))
+  dplyr::arrange(location, target_type, target_end_date) 
 
 
 data <- scoringutils::merge_pred_and_obs(prediction_data, truth_data, 
@@ -72,20 +70,10 @@ data <- scoringutils::merge_pred_and_obs(prediction_data, truth_data,
 
 Good to have you as a forecaster! Here is this weeks reminder and an update about what has happened lately. You're receiving this message because you gave us your email address when you registered for the [Epiforecasts Crowd Forecast App](https://cmmid-lshtm.shinyapps.io/crowd-forecast/). 
 
-### The European Forecast Hub
+### Crowdforecastr webiste
+Our forecasts now have their own website, [www.crowdforecastr.org](www.crowdforecastr.org). You can find all relevant information there, including a short list of suggestions on how to make better forecasts. 
 
-On March 8th, the [European Forecast Hub](https://covid19forecasthub.eu/) launched and we expanded our crowd forecast app which now incluedes a set of 32 countries. Some things have changed with the European Forecast Hub: 
-
-1. **data now gets updated every Sunday at 8.30am CET** and the **submission deadline is Monday at 11pm CET (10pm UK time)**
-2. The new evaluation is now at https://epiforecasts.io/europe-covid-forecast/. You can still access the old evaluation for past forecasts in Germany and Poland at https://epiforecasts.io/covid.german.forecasts. 
-3. You now need to make a choice which countries to forceast. We encourage you to keep submitting forecasts for Germany and Poland at least unitl the end of March! (That's when the official study period of the GM/PL Forecast Hub ends)
-
-
-### Introduction video
-
-In case you missed it: We created a [short video](https://www.youtube.com/watch?v=NzZkNxXFgm8) that explains how to make a forecast to help new forecasters get used to the user interface. If you like, check it out. 
-
-<br>
+You can now also access the forecasts via [app.crowdforecastr.org](app.crowdforecastr.org). 
 
 ### Reminder: make a forecast until Monday 11pm CET
 
@@ -96,42 +84,50 @@ We **update our data every Sunady at 8.30am CET**. You can then make a forecast 
 
 ### Forecast and Performance overview
 
-Now, let's have a look at last weeks forecasts and performance! For this week, we are still only showing forecasts for Germany and Poland, but we intend to change that in the near future. 
+Now, let's have a look at last weeks forecasts and performance! Here is an overview of last week's forecasts for the locations you forecasted and the ensemble forecast. Depending on the number of locations you forecasted, this might look a bit crammed. You can find more detailed information on our performance board [here](https://epiforecasts.io/europe-covid-forecast). 
 
-In the following we put together a short overview for you. You can find more detailed information on our performance board [here](https://epiforecasts.io/covid.german.forecasts). 
-
-*Here are the latest EpiExpert ensemble forecasts and next to them your own forecasts
-if you have submitted any.*
 
 ```{r plot-forecasts, echo=FALSE, out.width="49%", fig.show="hold"}
 
 if (weekdays(Sys.Date()) == "Monday") {
-  forecast_date <- covid.german.forecasts::latest_weekday(Sys.Date() - 7)
+  last_forecast_date <- covid.german.forecasts::latest_weekday(Sys.Date() - 7)
 } else {
-  forecast_date <- covid.german.forecasts::latest_weekday(Sys.Date())
+  last_forecast_date <- covid.german.forecasts::latest_weekday(Sys.Date())
+}
+
+forecasted_locations <- unique(data[model %in% board_name & 
+                                      forecast_date %in% last_forecast_date
+                                    ]$location_name)
+
+if (length(forecasted_locations) == 0) {
+  forecasted_locations <- c("Germany", "Poland", "United Kingdom")
 }
 
 
 filter_truth <- list('target_end_date >= Sys.Date() - 14 * 7')
+filter_both <- list("location_name %in% forecasted_locations")
 filter_forecasts <- list("model %in% 'EpiExpert-ensemble'", 
-                         paste0("forecast_date == '", forecast_date, "'"))
+                         paste0("forecast_date == '", last_forecast_date, "'"))
 
 plot_predictions(data = data, 
                  x = "target_end_date",
                  filter_truth = filter_truth, 
+                 filter_both = filter_both,
                  filter_forecasts = filter_forecasts,
                  facet_formula = target_type ~ location_name, 
-                 facet_wrap_or_grid = "grid") + 
+                 facet_wrap_or_grid = "grid", 
+                 allow_truth_without_pred = FALSE) + 
   ggplot2::labs(x = "Date", title = "Ensemble Forecasts") + 
   ggplot2::theme(legend.position = "bottom")
 
 filter_truth <- list('target_end_date >= Sys.Date() - 14 * 7')
 filter_forecasts <- list(paste0("model %in% '", board_name, "'"), 
-                         paste0("forecast_date == '", forecast_date, "'"))
+                         paste0("forecast_date == '", last_forecast_date, "'"))
 
 p <- plot_predictions(data = data, 
                  x = "target_end_date",
                  filter_truth = filter_truth, 
+                 filter_both = filter_both,
                  filter_forecasts = filter_forecasts,
                  facet_formula = target_type ~ location_name, 
                  facet_wrap_or_grid = "grid") 
@@ -147,14 +143,15 @@ if (!is.null(p)) {
 
 <br>
 
-*Here is the list with the current top 5 forecasters (based on the last 5 weeks): *
+*Here is the list with the current top 5 forecasters in the locations you forecasted (or Germany, Poland and UK if you didn't make a forecast), based on the last 5 weeks: *
 
-```{r rank-table, echo=FALSE, fig.align="center"}
+```{r rank-table, echo=FALSE, fig.align="center", eval = TRUE}
 cut_off <- covid.german.forecasts::latest_weekday(Sys.Date()) - 5 * 7
 df <- data %>%
   filter(forecast_date >= cut_off)
   
-table <- eval_forecasts(data, summarise_by = c("model"), 
+table <- eval_forecasts(data[location_name %in% forecasted_locations], 
+                        summarise_by = c("model"), 
                         compute_relative_skill = TRUE)
 
 table %>%
@@ -180,7 +177,7 @@ table %>%
 *And here is a plot with the rank by date and target of all active forecasters over time:*
 
 ```{r rank-over-time, echo=FALSE, fig.align = "center", fig.width=10, fig.height=8, out.width="80%"}
-scores <- scoringutils::eval_forecasts(data,
+scores <- scoringutils::eval_forecasts(data[location_name %in% forecasted_locations],
                                          summarise_by = c("model", 
                                                           "location_name", 
                                                           "target_type",
