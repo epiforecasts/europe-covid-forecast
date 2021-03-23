@@ -51,15 +51,20 @@ dates_to_epiweek <- function(df){
 #' @return A data frame grouped by week.
 #' @export
 #' @importFrom dplyr filter group_by summarise ungroup
+#' @importFrom lubridate year
 make_weekly <- function(inc) {
   inc_weekly <- inc %>%
     dates_to_epiweek() %>% 
     filter(epiweek_full == TRUE) %>% 
-    group_by(location, location_name, epiweek) %>%
+    mutate(year = year(date)) %>%
+    group_by(location, location_name, epiweek, year) %>%
     summarise(value = sum(value), 
               target_end_date = max(date),
               .groups = "drop_last") %>% 
-    ungroup()
+    ungroup() %>%
+    select(-year)
+  
+  return(inc_weekly)
 } 
 #' Make Data Cumulative
 #'
