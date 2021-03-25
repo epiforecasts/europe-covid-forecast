@@ -35,7 +35,7 @@ git add --all
 git commit -m "submission"
 
 # Create PR
-gh pr create --title "$ForecastDate - EpiForecast submission" --body " This is an automated submission. Hope your day has been sunshine and rainbows."
+gh pr create --title "$ForecastDate - EpiForecast EpiExpert submission" --body " This is an automated submission. Hope your day has been sunshine and rainbows."
 
 # Remove local submission branch 
 git checkout main
