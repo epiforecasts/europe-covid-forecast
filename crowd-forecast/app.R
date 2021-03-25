@@ -3,6 +3,7 @@
 # Or use the blue button on top of this file
 library(data.table)
 library(here)
+library(shinyjs)
 library(crowdforecastr)
 
 # load submission date from data if on server
