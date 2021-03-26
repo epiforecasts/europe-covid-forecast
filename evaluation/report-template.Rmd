@@ -29,7 +29,7 @@ render_ranking <- TRUE
 
 <br>
 
-This is an evaluation of forecasts of Covid-19 case and death numbers submitted by the [Epiforecasts team](github.com/epiforecasts) to the [European COVID-19 Forecast Hub](https://covid19forecasthub.eu/) ([European Forecast Hub Github page](https://github.com/epiforecasts/covid19-forecast-hub-europe)). These include the crowd forecasts made through the [crowdforecastr app](https://cmmid-lshtm.shinyapps.io/crowd-forecast/) as well as a model created using [EpiNow2](github.com/epiforecasts/epinow2). 
+This is an evaluation of forecasts of Covid-19 case and death numbers submitted by the [Epiforecasts team](https://github.com/epiforecasts) to the [European COVID-19 Forecast Hub](https://covid19forecasthub.eu/) ([European Forecast Hub Github page](https://github.com/epiforecasts/covid19-forecast-hub-europe)). These include the crowd forecasts made through the [crowdforecastr app](https://cmmid-lshtm.shinyapps.io/crowd-forecast/) as well as a model created using [EpiNow2](https://github.com/epiforecasts/epinow2). 
 
 This report is intended as a basic evaluation of predictions that helps forecasters to better understand their performance. The structure and visualisations are likely subject to change in the future and we cannot rule out any mistakes. You can learn more and provide feedback by creating an issue on our [github repository](https://github.com/epiforecasts/europe-covid-forecast)
 
