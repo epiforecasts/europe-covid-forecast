@@ -77,7 +77,7 @@ You can now also access the forecasts via [app.crowdforecastr.org](app.crowdfore
 
 ### Reminder: make a forecast until Monday 11pm CET
 
-We **update our data every Sunady at 8.30am CET**. You can then make a forecast until **11pm CET (1opm UK time) on Monday** using our [forecast app](https://cmmid-lshtm.shinyapps.io/crowd-forecast/). We would be very happy to have a forecast from you this week!
+We **update our data every Sunday at 8.30am CET**. You can then make a forecast until **11pm CET (1opm UK time) on Monday** using our [forecast app](https://cmmid-lshtm.shinyapps.io/crowd-forecast/). We would be very happy to have a forecast from you this week!
 
 
 <br>
