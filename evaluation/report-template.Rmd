@@ -97,7 +97,7 @@ out = c(out, knit_child(here::here("evaluation", "template-ranking-table.Rmd")))
 
 tabtitle = "latest"
 summarise_by = c("model")
-cut_off <- covid.german.forecasts::latest_weekday(Sys.Date()) - 5 * 7
+cut_off <- latest_weekday(Sys.Date()) - 5 * 7
 filter_list = list(paste0("forecast_date >= '", cut_off, "'"))
 out = c(out, knit_child(here::here("evaluation", "template-ranking-table.Rmd")))
 

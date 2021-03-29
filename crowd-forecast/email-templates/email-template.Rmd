@@ -16,12 +16,12 @@ library(here)
 library(scoringutils)
 library(dplyr)
 library(data.table)
-library(covid.german.forecasts)
+library(covid.ecdc.forecasts)
 library(kableExtra)
 ```
 
 
-```{r load-data, echo=FALSE, message = FALSE, warning = FALSE}
+```{r load-data, echo=FALSE, message=FALSE, warning=FALSE}
 # load all data ----------------------------------------------------------------
 root_dir <- here::here("crowd-forecast", "processed-forecast-data")
 file_paths_forecast <- here::here(root_dir, list.files(root_dir))
@@ -54,10 +54,13 @@ files <- list.files(here::here("data-raw"))
 file_paths <- here::here("data-raw", files[grepl("weekly-incident", files)])
 names(file_paths) <- c("case", "death")
 
+
 truth_data <- purrr::map_dfr(file_paths, readr::read_csv, .id = "target_type") %>%
+  dplyr::select(-location_name) %>%
   dplyr::rename(true_value = value) %>%
   dplyr::mutate(target_end_date = as.Date(target_end_date)) %>%
-  dplyr::arrange(location, target_type, target_end_date) 
+  dplyr::arrange(location, target_type, target_end_date) %>%
+  left_join(locations)
 
 
 data <- scoringutils::merge_pred_and_obs(prediction_data, truth_data, 
@@ -70,15 +73,11 @@ data <- scoringutils::merge_pred_and_obs(prediction_data, truth_data,
 
 Good to have you as a forecaster! Here is this weeks reminder and an update about what has happened lately. You're receiving this message because you gave us your email address when you registered for the [Epiforecasts Crowd Forecast App](https://cmmid-lshtm.shinyapps.io/crowd-forecast/). 
 
-### Crowdforecastr webiste
-Our forecasts now have their own website, [www.crowdforecastr.org](www.crowdforecastr.org). You can find all relevant information there, including a short list of suggestions on how to make better forecasts. 
-
-You can now also access the forecasts via [app.crowdforecastr.org](app.crowdforecastr.org). 
+You can always find more information about on [www.crowdforecastr.org](https://www.crowdforecastr.org). 
 
 ### Reminder: make a forecast until Monday 11pm CET
 
 We **update our data every Sunady at 8.30am CET**. You can then make a forecast until **11pm CET (1opm UK time) on Monday** using our [forecast app](https://cmmid-lshtm.shinyapps.io/crowd-forecast/). We would be very happy to have a forecast from you this week!
-
 
 <br>
 
@@ -90,9 +89,9 @@ Now, let's have a look at last weeks forecasts and performance! Here is an overv
 ```{r plot-forecasts, echo=FALSE, out.width="49%", fig.show="hold"}
 
 if (weekdays(Sys.Date()) == "Monday") {
-  last_forecast_date <- covid.german.forecasts::latest_weekday(Sys.Date() - 7)
+  last_forecast_date <- latest_weekday(Sys.Date() - 7)
 } else {
-  last_forecast_date <- covid.german.forecasts::latest_weekday(Sys.Date())
+  last_forecast_date <- latest_weekday(Sys.Date())
 }
 
 forecasted_locations <- unique(data[model %in% board_name & 
@@ -146,7 +145,7 @@ if (!is.null(p)) {
 *Here is the list with the current top 5 forecasters in the locations you forecasted (or Germany, Poland and UK if you didn't make a forecast), based on the last 5 weeks: *
 
 ```{r rank-table, echo=FALSE, fig.align="center", eval = TRUE}
-cut_off <- covid.german.forecasts::latest_weekday(Sys.Date()) - 5 * 7
+cut_off <- latest_weekday(Sys.Date()) - 5 * 7
 df <- data %>%
   filter(forecast_date >= cut_off)
   
