@@ -6,10 +6,10 @@ RUN apt-get update -y && \
     apt-get clean
     
 ## Copy files to working directory of server
-ADD . covid.german.forecasts
+ADD . europe-covid-forecast
 
 ## Set working directory to be this folder
-WORKDIR covid.german.forecasts
+WORKDIR europe-covid-forecast
 
 ## Install missing packages
 RUN Rscript -e "devtools::install_dev_deps()"
