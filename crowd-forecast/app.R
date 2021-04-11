@@ -25,7 +25,6 @@ cases_inc <- fread(here("data-raw", "weekly-incident-cases.csv"))[
 
 # bind together and sort according to date
 observations <- rbindlist(list(deaths_inc, cases_inc))
-observations <- observations[epiweek <= max(epiweek)]
 setorder(observations, target_type, target_end_date)
 
 # run app
