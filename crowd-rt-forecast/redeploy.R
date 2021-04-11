@@ -26,7 +26,7 @@ obs <-
 
 fwrite(obs, here("crowd-rt-forecast", "data-raw", "observations.csv"))
 
-# copy Rt samples and fit data as well
+# copy Rt samples and fit data as well -----------------------------------------
 copyrt <- function(origin_dir, target_dir, locations, date) {
   for (location in locations) {
     origin_folder <- here(origin_dir, location, date)
@@ -35,11 +35,32 @@ copyrt <- function(origin_dir, target_dir, locations, date) {
     if (dir.exists(origin_folder)) {
       check_dir(target_folder)
       file.copy(from = origin_folder, to = target_folder, recursive = TRUE)
+      
+      # read in epinow2 fit and thin
+      fit <- readRDS(here(target_folder, date, "model_fit.rds")) %>%
+        shredder::stan_slice(seq(1, 450, by = 450/25), inc_warmup = FALSE)
+      saveRDS(fit, here(target_folder, date, "model_fit.rds"))
+      
+      # reconstruct the estimate_samples.rds file
+      min_date <- readRDS(here(target_folder, date, "summarised_estimates.rds"))$date %>%
+        min(na.rm = TRUE)
+      df <- rstan::extract(fit, pars = "R")[[1]] %>%
+        t() %>%
+        as.data.table() 
+      colnames(df) <- as.character(1:ncol(df))
+      df <- df[, date := as.Date(min(min_date)) + 0:(nrow(df) - 1)] %>%
+        melt(id.vars = "date")
+      setnames(df, old = c("variable"), new = c("sample"))
+      df <- df[!is.na(value)]
+      df[, sample := as.numeric(sample)]
+      
+      saveRDS(df, here(target_folder, date, "estimate_samples.rds"))
     }
   }
 }
 origin_dir <- here("rt-forecast", "data", "samples", "cases")
 target_dir <- here("crowd-rt-forecast", "data-raw", "samples", "cases")
+locations <- list.files(origin_dir)
 copyrt(origin_dir, target_dir, locations, submission_date)
 
 setAccountInfo(
