@@ -5,6 +5,7 @@ library(dplyr)
 library(crowdforecastr)
 library(magrittr)
 library(rstantools)
+library(rstan)
 library(lubridate)
 library(shinyjs)
 library(EpiNow2)
@@ -23,7 +24,7 @@ options("golem.app.prod" = TRUE)
 if (!dir.exists("crowd-rt-forecast")) {
   submission_date <- readRDS("data-raw/submission_date.rds")
 } else {
-  submission_date <- floor_date(Sys.Date(), unit = "week", week_start = 1)
+  submission_date <- latest_weekday()
   saveRDS(submission_date, "crowd-rt-forecast/data-raw/submission_date.rds")
 }
 first_forecast_date <- as.character(as.Date(submission_date) - 16)
