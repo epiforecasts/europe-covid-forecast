@@ -1,7 +1,7 @@
 #!bin/bash
 
 #define date
-ForecastDate=$(date +'%Y-%m-%d' -d)
+ForecastDate=$(date +'%Y-%m-%d')
 
 # Clone the hub repository if not already present
 #git clone --depth 1 https://github.com/epiforecasts/covid19-forecast-hub-europe
@@ -17,7 +17,7 @@ cd ../covid19-forecast-hub-europe
 git checkout main
 git pull 
 # Switch to submission branch
-git checkout -b submission
+git checkout -b submission3
 git merge -Xtheirs main
 
 # Move back into forecast repository
@@ -39,5 +39,5 @@ gh pr create --title "$ForecastDate - EpiForecast EpiExpert submission" --body "
 
 # Remove local submission branch 
 git checkout main
-git branch -D submission
+git branch -D submission3
 cd ../europe-covid-forecast
