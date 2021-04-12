@@ -52,13 +52,15 @@ Suggests:
     shinybusy,
     zoo, 
     rstantools, 
-    shinyjs
+    shinyjs,
+    shredder
 Remotes:
   epiforecasts/EpiNow2,
   epiforecasts/covidregionaldata,
   epiforecasts/scoringutils,
   epiforecasts/crowdforecastr,
   epiforecasts/forecasthubutils
+  yonicd/shredder
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Biarch: true
