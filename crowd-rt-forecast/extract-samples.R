@@ -83,7 +83,7 @@ filtered_forecasts <- replace_date_and_time(filtered_forecasts)
 
 # write raw forecasts
 fwrite(raw_forecasts %>% select(-board_name),
-       here("rt-crowd-forecast", "raw-forecast-data",
+       here("crowd-rt-forecast", "raw-forecast-data",
             paste0(submission_date, "-raw-forecasts.csv")))
 
 # draw samples from the distributions ------------------------------------------
@@ -174,7 +174,7 @@ forecast_samples_daily <- forecast_samples %>%
 fwrite(forecast_samples_daily %>% 
          mutate(submission_date = submission_date, 
                 target_type = "case"),
-       here("rt-crowd-forecast", "processed-forecast-data",
+       here("crowd-rt-forecast", "processed-forecast-data",
             paste0(submission_date, "-processed-forecasts.csv")))
 
 # check results and plot
@@ -190,6 +190,6 @@ plot <- plot_predictions(
   facet_formula = ~ forecaster_id + location
   )
 
-plot_dir <- here("rt-crowd-forecast", "data", "plots", submission_date)
+plot_dir <- here("crowd-rt-forecast", "data", "plots", submission_date)
 check_dir(plot_dir)
 ggsave(file.path(plot_dir, "rt.png"))
