@@ -45,7 +45,7 @@ if (delete_data) {
 
 # obtain raw and filtered forecasts, save raw forecasts-------------------------
 locations <-
-  fread("https://raw.githubusercontent.com/epiforecasts/covid19-forecast-hub-europe/main/data-locations/locations_eu.csv")
+  fread("https://raw.githubusercontent.com/epiforecasts/covid19-forecast-hub-europe/main/data-locations/locations_eu.csv") # nolint
 
 raw_forecasts <- forecasts %>%
   left_join(locations, by = "location_name") %>%
