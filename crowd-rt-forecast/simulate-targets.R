@@ -15,7 +15,7 @@ target_date <- latest_weekday()
 
 # Get Rt forecasts --------------------------------------------------------
 crowd_rt <- fread(
-  here("rt-crowd-forecast", "processed-forecast-data",
+  here("crowd-rt-forecast", "processed-forecast-data",
        paste0(target_date, "-processed-forecasts.csv")
 ))
 
@@ -40,7 +40,7 @@ simulations <- simulate_crowd_cases(
 crowd_cases <- extract_samples(simulations, "cases")
 
 # save output
-plot_dir <- here("rt-crowd-forecast", "data", "plots", target_date)
+plot_dir <- here("crowd-rt-forecast", "data-raw", "plots", target_date)
 check_dir(plot_dir)
 
 walk(names(simulations), function(loc) {
@@ -53,8 +53,7 @@ walk(names(simulations), function(loc) {
 })
 
 # Simulate deaths --------------------------------------------------------------
-observations <- get_observations(dir = here("data-raw"), target_date,
-                                 locs = c("Germany", "Poland"))
+observations <- get_observations(dir = here("data-raw"), target_date)
 
 # Forecast deaths from cases ----------------------------------------------
 source_gist("https://gist.github.com/seabbs/4dad3958ca8d83daca8f02b143d152e6")
@@ -82,7 +81,6 @@ cum_deaths <- fread(here("data-raw", "weekly-cumulative-deaths.csv"))
 
 crowd_cases <- format_forecast(crowd_cases,
   locations = locations,
-  cumulative = cum_cases[location_name %in% c("Germany", "Poland")],
   forecast_date = target_date,
   submission_date = target_date,
   target_value = "case"
@@ -90,23 +88,13 @@ crowd_cases <- format_forecast(crowd_cases,
 
 crowd_deaths <- format_forecast(deaths_forecast$samples,
   locations = locations,
-  cumulative = cum_deaths[location_name %in% c("Germany", "Poland")],
   forecast_date = target_date,
   submission_date = target_date,
   target_value = "death"
 )
 
-# save forecasts
-crowd_folder <- here("submissions", "crowd-rt-forecasts", target_date)
-check_dir(crowd_folder)
-
-save_crowd_rt <- function(...) {
-  save_forecast(model = "-epiforecasts-EpiExpert_Rt", 
-                folder = crowd_folder,
-                date = target_date,
-                 ...)
-}
-save_crowd_rt(crowd_cases, "Germany", "GM", "-case")
-save_crowd_rt(crowd_cases, "Poland", "PL", "-case")
-save_crowd_rt(crowd_deaths, "Germany", "GM")
-save_crowd_rt(crowd_deaths, "Poland", "PL")
+forecast <- rbind(crowd_cases, crowd_deaths, use.names = TRUE)
+submission_folder <- here("submissions", "crowd-rt-forecasts", target_date)
+check_dir(submission_folder)
+fwrite(forecast,
+       file.path(submission_folder, paste0(target_date, "-epiforecasts-EpiExpert-Rt.csv")))
