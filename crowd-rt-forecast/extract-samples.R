@@ -129,7 +129,6 @@ overall_sample_number <- 1000
 # draw samples
 forecast_samples <- filtered_forecasts %>%
   rename(location = region) %>%
-  mutate(location = ifelse(location == "Germany", "GM", "PL")) %>%
   select(forecaster_id, location, target_end_date, submission_date,
          distribution, median, width) %>%
   arrange(forecaster_id, location, target_end_date) %>%
