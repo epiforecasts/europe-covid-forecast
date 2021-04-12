@@ -54,6 +54,7 @@ walk(names(simulations), function(loc) {
 
 # Simulate deaths --------------------------------------------------------------
 observations <- get_observations(dir = here("data-raw"), target_date)
+observations <- observations[region %in% unique(crowd_cases$region)]
 
 # Forecast deaths from cases ----------------------------------------------
 source_gist("https://gist.github.com/seabbs/4dad3958ca8d83daca8f02b143d152e6")
@@ -75,10 +76,6 @@ deaths_forecast <- regional_secondary(
 )
 
 # Submission --------------------------------------------------------------
-# Cumulative data
-cum_cases <- fread(here("data-raw", "weekly-cumulative-cases.csv"))
-cum_deaths <- fread(here("data-raw", "weekly-cumulative-deaths.csv"))
-
 crowd_cases <- format_forecast(crowd_cases,
   locations = locations,
   forecast_date = target_date,
