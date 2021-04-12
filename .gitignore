@@ -9,3 +9,4 @@ data-raw/*.csv
 crowd-forecast/data-raw
 Rplots.pdf
 crowd-forecast/data/
+crowd-rt-forecast/data-raw

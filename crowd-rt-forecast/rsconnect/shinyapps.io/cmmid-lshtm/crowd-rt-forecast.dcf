@@ -1,0 +1,10 @@
+name: crowd-rt-forecast
+title:
+username:
+account: cmmid-lshtm
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3928720
+bundleId: 4451796
+url: https://cmmid-lshtm.shinyapps.io/crowd-rt-forecast/
+when: 1617992631.91387
