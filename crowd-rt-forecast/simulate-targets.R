@@ -24,8 +24,6 @@ crowd_rt <- crowd_rt[, .(location,
   date = as.Date(target_end_date),
   value = round(value, 3)
 )]
-crowd_rt[location %in% "GM", location := "Germany"]
-crowd_rt[location %in% "PL", location := "Poland"]
 crowd_rt[, sample := 1:.N, by = .(location, date)]
 crowd_rt[, target := "cases"]
 
