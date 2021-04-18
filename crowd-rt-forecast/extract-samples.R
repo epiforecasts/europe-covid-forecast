@@ -157,7 +157,7 @@ forecaster_ids <- unique(forecast_samples$forecaster_id)
 n_samples <- max(forecast_samples$sample)
 helper_data <- expand.grid(target_end_date = date_range,
                            forecaster_id = forecaster_ids,
-                           location = c("GM", "PL"),
+                           location = locations$location_name,
                            submission_date = submission_date,
                            sample = 1:n_samples)
 
