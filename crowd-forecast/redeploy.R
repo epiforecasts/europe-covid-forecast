@@ -11,8 +11,10 @@ file.copy(from = c(here("data-raw", "weekly-incident-cases.csv"),
           to = here("crowd-forecast", "data-raw"),
           overwrite = TRUE)
 
-# if today is not Monday, set submission date to the next Monday
-if (weekdays(Sys.Date()) != "Monday") {
+# if today is not Monday (or if it is later than 9pm on the server), 
+# set submission date to the next Monday
+if (weekdays(Sys.Date()) != "Monday" | 
+    Sys.time() > as.POSIXct("21:00",format="%H:%M")) {
   submission_date <- latest_weekday() + 7
 } else {
   submission_date <- Sys.Date()
