@@ -71,19 +71,17 @@ data <- scoringutils::merge_pred_and_obs(prediction_data, truth_data,
 
 ### Dear `r name`,
 
-Good to have you as a forecaster! Here is this weeks reminder and an update about what has happened lately. You're receiving this message because you gave us your email address when you registered for the [Epiforecasts Crowd Forecast App](https://cmmid-lshtm.shinyapps.io/crowd-forecast/). 
+Good to have you as a forecaster! Here is this weeks reminder and an update about what has happened lately. We would be very happy about your insights again this week. 
 
-You can always find more information about on [www.crowdforecastr.org](https://www.crowdforecastr.org). 
+We **update our data every Sunday at 8.30am CET**. You can then make a forecast until **11pm CET (1opm UK time) on Monday** using our [forecast app](https://cmmid-lshtm.shinyapps.io/crowd-forecast/).
 
-### Reminder: make a forecast until Monday 11pm CET
-
-We **update our data every Sunday at 8.30am CET**. You can then make a forecast until **11pm CET (1opm UK time) on Monday** using our [forecast app](https://cmmid-lshtm.shinyapps.io/crowd-forecast/). We would be very happy to have a forecast from you this week!
+You can always find more information about the project on [www.crowdforecastr.org](https://www.crowdforecastr.org). 
 
 <br>
 
 ### Forecast and Performance overview
 
-Now, let's have a look at last weeks forecasts and performance! Here is an overview of last week's forecasts for the locations you forecasted and the ensemble forecast. Depending on the number of locations you forecasted, this might look a bit crammed. You can find more detailed information on our performance board [here](https://epiforecasts.io/europe-covid-forecast). 
+Now, let's have a look at last weeks forecasts and performance! Here is an overview of last week's forecasts for the locations you forecasted and the ensemble forecast. Depending on the number of locations you forecasted, this might look a bit crammed. You can find more detailed information on our performance board [here](https://epiforecasts.io/europe-covid-forecast). You can also find the evaluation for the European Forecast Hub [here](https://covid19forecasthub.eu/reports.html). 
 
 
 ```{r plot-forecasts, echo=FALSE, out.width="49%", fig.show="hold"}
@@ -214,5 +212,5 @@ Nikos for the Epiforecasts team
 
 <br>
 
-PS: If you don't want to receive future emails simply write me a quick message or go to the app and click on 'Account Details' in the menu to the left of the screen. You can simply delete your email address there. 
+PS: You're receiving this message because you gave us your email address when you registered for the [Epiforecasts Crowd Forecast App](https://cmmid-lshtm.shinyapps.io/crowd-forecast/). If you don't want to receive future emails simply write me a quick message or go to the app and click on 'Account Details' in the menu to the left of the screen. You can simply delete your email address there. 
 
