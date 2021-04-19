@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 #define date
 ForecastDate=$(date +'%Y-%m-%d')
@@ -17,7 +17,7 @@ cd ../covid19-forecast-hub-europe
 git checkout main
 git pull 
 # Switch to submission branch
-git checkout -b submission
+git checkout -b submission2
 git merge -Xtheirs main
 
 # Move back into forecast repository
@@ -28,7 +28,8 @@ cp -R -f "./submissions/rt-forecasts/$ForecastDate/." \
       "../covid19-forecast-hub-europe/data-processed/epiforecasts-EpiNow2/"
 cp -R -f "./submissions/crowd-forecasts/$ForecastDate/." \
       "../covid19-forecast-hub-europe/data-processed/epiforecasts-EpiExpert/"
-      
+cp -R -f "./submissions/crowd-rt-forecasts/$ForecastDate/." \
+      "../covid19-forecast-hub-europe/data-processed/epiforecasts-EpiExpert-Rt/"
 # Commit submission to branch
 cd ../covid19-forecast-hub-europe
 git add --all
@@ -39,5 +40,5 @@ gh pr create --title "$ForecastDate - EpiForecast EpiExpert submission" --body "
 
 # Remove local submission branch 
 git checkout main
-git branch -D submission
+git branch -D submission2
 cd ../europe-covid-forecast
