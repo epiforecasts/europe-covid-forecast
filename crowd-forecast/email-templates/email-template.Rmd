@@ -73,7 +73,7 @@ data <- scoringutils::merge_pred_and_obs(prediction_data, truth_data,
 
 Good to have you as a forecaster! Here is this weeks reminder and an update about what has happened lately. We would be very happy about your insights again this week. 
 
-We **update our data every Sunday at 8.30am CET**. You can then make a forecast until **11pm CET (1opm UK time) on Monday** using our [forecast app](https://cmmid-lshtm.shinyapps.io/crowd-forecast/).
+We **update our data every Sunday at 8.30am CET**. You can then make a forecast until **11pm CET (1pm UK time) on Monday** using our [forecast app](https://cmmid-lshtm.shinyapps.io/crowd-forecast/).
 
 You can always find more information about the project on [www.crowdforecastr.org](https://www.crowdforecastr.org). 
 
