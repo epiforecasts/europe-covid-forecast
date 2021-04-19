@@ -251,6 +251,21 @@ plot <- scoringutils::show_avail_forecasts(prediction_data,
 print(plot)
 ```
 
+
+```{r show-num-forecasters, results = 'asis'}
+plot <- show_avail_forecasts(data[!(model %in% c("EpiNow2",
+                                         "EpiExpert-ensemble"))], 
+                     y = "location_name", 
+                     by = c("location_name", "forecast_date", "model"), 
+                     summarise_by = c("location_name", "forecast_date"))
+print(plot)
+```
+
+```{r num-forecasters, results = 'asis'}
+data[!(model %in% c("EpiNow2", "EpiExpert-ensemble")), .(`number of forecasters` = length(unique(model))), , by = "forecast_date"][order(forecast_date)][!is.na(forecast_date)]
+
+``` 
+
 Most of the 'models' are human forecasters, but some are not: 
 
  - EpiExpert-ensemble is the ensemble that is formed as the mean of all human forecasts submitted
