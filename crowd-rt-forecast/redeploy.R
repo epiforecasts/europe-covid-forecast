@@ -4,8 +4,14 @@ library(dplyr)
 library(rsconnect)
 library(here)
 
-# if today is not Monday, set submission date to last monday
-submission_date <- latest_weekday()
+# if today is not Monday (or if it is later than 9pm on the server), 
+# set submission date to the next Monday
+if (weekdays(Sys.Date()) != "Monday" | 
+    Sys.time() > as.POSIXct("21:00",format="%H:%M")) {
+  submission_date <- latest_weekday() + 7
+} else {
+  submission_date <- Sys.Date()
+}
 
 check_dir(here("crowd-rt-forecast", "data-raw"))
 saveRDS(submission_date,
