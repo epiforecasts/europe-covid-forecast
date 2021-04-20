@@ -29,7 +29,7 @@ cp -R -f "./submissions/rt-forecasts/$ForecastDate/." \
 cp -R -f "./submissions/crowd-forecasts/$ForecastDate/." \
       "../covid19-forecast-hub-europe/data-processed/epiforecasts-EpiExpert/"
 cp -R -f "./submissions/crowd-rt-forecasts/$ForecastDate/." \
-      "../covid19-forecast-hub-europe/data-processed/epiforecasts-EpiExpert-Rt/"
+      "../covid19-forecast-hub-europe/data-processed/epiforecasts-EpiExpert_Rt/"
 # Commit submission to branch
 cd ../covid19-forecast-hub-europe
 git add --all
