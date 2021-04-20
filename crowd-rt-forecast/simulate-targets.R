@@ -92,4 +92,4 @@ forecast <- rbind(crowd_cases, crowd_deaths, use.names = TRUE)
 submission_folder <- here("submissions", "crowd-rt-forecasts", target_date)
 check_dir(submission_folder)
 fwrite(forecast,
-       file.path(submission_folder, paste0(target_date, "-epiforecasts-EpiExpert-Rt.csv")))
+       file.path(submission_folder, paste0(target_date, "-epiforecasts-EpiExpert_Rt.csv")))
