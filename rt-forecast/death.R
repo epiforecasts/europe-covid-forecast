@@ -42,7 +42,7 @@ forecast <- regional_secondary(
   )),
   return_fit = FALSE,
   secondary = secondary_opts(type = "incidence"),
-  obs = obs_opts(scale = list(mean = 0.01, sd = 0.05)),
+  obs = obs_opts(scale = list(mean = 0.01, sd = 0.05), week_effect = FALSE),
   burn_in = as.integer(max(observations$date) - min(observations$date)) - 2 * 7,
   control = list(adapt_delta = 0.95, max_treedepth = 15),
   verbose = TRUE
