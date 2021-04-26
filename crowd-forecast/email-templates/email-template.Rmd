@@ -81,7 +81,7 @@ You can always find more information about the project on [www.crowdforecastr.or
 
 ### Forecast and Performance overview
 
-Now, let's have a look at last weeks forecasts and performance! Here is an overview of last week's forecasts for the locations you forecasted and the ensemble forecast. Depending on the number of locations you forecasted, this might look a bit crammed. You can find more detailed information on our performance board [here](https://epiforecasts.io/europe-covid-forecast). You can also find the evaluation for the European Forecast Hub [here](https://covid19forecasthub.eu/reports.html). 
+Now, let's have a look at last weeks forecasts and performance! Here is an overview of last week's forecasts for the locations you forecasted (or Germany, Poland and UK if you didn’t make a forecast) and the ensemble forecast. Depending on the number of locations you forecasted, this might look a bit crammed. You can find more detailed information on our performance board [here](https://epiforecasts.io/europe-covid-forecast). You can also find the evaluation for the European Forecast Hub [here](https://covid19forecasthub.eu/reports.html). 
 
 
 ```{r plot-forecasts, echo=FALSE, out.width="49%", fig.show="hold"}
