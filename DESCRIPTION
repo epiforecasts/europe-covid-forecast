@@ -59,7 +59,7 @@ Remotes:
   epiforecasts/covidregionaldata,
   epiforecasts/scoringutils,
   epiforecasts/crowdforecastr,
-  epiforecasts/forecasthubutils
+  epiforecasts/forecasthubutils,
   yonicd/shredder
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
