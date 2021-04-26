@@ -7,7 +7,6 @@
 format_forecast(
   forecasts,
   locations,
-  cumulative = NULL,
   forecast_date = NULL,
   submission_date = NULL,
   CrI_samples = 1,
@@ -20,10 +19,6 @@ the following variables: \code{date}, \code{value}, \code{region}, and \code{sam
 
 \item{locations}{A data frame data dictionary linking locations
 with location names. Must contain: \code{location} and \code{location_name}}
-
-\item{cumulative}{A data frame but defaults to NULL.
-Previous cumulative case counts. Must contain: \code{target_end_date},
-\code{location}, and \code{value}.}
 
 \item{forecast_date}{A date indicating when the forecast took place.}
 

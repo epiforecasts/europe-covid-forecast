@@ -15,27 +15,34 @@ target_date <- latest_weekday()
 
 # Get Rt forecasts --------------------------------------------------------
 crowd_rt <- fread(
-  here("crowd-rt-forecast", "processed-forecast-data",
-       paste0(target_date, "-processed-forecasts.csv")
+  here("crowd-rt-forecast", "forecast-sample-data",
+       paste0(target_date, "-forecast-sample-data.csv")
 ))
 
 # dropped redundant columns and get correct shape
-crowd_rt <- crowd_rt[, .(location,
-  date = as.Date(target_end_date),
-  value = round(value, 3)
+crowd_rt <- crowd_rt[, .(location, 
+                         forecaster_id,
+                         date = as.Date(target_end_date),
+                         value = round(value, 3)
 )]
 crowd_rt[, sample := 1:.N, by = .(location, date)]
 crowd_rt[, target := "cases"]
 
 # Simulate cases ----------------------------------------------------------
-simulations <- simulate_crowd_cases(
-  crowd_rt,
-  model_dir = here("rt-forecast", "data", "samples"),
-  target_date = target_date
-)
+crowd_cases <- list()
+forecasters <- unique(crowd_rt$forecaster_id)
 
-# Extract output ----------------------------------------------------------
-crowd_cases <- extract_samples(simulations, "cases")
+for (forecaster in forecasters) {
+  dt <- copy(crowd_rt)[forecaster_id == forecaster][, forecaster_id := NULL]
+  simulations <- simulate_crowd_cases(
+    dt,
+    model_dir = here("rt-forecast", "data", "samples"),
+    target_date = target_date
+  )
+  crowd_cases[[forecaster]] <- extract_samples(simulations, "cases")
+}
+
+crowd_cases <- rbindlist(crowd_cases)
 
 # save output
 plot_dir <- here("crowd-rt-forecast", "data-raw", "plots", target_date)
