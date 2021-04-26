@@ -7,8 +7,8 @@ institution_affil: Centre for Mathematical Modelling of Infectious Diseases (CMM
 team_experience: 
 team_funding: 
 
-model_name: EpiExpert
-model_abbr: EpiExpert
+model_name: EpiExpert direct
+model_abbr: EpiExpert_direct
 model_output: 
 model_repo: 
 

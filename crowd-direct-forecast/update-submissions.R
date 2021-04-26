@@ -85,10 +85,10 @@ replace_date_and_time <- function(forecasts) {
 raw_forecasts <- replace_date_and_time(raw_forecasts)
 filtered_forecasts <- replace_date_and_time(filtered_forecasts)
 
-check_dir(here("crowd-forecast", "raw-forecast-data"))
+check_dir(here("crowd-direct-forecast", "raw-forecast-data"))
 # write raw forecasts
 fwrite(raw_forecasts %>% select(-board_name),
-       here("crowd-forecast", "raw-forecast-data",
+       here("crowd-direct-forecast", "raw-forecast-data",
             paste0(submission_date, "-raw-forecasts.csv")))
 
 # obtain quantiles from forecasts ----------------------------------------------
@@ -134,7 +134,7 @@ forecast_quantiles <- filtered_forecasts %>%
 
 # save forecasts in quantile-format
 fwrite(forecast_quantiles %>% mutate(submission_date = submission_date),
-       here("crowd-forecast", "processed-forecast-data",
+       here("crowd-direct-forecast", "processed-forecast-data",
        paste0(submission_date, "-processed-forecasts.csv")))
 
 # omit forecasters who haven't forecasted at least two targets
@@ -200,8 +200,8 @@ forecast_submission <- forecast_inc %>%
   select(-target_type, -location_name)
 
 # write submission file --------------------------------------------------------
-check_dir(here("submissions", "crowd-forecasts", submission_date))
+check_dir(here("submissions", "crowd-direct-forecasts", submission_date))
 
 forecast_submission %>%
-  fwrite(here("submissions", "crowd-forecasts", submission_date, 
-         paste0(submission_date, "-epiforecasts-EpiExpert.csv")))
+  fwrite(here("submissions", "crowd-direct-forecasts", submission_date, 
+         paste0(submission_date, "-epiforecasts-EpiExpert_direct.csv")))

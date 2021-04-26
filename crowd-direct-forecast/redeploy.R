@@ -8,7 +8,7 @@ library(rsconnect)
 check_dir(here("crowd-forecast", "data-raw"))
 file.copy(from = c(here("data-raw", "weekly-incident-cases.csv"),
             here("data-raw", "weekly-incident-deaths.csv")),
-          to = here("crowd-forecast", "data-raw"),
+          to = here("crowd-direct-forecast", "data-raw"),
           overwrite = TRUE)
 
 # if today is not Monday (or if it is later than 9pm on the server), 
@@ -21,7 +21,7 @@ if (weekdays(Sys.Date()) != "Monday" |
 }
 
 saveRDS(
-  submission_date, here("crowd-forecast", "data-raw", "submission_date.rds")
+  submission_date, here("crowd-direct-forecast", "data-raw", "submission_date.rds")
   )
 
 setAccountInfo(
@@ -30,7 +30,7 @@ setAccountInfo(
   secret = readRDS(here(".secrets", "shiny_secret.rds"))
 )
 
-deployApp(appDir = here("crowd-forecast"),
+deployApp(appDir = here("crowd-direct-forecast"),
           appName = "crowd-forecast",
           account = "cmmid-lshtm", 
           forceUpdate = TRUE,
