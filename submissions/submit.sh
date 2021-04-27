@@ -1,7 +1,7 @@
-#!bin/bash
+#!/bin/bash
 
 #define date
-ForecastDate=$(date +'%Y-%m-%d')
+ForecastDate=$(date -d '-1 day' +'%Y-%m-%d')
 
 # Clone the hub repository if not already present
 #git clone --depth 1 https://github.com/epiforecasts/covid19-forecast-hub-europe
@@ -24,8 +24,14 @@ git merge -Xtheirs main
 cd ../europe-covid-forecast
 
 # Copy your forecast from local folder to submission folder
-cp -R -f "./submissions/rt-forecasts/$ForecastDate/." \
-      "../covid19-forecast-hub-europe/data-processed/epiforecasts-EpiNow2/"
+# cp -R -f "./submissions/rt-forecasts/$ForecastDate/." \
+#       "../covid19-forecast-hub-europe/data-processed/epiforecasts-EpiNow2/"
+cp -R -f "./submissions/crowd-rt-forecasts/$ForecastDate/." \
+      "../covid19-forecast-hub-europe/data-processed/epiforecasts-EpiExpert_Rt/"
+cp -R -f "./submissions/crowd-direct-forecasts/$ForecastDate/." \
+      "../covid19-forecast-hub-europe/data-processed/epiforecasts-EpiExpert_direct/"
+cp -R -f "./submissions/crowd-forecasts/$ForecastDate/." \
+      "../covid19-forecast-hub-europe/data-processed/epiforecasts-EpiExpert/"
       
 # Commit submission to branch
 cd ../covid19-forecast-hub-europe
