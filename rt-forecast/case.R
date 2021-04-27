@@ -7,7 +7,7 @@ library(here, quietly = TRUE)
 library(lubridate, quietly = TRUE)
 
 # Set target date ---------------------------------------------------------
-target_date <- latest_weekday(char = TRUE)
+target_date <- latest_weekday(Sys.Date() + 7, char = TRUE)
 
 # Update delays -----------------------------------------------------------
 generation_time <- readRDS(
