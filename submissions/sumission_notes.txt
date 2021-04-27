@@ -1,0 +1,5 @@
+submission notes
+
+on 2021-04-26, the EpiExpert model was renamed EpiExpert-direct. The EpiExpert
+model is now a combination of the old regular crowd forecast (EpiExpert-direct) 
+and the new Rt crowd forecast, EpiExpert-Rt
