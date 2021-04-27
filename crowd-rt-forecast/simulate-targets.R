@@ -111,7 +111,7 @@ check_dir(processed_folder)
 
 fwrite(all_forecasts,
        file.path(processed_folder, 
-                 paste0(target_date, "-processed-forecast.csv")))
+                 paste0(target_date, "-processed-forecasts.csv")))
 
 
 # create ensemble
