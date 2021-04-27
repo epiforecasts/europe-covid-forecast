@@ -27,7 +27,11 @@ median_ensemble <- FALSE
 ids <- try_and_wait(read_sheet(ss = identification_sheet, sheet = "ids"))
 forecasts <- try_and_wait(read_sheet(ss = spread_sheet))
 
-delete_data <- TRUE
+names_ids <- ids %>%
+	dplyr::select(c(forecaster_id, board_name)) %>%
+	unique()
+
+delete_data <- FALSE
 if (delete_data) {
   # add forecasts to backup sheet
   try_and_wait(sheet_append(ss = spread_sheet, sheet = "oldforecasts",
@@ -82,12 +86,12 @@ raw_forecasts <- replace_date_and_time(raw_forecasts)
 filtered_forecasts <- replace_date_and_time(filtered_forecasts)
 
 # write raw forecasts
-fwrite(raw_forecasts %>% select(-board_name),
+fwrite(raw_forecasts,
        here("crowd-rt-forecast", "raw-forecast-data",
             paste0(submission_date, "-raw-forecasts.csv")))
 
 # draw samples from the distributions ------------------------------------------
-draw_samples <- function(distribution, median, width, n_people,
+draw_samples <- function(distribution, median, width, n_people = 1,
                          overall_sample_number = 1000,
                          min_per_person_samples = 50) {
   num_samples <- max(
@@ -136,7 +140,7 @@ forecast_samples <- filtered_forecasts %>%
   mutate(
     value = draw_samples(median = median, width = width,
                          distribution = distribution,
-                         n_people = n_people,
+                         n_people = 1, # draw 1000 samples per person
                          overall_sample_number = overall_sample_number,
                          min_per_person_samples = 50),
     sample = list(seq_len(length(value)))
@@ -144,7 +148,7 @@ forecast_samples <- filtered_forecasts %>%
   unnest(cols = c(sample, value)) %>%
   ungroup() %>%
   select(forecaster_id, location, target_end_date, submission_date,
-         sample, value) %>%
+	 sample, value) %>%
   arrange(forecaster_id, location, target_end_date, sample)
 
 # interpolate missing days
@@ -170,12 +174,18 @@ forecast_samples_daily <- forecast_samples %>%
   filter(!no_predictions) %>%
   mutate(value = na.approx(value))
 
+forecast_samples_daily <- dplyr::left_join(
+	forecast_samples_daily, 
+	names_ids, 
+	by = "forecaster_id"
+)
+
 # save forecasts in quantile-format
 fwrite(forecast_samples_daily %>% 
          mutate(submission_date = submission_date, 
                 target_type = "case"),
-       here("crowd-rt-forecast", "processed-forecast-data",
-            paste0(submission_date, "-processed-forecasts.csv")))
+       here("crowd-rt-forecast", "forecast-sample-data",
+            paste0(submission_date, "-forecast-sample-data.csv")))
 
 # check results and plot
 check <- forecast_samples_daily %>%
