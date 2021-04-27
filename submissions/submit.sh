@@ -13,7 +13,7 @@ ForecastDate=$(date -d '-1 day' +'%Y-%m-%d')
 # gh auth login
 
 # Update the hub repository
-cd ../covid19-forecast-hub-europe
+cd ../covid19-forecast-hub-europecd 
 git checkout main
 git pull 
 # Switch to submission branch
