@@ -1,0 +1,127 @@
+---
+params: 
+  report_date: "2021-03-29"
+always_allow_html: true
+output:
+  html_document:
+    theme: journal
+    self_contained: true
+    # css: https://covid19forecasthub.eu/css/styles.css
+title: "Crowd Forecast Ensemble Report"
+date: "`r params$report_date`"
+---
+
+```{r setup, include=FALSE}
+library(purrr)
+library(ggplot2)
+library(dplyr)
+library(DT)
+library(knitr)
+library(covidHubUtils)
+library(lubridate)
+library(here)
+library(data.table)
+library(readr)
+library(covid.ecdc.forecasts)
+knitr::opts_chunk$set(echo = FALSE,
+                      message = FALSE,
+                      warning = FALSE)
+
+include_ranking <- TRUE
+include_forecast_plot <- TRUE
+```
+
+```{r load-data}
+root_dir <- here::here("submissions", "crowd-forecasts")
+folder_paths <- here::here(root_dir, list.files(root_dir))
+file_paths_forecast <- here::here(folder_paths, list.files(folder_paths))
+
+prediction_data <- purrr::map_dfr(file_paths_forecast, 
+                                  .f = function(x) {
+                                    data <- data.table::fread(x) %>%
+                                      dplyr::mutate(target_end_date = as.Date(target_end_date), 
+                                                    forecast_date = as.Date(forecast_date))
+                                  }) %>%
+  dplyr::mutate(target_type = ifelse(grepl("death", target), "death", "case")) %>%
+  dplyr::rename(prediction = value) %>%
+  dplyr::mutate(model = "EpiExpert ensemble", 
+                horizon = as.numeric(substring(target, 1, 1))) %>%
+  dplyr::filter(type == "quantile") %>%
+  dplyr::select(location, forecast_date, quantile, prediction, horizon, model, target_end_date, target, target_type)
+
+
+
+files <- list.files(here::here("data-raw"))
+file_paths <- here::here("data-raw", files[grepl("weekly-incident", files)])
+names(file_paths) <- c("case", "death")
+
+truth <- purrr::map_dfr(file_paths, readr::read_csv, .id = "target_type") %>%
+  dplyr::rename(true_value = value) %>%
+  dplyr::mutate(target_end_date = as.Date(target_end_date)) %>%
+  dplyr::arrange(location, target_type, target_end_date) %>%
+  dplyr::left_join(locations)
+
+data <- scoringutils::merge_pred_and_obs(prediction_data, truth, 
+                                         join = "full")
+
+# rename target type to target variable to conform to hub format
+setnames(data, old = c("target_type"), new = c("target_variable"))
+data[, target_variable := ifelse(target_variable == "case", "inc case", "inc death")]
+
+target_variables <- c(Cases = "inc case", Deaths = "inc death")
+```
+
+---
+
+# Forecast visualisation {.tabset .tabset-fade}
+
+Forecasts of cases/deaths per week per 100,000. The date of the tab marks the date on which a forecast was made.
+
+```{r forecast-vis, include = FALSE, eval = include_forecast_plot}
+
+locations <- unique(truth$location_name)
+forecast_dates <-
+  rev(as.character(unique(data$forecast_date[!is.na(data$forecast_date)])))
+
+out <- NULL
+out <- c(out, knit_child(here::here("evaluation", "ensemble",
+                                    "template-plot-ensemble.Rmd")))
+```
+
+`r paste(if (include_forecast_plot) knit(text = out), collapse = '\n\n')`
+
+# {.unlisted .unnumbered}
+
+---
+
+# Forecast calibration {.tabset .tabset-fade .tabset-dropdown}
+
+Shown below are PIT histograms for the most recent ensemble forecasts. These show the proportion of true values within each predict quantile (width: 0.2).
+
+```{r calibration, echo = FALSE, include = include_ranking}
+gap <- 0.2
+quantiles <- seq(gap, 1 - gap, by = gap)
+scores <- eval_forecasts(data,
+                         summarise_by = c("model", "range", "quantile",
+                                          "target_variable", "horizon"),
+                         pit_plots = TRUE)
+
+
+even_quantiles <-
+  scores[!is.na(quantile) & round(quantile, 3) %in% round(quantiles, 3)]
+setkey(even_quantiles, target_variable, horizon, quantile)
+pit <- even_quantiles[, list(quantile = c(quantile, 1),
+                             pit_bin = diff(c(0, quantile_coverage, 1))),
+               by = c("target_variable", "horizon")]
+
+p <- ggplot(pit, aes(x = quantile - gap / 2, y = pit_bin)) +
+  geom_col() +
+  theme_light() +
+  facet_grid(horizon ~ target_variable) +
+  xlab("Quantile") + ylab("Proportion") +
+  geom_hline(yintercept = gap, linetype = "dashed")
+
+print(p)
+```
+
+---
