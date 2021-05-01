@@ -31,6 +31,8 @@ crowd_rt <- crowd_rt[, .(location,
 )]
 crowd_rt[, sample := 1:.N, by = .(location, date)]
 crowd_rt[, target := "cases"]
+# temporary fix to get rid of sample numbers greater than 1000
+crowd_rt[sample > 1000, sample := sample - 1000]
 
 # Simulate cases ----------------------------------------------------------
 all_forecasts <- list()

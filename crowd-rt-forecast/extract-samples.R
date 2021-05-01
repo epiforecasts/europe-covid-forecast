@@ -91,12 +91,8 @@ fwrite(raw_forecasts,
             paste0(submission_date, "-raw-forecasts.csv")))
 
 # draw samples from the distributions ------------------------------------------
-draw_samples <- function(distribution, median, width, n_people = 1,
-                         overall_sample_number = 1000,
-                         min_per_person_samples = 50) {
-  num_samples <- max(
-    ceiling(overall_sample_number / n_people), min_per_person_samples
-    )
+draw_samples <- function(distribution, median, width, samples_per_person = 1000) {
+  num_samples <- samples_per_person
   if (distribution == "log-normal") {
     values <- exp(rnorm(
       num_samples, mean = log(as.numeric(median)), sd = as.numeric(width))
@@ -128,8 +124,6 @@ n_people <- filtered_forecasts %>%
   pull(n_ids) %>%
   min()
 
-overall_sample_number <- 1000
-
 # draw samples
 forecast_samples <- filtered_forecasts %>%
   rename(location = region) %>%
@@ -139,10 +133,8 @@ forecast_samples <- filtered_forecasts %>%
   rowwise() %>%
   mutate(
     value = draw_samples(median = median, width = width,
-                         distribution = distribution,
-                         n_people = 1, # draw 1000 samples per person
-                         overall_sample_number = overall_sample_number,
-                         min_per_person_samples = 50),
+                         distribution = distribution, 
+                         samples_per_person = 1000),
     sample = list(seq_len(length(value)))
     ) %>%
   unnest(cols = c(sample, value)) %>%
