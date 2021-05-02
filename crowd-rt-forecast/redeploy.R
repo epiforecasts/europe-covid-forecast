@@ -6,9 +6,10 @@ library(here)
 
 # if today is not Monday (or if it is later than 9pm on the server), 
 # set submission date to the next Monday
-if (weekdays(Sys.Date()) != "Monday" | 
-    Sys.time() > as.POSIXct("21:00",format="%H:%M")) {
-  submission_date <- latest_weekday() + 7
+nextweek <- weekdays(Sys.Date()) != "Monday" | 
+    Sys.time() > as.POSIXct("21:00",format="%H:%M")
+if (nextweek) {
+  submission_date <- latest_weekday() 
 } else {
   submission_date <- Sys.Date()
 }
@@ -19,10 +20,13 @@ saveRDS(submission_date,
 first_forecast_date <- as.character(as.Date(submission_date) - 16)
 
 # copy Rt data into app
+if (nextweek) {
+  obs_file <- here("rt-forecast", "data", "summary", "cases", submission_date, "rt.csv")
+} else {
+  obs_file <- here("rt-forecast", "data", "summary", "cases", submission_date, "rt.csv")
+}
 obs <-
-  fread(
-    here("rt-forecast", "data", "summary", "cases", submission_date, "rt.csv")
-    ) %>%
+  fread(obs_file) %>%
   rename(value = median, target_end_date = date) %>%
   mutate(target_type = "case", target_end_date = as.Date(target_end_date)) %>%
   filter(target_end_date <= (as.Date(first_forecast_date) + 7 * 6)) %>%
@@ -67,7 +71,11 @@ copyrt <- function(origin_dir, target_dir, locations, date) {
 origin_dir <- here("rt-forecast", "data", "samples", "cases")
 target_dir <- here("crowd-rt-forecast", "data-raw", "samples", "cases")
 locations <- list.files(origin_dir)
-copyrt(origin_dir, target_dir, locations, submission_date)
+if (nextweek) {
+ copyrt(origin_dir, target_dir, locations, submission_date)
+} else {
+ copyrt(origin_dir, target_dir, locations, submission_date)
+}
 
 setAccountInfo(
   name = "cmmid-lshtm",
