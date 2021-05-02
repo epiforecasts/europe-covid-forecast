@@ -9,7 +9,7 @@ library(here)
 nextweek <- weekdays(Sys.Date()) != "Monday" | 
     Sys.time() > as.POSIXct("21:00",format="%H:%M")
 if (nextweek) {
-  submission_date <- latest_weekday() 
+  submission_date <- latest_weekday() + 7
 } else {
   submission_date <- Sys.Date()
 }
