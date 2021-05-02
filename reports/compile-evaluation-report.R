@@ -45,13 +45,14 @@ load_and_copy_forecasts <- function(root_dir,
   fwrite(forecasts, out_file_path)
 }
 
-# read in the EpiExpert ensemble forecast and EpiNow2 models
+# read in and copy the EpiExpert expert ensemble forecasts
 load_and_copy_forecasts(
-  root_dir = here("submissions", "crowd-direct-forecasts"), 
+  root_dir = here("submissions", "crowd-forecasts"), 
   out_file_path = here("crowd-direct-forecast", "processed-forecast-data",
                        "all-epiexpert-forecasts.csv"), 
   new_board_name = "EpiExpert-ensemble"
 )
+
 
 # also read all EpiNow2 forecasts, give them a board_name 
 load_and_copy_forecasts(
@@ -76,7 +77,7 @@ prediction_data <- purrr::map_dfr(file_paths_forecast,
                                     
                                     data[, target_end_date := as.Date(target_end_date)]
                                     data[, forecast_date := calc_submission_due_date(forecast_date)]
-                                    data[, submission_date := as.Date(submission_date)]
+                                    data[, submission_date := as.character(forecast_date)]
                                     if (grepl("-rt", x)) {
                                       data[, board_name := paste(model, "(Rt)")]
                                       data[, model := NULL]
