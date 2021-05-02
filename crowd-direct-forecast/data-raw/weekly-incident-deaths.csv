@@ -64,6 +64,7 @@ AT,Austria,203,2021-04-03
 AT,Austria,228,2021-04-10
 AT,Austria,208,2021-04-17
 AT,Austria,200,2021-04-24
+AT,Austria,163,2021-05-01
 BE,Belgium,0,2020-02-01
 BE,Belgium,0,2020-02-08
 BE,Belgium,0,2020-02-15
@@ -129,6 +130,7 @@ BE,Belgium,260,2021-04-03
 BE,Belgium,298,2021-04-10
 BE,Belgium,290,2021-04-17
 BE,Belgium,272,2021-04-24
+BE,Belgium,268,2021-05-01
 BG,Bulgaria,0,2020-02-01
 BG,Bulgaria,0,2020-02-08
 BG,Bulgaria,0,2020-02-15
@@ -194,6 +196,7 @@ BG,Bulgaria,857,2021-04-03
 BG,Bulgaria,844,2021-04-10
 BG,Bulgaria,787,2021-04-17
 BG,Bulgaria,721,2021-04-24
+BG,Bulgaria,585,2021-05-01
 CH,Switzerland,0,2020-02-01
 CH,Switzerland,0,2020-02-08
 CH,Switzerland,0,2020-02-15
@@ -259,6 +262,7 @@ CH,Switzerland,52,2021-04-03
 CH,Switzerland,101,2021-04-10
 CH,Switzerland,53,2021-04-17
 CH,Switzerland,89,2021-04-24
+CH,Switzerland,39,2021-05-01
 CY,Cyprus,0,2020-02-01
 CY,Cyprus,0,2020-02-08
 CY,Cyprus,0,2020-02-15
@@ -324,6 +328,7 @@ CY,Cyprus,11,2021-04-03
 CY,Cyprus,11,2021-04-10
 CY,Cyprus,16,2021-04-17
 CY,Cyprus,10,2021-04-24
+CY,Cyprus,14,2021-05-01
 CZ,Czechia,0,2020-02-01
 CZ,Czechia,0,2020-02-08
 CZ,Czechia,0,2020-02-15
@@ -389,6 +394,7 @@ CZ,Czechia,1089,2021-04-03
 CZ,Czechia,867,2021-04-10
 CZ,Czechia,662,2021-04-17
 CZ,Czechia,524,2021-04-24
+CZ,Czechia,396,2021-05-01
 DE,Germany,0,2020-02-01
 DE,Germany,0,2020-02-08
 DE,Germany,0,2020-02-15
@@ -454,6 +460,7 @@ DE,Germany,1095,2021-04-03
 DE,Germany,1392,2021-04-10
 DE,Germany,1569,2021-04-17
 DE,Germany,1639,2021-04-24
+DE,Germany,1597,2021-05-01
 DK,Denmark,0,2020-02-01
 DK,Denmark,0,2020-02-08
 DK,Denmark,0,2020-02-15
@@ -519,6 +526,7 @@ DK,Denmark,15,2021-04-03
 DK,Denmark,11,2021-04-10
 DK,Denmark,13,2021-04-17
 DK,Denmark,22,2021-04-24
+DK,Denmark,15,2021-05-01
 EE,Estonia,0,2020-02-01
 EE,Estonia,0,2020-02-08
 EE,Estonia,0,2020-02-15
@@ -584,6 +592,7 @@ EE,Estonia,71,2021-04-03
 EE,Estonia,89,2021-04-10
 EE,Estonia,62,2021-04-17
 EE,Estonia,55,2021-04-24
+EE,Estonia,29,2021-05-01
 ES,Spain,0,2020-02-01
 ES,Spain,0,2020-02-08
 ES,Spain,0,2020-02-15
@@ -649,6 +658,7 @@ ES,Spain,688,2021-04-03
 ES,Spain,630,2021-04-10
 ES,Spain,653,2021-04-17
 ES,Spain,610,2021-04-24
+ES,Spain,625,2021-05-01
 FI,Finland,0,2020-02-01
 FI,Finland,0,2020-02-08
 FI,Finland,0,2020-02-15
@@ -714,6 +724,7 @@ FI,Finland,29,2021-04-03
 FI,Finland,22,2021-04-10
 FI,Finland,19,2021-04-17
 FI,Finland,16,2021-04-24
+FI,Finland,11,2021-05-01
 FR,France,0,2020-02-01
 FR,France,0,2020-02-08
 FR,France,1,2020-02-15
@@ -779,6 +790,7 @@ FR,France,1773,2021-04-03
 FR,France,1745,2021-04-10
 FR,France,2525,2021-04-17
 FR,France,2099,2021-04-24
+FR,France,1961,2021-05-01
 GB,United Kingdom,0,2020-02-01
 GB,United Kingdom,0,2020-02-08
 GB,United Kingdom,0,2020-02-15
@@ -844,6 +856,7 @@ GB,United Kingdom,253,2021-04-03
 GB,United Kingdom,254,2021-04-10
 GB,United Kingdom,180,2021-04-17
 GB,United Kingdom,157,2021-04-24
+GB,United Kingdom,107,2021-05-01
 GR,Greece,0,2020-02-01
 GR,Greece,0,2020-02-08
 GR,Greece,0,2020-02-15
@@ -909,6 +922,7 @@ GR,Greece,476,2021-04-03
 GR,Greece,531,2021-04-10
 GR,Greece,564,2021-04-17
 GR,Greece,553,2021-04-24
+GR,Greece,503,2021-05-01
 HR,Croatia,0,2020-02-01
 HR,Croatia,0,2020-02-08
 HR,Croatia,0,2020-02-15
@@ -974,6 +988,7 @@ HR,Croatia,153,2021-04-03
 HR,Croatia,244,2021-04-10
 HR,Croatia,254,2021-04-17
 HR,Croatia,292,2021-04-24
+HR,Croatia,315,2021-05-01
 HU,Hungary,0,2020-02-01
 HU,Hungary,0,2020-02-08
 HU,Hungary,0,2020-02-15
@@ -1039,6 +1054,7 @@ HU,Hungary,1752,2021-04-03
 HU,Hungary,1707,2021-04-10
 HU,Hungary,1768,2021-04-17
 HU,Hungary,1441,2021-04-24
+HU,Hungary,1281,2021-05-01
 IE,Ireland,0,2020-02-01
 IE,Ireland,0,2020-02-08
 IE,Ireland,0,2020-02-15
@@ -1104,6 +1120,7 @@ IE,Ireland,62,2021-04-03
 IE,Ireland,68,2021-04-10
 IE,Ireland,52,2021-04-17
 IE,Ireland,37,2021-04-24
+IE,Ireland,34,2021-05-01
 IS,Iceland,0,2020-02-01
 IS,Iceland,0,2020-02-08
 IS,Iceland,0,2020-02-15
@@ -1169,6 +1186,7 @@ IS,Iceland,0,2021-04-03
 IS,Iceland,0,2021-04-10
 IS,Iceland,0,2021-04-17
 IS,Iceland,0,2021-04-24
+IS,Iceland,0,2021-05-01
 IT,Italy,0,2020-02-01
 IT,Italy,0,2020-02-08
 IT,Italy,0,2020-02-15
@@ -1234,6 +1252,7 @@ IT,Italy,3068,2021-04-03
 IT,Italy,3219,2021-04-10
 IT,Italy,2753,2021-04-17
 IT,Italy,2345,2021-04-24
+IT,Italy,2012,2021-05-01
 LI,Liechtenstein,0,2020-02-01
 LI,Liechtenstein,0,2020-02-08
 LI,Liechtenstein,0,2020-02-15
@@ -1299,6 +1318,7 @@ LI,Liechtenstein,0,2021-04-03
 LI,Liechtenstein,0,2021-04-10
 LI,Liechtenstein,0,2021-04-17
 LI,Liechtenstein,1,2021-04-24
+LI,Liechtenstein,0,2021-05-01
 LT,Lithuania,0,2020-02-01
 LT,Lithuania,0,2020-02-08
 LT,Lithuania,0,2020-02-15
@@ -1364,6 +1384,7 @@ LT,Lithuania,63,2021-04-03
 LT,Lithuania,69,2021-04-10
 LT,Lithuania,80,2021-04-17
 LT,Lithuania,90,2021-04-24
+LT,Lithuania,96,2021-05-01
 LU,Luxembourg,0,2020-02-01
 LU,Luxembourg,0,2020-02-08
 LU,Luxembourg,0,2020-02-15
@@ -1429,6 +1450,7 @@ LU,Luxembourg,12,2021-04-03
 LU,Luxembourg,13,2021-04-10
 LU,Luxembourg,22,2021-04-17
 LU,Luxembourg,5,2021-04-24
+LU,Luxembourg,6,2021-05-01
 LV,Latvia,0,2020-02-01
 LV,Latvia,0,2020-02-08
 LV,Latvia,0,2020-02-15
@@ -1494,6 +1516,7 @@ LV,Latvia,51,2021-04-03
 LV,Latvia,63,2021-04-10
 LV,Latvia,62,2021-04-17
 LV,Latvia,53,2021-04-24
+LV,Latvia,38,2021-05-01
 MT,Malta,0,2020-02-01
 MT,Malta,0,2020-02-08
 MT,Malta,0,2020-02-15
@@ -1559,6 +1582,7 @@ MT,Malta,12,2021-04-03
 MT,Malta,5,2021-04-10
 MT,Malta,7,2021-04-17
 MT,Malta,3,2021-04-24
+MT,Malta,3,2021-05-01
 NL,Netherlands,0,2020-02-01
 NL,Netherlands,0,2020-02-08
 NL,Netherlands,0,2020-02-15
@@ -1624,6 +1648,7 @@ NL,Netherlands,156,2021-04-03
 NL,Netherlands,148,2021-04-10
 NL,Netherlands,150,2021-04-17
 NL,Netherlands,134,2021-04-24
+NL,Netherlands,131,2021-05-01
 NO,Norway,0,2020-02-01
 NO,Norway,0,2020-02-08
 NO,Norway,0,2020-02-15
@@ -1689,6 +1714,7 @@ NO,Norway,17,2021-04-03
 NO,Norway,11,2021-04-10
 NO,Norway,24,2021-04-17
 NO,Norway,28,2021-04-24
+NO,Norway,20,2021-05-01
 PL,Poland,0,2020-02-01
 PL,Poland,0,2020-02-08
 PL,Poland,0,2020-02-15
@@ -1754,6 +1780,7 @@ PL,Poland,2984,2021-04-03
 PL,Poland,3439,2021-04-10
 PL,Poland,3649,2021-04-17
 PL,Poland,3397,2021-04-24
+PL,Poland,2702,2021-05-01
 PT,Portugal,0,2020-02-01
 PT,Portugal,0,2020-02-08
 PT,Portugal,0,2020-02-15
@@ -1819,6 +1846,7 @@ PT,Portugal,48,2021-04-03
 PT,Portugal,35,2021-04-10
 PT,Portugal,32,2021-04-17
 PT,Portugal,17,2021-04-24
+PT,Portugal,17,2021-05-01
 RO,Romania,0,2020-02-01
 RO,Romania,0,2020-02-08
 RO,Romania,0,2020-02-15
@@ -1884,6 +1912,7 @@ RO,Romania,976,2021-04-03
 RO,Romania,1033,2021-04-10
 RO,Romania,1066,2021-04-17
 RO,Romania,1195,2021-04-24
+RO,Romania,927,2021-05-01
 SE,Sweden,0,2020-02-01
 SE,Sweden,0,2020-02-08
 SE,Sweden,0,2020-02-15
@@ -1949,6 +1978,7 @@ SE,Sweden,96,2021-04-03
 SE,Sweden,123,2021-04-10
 SE,Sweden,167,2021-04-17
 SE,Sweden,135,2021-04-24
+SE,Sweden,125,2021-05-01
 SI,Slovenia,0,2020-02-01
 SI,Slovenia,0,2020-02-08
 SI,Slovenia,0,2020-02-15
@@ -2014,6 +2044,7 @@ SI,Slovenia,57,2021-04-03
 SI,Slovenia,44,2021-04-10
 SI,Slovenia,41,2021-04-17
 SI,Slovenia,50,2021-04-24
+SI,Slovenia,55,2021-05-01
 SK,Slovakia,0,2020-02-01
 SK,Slovakia,0,2020-02-08
 SK,Slovakia,0,2020-02-15
@@ -2079,3 +2110,4 @@ SK,Slovakia,522,2021-04-03
 SK,Slovakia,539,2021-04-10
 SK,Slovakia,556,2021-04-17
 SK,Slovakia,415,2021-04-24
+SK,Slovakia,274,2021-05-01
