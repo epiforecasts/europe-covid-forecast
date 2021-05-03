@@ -1,0 +1,179 @@
+---
+output:
+  html_document
+title: "Test for individual forecaster"
+# toc: true
+# toc_float: true
+# toc_collapsed: true
+# toc_depth: 3
+---
+
+# Test
+
+
+```{r setup, include=FALSE}
+library(covid.german.forecasts)
+library(scoringutils)
+library(ggplot2)
+library(dplyr)
+library(DT)
+library(knitr)
+knitr::opts_chunk$set(echo = FALSE, 
+                      message = FALSE, 
+                      warning = FALSE)
+
+forecaster <- "nib"
+```
+
+<br>
+
+```{r load-data}
+# load all data ----------------------------------------------------------------
+root_dir <- here::here("crowd-forecast", "processed-forecast-data")
+file_paths_forecast <- here::here(root_dir, list.files(root_dir))
+
+prediction_data <- purrr::map_dfr(file_paths_forecast, 
+                                  .f = function(x) {
+                                    data <- data.table::fread(x) %>%
+                                      dplyr::mutate(target_end_date = as.Date(target_end_date), 
+                                                    submission_date = as.Date(submission_date), 
+                                                    forecast_date = as.Date(forecast_date))
+                                  }) %>%
+  dplyr::mutate(target_type = ifelse(grepl("death", target), "death", "case")) %>%
+  dplyr::rename(prediction = value) %>%
+  dplyr::mutate(forecast_date = as.Date(submission_date)) %>%
+  dplyr::rename(model = board_name) %>%
+  dplyr::filter(type == "quantile", 
+                location_name %in% c("Germany", "Poland")) %>%
+  dplyr::select(location, location_name, forecast_date, quantile, prediction, model, target_end_date, horizon, target, target_type)
+
+# filter forecasters such that only those are kept that have submitted forecasts
+# in the last four weeks
+keep_fc <- prediction_data %>%
+  dplyr::filter(forecast_date > (Sys.Date() - 4 * 7)) %>%
+  dplyr::pull(model) %>%
+  unique()
+
+prediction_data <- dplyr::filter(prediction_data, 
+                                 model %in% keep_fc)
+
+files <- list.files(here::here("data-raw"))
+file_paths <- here::here("data-raw", files[grepl("weekly-incident", files)])
+names(file_paths) <- c("case", "death")
+
+truth_data <- purrr::map_dfr(file_paths, readr::read_csv, .id = "target_type") %>%
+  dplyr::rename(true_value = value) %>%
+  dplyr::mutate(target_end_date = as.Date(target_end_date)) %>%
+  dplyr::arrange(location, target_type, target_end_date) %>%
+  dplyr::filter(location_name %in% c("Germany", "Poland"))
+
+
+data <- scoringutils::merge_pred_and_obs(prediction_data, truth_data, 
+                                         join = "full")
+
+```
+
+
+# Your forecasts {.tabset}
+```{r prediction-plots, echo = FALSE, results='asis', fig.width = 10, fig.height=15}
+
+
+locations <- unique(data$location_name)
+types <- unique(data$target_type)
+
+for (loc in locations) {
+  cat("\n\n##", loc, "{.tabset}\n\n")
+  for (type in types) {
+    cat("\n\n###", type, "\n\n")  
+    
+    filter_both <- list(paste0("target_type == '", type, "'"),
+                        paste0("location_name == '", loc, "'"))
+    filter_truth <- list(paste0("target_end_date > '2020-09-01'"))
+    filter_forecasts <- list(paste0(paste0("model == '", forecaster, "'")))
+    
+    
+    plot <- scoringutils::plot_predictions(data,
+                                           x = "target_end_date",
+                                           filter_both = filter_both,
+                                           filter_truth = filter_truth,
+                                           filter_forecasts = filter_forecasts,
+                                           facet_formula = ~ forecast_date,
+                                           # facet_formula = model ~ target_type + location_name,
+                                           # facet_wrap_or_grid = "facet",
+                                           allow_truth_without_pred = FALSE,
+                                           ncol = 3,
+                                           remove_from_truth = c("forecast_date"),
+                                           scales = "free") + 
+      # ggplot2::ggtitle(paste0("Predictions for incident ", target_type,  "s")) + 
+      ggplot2::theme(legend.position = "bottom", 
+                     strip.placement = "outside")
+    
+    print(plot)
+    
+  }
+}
+
+
+
+```
+
+
+# Bias
+
+```{r, echo = FALSE, results='asis', fig.width = 10, fig.height=7}
+
+scores <- eval_forecasts(data, 
+                         summarise_by = c("model", "forecast_date", 
+                                          "location_name", "target_type"), 
+                         compute_relative_skill = FALSE)
+
+p <- score_heatmap(scores %>%
+                     dplyr::filter(model == "nib"), y = "forecast_date", x = "model", 
+                   metric = "bias", 
+                   ncol = 4,
+                   facet_formula = ~ location_name + target_type)
+
+print(p)
+```
+
+# Interval score components
+
+```{r, echo = FALSE, results='asis', fig.width = 10, fig.height=7}
+
+scores <- eval_forecasts(data, 
+                         summarise_by = c("model", "forecast_date", 
+                                          "location_name", "target_type"), 
+                         compute_relative_skill = FALSE)
+
+p <- wis_components(scores %>%
+                dplyr::filter(model == "nib"), x = "forecast_date", y = "model", 
+              ncol = 4,
+              facet_formula = ~ location_name + target_type, 
+              scales = "free") + 
+  ggplot2::theme(legend.position = "bottom")
+
+print(p)
+```
+
+# Calibration
+
+```{r, echo = FALSE, results='asis', fig.width = 10, fig.height=7, fig.show="hold", out.width="50%"}
+
+scores <- eval_forecasts(data, 
+                         summarise_by = c("model", "quantile", "range"), 
+                         compute_relative_skill = FALSE)
+
+p1 <- interval_coverage(scores %>%
+                dplyr::filter(model == "nib")) + 
+  ggplot2::theme(legend.position = "bottom")
+
+p2 <- quantile_coverage(scores %>%
+                dplyr::filter(model == "nib")) + 
+  ggplot2::theme(legend.position = "bottom")
+
+print(p1)
+print(p2)
+
+```
+
+
