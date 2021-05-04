@@ -36,5 +36,5 @@ fwrite(weekly_cases, here("data-raw", "weekly-incident-cases.csv"))
 fwrite(weekly_deaths, here("data-raw", "weekly-incident-deaths.csv"))
 
 # Forecast date ---------------------------------------------------------------
-forecast_date <- ceiling_date(Sys.Date(), unit = "week", week_start = 1)
+forecast_date <- ceiling_date(Sys.Date() - 7, unit = "week", week_start = 1)
 fwrite(list(forecast_date), here("data-raw", "forecast-date.csv"))

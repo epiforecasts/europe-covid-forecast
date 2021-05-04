@@ -11,3 +11,5 @@
 ^Dockerfile$
 ^\.secrets$
 ^Rplots\.pdf$
+^crowd-rt-forecast$
+^crowd-direct-forecast$
