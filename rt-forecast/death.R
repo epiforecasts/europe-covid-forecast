@@ -10,7 +10,7 @@ library(ggplot2, quietly = TRUE)
 library(purrr, quietly = TRUE)
 
 # Set target date ---------------------------------------------------------
-target_date <- latest_weekday(char = TRUE)
+target_date <- get_forecast_date(dir = here("data-raw"), char = TRUE)
 
 # Get observations --------------------------------------------------------
 observations <- get_observations(dir = here("data-raw"), target_date)
@@ -44,7 +44,7 @@ forecast <- regional_secondary(
   secondary = secondary_opts(type = "incidence"),
   obs = obs_opts(scale = list(mean = 0.01, sd = 0.05), week_effect = FALSE),
   burn_in = as.integer(max(observations$date) - min(observations$date)) - 2 * 7,
-  control = list(adapt_delta = 0.95, max_treedepth = 15),
+  control = list(adapt_delta = 0.99, max_treedepth = 15),
   verbose = TRUE
 )
 

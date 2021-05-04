@@ -122,6 +122,24 @@ latest_weekday <- function(date = Sys.Date(), day = 1, char = FALSE){
   }
   return(weekday)
 }
+
+
+#' Get Target Forecast Date
+#'
+#' @inheritParams get_observations
+#' @inheritParams latest_weekday
+#' @return A date or a character string representing a date.
+#' @export
+#' @importFrom data.table fread
+get_forecast_date <- function(dir, char = FALSE) {
+  date <- fread(file.path(dir, "forecast-date.csv"))
+  date <- date$V1
+  if (char) {
+    date <- as.character(date)
+  }
+  return(date)
+}
+
 #' Get Local Truth Data
 #'
 #' @param dir A character string indicating the path to the target data folder.
