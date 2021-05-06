@@ -1,5 +1,8 @@
 #!/bin/bash
 
+Rscript reports/compile-ensemble-report.R    
+Rscript reports/compile-evaluation-report.R
+
 cd ..
 
 cp -R -f "europe-covid-forecast/docs/index.html" "crowd-evaluation/"
@@ -17,3 +20,5 @@ git pull
 git push
 
 cd ..
+
+cd europe-covid-forecast
