@@ -33,15 +33,13 @@ function getMonday(d) {
 }
 
 
-``` {r results = 'asis'} 
+``` {r results = 'asis', echo = FALSE} 
 
 latest_date <- as.character(date)
 
-
-
 cat(paste0("function getURL(report, country) { \n",
            "var str = 'reports/'; \n", 
-           "str = str.concat(report, '-report-', ", latest_date, "); \n", 
+           "str = str.concat(report, '-report-', '", latest_date, "'); \n", 
            "if (!(report === 'ensemble')) { \n", 
            "  str = str.concat('-', country); \n", 
            "} \n", 
