@@ -32,26 +32,24 @@ function getMonday(d) {
   return new Date(d.setDate(diff));
 }
 
-function getURL(report, country) {
-  
-  var latest_monday = getMonday(new Date());
-  
-  var dd = String(latest_monday.getDate()).padStart(2, '0');
-  var mm = String(latest_monday.getMonth() + 1).padStart(2, '0'); //January is 0!
-  var yyyy = latest_monday.getFullYear();
-  date = yyyy + '-' + mm + '-' + dd;
-  
-  var str = "reports/";
-  str = str.concat(report, "-report-", date);
-  if (!(report === "ensemble")) {
-    str = str.concat("-", country);
-  }
-  str = str.concat(".html");
-  return(str);
-}
+
+``` {r results = 'asis', echo = FALSE} 
+
+latest_date <- as.character(date)
+
+cat(paste0("function getURL(report, country) { \n",
+           "var str = 'reports/'; \n", 
+           "str = str.concat(report, '-report-', '", latest_date, "'); \n", 
+           "if (!(report === 'ensemble')) { \n", 
+           "  str = str.concat('-', country); \n", 
+           "} \n", 
+           "str = str.concat('.html'); \n", 
+           "return(str); \n",
+           "}"))
+
+``` 
 
 function updateIframe() {
-  <!-- var date = date_options.options[date_options.selectedIndex].value; -->
   var report = report_options.options[report_options.selectedIndex].value;
   var country = country_options.options[country_options.selectedIndex].value;
   if (report == "evaluation") {
