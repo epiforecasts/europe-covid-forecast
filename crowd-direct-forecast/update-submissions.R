@@ -188,7 +188,7 @@ if (median_ensemble) {
     target_type, quantile, value, location_name)
 }
 # add point forecast
-  forecast_inc <- bind_rows(forecast_inc, 
+  forecast_inc <- rbind(forecast_inc, 
     forecast_inc %>%
       dplyr::filter(quantile == 0.5) %>%
       mutate(type = "point",
