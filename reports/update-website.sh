@@ -1,5 +1,6 @@
 #!/bin/bash
 
+Rscript data-raw/update.R
 Rscript reports/compile-ensemble-report.R    
 Rscript reports/compile-evaluation-report.R
 Rscript reports/update-index-file.R
