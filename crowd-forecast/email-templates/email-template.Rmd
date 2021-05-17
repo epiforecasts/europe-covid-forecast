@@ -23,7 +23,7 @@ library(kableExtra)
 
 ```{r load-data, echo=FALSE, message=FALSE, warning=FALSE}
 # load all data ----------------------------------------------------------------
-root_dir <- here::here("crowd-forecast", "processed-forecast-data")
+root_dir <- here::here("crowd-direct-forecast", "processed-forecast-data")
 file_paths_forecast <- here::here(root_dir, list.files(root_dir))
 
 prediction_data <- purrr::map_dfr(file_paths_forecast, 
@@ -71,11 +71,15 @@ data <- scoringutils::merge_pred_and_obs(prediction_data, truth_data,
 
 ### Dear `r name`,
 
-Good to have you as a forecaster! Here is this weeks reminder and an update about what has happened lately. We would be very happy about your insights again this week. 
+We're very excited to announce the UK Covid-19 Crowd Forecasting Challenge! Starting May 24th we will pay extra attention to your forecasts for the United Kingdom. The best forecaster can win a cash prize of 100 GBP. In order to participate, all you need to do is submit a forecast for the UK over the coming 12 weeks. If you miss a week that is no problem - you will be assigned the median score of all forecasters who participated that week. Find more information on the project [here](https://www.crowdforecastr.org/2021/05/11/uk-challenge/). 
 
-We **update our data every Sunday at 8.30am CET**. You can then make a forecast until **11pm CET (1pm UK time) on Monday** using our [forecast app](https://cmmid-lshtm.shinyapps.io/crowd-forecast/).
+Forecasts can be made between Sunday 10am and Monday 10pm UK time. 
+
+At the moment, the UK is at a critical juncture: on the one hand we see a very successful vaccination campaign. On the other hand, new variants are emerging and spreading and easing restrictions is not without risk. Many of these things are hard to model and hard to predict. The next weeks may therefore hold important lessons for other countries going out of lockdowns. 
 
 You can always find more information about the project on [www.crowdforecastr.org](https://www.crowdforecastr.org). 
+
+![](../../../crowdforecasting-challenge/Crowdforecasting-challenge-header.png)
 
 <br>
 
@@ -208,7 +212,7 @@ Thank you very much for your support and participation. We very much appreciate 
 
 Best wishes, 
 
-Nikos for the Epiforecasts team
+Nikos for the epiforecasts team
 
 <br>
 

@@ -49,7 +49,7 @@ for (i in seq_len(nrow(participant_data))) {
     email,
     to = mail_address, from = "epiforecasts@gmail.com",
     credentials = creds_file(here(".secrets", "epiforecasts-email-creds")),
-    subject = paste("EpiForecasts Crowd Forecast Update -", Sys.Date())
+    subject = paste("Announcing the Covid-19 UK Crowd Forecasting Challenge")
     )
   print(i)
 }
