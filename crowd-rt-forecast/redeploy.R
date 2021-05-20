@@ -48,7 +48,7 @@ copyrt <- function(origin_dir, target_dir, locations, date) {
       
       # read in epinow2 fit and thin
       fit <- readRDS(here(target_folder, date, "model_fit.rds")) %>%
-        shredder::stan_slice(seq(1, 450, by = 450/25), inc_warmup = FALSE)
+        shredder::stan_slice(seq(1, 450, by = 450/50), inc_warmup = FALSE)
       saveRDS(fit, here(target_folder, date, "model_fit.rds"))
       
       # reconstruct the estimate_samples.rds file
