@@ -23,9 +23,19 @@ deaths_inc <- fread(here("data-raw", "weekly-incident-deaths.csv"))[
 cases_inc <- fread(here("data-raw", "weekly-incident-cases.csv"))[
   , target_type := "cases"]
 
-# bind together and sort according to date
+# bind together and sort according to date and location
 observations <- rbindlist(list(deaths_inc, cases_inc))
-setorder(observations, target_type, target_end_date)
+
+locs <- observations$location_name %>% unique
+
+observations[
+  , location_name := factor(location_name, 
+                            levels = c("United Kingdom", 
+                                       locs[locs != "United Kingdom"]))
+]
+
+setorder(observations, target_type, target_end_date, location_name)
+observations[, location_name := as.character(location_name)]
 
 # run app
 run_app(data = observations, 
