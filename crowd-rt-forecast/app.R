@@ -38,8 +38,17 @@ if (dir.exists("rt-forecast")) {
     rename(value = median, target_end_date = date, location_name = region) %>%
     mutate(target_type = "case", target_end_date = as.Date(target_end_date)) %>%
     filter(target_end_date <= (as.Date(first_forecast_date) + 7 * 6)) %>%
-    arrange(location_name, target_type, target_end_date) %>%
     select(-strat, -type, -mean, -sd)
+  
+  setDT(obs)
+  locs <- obs$location_name %>% unique
+  obs[
+    , location_name := factor(location_name, 
+                              levels = c("United Kingdom", 
+                                         locs[locs != "United Kingdom"]))
+  ]
+  setorder(obs, location_name, target_type, target_end_date)
+  obs[, location_name := as.character(location_name)]
 
   fwrite(obs, "crowd-rt-forecast/data-raw/observations.csv")
   
