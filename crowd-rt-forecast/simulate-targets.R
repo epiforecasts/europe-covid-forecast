@@ -29,7 +29,7 @@ crowd_rt <- crowd_rt[, .(location,
                          date = as.Date(target_end_date),
                          value = round(value, 3)
 )]
-crowd_rt[, sample := 1:.N, by = .(location, date)]
+crowd_rt[, sample := 1:.N, by = .(location, date, forecaster_id)]
 crowd_rt[, target := "cases"]
 # temporary fix to get rid of sample numbers greater than 1000
 crowd_rt[sample > 1000, sample := sample - 1000]

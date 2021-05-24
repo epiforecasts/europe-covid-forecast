@@ -1,12 +1,4 @@
 forecaster_id,forecast_date,expert,leaderboard,distribution,median,width,horizon,target_end_date,submission_date,location_name,target_type,location,forecast_duration,forecast_week
-937027,2021-05-19T00:00:00Z,FALSE,anonymous,normal,16923.27,0.1,1,2021-05-22,2021-05-17T00:00:00Z,United Kingdom,cases,GB,,20
-937027,2021-05-19T00:00:00Z,FALSE,anonymous,normal,15761.44,0.2,2,2021-05-29,2021-05-17T00:00:00Z,United Kingdom,cases,GB,,20
-937027,2021-05-19T00:00:00Z,FALSE,anonymous,normal,15296.7,0.3,3,2021-06-05,2021-05-17T00:00:00Z,United Kingdom,cases,GB,,20
-937027,2021-05-19T00:00:00Z,FALSE,anonymous,normal,14251.05,0.4,4,2021-06-12,2021-05-17T00:00:00Z,United Kingdom,cases,GB,,20
-937027,2021-05-19T00:00:00Z,FALSE,anonymous,normal,72,0.137,1,2021-05-22,2021-05-17T00:00:00Z,United Kingdom,deaths,GB,1.96878383954366,20
-937027,2021-05-19T00:00:00Z,FALSE,anonymous,normal,65,0.2,2,2021-05-29,2021-05-17T00:00:00Z,United Kingdom,deaths,GB,1.96878383954366,20
-937027,2021-05-19T00:00:00Z,FALSE,anonymous,normal,64,0.3,3,2021-06-05,2021-05-17T00:00:00Z,United Kingdom,deaths,GB,1.96878383954366,20
-937027,2021-05-19T00:00:00Z,FALSE,anonymous,normal,60,0.4,4,2021-06-12,2021-05-17T00:00:00Z,United Kingdom,deaths,GB,1.96878383954366,20
 256931,2021-05-21T00:00:00Z,FALSE,anonymous,log-normal,17072.65,0.254,1,2021-05-29,2021-05-24T00:00:00Z,United Kingdom,cases,GB,,20
 256931,2021-05-21T00:00:00Z,FALSE,anonymous,log-normal,19337.4,0.325,2,2021-06-05,2021-05-24T00:00:00Z,United Kingdom,cases,GB,,20
 256931,2021-05-21T00:00:00Z,FALSE,anonymous,log-normal,23866.91,0.397,3,2021-06-12,2021-05-24T00:00:00Z,United Kingdom,cases,GB,,20
@@ -295,3 +287,7 @@ forecaster_id,forecast_date,expert,leaderboard,distribution,median,width,horizon
 242250,2021-05-24T00:00:00Z,TRUE,anonymous,log-normal,286.24,0.433,2,2021-06-05,2021-05-24T00:00:00Z,France,deaths,FR,85.7800970077515,21
 242250,2021-05-24T00:00:00Z,TRUE,anonymous,log-normal,196.62,0.567,3,2021-06-12,2021-05-24T00:00:00Z,France,deaths,FR,85.7800970077515,21
 242250,2021-05-24T00:00:00Z,TRUE,anonymous,log-normal,144.35,0.7,4,2021-06-19,2021-05-24T00:00:00Z,France,deaths,FR,85.7800970077515,21
+778898,2021-05-24T00:00:00Z,FALSE,yes,log-normal,14500,0.13,1,2021-06-05,2021-05-31T00:00:00Z,United Kingdom,cases,GB,,21
+778898,2021-05-24T00:00:00Z,FALSE,yes,log-normal,17827.43,0.17,2,2021-06-12,2021-05-31T00:00:00Z,United Kingdom,cases,GB,,21
+778898,2021-05-24T00:00:00Z,FALSE,yes,log-normal,21183.49,0.21,3,2021-06-19,2021-05-31T00:00:00Z,United Kingdom,cases,GB,,21
+778898,2021-05-24T00:00:00Z,FALSE,yes,log-normal,26553.2,0.25,4,2021-06-26,2021-05-31T00:00:00Z,United Kingdom,cases,GB,,21
