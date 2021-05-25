@@ -40,7 +40,7 @@ loc_names <- names(rt)
 rt <- lapply(loc_names,  function(loc, proc_pop = 0.2) {
   rt_loc <- rt[[loc]]
   rt_loc$pop <- locations[location_name %in% loc, ]$population
-  rt_loc$pop <- rt_loc$pop * proc_pop
+  rt_loc$pop <- as.integer(rt_loc$pop * proc_pop)
   return(rt_loc)
 })
 names(rt) <- loc_names
