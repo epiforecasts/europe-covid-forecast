@@ -10,7 +10,8 @@ format_forecast(
   forecast_date = NULL,
   submission_date = NULL,
   CrI_samples = 1,
-  target_value = NULL
+  target_value = NULL,
+  max_value = 1e+07
 )
 }
 \arguments{
@@ -29,6 +30,9 @@ Defaults to 1. Can be helpful for models that have more uncertainty
 than is reasonable.}
 
 \item{target_value}{Character string indicating the target value name.}
+
+\item{max_value}{Integer indicating the maximum forecast value allowed.
+Defaults to 10 million.}
 }
 \value{
 A data frame
