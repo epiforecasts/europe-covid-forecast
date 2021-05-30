@@ -92,7 +92,8 @@ prediction_data <- purrr::map_dfr(file_paths_forecast,
   dplyr::select(location, forecast_date, quantile, prediction, 
                 horizon, model, target_end_date, target, target_type) %>%
   dplyr::left_join(locations) %>%
-  dplyr::filter(forecast_date >= "2021-05-24")
+  dplyr::filter(forecast_date >= "2021-05-24") %>%
+  dplyr::filter(model != "EpiNow2")
 
 files <- list.files(here::here("data-raw"))
 file_paths <- here::here("data-raw", files[grepl("weekly-incident", files)])

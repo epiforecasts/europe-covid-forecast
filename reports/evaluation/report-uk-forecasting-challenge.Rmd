@@ -125,7 +125,6 @@ out <- c(out, knit_child(here::here("reports", "evaluation",
 
 `r paste(if (include_forecast_plot) knit(text = out), collapse = '\n\n')`
 
-<!--
 
 ## {.unlisted .unnumbered}
 
@@ -208,4 +207,3 @@ If you want to learn more about a model, you can go the the 'data-processed'-fol
 
 
 
--->

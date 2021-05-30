@@ -3,7 +3,7 @@
 Rscript reports/compile-ensemble-report.R    
 Rscript reports/compile-evaluation-report.R
 Rscript reports/compile-uk-challenge-report.R
-script reports/update-index-file.R
+Rscript reports/update-index-file.R
 
 
 # copy files over to crowd-evaluation repo and push
@@ -39,4 +39,5 @@ git commit -m "automated update - evaluation report"
 git pull
 git push
 cd ..
+cd europe-covid-forecast
 

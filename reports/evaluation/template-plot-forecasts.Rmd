@@ -2,11 +2,11 @@
 fd <- max(as.Date(forecast_dates))
 
 n_models <- data %>%
-  dplyr::filter(location_name %in% loc, 
-                forecast_date == fd) %>%
-  pull(model) %>%
-  unique() %>%
-  length()
+  dplyr::filter(location_name %in% loc) %>%
+  dplyr::group_by(forecast_date) %>%
+  dplyr::summarise(n = length(unique(model))) %>%
+  pull(n) %>%
+  max() 
 
 ht <- max(ceiling(n_models / 2) * 1.5, 5)
 
@@ -29,6 +29,8 @@ for (forecast_date in forecast_dates) {
       filter_truth <- list(paste0("target_end_date > '", as.Date(forecast_date) - 7 * 10, "'"), 
                            paste0("target_end_date <= '", as.Date(forecast_date) + 7 * 4, "'"))
       filter_forecasts <- list(paste0("forecast_date == '", as.Date(forecast_date), "'"))
+      
+      nrow(data)
       
       
       plot <- scoringutils::plot_predictions(data,
