@@ -40,30 +40,34 @@ if (length(unique(df$location)) > 1) {
 table <- eval_forecasts(df, summarise_by = summarise_by, 
                         compute_relative_skill = TRUE)
 
-setcolorder(table, c("model", "relative_skill"))
-
-htmltools::tagList(
-     table %>%
-       arrange(relative_skill) %>%
-       dplyr::select(-scaled_rel_skill) %>%
-       mutate_if(is.numeric, round, 2) %>%
-       dplyr::rename(wis = interval_score,
-                     underpred = underprediction,
-                     overpred = overprediction,
-                     cvrage_dev = coverage_deviation,
-                     rel_skill = relative_skill) %>%
-       DT::datatable(extensions = c('FixedColumns', 'Buttons'),
-                     width = "100%",
-                     options = list(
-                       paging = FALSE,
-                       info = FALSE,
-                       buttons = c('csv', 'excel'),
-                       dom = 'Bfrtip',
-                       scrollX = TRUE,
-                       fixedColumns = TRUE
-                     ), 
-                     class = 'white-space: nowrap')
-)
+if (nrow(table) == 0) {
+  
+} else {
+  setcolorder(table, c("model", "relative_skill"))
+  
+  htmltools::tagList(
+    table %>%
+      arrange(relative_skill) %>%
+      dplyr::select(-scaled_rel_skill) %>%
+      mutate_if(is.numeric, round, 2) %>%
+      dplyr::rename(wis = interval_score,
+                    underpred = underprediction,
+                    overpred = overprediction,
+                    cvrage_dev = coverage_deviation,
+                    rel_skill = relative_skill) %>%
+      DT::datatable(extensions = c('FixedColumns', 'Buttons'),
+                    width = "100%",
+                    options = list(
+                      paging = FALSE,
+                      info = FALSE,
+                      buttons = c('csv', 'excel'),
+                      dom = 'Bfrtip',
+                      scrollX = TRUE,
+                      fixedColumns = TRUE
+                    ), 
+                    class = 'white-space: nowrap')
+  )
+}
 ```
 
 
