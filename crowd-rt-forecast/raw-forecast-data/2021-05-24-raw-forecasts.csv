@@ -1,0 +1,57 @@
+forecaster_id,forecast_date,expert,leaderboard,board_name,distribution,median,width,horizon,target_end_date,submission_date,region,target_type,forecast_duration,forecast_week
+215393,2021-05-24,TRUE,yes,seb,normal,0.83,0.01,1,2021-05-08,2021-05-24,Germany,,,21
+215393,2021-05-24,TRUE,yes,seb,normal,0.82,0.033,2,2021-05-15,2021-05-24,Germany,,,21
+215393,2021-05-24,TRUE,yes,seb,normal,0.85,0.057,3,2021-05-22,2021-05-24,Germany,,,21
+215393,2021-05-24,TRUE,yes,seb,normal,0.87,0.08,4,2021-05-29,2021-05-24,Germany,,,21
+215393,2021-05-24,TRUE,yes,seb,normal,0.9,0.103,5,2021-06-05,2021-05-24,Germany,,,21
+215393,2021-05-24,TRUE,yes,seb,normal,0.92,0.127,6,2021-06-12,2021-05-24,Germany,,,21
+215393,2021-05-24,TRUE,yes,seb,normal,0.95,0.15,7,2021-06-19,2021-05-24,Germany,,,21
+215393,2021-05-24,TRUE,yes,seb,normal,1,0.01,1,2021-05-08,2021-05-24,United Kingdom,,55.0498633384705,21
+215393,2021-05-24,TRUE,yes,seb,normal,1.1,0.02,2,2021-05-15,2021-05-24,United Kingdom,,55.0498633384705,21
+215393,2021-05-24,TRUE,yes,seb,normal,1.2,0.03,3,2021-05-22,2021-05-24,United Kingdom,,55.0498633384705,21
+215393,2021-05-24,TRUE,yes,seb,normal,1.3,0.04,4,2021-05-29,2021-05-24,United Kingdom,,55.0498633384705,21
+215393,2021-05-24,TRUE,yes,seb,normal,1.4,0.05,5,2021-06-05,2021-05-24,United Kingdom,,55.0498633384705,21
+215393,2021-05-24,TRUE,yes,seb,normal,1.5,0.06,6,2021-06-12,2021-05-24,United Kingdom,,55.0498633384705,21
+215393,2021-05-24,TRUE,yes,seb,normal,1.6,0.07,7,2021-06-19,2021-05-24,United Kingdom,,55.0498633384705,21
+515822,2021-05-24,TRUE,yes,seabbs,normal,0.83,0.02,1,2021-05-08,2021-05-24,Germany,,,21
+515822,2021-05-24,TRUE,yes,seabbs,normal,0.82,0.033,2,2021-05-15,2021-05-24,Germany,,,21
+515822,2021-05-24,TRUE,yes,seabbs,normal,0.816,0.047,3,2021-05-22,2021-05-24,Germany,,,21
+515822,2021-05-24,TRUE,yes,seabbs,normal,0.83,0.06,4,2021-05-29,2021-05-24,Germany,,,21
+515822,2021-05-24,TRUE,yes,seabbs,normal,0.85,0.073,5,2021-06-05,2021-05-24,Germany,,,21
+515822,2021-05-24,TRUE,yes,seabbs,normal,0.87,0.087,6,2021-06-12,2021-05-24,Germany,,,21
+515822,2021-05-24,TRUE,yes,seabbs,normal,0.92,0.1,7,2021-06-19,2021-05-24,Germany,,,21
+515822,2021-05-24,TRUE,yes,seabbs,normal,0.967,0.02,1,2021-05-08,2021-05-24,United Kingdom,,84.8776755332947,21
+515822,2021-05-24,TRUE,yes,seabbs,normal,0.967,0.033,2,2021-05-15,2021-05-24,United Kingdom,,84.8776755332947,21
+515822,2021-05-24,TRUE,yes,seabbs,normal,0.965,0.047,3,2021-05-22,2021-05-24,United Kingdom,,84.8776755332947,21
+515822,2021-05-24,TRUE,yes,seabbs,normal,0.99,0.06,4,2021-05-29,2021-05-24,United Kingdom,,84.8776755332947,21
+515822,2021-05-24,TRUE,yes,seabbs,normal,1.01,0.073,5,2021-06-05,2021-05-24,United Kingdom,,84.8776755332947,21
+515822,2021-05-24,TRUE,yes,seabbs,normal,1.03,0.087,6,2021-06-12,2021-05-24,United Kingdom,,84.8776755332947,21
+515822,2021-05-24,TRUE,yes,seabbs,normal,1.04,0.1,7,2021-06-19,2021-05-24,United Kingdom,,84.8776755332947,21
+515822,2021-05-24,TRUE,yes,seabbs,normal,0.729,0.01,1,2021-05-08,2021-05-24,Poland,,45.7728881835938,21
+515822,2021-05-24,TRUE,yes,seabbs,normal,0.589,0.02,2,2021-05-15,2021-05-24,Poland,,45.7728881835938,21
+515822,2021-05-24,TRUE,yes,seabbs,normal,0.61,0.03,3,2021-05-22,2021-05-24,Poland,,45.7728881835938,21
+515822,2021-05-24,TRUE,yes,seabbs,normal,0.61,0.04,4,2021-05-29,2021-05-24,Poland,,45.7728881835938,21
+515822,2021-05-24,TRUE,yes,seabbs,normal,0.62,0.05,5,2021-06-05,2021-05-24,Poland,,45.7728881835938,21
+515822,2021-05-24,TRUE,yes,seabbs,normal,0.6,0.06,6,2021-06-12,2021-05-24,Poland,,45.7728881835938,21
+515822,2021-05-24,TRUE,yes,seabbs,normal,0.6,0.07,7,2021-06-19,2021-05-24,Poland,,45.7728881835938,21
+496375,2021-05-24,FALSE,yes,Sophia,normal,0.967,0.01,1,2021-05-08,2021-05-24,United Kingdom,,,21
+496375,2021-05-24,FALSE,yes,Sophia,normal,0.97,0.023,2,2021-05-15,2021-05-24,United Kingdom,,,21
+496375,2021-05-24,FALSE,yes,Sophia,normal,0.965,0.037,3,2021-05-22,2021-05-24,United Kingdom,,,21
+496375,2021-05-24,FALSE,yes,Sophia,normal,0.95,0.05,4,2021-05-29,2021-05-24,United Kingdom,,,21
+496375,2021-05-24,FALSE,yes,Sophia,normal,0.94,0.063,5,2021-06-05,2021-05-24,United Kingdom,,,21
+496375,2021-05-24,FALSE,yes,Sophia,normal,0.965,0.077,6,2021-06-12,2021-05-24,United Kingdom,,,21
+496375,2021-05-24,FALSE,yes,Sophia,normal,0.98,0.09,7,2021-06-19,2021-05-24,United Kingdom,,,21
+120249,2021-05-24,FALSE,yes,Layperson_21,normal,0.97,0.01,1,2021-05-08,2021-05-24,United Kingdom,,,21
+120249,2021-05-24,FALSE,yes,Layperson_21,normal,0.99,0.058,2,2021-05-15,2021-05-24,United Kingdom,,,21
+120249,2021-05-24,FALSE,yes,Layperson_21,normal,1.03,0.107,3,2021-05-22,2021-05-24,United Kingdom,,,21
+120249,2021-05-24,FALSE,yes,Layperson_21,normal,1.01,0.155,4,2021-05-29,2021-05-24,United Kingdom,,,21
+120249,2021-05-24,FALSE,yes,Layperson_21,normal,1,0.203,5,2021-06-05,2021-05-24,United Kingdom,,,21
+120249,2021-05-24,FALSE,yes,Layperson_21,normal,0.99,0.252,6,2021-06-12,2021-05-24,United Kingdom,,,21
+120249,2021-05-24,FALSE,yes,Layperson_21,normal,0.96,0.3,7,2021-06-19,2021-05-24,United Kingdom,,,21
+350435,2021-05-24,FALSE,yes,habakuk,fifth-power-normal,0.967,0.01,1,2021-05-08,2021-05-24,United Kingdom,,,21
+350435,2021-05-24,FALSE,yes,habakuk,fifth-power-normal,0.967,0.02,2,2021-05-15,2021-05-24,United Kingdom,,,21
+350435,2021-05-24,FALSE,yes,habakuk,fifth-power-normal,0.965,0.025,3,2021-05-22,2021-05-24,United Kingdom,,,21
+350435,2021-05-24,FALSE,yes,habakuk,fifth-power-normal,0.963,0.03,4,2021-05-29,2021-05-24,United Kingdom,,,21
+350435,2021-05-24,FALSE,yes,habakuk,fifth-power-normal,0.962,0.035,5,2021-06-05,2021-05-24,United Kingdom,,,21
+350435,2021-05-24,FALSE,yes,habakuk,fifth-power-normal,0.961,0.038,6,2021-06-12,2021-05-24,United Kingdom,,,21
+350435,2021-05-24,FALSE,yes,habakuk,fifth-power-normal,0.96,0.042,7,2021-06-19,2021-05-24,United Kingdom,,,21

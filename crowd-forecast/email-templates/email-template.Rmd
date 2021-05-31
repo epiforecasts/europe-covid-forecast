@@ -71,15 +71,23 @@ data <- scoringutils::merge_pred_and_obs(prediction_data, truth_data,
 
 ### Dear `r name`,
 
-We're very excited to announce the UK Covid-19 Crowd Forecasting Challenge! Starting May 24th we will pay extra attention to your forecasts for the United Kingdom. The best forecaster can win a cash prize of 100 GBP. In order to participate, all you need to do is submit a forecast for the UK over the coming 12 weeks. If you miss a week that is no problem - you will be assigned the median score of all forecasters who participated that week. Find more information on the project [here](https://www.crowdforecastr.org/2021/05/11/uk-challenge/). 
+The first week of the UK Covid-19 Crowd Forecasting Challenge is over and the fist results are in. While forecasters had predicted an upswing, the actual number of reported infections was higher than predicted. If you like you can still join by simply submitting a forecast for the UK this week. That is all and you'll automatially be eligible to win a prize of up to 100GBP. 
 
-Forecasts can be made between Sunday 10am and Monday 10pm UK time. 
+In addition to the app we created a small survey (2mins) that helps us learn more about how you made your predictions. Please check it out at https://forms.gle/aX5txdeng3DN7rjV9. Thank you very much!
 
-At the moment, the UK is at a critical juncture: on the one hand we see a very successful vaccination campaign. On the other hand, new variants are emerging and spreading and easing restrictions is not without risk. Many of these things are hard to model and hard to predict. The next weeks may therefore hold important lessons for other countries going out of lockdowns. 
+For more information on the project visit [here](https://www.crowdforecastr.org/2021/05/11/uk-challenge/). 
+
+Forecasts can be made between Sunday 12am and Monday 8pm UK time (we slightly changed these times so that we can check and process all forecasts). 
 
 You can always find more information about the project on [www.crowdforecastr.org](https://www.crowdforecastr.org). 
 
 ![](../../../crowdforecasting-challenge/Crowdforecasting-challenge-header.png)
+
+### UK Crowd Forecasting Challenge leaderboard
+
+Here are the current top 10 forecasters in the UK forecasting challenge: 
+
+![](../../../crowdforecasting-challenge/leaderboard-week-1.png)
 
 <br>
 
@@ -177,7 +185,7 @@ table %>%
 
 *And here is a plot with the rank by date and target of all active forecasters over time:*
 
-```{r rank-over-time, echo=FALSE, fig.align = "center", fig.width=10, fig.height=8, out.width="80%"}
+```{r rank-over-time, echo=FALSE, fig.align = "center", fig.width=10, fig.height=10, out.width="80%"}
 scores <- scoringutils::eval_forecasts(data[location_name %in% forecasted_locations],
                                          summarise_by = c("model", 
                                                           "location_name", 

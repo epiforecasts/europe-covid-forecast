@@ -10,6 +10,8 @@
 #'  Defaults to 1. Can be helpful for models that have more uncertainty
 #'  than is reasonable.
 #' @param target_value Character string indicating the target value name.
+#' @param max_value Integer indicating the maximum forecast value allowed. 
+#' Defaults to 10 million. 
 #' @return A data frame
 #' @export
 #' @importFrom data.table rbindlist setorder setcolorder := .N .SD
@@ -19,7 +21,8 @@ format_forecast <- function(forecasts,
                             forecast_date = NULL,
                             submission_date = NULL,
                             CrI_samples = 1,
-                            target_value = NULL) {
+                            target_value = NULL,
+                            max_value = 1e7) {
 
   # Filter to full epiweeks
   forecasts <- dates_to_epiweek(forecasts)
@@ -79,5 +82,8 @@ format_forecast <- function(forecasts,
   forecasts_format[, scenario_id := "forecast"]
   forecasts_format <-
     forecasts_format[, c("horizon", "submission_date", "location_name") := NULL]
+
+  forecasts_format <- 
+    forecasts_format[, value := ifelse(value > max_value, max_value, value)]
   return(forecasts_format)
 }

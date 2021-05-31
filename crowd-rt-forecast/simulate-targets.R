@@ -29,7 +29,7 @@ crowd_rt <- crowd_rt[, .(location,
                          date = as.Date(target_end_date),
                          value = round(value, 3)
 )]
-crowd_rt[, sample := 1:.N, by = .(location, date)]
+crowd_rt[, sample := 1:.N, by = .(location, date, forecaster_id)]
 crowd_rt[, target := "cases"]
 # temporary fix to get rid of sample numbers greater than 1000
 crowd_rt[sample > 1000, sample := sample - 1000]
@@ -79,7 +79,7 @@ for (forecaster in forecasters) {
     return_fit = FALSE,
     secondary = secondary_opts(type = "incidence"),
     obs = obs_opts(scale = list(mean = 0.01, sd = 0.02)),
-    burn_in = as.integer(max(observations$date) - min(observations$date)) - 3 * 7,
+    burn_in = 3 * 7,
     control = list(adapt_delta = 0.98, max_treedepth = 15),
     verbose = FALSE
   )

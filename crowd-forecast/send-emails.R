@@ -30,8 +30,15 @@ participant_data <- ids %>%
 # update data (probably needs to happen only on local machine)
 source(here("data-raw", "update.R"))
 
+test <- FALSE
+participants <- seq_len(nrow(participant_data))
+
+if (test) {
+  participants <- 1
+}
+
 # iterate over rows and send an email
-for (i in seq_len(nrow(participant_data))) {
+for (i in participants) {
 
   temp_data <- as.data.table(participant_data)[i]
 
@@ -49,7 +56,7 @@ for (i in seq_len(nrow(participant_data))) {
     email,
     to = mail_address, from = "epiforecasts@gmail.com",
     credentials = creds_file(here(".secrets", "epiforecasts-email-creds")),
-    subject = paste("Announcing the Covid-19 UK Crowd Forecasting Challenge")
+    subject = paste("Crowd forecasting news and results from week 1")
     )
   print(i)
 }

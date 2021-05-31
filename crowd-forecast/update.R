@@ -30,13 +30,14 @@ rt_forecasts <- data.table::fread(file_paths[2])[, .(board_name = model,
                                                     target, scenario_id)]
 
 crowd_forecasts <- rbind(direct_forecasts, rt_forecasts)
+setDT(crowd_forecasts)
 
 # create mean ensemble for submission
 submission <- crowd_forecasts[, .(value = mean(value)), 
                               by = c("location", "type", "quantile", 
-                                     "target_end_date", 
-                                     "forecast_date", "target", 
+                                     "target_end_date", "target", 
                                      "scenario_id")]
+submission[, forecast_date := latest_weekday()]
 
 # write submission file
 submission_folder <- here("submissions", "crowd-forecasts", submission_date)
