@@ -39,6 +39,10 @@ include_countries <- include_forecast_plot ||
   include_ranks_over_time
 ```
 
+<style type="text/css">
+    div.datatables { height: auto !important;}
+</style>
+
 
 ```{r prepare-data}
 data <- params$data
@@ -130,8 +134,53 @@ out <- c(out, knit_child(here::here("reports", "evaluation",
 
 ---
 
+## Leaderboard
+
+```{r leaderboard, results = 'asis'}
+
+rankingdata <- data
+
+table <- eval_forecasts(rankingdata, summarise_by = c("model"), 
+                        compute_relative_skill = TRUE)
+
+
+table <- table[, c("model", "relative_skill")]
+
+out <- htmltools::tagList(
+  table %>%
+    arrange(relative_skill) %>%
+    mutate_if(is.numeric, round, 2) %>%
+    dplyr::mutate(ranking = 1:n()) %>%
+    dplyr::rename(`relative skill (lower = better)` = relative_skill, 
+                  forecaster = model) %>%
+     DT::datatable(extensions = c('FixedColumns', 'Buttons'),
+                    width = "100%",
+                    options = list(
+                      paging = FALSE,
+                      info = FALSE,
+                      buttons = c('csv', 'excel'),
+                      dom = 'Bfrtip',
+                      scrollX = TRUE,
+                      fixedColumns = TRUE
+                    ), 
+                    class = 'white-space: nowrap')
+)
+```
+
+
+
+
+`r paste(knit(text = out), collapse = '\n\n\n')`
+
+
+
+
+## {.unlisted .unnumbered}
+
+---
+
 ```{r ranking-header, include = FALSE, eval = include_ranking}
-out <- paste0("\n\n## Forecast scores (", loc, ") {.tabset .tabset-fade}\n\n")
+out <- paste0("\n\n\n## Detailed forecast scores {.tabset .tabset-fade}\n\n")
 
 out <- c(out, "Scores separated by target and forecast horizon.\n\n")
 ```
@@ -177,7 +226,7 @@ for (variable in names(target_variables)) {
 ---
 
 ```{r forecast-and-scores-header, include = FALSE, results='asis'}
-out <- paste0("\n\n## Scores over time (", loc, ") {.tabset .tabset-fade}\n\n")
+out <- paste0("\n\n## Evolution of scores over time {.tabset .tabset-fade}\n\n")
 out <- c(out, "Visualisation of the weighted interval score over time. In",
          "addition, the components of the interval score, sharpness (how",
          "narrow are forecasts - smaller is better), and penalties for",

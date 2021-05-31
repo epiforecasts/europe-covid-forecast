@@ -9,9 +9,9 @@ Rscript reports/update-index-file.R
 # copy files over to crowd-evaluation repo and push
 cd ..
 
-cp -R -f "europe-covid-forecast/docs/index.html" "crowd-evaluation/"
+\cp -R -f "europe-covid-forecast/docs/index.html" "crowd-evaluation/"
 
-cp -R -f "europe-covid-forecast/docs/reports" "crowd-evaluation/"
+\cp -R -f "europe-covid-forecast/docs/reports" "crowd-evaluation/"
 
 cd crowd-evaluation 
 
@@ -31,7 +31,7 @@ cd europe-covid-forecast
 
 cd ..
 
-cp "europe-covid-forecast/docs/reports/uk-challenge/index.html" "uk-challenge"
+\cp -rf "europe-covid-forecast/docs/reports/uk-challenge/index.html" "uk-challenge"
 
 cd uk-challenge
 git add .
