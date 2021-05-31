@@ -1,11 +1,4 @@
 forecaster_id,forecast_date,expert,leaderboard,board_name,distribution,median,width,horizon,target_end_date,submission_date,region,target_type,forecast_duration,forecast_week
-811796,2021-05-26,TRUE,yes,MatthiasLinden,normal,0.83,0.015,1,2021-05-08,2021-05-24,Germany,,,21
-811796,2021-05-26,TRUE,yes,MatthiasLinden,normal,0.85,0.029,2,2021-05-15,2021-05-24,Germany,,,21
-811796,2021-05-26,TRUE,yes,MatthiasLinden,normal,0.92,0.043,3,2021-05-22,2021-05-24,Germany,,,21
-811796,2021-05-26,TRUE,yes,MatthiasLinden,normal,0.936,0.058,4,2021-05-29,2021-05-24,Germany,,,21
-811796,2021-05-26,TRUE,yes,MatthiasLinden,normal,0.95,0.072,5,2021-06-05,2021-05-24,Germany,,,21
-811796,2021-05-26,TRUE,yes,MatthiasLinden,normal,1,0.086,6,2021-06-12,2021-05-24,Germany,,,21
-811796,2021-05-26,TRUE,yes,MatthiasLinden,normal,1.01,0.1,7,2021-06-19,2021-05-24,Germany,,,21
 892797,2021-05-30,FALSE,yes,curlykale,normal,1.066,0.006,1,2021-05-15,2021-05-31,United Kingdom,,,22
 892797,2021-05-30,FALSE,yes,curlykale,normal,1.095,0.014,2,2021-05-22,2021-05-31,United Kingdom,,,22
 892797,2021-05-30,FALSE,yes,curlykale,normal,1.112,0.021,3,2021-05-29,2021-05-31,United Kingdom,,,22
