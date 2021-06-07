@@ -13,6 +13,8 @@ raw_dt[["cases"]] <-
 raw_dt[["deaths"]] <-
   fread("https://raw.githubusercontent.com/epiforecasts/covid19-forecast-hub-europe/main/data-truth/JHU/truth_JHU-Incident%20Deaths.csv")
 
+setDT(locations)
+
 # Assign location names ---------------------------------------------------
 dt <- lapply(raw_dt, function(dt) {
   dt <- merge(dt[, .(date = as_date(date), location, value)], locations[, .(location, location_name)], all.x = TRUE)
