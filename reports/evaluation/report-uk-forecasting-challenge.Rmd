@@ -58,7 +58,7 @@ target_variables <- c(Cases = "inc case", Deaths = "inc death")
 
 ## Welcome to the UK Covid-19 Forecasting Challenge evaluation board!
 
-Below you find a visualisation of all forecasts made for the [UK Covid-19 Crowd Forecasting Challenge](https://www.crowdforecastr.org/2021/05/11/uk-challenge/) as well as an evaluation of the forecasts. The latter part will be added as soon as data comes in. 
+Below you find a visualisation of all forecasts made for the [UK Covid-19 Crowd Forecasting Challenge](https://www.crowdforecastr.org/2021/05/11/uk-challenge/) as well as an evaluation of the forecasts. 
 
 If you want to learn more about the crowd forecasting challenge and how to participate, visit [crowdforecastr.org](https://crowdforecastr.org)
 
