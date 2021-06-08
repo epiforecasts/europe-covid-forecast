@@ -71,7 +71,7 @@ data <- scoringutils::merge_pred_and_obs(prediction_data, truth_data,
 
 ### Dear `r name`,
 
-The first week of the UK Covid-19 Crowd Forecasting Challenge is over and the fist results are in. While forecasters had predicted an upswing, the actual number of reported infections was higher than predicted. If you like you can still join by simply submitting a forecast for the UK this week. That is all and you'll automatially be eligible to win a prize of up to 100GBP. 
+The second week of the UK Covid-19 Crowd Forecasting Challenge is over and the first results are in. While forecasters had predicted an upswing, the actual number of reported infections was higher than predicted. If you like you can still join by simply submitting a forecast for the UK this week. That is all and you'll automatially be eligible to win a prize of up to 100GBP. 
 
 In addition to the app we created a small survey (2mins) that helps us learn more about how you made your predictions. Please check it out at https://forms.gle/aX5txdeng3DN7rjV9. Thank you very much!
 
@@ -87,13 +87,13 @@ You can always find more information about the project on [www.crowdforecastr.or
 
 Here are the current top 10 forecasters in the UK forecasting challenge: 
 
-![](../../../crowdforecasting-challenge/leaderboard-week-1.png)
+![](../../../crowdforecasting-challenge/leaderboard-week-2.png). The leaderboard for the UK Crowd Forecasting Challenge is [here](https://epiforecasts.io/uk-challenge). 
 
 <br>
 
 ### Forecast and Performance overview
 
-Now, let's have a look at last weeks forecasts and performance! Here is an overview of last week's forecasts for the locations you forecasted (or Germany, Poland and UK if you didn’t make a forecast) and the ensemble forecast. Depending on the number of locations you forecasted, this might look a bit crammed. You can find more detailed information on our performance board [here](https://epiforecasts.io/europe-covid-forecast). You can also find the evaluation for the European Forecast Hub [here](https://covid19forecasthub.eu/reports.html). 
+Now, let's have a look at last weeks forecasts and performance! Here is an overview of last week's forecasts for the locations you forecasted (or Germany, Poland and UK if you didn’t make a forecast) and the ensemble forecast. Depending on the number of locations you forecasted, this might look a bit crammed. You can find more detailed information on our performance board [here](https://epiforecasts.io/crowd-evaluation). You can also find the evaluation for the European Forecast Hub [here](https://covid19forecasthub.eu/reports.html). 
 
 
 ```{r plot-forecasts, echo=FALSE, out.width="49%", fig.show="hold"}
