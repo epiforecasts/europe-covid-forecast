@@ -1,172 +1,53 @@
 forecaster_id,forecast_date,expert,leaderboard,board_name,distribution,median,width,horizon,target_end_date,submission_date,region,target_type,forecast_duration,forecast_week
-256931,2021-06-06,FALSE,anonymous,anonymous_Dunlin,normal,1.2,0.04,1,2021-05-22,2021-06-07,United Kingdom,,,23
-256931,2021-06-06,FALSE,anonymous,anonymous_Dunlin,normal,1.26,0.053,2,2021-05-29,2021-06-07,United Kingdom,,,23
-256931,2021-06-06,FALSE,anonymous,anonymous_Dunlin,normal,1.32,0.067,3,2021-06-05,2021-06-07,United Kingdom,,,23
-256931,2021-06-06,FALSE,anonymous,anonymous_Dunlin,normal,1.34,0.08,4,2021-06-12,2021-06-07,United Kingdom,,,23
-256931,2021-06-06,FALSE,anonymous,anonymous_Dunlin,normal,1.35,0.093,5,2021-06-19,2021-06-07,United Kingdom,,,23
-256931,2021-06-06,FALSE,anonymous,anonymous_Dunlin,normal,1.35,0.107,6,2021-06-26,2021-06-07,United Kingdom,,,23
-256931,2021-06-06,FALSE,anonymous,anonymous_Dunlin,normal,1.36,0.12,7,2021-07-03,2021-06-07,United Kingdom,,,23
-253412,2021-06-07,TRUE,yes,BQuilty,normal,1.199,0.01,1,2021-05-22,2021-06-07,United Kingdom,,,23
-253412,2021-06-07,TRUE,yes,BQuilty,normal,1.274,0.02,2,2021-05-29,2021-06-07,United Kingdom,,,23
-253412,2021-06-07,TRUE,yes,BQuilty,normal,1.3,0.03,3,2021-06-05,2021-06-07,United Kingdom,,,23
-253412,2021-06-07,TRUE,yes,BQuilty,normal,1.326,0.04,4,2021-06-12,2021-06-07,United Kingdom,,,23
-253412,2021-06-07,TRUE,yes,BQuilty,normal,1.344,0.05,5,2021-06-19,2021-06-07,United Kingdom,,,23
-253412,2021-06-07,TRUE,yes,BQuilty,normal,1.35,0.06,6,2021-06-26,2021-06-07,United Kingdom,,,23
-253412,2021-06-07,TRUE,yes,BQuilty,normal,1.358,0.07,7,2021-07-03,2021-06-07,United Kingdom,,,23
-515822,2021-06-07,TRUE,yes,seabbs,normal,0.737,0.01,1,2021-05-22,2021-06-07,Germany,,,23
-515822,2021-06-07,TRUE,yes,seabbs,normal,0.726,0.042,2,2021-05-29,2021-06-07,Germany,,,23
-515822,2021-06-07,TRUE,yes,seabbs,normal,0.719,0.073,3,2021-06-05,2021-06-07,Germany,,,23
-515822,2021-06-07,TRUE,yes,seabbs,normal,0.79,0.105,4,2021-06-12,2021-06-07,Germany,,,23
-515822,2021-06-07,TRUE,yes,seabbs,normal,0.93,0.137,5,2021-06-19,2021-06-07,Germany,,,23
-515822,2021-06-07,TRUE,yes,seabbs,normal,0.94,0.168,6,2021-06-26,2021-06-07,Germany,,,23
-515822,2021-06-07,TRUE,yes,seabbs,normal,0.93,0.2,7,2021-07-03,2021-06-07,Germany,,,23
-515822,2021-06-07,TRUE,yes,seabbs,normal,1.199,0.05,1,2021-05-22,2021-06-07,United Kingdom,,70.4472417831421,23
-515822,2021-06-07,TRUE,yes,seabbs,normal,1.26,0.092,2,2021-05-29,2021-06-07,United Kingdom,,70.4472417831421,23
-515822,2021-06-07,TRUE,yes,seabbs,normal,1.283,0.133,3,2021-06-05,2021-06-07,United Kingdom,,70.4472417831421,23
-515822,2021-06-07,TRUE,yes,seabbs,normal,1.283,0.175,4,2021-06-12,2021-06-07,United Kingdom,,70.4472417831421,23
-515822,2021-06-07,TRUE,yes,seabbs,normal,1.16,0.217,5,2021-06-19,2021-06-07,United Kingdom,,70.4472417831421,23
-515822,2021-06-07,TRUE,yes,seabbs,normal,1.09,0.258,6,2021-06-26,2021-06-07,United Kingdom,,70.4472417831421,23
-515822,2021-06-07,TRUE,yes,seabbs,normal,1.03,0.3,7,2021-07-03,2021-06-07,United Kingdom,,70.4472417831421,23
-515822,2021-06-07,TRUE,yes,seabbs,normal,0.591,0.01,1,2021-05-22,2021-06-07,Poland,,40.4544849395752,23
-515822,2021-06-07,TRUE,yes,seabbs,normal,0.556,0.042,2,2021-05-29,2021-06-07,Poland,,40.4544849395752,23
-515822,2021-06-07,TRUE,yes,seabbs,normal,0.65,0.073,3,2021-06-05,2021-06-07,Poland,,40.4544849395752,23
-515822,2021-06-07,TRUE,yes,seabbs,normal,0.79,0.105,4,2021-06-12,2021-06-07,Poland,,40.4544849395752,23
-515822,2021-06-07,TRUE,yes,seabbs,normal,0.85,0.137,5,2021-06-19,2021-06-07,Poland,,40.4544849395752,23
-515822,2021-06-07,TRUE,yes,seabbs,normal,0.92,0.168,6,2021-06-26,2021-06-07,Poland,,40.4544849395752,23
-515822,2021-06-07,TRUE,yes,seabbs,normal,1.01,0.2,7,2021-07-03,2021-06-07,Poland,,40.4544849395752,23
-643605,2021-06-07,TRUE,yes,aen,normal,1.199,0.02,1,2021-05-22,2021-06-07,United Kingdom,,,23
-643605,2021-06-07,TRUE,yes,aen,normal,1.26,0.03,2,2021-05-29,2021-06-07,United Kingdom,,,23
-643605,2021-06-07,TRUE,yes,aen,normal,1.283,0.041,3,2021-06-05,2021-06-07,United Kingdom,,,23
-643605,2021-06-07,TRUE,yes,aen,normal,1.28,0.051,4,2021-06-12,2021-06-07,United Kingdom,,,23
-643605,2021-06-07,TRUE,yes,aen,normal,1.3,0.061,5,2021-06-19,2021-06-07,United Kingdom,,,23
-643605,2021-06-07,TRUE,yes,aen,normal,1.27,0.072,6,2021-06-26,2021-06-07,United Kingdom,,,23
-643605,2021-06-07,TRUE,yes,aen,normal,1.209,0.082,7,2021-07-03,2021-06-07,United Kingdom,,,23
-812825,2021-06-07,FALSE,anonymous,anonymous_Echidna,normal,1.199,0.01,1,2021-05-22,2021-06-07,United Kingdom,,,23
-812825,2021-06-07,FALSE,anonymous,anonymous_Echidna,normal,1.29,0.02,2,2021-05-29,2021-06-07,United Kingdom,,,23
-812825,2021-06-07,FALSE,anonymous,anonymous_Echidna,normal,1.42,0.03,3,2021-06-05,2021-06-07,United Kingdom,,,23
-812825,2021-06-07,FALSE,anonymous,anonymous_Echidna,normal,1.45,0.04,4,2021-06-12,2021-06-07,United Kingdom,,,23
-812825,2021-06-07,FALSE,anonymous,anonymous_Echidna,normal,1.42,0.05,5,2021-06-19,2021-06-07,United Kingdom,,,23
-812825,2021-06-07,FALSE,anonymous,anonymous_Echidna,normal,1.35,0.06,6,2021-06-26,2021-06-07,United Kingdom,,,23
-812825,2021-06-07,FALSE,anonymous,anonymous_Echidna,normal,1.18,0.07,7,2021-07-03,2021-06-07,United Kingdom,,,23
-130436,2021-06-07,FALSE,anonymous,anonymous_Wolverine,normal,1.199,0.01,1,2021-05-22,2021-06-07,United Kingdom,,,23
-130436,2021-06-07,FALSE,anonymous,anonymous_Wolverine,normal,1.26,0.02,2,2021-05-29,2021-06-07,United Kingdom,,,23
-130436,2021-06-07,FALSE,anonymous,anonymous_Wolverine,normal,1.283,0.03,3,2021-06-05,2021-06-07,United Kingdom,,,23
-130436,2021-06-07,FALSE,anonymous,anonymous_Wolverine,normal,1.16,0.04,4,2021-06-12,2021-06-07,United Kingdom,,,23
-130436,2021-06-07,FALSE,anonymous,anonymous_Wolverine,normal,1.01,0.05,5,2021-06-19,2021-06-07,United Kingdom,,,23
-130436,2021-06-07,FALSE,anonymous,anonymous_Wolverine,normal,0.86,0.06,6,2021-06-26,2021-06-07,United Kingdom,,,23
-130436,2021-06-07,FALSE,anonymous,anonymous_Wolverine,normal,0.63,0.07,7,2021-07-03,2021-06-07,United Kingdom,,,23
-752802,2021-06-07,FALSE,yes,HCBarney,normal,1.199,0.025,1,2021-05-22,2021-06-07,United Kingdom,,,23
-752802,2021-06-07,FALSE,yes,HCBarney,normal,1.26,0.038,2,2021-05-29,2021-06-07,United Kingdom,,,23
-752802,2021-06-07,FALSE,yes,HCBarney,normal,1.36,0.05,3,2021-06-05,2021-06-07,United Kingdom,,,23
-752802,2021-06-07,FALSE,yes,HCBarney,normal,1.55,0.062,4,2021-06-12,2021-06-07,United Kingdom,,,23
-752802,2021-06-07,FALSE,yes,HCBarney,normal,1.45,0.075,5,2021-06-19,2021-06-07,United Kingdom,,,23
-752802,2021-06-07,FALSE,yes,HCBarney,normal,1.3,0.088,6,2021-06-26,2021-06-07,United Kingdom,,,23
-752802,2021-06-07,FALSE,yes,HCBarney,normal,1,0.1,7,2021-07-03,2021-06-07,United Kingdom,,,23
-370553,2021-06-07,TRUE,anonymous,anonymous_Duck,normal,1.199,0.01,1,2021-05-22,2021-06-07,United Kingdom,,,23
-370553,2021-06-07,TRUE,anonymous,anonymous_Duck,normal,1.26,0.02,2,2021-05-29,2021-06-07,United Kingdom,,,23
-370553,2021-06-07,TRUE,anonymous,anonymous_Duck,normal,1.42,0.03,3,2021-06-05,2021-06-07,United Kingdom,,,23
-370553,2021-06-07,TRUE,anonymous,anonymous_Duck,normal,1.47,0.04,4,2021-06-12,2021-06-07,United Kingdom,,,23
-370553,2021-06-07,TRUE,anonymous,anonymous_Duck,normal,1.41,0.05,5,2021-06-19,2021-06-07,United Kingdom,,,23
-370553,2021-06-07,TRUE,anonymous,anonymous_Duck,normal,1.34,0.06,6,2021-06-26,2021-06-07,United Kingdom,,,23
-370553,2021-06-07,TRUE,anonymous,anonymous_Duck,normal,1.283,0.07,7,2021-07-03,2021-06-07,United Kingdom,,,23
-966843,2021-06-07,FALSE,yes,Captainjakerson,normal,1.8,0.01,1,2021-05-22,2021-06-07,United Kingdom,,,23
-966843,2021-06-07,FALSE,yes,Captainjakerson,normal,1.8,0.02,2,2021-05-29,2021-06-07,United Kingdom,,,23
-966843,2021-06-07,FALSE,yes,Captainjakerson,normal,1.3,0.03,3,2021-06-05,2021-06-07,United Kingdom,,,23
-966843,2021-06-07,FALSE,yes,Captainjakerson,normal,1.6,0.04,4,2021-06-12,2021-06-07,United Kingdom,,,23
-966843,2021-06-07,FALSE,yes,Captainjakerson,normal,1.2,0.05,5,2021-06-19,2021-06-07,United Kingdom,,,23
-966843,2021-06-07,FALSE,yes,Captainjakerson,normal,1.2,0.06,6,2021-06-26,2021-06-07,United Kingdom,,,23
-966843,2021-06-07,FALSE,yes,Captainjakerson,normal,0.9,0.07,7,2021-07-03,2021-06-07,United Kingdom,,,23
-496375,2021-06-07,FALSE,yes,Sophia,normal,0.86,0.03,1,2021-05-22,2021-06-07,Austria,,,23
-496375,2021-06-07,FALSE,yes,Sophia,normal,0.93,0.043,2,2021-05-29,2021-06-07,Austria,,,23
-496375,2021-06-07,FALSE,yes,Sophia,normal,0.99,0.056,3,2021-06-05,2021-06-07,Austria,,,23
-496375,2021-06-07,FALSE,yes,Sophia,normal,1.02,0.069,4,2021-06-12,2021-06-07,Austria,,,23
-496375,2021-06-07,FALSE,yes,Sophia,normal,1.04,0.082,5,2021-06-19,2021-06-07,Austria,,,23
-496375,2021-06-07,FALSE,yes,Sophia,normal,1.05,0.095,6,2021-06-26,2021-06-07,Austria,,,23
-496375,2021-06-07,FALSE,yes,Sophia,normal,1.05,0.108,7,2021-07-03,2021-06-07,Austria,,,23
-215393,2021-06-07,TRUE,yes,seb,normal,1.199,0.001,1,2021-05-22,2021-06-07,United Kingdom,,,23
-215393,2021-06-07,TRUE,yes,seb,normal,1.26,0.013,2,2021-05-29,2021-06-07,United Kingdom,,,23
-215393,2021-06-07,TRUE,yes,seb,normal,1.283,0.024,3,2021-06-05,2021-06-07,United Kingdom,,,23
-215393,2021-06-07,TRUE,yes,seb,normal,1.283,0.036,4,2021-06-12,2021-06-07,United Kingdom,,,23
-215393,2021-06-07,TRUE,yes,seb,normal,1.283,0.047,5,2021-06-19,2021-06-07,United Kingdom,,,23
-215393,2021-06-07,TRUE,yes,seb,normal,1.283,0.059,6,2021-06-26,2021-06-07,United Kingdom,,,23
-215393,2021-06-07,TRUE,yes,seb,normal,1.283,0.07,7,2021-07-03,2021-06-07,United Kingdom,,,23
-215393,2021-06-07,TRUE,yes,seb,normal,0.737,0.01,1,2021-05-22,2021-06-07,Germany,,126.244163513184,23
-215393,2021-06-07,TRUE,yes,seb,normal,0.75,0.025,2,2021-05-29,2021-06-07,Germany,,126.244163513184,23
-215393,2021-06-07,TRUE,yes,seb,normal,0.77,0.04,3,2021-06-05,2021-06-07,Germany,,126.244163513184,23
-215393,2021-06-07,TRUE,yes,seb,normal,0.79,0.055,4,2021-06-12,2021-06-07,Germany,,126.244163513184,23
-215393,2021-06-07,TRUE,yes,seb,normal,0.85,0.07,5,2021-06-19,2021-06-07,Germany,,126.244163513184,23
-215393,2021-06-07,TRUE,yes,seb,normal,0.92,0.085,6,2021-06-26,2021-06-07,Germany,,126.244163513184,23
-215393,2021-06-07,TRUE,yes,seb,normal,1,0.1,7,2021-07-03,2021-06-07,Germany,,126.244163513184,23
-752802,2021-06-07,FALSE,yes,HCBarney,normal,1.2,0.021,1,2021-05-22,2021-06-07,United Kingdom,,12927.7804031372,23
-752802,2021-06-07,FALSE,yes,HCBarney,normal,1.26,0.031,2,2021-05-29,2021-06-07,United Kingdom,,12927.7804031372,23
-752802,2021-06-07,FALSE,yes,HCBarney,normal,1.3,0.041,3,2021-06-05,2021-06-07,United Kingdom,,12927.7804031372,23
-752802,2021-06-07,FALSE,yes,HCBarney,normal,1.47,0.051,4,2021-06-12,2021-06-07,United Kingdom,,12927.7804031372,23
-752802,2021-06-07,FALSE,yes,HCBarney,normal,1.57,0.06,5,2021-06-19,2021-06-07,United Kingdom,,12927.7804031372,23
-752802,2021-06-07,FALSE,yes,HCBarney,normal,1.53,0.07,6,2021-06-26,2021-06-07,United Kingdom,,12927.7804031372,23
-752802,2021-06-07,FALSE,yes,HCBarney,normal,1.39,0.08,7,2021-07-03,2021-06-07,United Kingdom,,12927.7804031372,23
-752802,2021-06-07,FALSE,yes,HCBarney,normal,1.2,0.021,1,2021-05-22,2021-06-07,United Kingdom,,5.61748600006104,23
-752802,2021-06-07,FALSE,yes,HCBarney,normal,1.26,0.031,2,2021-05-29,2021-06-07,United Kingdom,,5.61748600006104,23
-752802,2021-06-07,FALSE,yes,HCBarney,normal,1.3,0.041,3,2021-06-05,2021-06-07,United Kingdom,,5.61748600006104,23
-752802,2021-06-07,FALSE,yes,HCBarney,normal,1.47,0.051,4,2021-06-12,2021-06-07,United Kingdom,,5.61748600006104,23
-752802,2021-06-07,FALSE,yes,HCBarney,normal,1.57,0.06,5,2021-06-19,2021-06-07,United Kingdom,,5.61748600006104,23
-752802,2021-06-07,FALSE,yes,HCBarney,normal,1.53,0.07,6,2021-06-26,2021-06-07,United Kingdom,,5.61748600006104,23
-752802,2021-06-07,FALSE,yes,HCBarney,normal,1.39,0.08,7,2021-07-03,2021-06-07,United Kingdom,,5.61748600006104,23
-752802,2021-06-09,FALSE,yes,HCBarney,normal,1.199,0.01,1,2021-05-22,2021-06-07,United Kingdom,,131689.879185677,23
-752802,2021-06-09,FALSE,yes,HCBarney,normal,1.26,0.02,2,2021-05-29,2021-06-07,United Kingdom,,131689.879185677,23
-752802,2021-06-09,FALSE,yes,HCBarney,normal,1.283,0.03,3,2021-06-05,2021-06-07,United Kingdom,,131689.879185677,23
-752802,2021-06-09,FALSE,yes,HCBarney,normal,1.469,0.04,4,2021-06-12,2021-06-07,United Kingdom,,131689.879185677,23
-752802,2021-06-09,FALSE,yes,HCBarney,normal,1.5,0.05,5,2021-06-19,2021-06-07,United Kingdom,,131689.879185677,23
-752802,2021-06-09,FALSE,yes,HCBarney,normal,1.47,0.06,6,2021-06-26,2021-06-07,United Kingdom,,131689.879185677,23
-752802,2021-06-09,FALSE,yes,HCBarney,normal,1.3,0.07,7,2021-07-03,2021-06-07,United Kingdom,,131689.879185677,23
-256931,2021-06-14,FALSE,anonymous,anonymous_Dunlin,normal,1.307,0.01,1,2021-05-29,2021-06-14,United Kingdom,,7.35359455990019,24
-256931,2021-06-14,FALSE,anonymous,anonymous_Dunlin,normal,1.35,0.02,2,2021-06-05,2021-06-14,United Kingdom,,7.35359455990019,24
-256931,2021-06-14,FALSE,anonymous,anonymous_Dunlin,normal,1.357,0.03,3,2021-06-12,2021-06-14,United Kingdom,,7.35359455990019,24
-256931,2021-06-14,FALSE,anonymous,anonymous_Dunlin,normal,1.357,0.04,4,2021-06-19,2021-06-14,United Kingdom,,7.35359455990019,24
-256931,2021-06-14,FALSE,anonymous,anonymous_Dunlin,normal,1.357,0.05,5,2021-06-26,2021-06-14,United Kingdom,,7.35359455990019,24
-256931,2021-06-14,FALSE,anonymous,anonymous_Dunlin,normal,1.32,0.06,6,2021-07-03,2021-06-14,United Kingdom,,7.35359455990019,24
-256931,2021-06-14,FALSE,anonymous,anonymous_Dunlin,normal,1.28,0.07,7,2021-07-10,2021-06-14,United Kingdom,,7.35359455990019,24
-253412,2021-06-14,TRUE,yes,BQuilty,normal,1.307,0.01,1,2021-05-29,2021-06-14,United Kingdom,,6.84249593350622,24
-253412,2021-06-14,TRUE,yes,BQuilty,normal,1.341,0.02,2,2021-06-05,2021-06-14,United Kingdom,,6.84249593350622,24
-253412,2021-06-14,TRUE,yes,BQuilty,normal,1.357,0.03,3,2021-06-12,2021-06-14,United Kingdom,,6.84249593350622,24
-253412,2021-06-14,TRUE,yes,BQuilty,normal,1.357,0.04,4,2021-06-19,2021-06-14,United Kingdom,,6.84249593350622,24
-253412,2021-06-14,TRUE,yes,BQuilty,normal,1.357,0.05,5,2021-06-26,2021-06-14,United Kingdom,,6.84249593350622,24
-253412,2021-06-14,TRUE,yes,BQuilty,normal,1.357,0.06,6,2021-07-03,2021-06-14,United Kingdom,,6.84249593350622,24
-253412,2021-06-14,TRUE,yes,BQuilty,normal,1.357,0.07,7,2021-07-10,2021-06-14,United Kingdom,,6.84249593350622,24
-130436,2021-06-14,FALSE,anonymous,anonymous_Wolverine,normal,1.307,0.01,1,2021-05-29,2021-06-14,United Kingdom,,6.71649104939567,24
-130436,2021-06-14,FALSE,anonymous,anonymous_Wolverine,normal,1.341,0.02,2,2021-06-05,2021-06-14,United Kingdom,,6.71649104939567,24
-130436,2021-06-14,FALSE,anonymous,anonymous_Wolverine,normal,1.357,0.03,3,2021-06-12,2021-06-14,United Kingdom,,6.71649104939567,24
-130436,2021-06-14,FALSE,anonymous,anonymous_Wolverine,normal,1.3,0.04,4,2021-06-19,2021-06-14,United Kingdom,,6.71649104939567,24
-130436,2021-06-14,FALSE,anonymous,anonymous_Wolverine,normal,1.21,0.05,5,2021-06-26,2021-06-14,United Kingdom,,6.71649104939567,24
-130436,2021-06-14,FALSE,anonymous,anonymous_Wolverine,normal,1.09,0.06,6,2021-07-03,2021-06-14,United Kingdom,,6.71649104939567,24
-130436,2021-06-14,FALSE,anonymous,anonymous_Wolverine,normal,0.99,0.07,7,2021-07-10,2021-06-14,United Kingdom,,6.71649104939567,24
-515822,2021-06-14,TRUE,yes,seabbs,normal,0.723,0.05,1,2021-05-29,2021-06-14,Germany,,623488.636189938,24
-515822,2021-06-14,TRUE,yes,seabbs,normal,0.715,0.075,2,2021-06-05,2021-06-14,Germany,,623488.636189938,24
-515822,2021-06-14,TRUE,yes,seabbs,normal,0.74,0.1,3,2021-06-12,2021-06-14,Germany,,623488.636189938,24
-515822,2021-06-14,TRUE,yes,seabbs,normal,0.76,0.125,4,2021-06-19,2021-06-14,Germany,,623488.636189938,24
-515822,2021-06-14,TRUE,yes,seabbs,normal,0.81,0.15,5,2021-06-26,2021-06-14,Germany,,623488.636189938,24
-515822,2021-06-14,TRUE,yes,seabbs,normal,0.86,0.175,6,2021-07-03,2021-06-14,Germany,,623488.636189938,24
-515822,2021-06-14,TRUE,yes,seabbs,normal,0.94,0.2,7,2021-07-10,2021-06-14,Germany,,623488.636189938,24
-515822,2021-06-14,TRUE,yes,seabbs,normal,1.307,0.05,1,2021-05-29,2021-06-14,United Kingdom,,92.3913559913635,24
-515822,2021-06-14,TRUE,yes,seabbs,normal,1.341,0.075,2,2021-06-05,2021-06-14,United Kingdom,,92.3913559913635,24
-515822,2021-06-14,TRUE,yes,seabbs,normal,1.357,0.1,3,2021-06-12,2021-06-14,United Kingdom,,92.3913559913635,24
-515822,2021-06-14,TRUE,yes,seabbs,normal,1.31,0.125,4,2021-06-19,2021-06-14,United Kingdom,,92.3913559913635,24
-515822,2021-06-14,TRUE,yes,seabbs,normal,1.22,0.15,5,2021-06-26,2021-06-14,United Kingdom,,92.3913559913635,24
-515822,2021-06-14,TRUE,yes,seabbs,normal,1.07,0.175,6,2021-07-03,2021-06-14,United Kingdom,,92.3913559913635,24
-515822,2021-06-14,TRUE,yes,seabbs,normal,0.94,0.2,7,2021-07-10,2021-06-14,United Kingdom,,92.3913559913635,24
-515822,2021-06-14,TRUE,yes,seabbs,normal,0.658,0.05,1,2021-05-29,2021-06-14,Poland,,60.9498949050903,24
-515822,2021-06-14,TRUE,yes,seabbs,normal,0.689,0.075,2,2021-06-05,2021-06-14,Poland,,60.9498949050903,24
-515822,2021-06-14,TRUE,yes,seabbs,normal,0.699,0.1,3,2021-06-12,2021-06-14,Poland,,60.9498949050903,24
-515822,2021-06-14,TRUE,yes,seabbs,normal,0.75,0.125,4,2021-06-19,2021-06-14,Poland,,60.9498949050903,24
-515822,2021-06-14,TRUE,yes,seabbs,normal,0.79,0.15,5,2021-06-26,2021-06-14,Poland,,60.9498949050903,24
-515822,2021-06-14,TRUE,yes,seabbs,normal,0.86,0.175,6,2021-07-03,2021-06-14,Poland,,60.9498949050903,24
-515822,2021-06-14,TRUE,yes,seabbs,normal,0.93,0.2,7,2021-07-10,2021-06-14,Poland,,60.9498949050903,24
-215393,2021-06-14,TRUE,yes,seb,normal,1.307,0.01,1,2021-05-29,2021-06-14,United Kingdom,,599703.402680874,24
-215393,2021-06-14,TRUE,yes,seb,normal,1.341,0.02,2,2021-06-05,2021-06-14,United Kingdom,,599703.402680874,24
-215393,2021-06-14,TRUE,yes,seb,normal,1.357,0.03,3,2021-06-12,2021-06-14,United Kingdom,,599703.402680874,24
-215393,2021-06-14,TRUE,yes,seb,normal,1.3,0.04,4,2021-06-19,2021-06-14,United Kingdom,,599703.402680874,24
-215393,2021-06-14,TRUE,yes,seb,normal,1.25,0.05,5,2021-06-26,2021-06-14,United Kingdom,,599703.402680874,24
-215393,2021-06-14,TRUE,yes,seb,normal,1.2,0.06,6,2021-07-03,2021-06-14,United Kingdom,,599703.402680874,24
-215393,2021-06-14,TRUE,yes,seb,normal,1.2,0.07,7,2021-07-10,2021-06-14,United Kingdom,,599703.402680874,24
+256931,2021-06-14,FALSE,anonymous,anonymous_Dunlin,normal,1.307,0.01,1,2021-05-29,2021-06-14,United Kingdom,,,24
+256931,2021-06-14,FALSE,anonymous,anonymous_Dunlin,normal,1.35,0.02,2,2021-06-05,2021-06-14,United Kingdom,,,24
+256931,2021-06-14,FALSE,anonymous,anonymous_Dunlin,normal,1.357,0.03,3,2021-06-12,2021-06-14,United Kingdom,,,24
+256931,2021-06-14,FALSE,anonymous,anonymous_Dunlin,normal,1.357,0.04,4,2021-06-19,2021-06-14,United Kingdom,,,24
+256931,2021-06-14,FALSE,anonymous,anonymous_Dunlin,normal,1.357,0.05,5,2021-06-26,2021-06-14,United Kingdom,,,24
+256931,2021-06-14,FALSE,anonymous,anonymous_Dunlin,normal,1.32,0.06,6,2021-07-03,2021-06-14,United Kingdom,,,24
+256931,2021-06-14,FALSE,anonymous,anonymous_Dunlin,normal,1.28,0.07,7,2021-07-10,2021-06-14,United Kingdom,,,24
+253412,2021-06-14,TRUE,yes,BQuilty,normal,1.307,0.01,1,2021-05-29,2021-06-14,United Kingdom,,,24
+253412,2021-06-14,TRUE,yes,BQuilty,normal,1.341,0.02,2,2021-06-05,2021-06-14,United Kingdom,,,24
+253412,2021-06-14,TRUE,yes,BQuilty,normal,1.357,0.03,3,2021-06-12,2021-06-14,United Kingdom,,,24
+253412,2021-06-14,TRUE,yes,BQuilty,normal,1.357,0.04,4,2021-06-19,2021-06-14,United Kingdom,,,24
+253412,2021-06-14,TRUE,yes,BQuilty,normal,1.357,0.05,5,2021-06-26,2021-06-14,United Kingdom,,,24
+253412,2021-06-14,TRUE,yes,BQuilty,normal,1.357,0.06,6,2021-07-03,2021-06-14,United Kingdom,,,24
+253412,2021-06-14,TRUE,yes,BQuilty,normal,1.357,0.07,7,2021-07-10,2021-06-14,United Kingdom,,,24
+130436,2021-06-14,FALSE,anonymous,anonymous_Wolverine,normal,1.307,0.01,1,2021-05-29,2021-06-14,United Kingdom,,,24
+130436,2021-06-14,FALSE,anonymous,anonymous_Wolverine,normal,1.341,0.02,2,2021-06-05,2021-06-14,United Kingdom,,,24
+130436,2021-06-14,FALSE,anonymous,anonymous_Wolverine,normal,1.357,0.03,3,2021-06-12,2021-06-14,United Kingdom,,,24
+130436,2021-06-14,FALSE,anonymous,anonymous_Wolverine,normal,1.3,0.04,4,2021-06-19,2021-06-14,United Kingdom,,,24
+130436,2021-06-14,FALSE,anonymous,anonymous_Wolverine,normal,1.21,0.05,5,2021-06-26,2021-06-14,United Kingdom,,,24
+130436,2021-06-14,FALSE,anonymous,anonymous_Wolverine,normal,1.09,0.06,6,2021-07-03,2021-06-14,United Kingdom,,,24
+130436,2021-06-14,FALSE,anonymous,anonymous_Wolverine,normal,0.99,0.07,7,2021-07-10,2021-06-14,United Kingdom,,,24
+515822,2021-06-14,TRUE,yes,seabbs,normal,0.723,0.05,1,2021-05-29,2021-06-14,Germany,,,24
+515822,2021-06-14,TRUE,yes,seabbs,normal,0.715,0.075,2,2021-06-05,2021-06-14,Germany,,,24
+515822,2021-06-14,TRUE,yes,seabbs,normal,0.74,0.1,3,2021-06-12,2021-06-14,Germany,,,24
+515822,2021-06-14,TRUE,yes,seabbs,normal,0.76,0.125,4,2021-06-19,2021-06-14,Germany,,,24
+515822,2021-06-14,TRUE,yes,seabbs,normal,0.81,0.15,5,2021-06-26,2021-06-14,Germany,,,24
+515822,2021-06-14,TRUE,yes,seabbs,normal,0.86,0.175,6,2021-07-03,2021-06-14,Germany,,,24
+515822,2021-06-14,TRUE,yes,seabbs,normal,0.94,0.2,7,2021-07-10,2021-06-14,Germany,,,24
+515822,2021-06-14,TRUE,yes,seabbs,normal,1.307,0.05,1,2021-05-29,2021-06-14,United Kingdom,,1.53985593318939,24
+515822,2021-06-14,TRUE,yes,seabbs,normal,1.341,0.075,2,2021-06-05,2021-06-14,United Kingdom,,1.53985593318939,24
+515822,2021-06-14,TRUE,yes,seabbs,normal,1.357,0.1,3,2021-06-12,2021-06-14,United Kingdom,,1.53985593318939,24
+515822,2021-06-14,TRUE,yes,seabbs,normal,1.31,0.125,4,2021-06-19,2021-06-14,United Kingdom,,1.53985593318939,24
+515822,2021-06-14,TRUE,yes,seabbs,normal,1.22,0.15,5,2021-06-26,2021-06-14,United Kingdom,,1.53985593318939,24
+515822,2021-06-14,TRUE,yes,seabbs,normal,1.07,0.175,6,2021-07-03,2021-06-14,United Kingdom,,1.53985593318939,24
+515822,2021-06-14,TRUE,yes,seabbs,normal,0.94,0.2,7,2021-07-10,2021-06-14,United Kingdom,,1.53985593318939,24
+515822,2021-06-14,TRUE,yes,seabbs,normal,0.658,0.05,1,2021-05-29,2021-06-14,Poland,,1.01583158175151,24
+515822,2021-06-14,TRUE,yes,seabbs,normal,0.689,0.075,2,2021-06-05,2021-06-14,Poland,,1.01583158175151,24
+515822,2021-06-14,TRUE,yes,seabbs,normal,0.699,0.1,3,2021-06-12,2021-06-14,Poland,,1.01583158175151,24
+515822,2021-06-14,TRUE,yes,seabbs,normal,0.75,0.125,4,2021-06-19,2021-06-14,Poland,,1.01583158175151,24
+515822,2021-06-14,TRUE,yes,seabbs,normal,0.79,0.15,5,2021-06-26,2021-06-14,Poland,,1.01583158175151,24
+515822,2021-06-14,TRUE,yes,seabbs,normal,0.86,0.175,6,2021-07-03,2021-06-14,Poland,,1.01583158175151,24
+515822,2021-06-14,TRUE,yes,seabbs,normal,0.93,0.2,7,2021-07-10,2021-06-14,Poland,,1.01583158175151,24
+215393,2021-06-14,TRUE,yes,seb,normal,1.307,0.01,1,2021-05-29,2021-06-14,United Kingdom,,,24
+215393,2021-06-14,TRUE,yes,seb,normal,1.341,0.02,2,2021-06-05,2021-06-14,United Kingdom,,,24
+215393,2021-06-14,TRUE,yes,seb,normal,1.357,0.03,3,2021-06-12,2021-06-14,United Kingdom,,,24
+215393,2021-06-14,TRUE,yes,seb,normal,1.3,0.04,4,2021-06-19,2021-06-14,United Kingdom,,,24
+215393,2021-06-14,TRUE,yes,seb,normal,1.25,0.05,5,2021-06-26,2021-06-14,United Kingdom,,,24
+215393,2021-06-14,TRUE,yes,seb,normal,1.2,0.06,6,2021-07-03,2021-06-14,United Kingdom,,,24
+215393,2021-06-14,TRUE,yes,seb,normal,1.2,0.07,7,2021-07-10,2021-06-14,United Kingdom,,,24
 215393,2021-06-14,TRUE,yes,seb,normal,0.723,0.01,1,2021-05-29,2021-06-14,Germany,,13.3331441879272,24
 215393,2021-06-14,TRUE,yes,seb,normal,0.715,0.02,2,2021-06-05,2021-06-14,Germany,,13.3331441879272,24
 215393,2021-06-14,TRUE,yes,seb,normal,0.71,0.03,3,2021-06-12,2021-06-14,Germany,,13.3331441879272,24
@@ -188,3 +69,10 @@ forecaster_id,forecast_date,expert,leaderboard,board_name,distribution,median,wi
 215393,2021-06-14,TRUE,yes,seb,normal,1.25,0.07,5,2021-06-26,2021-06-14,United Kingdom,,59.0929341316223,24
 215393,2021-06-14,TRUE,yes,seb,normal,1.25,0.085,6,2021-07-03,2021-06-14,United Kingdom,,59.0929341316223,24
 215393,2021-06-14,TRUE,yes,seb,normal,1.25,0.1,7,2021-07-10,2021-06-14,United Kingdom,,59.0929341316223,24
+496375,2021-06-14,FALSE,yes,Sophia,normal,1.33,0.01,1,2021-05-29,2021-06-14,United Kingdom,,,24
+496375,2021-06-14,FALSE,yes,Sophia,normal,1.34,0.02,2,2021-06-05,2021-06-14,United Kingdom,,,24
+496375,2021-06-14,FALSE,yes,Sophia,normal,1.35,0.03,3,2021-06-12,2021-06-14,United Kingdom,,,24
+496375,2021-06-14,FALSE,yes,Sophia,normal,1.36,0.04,4,2021-06-19,2021-06-14,United Kingdom,,,24
+496375,2021-06-14,FALSE,yes,Sophia,normal,1.37,0.05,5,2021-06-26,2021-06-14,United Kingdom,,,24
+496375,2021-06-14,FALSE,yes,Sophia,normal,1.38,0.06,6,2021-07-03,2021-06-14,United Kingdom,,,24
+496375,2021-06-14,FALSE,yes,Sophia,normal,1.39,0.07,7,2021-07-10,2021-06-14,United Kingdom,,,24
