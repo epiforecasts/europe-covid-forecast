@@ -58,7 +58,7 @@ target_variables <- c(Cases = "inc case", Deaths = "inc death")
 
 ## Welcome to the UK Covid-19 Forecasting Challenge evaluation board!
 
-Below you find a visualisation of all forecasts made for the [UK Covid-19 Crowd Forecasting Challenge](https://www.crowdforecastr.org/2021/05/11/uk-challenge/) as well as an evaluation of the forecasts. The latter part will be added as soon as data comes in. 
+Below you find a visualisation of all forecasts made for the [UK Covid-19 Crowd Forecasting Challenge](https://www.crowdforecastr.org/2021/05/11/uk-challenge/) as well as an evaluation of the forecasts. 
 
 If you want to learn more about the crowd forecasting challenge and how to participate, visit [crowdforecastr.org](https://crowdforecastr.org)
 
@@ -138,20 +138,42 @@ out <- c(out, knit_child(here::here("reports", "evaluation",
 
 ```{r leaderboard, results = 'asis'}
 
-rankingdata <- data
+rankingdata <- copy(data)
 
-table <- eval_forecasts(rankingdata, summarise_by = c("model"), 
-                        compute_relative_skill = TRUE)
+# log data 
+rankingdata[, true_value := pmax(true_value, 0)]
+rankingdata[, true_value := log(true_value + 1)]
+rankingdata[, prediction := pmax(prediction, 0)]
+rankingdata[, prediction := log(prediction + 1)]
+
+table <- eval_forecasts(rankingdata, summarise_by = c("model", "forecast_date"))
 
 
-table <- table[, c("model", "relative_skill")]
+# assign median score if no forecast was made ----------------------------------
+# for ever forecast_date, calculate the median
+medians <- table[model != "EpiExpert-ensemble", 
+                 .(median = median(interval_score)), by = "forecast_date"]
+
+# get complete set of forecasters and dates
+fcdates <- medians$forecast_date
+participants <- unique(rankingdata$model)
+complete_set <- expand.grid(forecast_date = fcdates, 
+                            model = participants[!is.na(participants)])
+
+# merge medians with complete set and that with scores
+medians <- merge(complete_set, medians, all.y = TRUE)
+
+table <- merge(table, medians, all.y = TRUE)
+table[is.na(interval_score), interval_score := median]
+
+table <- table[, .(interval_score = sum(interval_score)), by = "model"]
 
 out <- htmltools::tagList(
   table %>%
-    arrange(relative_skill) %>%
+    arrange(interval_score) %>%
     mutate_if(is.numeric, round, 2) %>%
     dplyr::mutate(ranking = 1:n()) %>%
-    dplyr::rename(`relative skill (lower = better)` = relative_skill, 
+    dplyr::rename(`interval score (lower = better)` = interval_score, 
                   forecaster = model) %>%
      DT::datatable(extensions = c('FixedColumns', 'Buttons'),
                     width = "100%",
