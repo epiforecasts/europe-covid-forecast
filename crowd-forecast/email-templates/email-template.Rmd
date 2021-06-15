@@ -23,7 +23,7 @@ library(kableExtra)
 
 ```{r load-data, echo=FALSE, message=FALSE, warning=FALSE}
 # load all data ----------------------------------------------------------------
-root_dir <- here::here("crowd-forecast", "processed-forecast-data")
+root_dir <- here::here("crowd-direct-forecast", "processed-forecast-data")
 file_paths_forecast <- here::here(root_dir, list.files(root_dir))
 
 prediction_data <- purrr::map_dfr(file_paths_forecast, 
@@ -71,17 +71,29 @@ data <- scoringutils::merge_pred_and_obs(prediction_data, truth_data,
 
 ### Dear `r name`,
 
-Good to have you as a forecaster! Here is this weeks reminder and an update about what has happened lately. We would be very happy about your insights again this week. 
+The second week of the UK Covid-19 Crowd Forecasting Challenge is over and the first results are in. While forecasters had predicted an upswing, the actual number of reported infections was higher than predicted. If you like you can still join by simply submitting a forecast for the UK this week. That is all and you'll automatially be eligible to win a prize of up to 100GBP. 
 
-We **update our data every Sunday at 8.30am CET**. You can then make a forecast until **11pm CET (1pm UK time) on Monday** using our [forecast app](https://cmmid-lshtm.shinyapps.io/crowd-forecast/).
+In addition to the app we created a small survey (2mins) that helps us learn more about how you made your predictions. Please check it out at https://forms.gle/aX5txdeng3DN7rjV9. Thank you very much!
+
+For more information on the project visit [here](https://www.crowdforecastr.org/2021/05/11/uk-challenge/). 
+
+Forecasts can be made between Sunday 12am and Monday 8pm UK time (we slightly changed these times so that we can check and process all forecasts). 
 
 You can always find more information about the project on [www.crowdforecastr.org](https://www.crowdforecastr.org). 
+
+![](../../../crowdforecasting-challenge/Crowdforecasting-challenge-header.png)
+
+### UK Crowd Forecasting Challenge leaderboard
+
+Here are the current top 10 forecasters in the UK forecasting challenge: 
+
+![](../../../crowdforecasting-challenge/leaderboard-week-2.png). The leaderboard for the UK Crowd Forecasting Challenge is [here](https://epiforecasts.io/uk-challenge). 
 
 <br>
 
 ### Forecast and Performance overview
 
-Now, let's have a look at last weeks forecasts and performance! Here is an overview of last week's forecasts for the locations you forecasted (or Germany, Poland and UK if you didn’t make a forecast) and the ensemble forecast. Depending on the number of locations you forecasted, this might look a bit crammed. You can find more detailed information on our performance board [here](https://epiforecasts.io/europe-covid-forecast). You can also find the evaluation for the European Forecast Hub [here](https://covid19forecasthub.eu/reports.html). 
+Now, let's have a look at last weeks forecasts and performance! Here is an overview of last week's forecasts for the locations you forecasted (or Germany, Poland and UK if you didn’t make a forecast) and the ensemble forecast. Depending on the number of locations you forecasted, this might look a bit crammed. You can find more detailed information on our performance board [here](https://epiforecasts.io/crowd-evaluation). You can also find the evaluation for the European Forecast Hub [here](https://covid19forecasthub.eu/reports.html). 
 
 
 ```{r plot-forecasts, echo=FALSE, out.width="49%", fig.show="hold"}
@@ -173,7 +185,7 @@ table %>%
 
 *And here is a plot with the rank by date and target of all active forecasters over time:*
 
-```{r rank-over-time, echo=FALSE, fig.align = "center", fig.width=10, fig.height=8, out.width="80%"}
+```{r rank-over-time, echo=FALSE, fig.align = "center", fig.width=10, fig.height=10, out.width="80%"}
 scores <- scoringutils::eval_forecasts(data[location_name %in% forecasted_locations],
                                          summarise_by = c("model", 
                                                           "location_name", 
@@ -208,7 +220,7 @@ Thank you very much for your support and participation. We very much appreciate 
 
 Best wishes, 
 
-Nikos for the Epiforecasts team
+Nikos for the epiforecasts team
 
 <br>
 
