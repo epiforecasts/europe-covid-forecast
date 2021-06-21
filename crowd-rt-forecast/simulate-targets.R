@@ -117,10 +117,18 @@ fwrite(all_forecasts,
 
 
 # create ensemble
+median_ensemble <- TRUE
+
+if (median_ensemble) {
+  aggregate_function <- getFunction("median")
+} else {
+  aggregate_function <- getFunction("mean")
+}
+
 submission <- all_forecasts %>%
   dplyr::group_by(location, target, type, quantile, 
                   target_end_date, forecast_date, scenario_id) %>%
-  dplyr::summarise(value = mean(value)) %>%
+  dplyr::summarise(value = aggregate_function(value)) %>%
   dplyr::ungroup()
 
 submission_folder <- here("submissions", "crowd-rt-forecasts", target_date)

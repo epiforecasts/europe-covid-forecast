@@ -32,8 +32,17 @@ rt_forecasts <- data.table::fread(file_paths[2])[, .(board_name = model,
 crowd_forecasts <- rbind(direct_forecasts, rt_forecasts)
 setDT(crowd_forecasts)
 
-# create mean ensemble for submission
-submission <- crowd_forecasts[, .(value = mean(value)), 
+
+median_ensemble <- TRUE
+
+if (median_ensemble) {
+  aggregate_function <- getFunction("median")
+} else {
+  aggregate_function <- getFunction("mean")
+}
+
+# create ensemble for submission
+submission <- crowd_forecasts[, .(value = aggregate_function(value)), 
                               by = c("location", "type", "quantile", 
                                      "target_end_date", "target", 
                                      "scenario_id")]
