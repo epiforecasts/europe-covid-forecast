@@ -49,12 +49,13 @@ for (forecast_date in forecast_dates) {
                        strip.placement = "outside") + 
         scale_y_continuous(labels = scales::comma) + 
         expand_limits(y = 0) + 
-        coord_cartesian(ylim = c(0, NA)) + 
-        labs(x = "Date")
+        coord_cartesian(ylim = c(0, NA)) 
       
       if (is.null(plot)) {
         print("no forecasts available")
       } else {
+        plot <- plot + 
+          labs(x = "Date")
         print(plot)
       }
     }
