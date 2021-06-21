@@ -19,11 +19,13 @@ library(scoringutils)
 library(ggplot2)
 library(dplyr)
 library(DT)
+library(data.table)
 library(here)
 library(knitr)
 library(covidHubUtils)
 library(lubridate)
 library(purrr)
+options(knitr.duplicate.label = "allow")
 knitr::opts_chunk$set(echo = FALSE, 
                       message = FALSE, 
                       warning = FALSE)
