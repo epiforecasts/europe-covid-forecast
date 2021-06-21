@@ -164,29 +164,24 @@ forecast_quantiles <- forecast_quantiles %>%
 # forecast_quantiles <- left_join(forecast_quantiles, 
 #                                 targets_to_keep)
 
-  
+# make ensemble
+median_ensemble <- TRUE
 if (median_ensemble) {
-  # make median ensemble
-  forecast_inc <- forecast_quantiles %>%
-    mutate(target_end_date = as.Date(target_end_date)) %>%
-    group_by(location, location_name, target, target_type,
-     quantile, horizon, target_end_date) %>%
-    summarise(value = median(value)) %>%
-    ungroup() %>%
-    select(target, target_end_date, location, target_type, type,
-     quantile, value, location_name)
+  aggregate_function <- getFunction("median")
 } else {
-  # make mean ensemble
-  forecast_inc <- forecast_quantiles %>%
-    mutate(target_end_date = as.Date(target_end_date), 
-           type = "quantile") %>%
-    group_by(location, location_name, target, target_type, type,
-     quantile, horizon, target_end_date) %>%
-    summarise(value = mean(value)) %>%
-    ungroup() %>%
-    select(target, target_end_date, location, type,
-    target_type, quantile, value, location_name)
+  aggregate_function <- getFunction("mean")
 }
+
+forecast_inc <- forecast_quantiles %>%
+  mutate(target_end_date = as.Date(target_end_date), 
+         type = "quantile") %>%
+  group_by(location, location_name, target, target_type, type,
+           quantile, horizon, target_end_date) %>%
+  summarise(value = aggregate_function(value)) %>%
+  ungroup() %>%
+  select(target, target_end_date, location, type,
+         target_type, quantile, value, location_name)
+
 # add point forecast
   forecast_inc <- bind_rows(forecast_inc, 
     forecast_inc %>%
