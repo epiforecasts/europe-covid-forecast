@@ -84,6 +84,6 @@ format_forecast <- function(forecasts,
     forecasts_format[, c("horizon", "submission_date", "location_name") := NULL]
 
   forecasts_format <- 
-    forecasts_format[, value := ifelse(value > max_value, max_value, value)]
+    forecasts_format[, value := ifelse(value > max_value, round(max_value), round(value))]
   return(forecasts_format)
 }
