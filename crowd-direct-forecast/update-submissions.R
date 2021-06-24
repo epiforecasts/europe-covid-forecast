@@ -16,7 +16,7 @@ identification_sheet <- "1GJ5BNcN1UfAlZSkYwgr1-AxgsVA2wtwQ9bRwZ64ZXRQ"
 
 # setup ------------------------------------------------------------------------
 submission_date <- latest_weekday()
-median_ensemble <- FALSE
+median_ensemble <- TRUE
 # grid of quantiles to obtain / submit from forecasts
 quantile_grid <- c(0.01, 0.025, seq(0.05, 0.95, 0.05), 0.975, 0.99)
 
@@ -165,7 +165,6 @@ forecast_quantiles <- forecast_quantiles %>%
 #                                 targets_to_keep)
 
 # make ensemble
-median_ensemble <- TRUE
 if (median_ensemble) {
   aggregate_function <- getFunction("median")
 } else {
@@ -183,16 +182,17 @@ forecast_inc <- forecast_quantiles %>%
          target_type, quantile, value, location_name)
 
 # add point forecast
-  forecast_inc <- bind_rows(forecast_inc, 
-    forecast_inc %>%
-      dplyr::filter(quantile == 0.5) %>%
-      mutate(type = "point",
-      quantile = NA))
+forecast_inc <- bind_rows(forecast_inc, 
+                          forecast_inc %>%
+                            dplyr::filter(quantile == 0.5) %>%
+                            mutate(type = "point",
+                                   quantile = NA))
 
 forecast_submission <- forecast_inc %>%
   mutate(forecast_date = submission_date, 
          scenario_id = "forecast") %>%
-  select(-target_type, -location_name)
+  select(-target_type, -location_name) %>%
+  mutate(value = round(value))
 
 # write submission file --------------------------------------------------------
 check_dir(here("submissions", "crowd-direct-forecasts", submission_date))

@@ -129,7 +129,8 @@ submission <- all_forecasts %>%
   dplyr::group_by(location, target, type, quantile, 
                   target_end_date, forecast_date, scenario_id) %>%
   dplyr::summarise(value = aggregate_function(value)) %>%
-  dplyr::ungroup()
+  dplyr::ungroup() %>%
+  dpyr::mutate(value = round(value))
 
 submission_folder <- here("submissions", "crowd-rt-forecasts", target_date)
 check_dir(submission_folder)

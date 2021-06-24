@@ -47,6 +47,7 @@ submission <- crowd_forecasts[, .(value = aggregate_function(value)),
                                      "target_end_date", "target", 
                                      "scenario_id")]
 submission[, forecast_date := latest_weekday()]
+submission[, value := round(value)]
 
 # write submission file
 submission_folder <- here("submissions", "crowd-forecasts", submission_date)
