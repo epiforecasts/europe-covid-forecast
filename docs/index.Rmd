@@ -6,7 +6,10 @@ output:
     toc: false
     toc_float: false
 ---
-  
+
+This is an overall evaluation of all crowd forecasts.
+**Find the leaderboard for the UK Crowd Forecasting Challenge [here](https://epiforecasts.io/uk-challenge).** 
+
 Choose the date and type of report you wish do view using the dropdown menu. The _Ensemble_ report shows the recent forecasts and performance of the crowd ensemble, whereas the _Evaluation_ report shows performance and forecasts for individual forecasters, overall and by country. The reports get updated every Tuesday.
 
 ```{r load, include = FALSE}
