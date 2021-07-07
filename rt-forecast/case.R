@@ -37,7 +37,7 @@ rt <- opts_list(
 )
 # add population adjustment for each country
 loc_names <- names(rt)
-rt <- lapply(loc_names,  function(loc, proc_pop = 0.2) {
+rt <- lapply(loc_names,  function(loc, proc_pop = 0.6) {
   rt_loc <- rt[[loc]]
   rt_loc$pop <- locations[location_name %in% loc, ]$population
   rt_loc$pop <- as.integer(rt_loc$pop * proc_pop)
