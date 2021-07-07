@@ -258,23 +258,57 @@ out <- c(out, "Visualisation of the weighted interval score over time. In",
 
 `r paste(knit(text = out), collapse = '\n\n')`
 
-```{r forecast-and-scores, include = FALSE}
-out <- NULL
+## Number of participants 
 
-for (this_horizon in horizons) {
-  horizon_string <-
-    paste0(this_horizon, " week", if_else(this_horizon > 1, "s", ""),
-           " ahead horizon {.tabset .tabset-fade}\n\n ")
-    out <- c(out, paste("\n\n###", horizon_string, "\n\n"))
-    out <- c(out, knit_child(here::here("reports", "evaluation",
-                                        "template-scores-and-truth-time.Rmd"),
-                             quiet = TRUE))
-  }
+``` {r}
+
+
+
+dt <- data[!(model %in% c("Crowd-Rt-Forecast",
+                          "EpiNow2_secondary", 
+                          "EpiExpert-ensemble", 
+                          "EpiNow2")), 
+           .(`number of forecasters` = length(unique(model))), , 
+           by = c("forecast_date", "location_name", "target_variable")
+][order(forecast_date)][
+  !is.na(forecast_date)][
+    location_name == "United Kingdom"
+  ]
+
+dt[, .(sd = sd(`number of forecasters`), 
+                             mean = mean(`number of forecasters`), 
+                             min  = min(`number of forecasters`), 
+                             max = max(`number of forecasters`), 
+                             median = median(`number of forecasters`)), 
+   by = c("location_name", "target_variable")] 
+
+dt %>%
+  ggplot(aes(y = `number of forecasters`, 
+             x = forecast_date, 
+             group = target_variable)) + 
+  geom_line() + 
+  geom_point() + 
+  facet_grid(target_variable ~ .) + 
+  theme_minimal() + 
+  labs(x = "Forecast date")
 ```
 
-`r paste(knit(text = out), collapse = '\n\n')`
 
-If you want to learn more about a model, you can go the the 'data-processed'-folder of the [European Forecast Hub github repository](https://github.com/epiforecasts/covid19-forecast-hub-europe), select a model and access the metadata file with further information provided by the model authors. 
+<!-- # ```{r forecast-and-scores, include = FALSE} -->
+<!-- out <- NULL -->
+
+<!-- for (this_horizon in horizons) { -->
+<!--   horizon_string <- -->
+<!--     paste0(this_horizon, " week", if_else(this_horizon > 1, "s", ""), -->
+<!--            " ahead horizon {.tabset .tabset-fade}\n\n ") -->
+<!--     out <- c(out, paste("\n\n###", horizon_string, "\n\n")) -->
+<!--     out <- c(out, knit_child(here::here("reports", "evaluation", -->
+<!--                                         "template-scores-and-truth-time.Rmd"), -->
+<!--                              quiet = TRUE)) -->
+<!--   } -->
+<!-- ``` -->
+
+<!-- `r paste(knit(text = out), collapse = '\n\n')` -->
 
 
 
