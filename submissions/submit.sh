@@ -17,7 +17,7 @@ cd ../covid19-forecast-hub-europe
 git checkout main
 git pull 
 # Switch to submission branch
-git checkout -b submission4
+git checkout -b submission5
 git merge -Xtheirs main
 
 # Move back into forecast repository
@@ -43,5 +43,5 @@ gh pr create --title "$ForecastDate - EpiForecast submission" --body " This is a
 
 # Remove local submission branch 
 git checkout main
-git branch -D submission4
+git branch -D submission5
 cd ../europe-covid-forecast
