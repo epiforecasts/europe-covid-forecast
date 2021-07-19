@@ -45,7 +45,7 @@ include_countries <- include_forecast_plot ||
 
 
 ```{r prepare-data}
-data <- params$data
+data <- params$data[location_name == "United Kingdom"]
 
 horizons <- 1:4
 
