@@ -87,7 +87,7 @@ You can always find more information about the project on [www.crowdforecastr.or
 
 Here are the current top 10 forecasters in the UK forecasting challenge: 
 
-![](../../../crowdforecasting-challenge/leaderboard-week-7.png). The entire leaderboard for the UK Crowd Forecasting Challenge is [here](https://epiforecasts.io/uk-challenge). 
+![](../../../crowdforecasting-challenge/leaderboard-week-8.png). The entire leaderboard for the UK Crowd Forecasting Challenge is [here](https://epiforecasts.io/uk-challenge). 
 
 <br>
 
