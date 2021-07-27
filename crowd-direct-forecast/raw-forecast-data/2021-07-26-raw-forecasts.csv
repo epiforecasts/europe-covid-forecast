@@ -1,312 +1,24 @@
 forecaster_id,forecast_date,expert,leaderboard,distribution,median,width,horizon,target_end_date,submission_date,location_name,target_type,location,inc_hosp,inc_case,inc_death,forecast_duration,forecast_week
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-297158,2021-07-18T00:00:00Z,FALSE,yes,log-normal,382617,0.11,1,2021-07-24,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-297158,2021-07-18T00:00:00Z,FALSE,yes,log-normal,468703,0.12,2,2021-07-31,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-297158,2021-07-18T00:00:00Z,FALSE,yes,log-normal,554703,0.13,3,2021-08-07,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-297158,2021-07-18T00:00:00Z,FALSE,yes,log-normal,640703,0.14,4,2021-08-14,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-297158,2021-07-18T00:00:00Z,FALSE,yes,log-normal,376,0.18,1,2021-07-24,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,1.80231235027313,29
-297158,2021-07-18T00:00:00Z,FALSE,yes,log-normal,468,0.198,2,2021-07-31,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,1.80231235027313,29
-297158,2021-07-18T00:00:00Z,FALSE,yes,log-normal,560,0.216,3,2021-08-07,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,1.80231235027313,29
-297158,2021-07-18T00:00:00Z,FALSE,yes,log-normal,652,0.234,4,2021-08-14,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,1.80231235027313,29
-427811,2021-07-18T00:00:00Z,FALSE,anonymous,log-normal,433000,0.09,1,2021-07-24,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-427811,2021-07-18T00:00:00Z,FALSE,anonymous,log-normal,545000,0.12,2,2021-07-31,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-427811,2021-07-18T00:00:00Z,FALSE,anonymous,log-normal,649000,0.15,3,2021-08-07,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-427811,2021-07-18T00:00:00Z,FALSE,anonymous,log-normal,733000,0.18,4,2021-08-14,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-427811,2021-07-18T00:00:00Z,FALSE,anonymous,log-normal,405,0.12,1,2021-07-24,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,13.1609239180883,29
-427811,2021-07-18T00:00:00Z,FALSE,anonymous,log-normal,608,0.147,2,2021-07-31,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,13.1609239180883,29
-427811,2021-07-18T00:00:00Z,FALSE,anonymous,log-normal,875,0.173,3,2021-08-07,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,13.1609239180883,29
-427811,2021-07-18T00:00:00Z,FALSE,anonymous,log-normal,1174,0.2,4,2021-08-14,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,13.1609239180883,29
-778898,2021-07-18T00:00:00Z,FALSE,yes,log-normal,384012,0.11,1,2021-07-24,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-778898,2021-07-18T00:00:00Z,FALSE,yes,log-normal,450211,0.157,2,2021-07-31,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-778898,2021-07-18T00:00:00Z,FALSE,yes,log-normal,495000,0.203,3,2021-08-07,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-778898,2021-07-18T00:00:00Z,FALSE,yes,log-normal,494000,0.25,4,2021-08-14,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-467474,2021-07-19T00:00:00Z,FALSE,yes,log-normal,390000,0.11,1,2021-07-24,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-467474,2021-07-19T00:00:00Z,FALSE,yes,log-normal,510000,0.207,2,2021-07-31,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-467474,2021-07-19T00:00:00Z,FALSE,yes,log-normal,660000,0.303,3,2021-08-07,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-467474,2021-07-19T00:00:00Z,FALSE,yes,log-normal,950000,0.4,4,2021-08-14,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-467474,2021-07-19T00:00:00Z,FALSE,yes,log-normal,400,0.234,1,2021-07-24,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,61.1191182136536,29
-467474,2021-07-19T00:00:00Z,FALSE,yes,log-normal,550,0.289,2,2021-07-31,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,61.1191182136536,29
-467474,2021-07-19T00:00:00Z,FALSE,yes,log-normal,700,0.345,3,2021-08-07,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,61.1191182136536,29
-467474,2021-07-19T00:00:00Z,FALSE,yes,log-normal,850,0.4,4,2021-08-14,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,61.1191182136536,29
-253412,2021-07-19T00:00:00Z,TRUE,yes,log-normal,424058.44,0.2,1,2021-07-24,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-253412,2021-07-19T00:00:00Z,TRUE,yes,log-normal,616304.75,0.333,2,2021-07-31,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-253412,2021-07-19T00:00:00Z,TRUE,yes,log-normal,836804.41,0.467,3,2021-08-07,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-253412,2021-07-19T00:00:00Z,TRUE,yes,log-normal,997568.58,0.6,4,2021-08-14,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-253412,2021-07-19T00:00:00Z,TRUE,yes,log-normal,417.81,0.2,1,2021-07-24,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,54.5354809761047,29
-253412,2021-07-19T00:00:00Z,TRUE,yes,log-normal,599.64,0.333,2,2021-07-31,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,54.5354809761047,29
-253412,2021-07-19T00:00:00Z,TRUE,yes,log-normal,804.67,0.467,3,2021-08-07,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,54.5354809761047,29
-253412,2021-07-19T00:00:00Z,TRUE,yes,log-normal,1057.91,0.6,4,2021-08-14,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,54.5354809761047,29
-399323,2021-07-19T00:00:00Z,FALSE,yes,log-normal,367172.65,0.11,1,2021-07-24,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-399323,2021-07-19T00:00:00Z,FALSE,yes,log-normal,428256.67,0.137,2,2021-07-31,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-399323,2021-07-19T00:00:00Z,FALSE,yes,log-normal,499560.09,0.163,3,2021-08-07,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-399323,2021-07-19T00:00:00Z,FALSE,yes,log-normal,594977.2,0.19,4,2021-08-14,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-399323,2021-07-19T00:00:00Z,FALSE,yes,log-normal,367172.65,0.11,1,2021-07-24,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,28.3790736198425,29
-399323,2021-07-19T00:00:00Z,FALSE,yes,log-normal,428256.67,0.137,2,2021-07-31,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,28.3790736198425,29
-399323,2021-07-19T00:00:00Z,FALSE,yes,log-normal,499560.09,0.163,3,2021-08-07,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,28.3790736198425,29
-399323,2021-07-19T00:00:00Z,FALSE,yes,log-normal,580611.12,0.19,4,2021-08-14,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,28.3790736198425,29
-715433,2021-07-19T00:00:00Z,TRUE,yes,log-normal,335000,0.08,1,2021-07-24,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-715433,2021-07-19T00:00:00Z,TRUE,yes,log-normal,353887.58,0.083,2,2021-07-31,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-715433,2021-07-19T00:00:00Z,TRUE,yes,log-normal,366369.38,0.087,3,2021-08-07,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-715433,2021-07-19T00:00:00Z,TRUE,yes,log-normal,374657.09,0.09,4,2021-08-14,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-715433,2021-07-19T00:00:00Z,TRUE,yes,log-normal,330,0.15,1,2021-07-24,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,1.55599748293559,29
-715433,2021-07-19T00:00:00Z,TRUE,yes,log-normal,380,0.167,2,2021-07-31,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,1.55599748293559,29
-715433,2021-07-19T00:00:00Z,TRUE,yes,log-normal,410,0.183,3,2021-08-07,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,1.55599748293559,29
-715433,2021-07-19T00:00:00Z,TRUE,yes,log-normal,425,0.2,4,2021-08-14,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,1.55599748293559,29
-515822,2021-07-19T00:00:00Z,TRUE,yes,log-normal,375020.6,0.11,1,2021-07-24,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-515822,2021-07-19T00:00:00Z,TRUE,yes,log-normal,581534.51,0.14,2,2021-07-31,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-515822,2021-07-19T00:00:00Z,TRUE,yes,log-normal,768702.71,0.17,3,2021-08-07,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-515822,2021-07-19T00:00:00Z,TRUE,yes,log-normal,878275.13,0.2,4,2021-08-14,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-515822,2021-07-19T00:00:00Z,TRUE,yes,log-normal,373.99,0.05,1,2021-07-24,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,35.5757617950439,29
-515822,2021-07-19T00:00:00Z,TRUE,yes,log-normal,538.75,0.1,2,2021-07-31,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,35.5757617950439,29
-515822,2021-07-19T00:00:00Z,TRUE,yes,log-normal,736.83,0.15,3,2021-08-07,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,35.5757617950439,29
-515822,2021-07-19T00:00:00Z,TRUE,yes,log-normal,991.33,0.2,4,2021-08-14,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,35.5757617950439,29
-515822,2021-07-19T00:00:00Z,TRUE,yes,log-normal,798.05,0.05,1,2021-07-24,2021-07-19T00:00:00Z,Poland,cases,PL,,JHU,JHU,28.7851190567017,29
-515822,2021-07-19T00:00:00Z,TRUE,yes,log-normal,1259.55,0.1,2,2021-07-31,2021-07-19T00:00:00Z,Poland,cases,PL,,JHU,JHU,28.7851190567017,29
-515822,2021-07-19T00:00:00Z,TRUE,yes,log-normal,1847.35,0.15,3,2021-08-07,2021-07-19T00:00:00Z,Poland,cases,PL,,JHU,JHU,28.7851190567017,29
-515822,2021-07-19T00:00:00Z,TRUE,yes,log-normal,2174.35,0.2,4,2021-08-14,2021-07-19T00:00:00Z,Poland,cases,PL,,JHU,JHU,28.7851190567017,29
-515822,2021-07-19T00:00:00Z,TRUE,yes,log-normal,45.68,0.1,1,2021-07-24,2021-07-19T00:00:00Z,Poland,deaths,PL,,JHU,JHU,14.7873682975769,29
-515822,2021-07-19T00:00:00Z,TRUE,yes,log-normal,36.6,0.2,2,2021-07-31,2021-07-19T00:00:00Z,Poland,deaths,PL,,JHU,JHU,14.7873682975769,29
-515822,2021-07-19T00:00:00Z,TRUE,yes,log-normal,32.91,0.3,3,2021-08-07,2021-07-19T00:00:00Z,Poland,deaths,PL,,JHU,JHU,14.7873682975769,29
-515822,2021-07-19T00:00:00Z,TRUE,yes,log-normal,29.31,0.4,4,2021-08-14,2021-07-19T00:00:00Z,Poland,deaths,PL,,JHU,JHU,14.7873682975769,29
-515822,2021-07-19T00:00:00Z,TRUE,yes,log-normal,12224.5,0.05,1,2021-07-24,2021-07-19T00:00:00Z,Germany,cases,DE,,JHU,JHU,27.1290907859802,29
-515822,2021-07-19T00:00:00Z,TRUE,yes,log-normal,20199.55,0.1,2,2021-07-31,2021-07-19T00:00:00Z,Germany,cases,DE,,JHU,JHU,27.1290907859802,29
-515822,2021-07-19T00:00:00Z,TRUE,yes,log-normal,32278.38,0.15,3,2021-08-07,2021-07-19T00:00:00Z,Germany,cases,DE,,JHU,JHU,27.1290907859802,29
-515822,2021-07-19T00:00:00Z,TRUE,yes,log-normal,48239.21,0.2,4,2021-08-14,2021-07-19T00:00:00Z,Germany,cases,DE,,JHU,JHU,27.1290907859802,29
-515822,2021-07-19T00:00:00Z,TRUE,yes,log-normal,102.82,0.062,1,2021-07-24,2021-07-19T00:00:00Z,Germany,deaths,DE,,JHU,JHU,32.2382760047913,29
-515822,2021-07-19T00:00:00Z,TRUE,yes,log-normal,79.01,0.141,2,2021-07-31,2021-07-19T00:00:00Z,Germany,deaths,DE,,JHU,JHU,32.2382760047913,29
-515822,2021-07-19T00:00:00Z,TRUE,yes,log-normal,64.61,0.221,3,2021-08-07,2021-07-19T00:00:00Z,Germany,deaths,DE,,JHU,JHU,32.2382760047913,29
-515822,2021-07-19T00:00:00Z,TRUE,yes,log-normal,62.91,0.3,4,2021-08-14,2021-07-19T00:00:00Z,Germany,deaths,DE,,JHU,JHU,32.2382760047913,29
-996366,2021-07-19T00:00:00Z,TRUE,yes,log-normal,361822.36,0.11,1,2021-07-24,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-996366,2021-07-19T00:00:00Z,TRUE,yes,log-normal,479358.75,0.14,2,2021-07-31,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-996366,2021-07-19T00:00:00Z,TRUE,yes,log-normal,612162.67,0.17,3,2021-08-07,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-996366,2021-07-19T00:00:00Z,TRUE,yes,log-normal,736976.46,0.2,4,2021-08-14,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-996366,2021-07-19T00:00:00Z,TRUE,yes,log-normal,389.13,0.234,1,2021-07-24,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,1.26495762666066,29
-996366,2021-07-19T00:00:00Z,TRUE,yes,log-normal,575.38,0.245,2,2021-07-31,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,1.26495762666066,29
-996366,2021-07-19T00:00:00Z,TRUE,yes,log-normal,831.13,0.255,3,2021-08-07,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,1.26495762666066,29
-996366,2021-07-19T00:00:00Z,TRUE,yes,log-normal,1121.9,0.266,4,2021-08-14,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,1.26495762666066,29
-996366,2021-07-19T00:00:00Z,TRUE,yes,log-normal,11958.94,0.348,1,2021-07-24,2021-07-19T00:00:00Z,Germany,cases,DE,,JHU,JHU,4.01025902430216,29
-996366,2021-07-19T00:00:00Z,TRUE,yes,log-normal,18990.85,0.372,2,2021-07-31,2021-07-19T00:00:00Z,Germany,cases,DE,,JHU,JHU,4.01025902430216,29
-996366,2021-07-19T00:00:00Z,TRUE,yes,log-normal,30031.27,0.395,3,2021-08-07,2021-07-19T00:00:00Z,Germany,cases,DE,,JHU,JHU,4.01025902430216,29
-996366,2021-07-19T00:00:00Z,TRUE,yes,log-normal,46805.6,0.419,4,2021-08-14,2021-07-19T00:00:00Z,Germany,cases,DE,,JHU,JHU,4.01025902430216,29
-996366,2021-07-19T00:00:00Z,TRUE,yes,log-normal,106.09,0.249,1,2021-07-24,2021-07-19T00:00:00Z,Germany,deaths,DE,,JHU,JHU,1.55846304098765,29
-996366,2021-07-19T00:00:00Z,TRUE,yes,log-normal,89.67,0.414,2,2021-07-31,2021-07-19T00:00:00Z,Germany,deaths,DE,,JHU,JHU,1.55846304098765,29
-996366,2021-07-19T00:00:00Z,TRUE,yes,log-normal,92.31,0.579,3,2021-08-07,2021-07-19T00:00:00Z,Germany,deaths,DE,,JHU,JHU,1.55846304098765,29
-996366,2021-07-19T00:00:00Z,TRUE,yes,log-normal,115.89,0.744,4,2021-08-14,2021-07-19T00:00:00Z,Germany,deaths,DE,,JHU,JHU,1.55846304098765,29
-496375,2021-07-19T00:00:00Z,FALSE,yes,log-normal,384612.9,0.1,1,2021-07-24,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-496375,2021-07-19T00:00:00Z,FALSE,yes,log-normal,468354.01,0.133,2,2021-07-31,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-496375,2021-07-19T00:00:00Z,FALSE,yes,log-normal,554203.94,0.167,3,2021-08-07,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-496375,2021-07-19T00:00:00Z,FALSE,yes,log-normal,671477.94,0.2,4,2021-08-14,2021-07-19T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,29
-496375,2021-07-19T00:00:00Z,FALSE,yes,log-normal,366.41,0.15,1,2021-07-24,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,55.9971880912781,29
-496375,2021-07-19T00:00:00Z,FALSE,yes,log-normal,470.97,0.183,2,2021-07-31,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,55.9971880912781,29
-496375,2021-07-19T00:00:00Z,FALSE,yes,log-normal,591.53,0.217,3,2021-08-07,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,55.9971880912781,29
-496375,2021-07-19T00:00:00Z,FALSE,yes,log-normal,760.88,0.25,4,2021-08-14,2021-07-19T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,55.9971880912781,29
-297158,2021-07-25T00:00:00Z,FALSE,yes,log-normal,275718.76,0.15,1,2021-07-31,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,10691.0159031312,30
-297158,2021-07-25T00:00:00Z,FALSE,yes,log-normal,265659.2,0.178,2,2021-08-07,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,10691.0159031312,30
-297158,2021-07-25T00:00:00Z,FALSE,yes,log-normal,258659,0.206,3,2021-08-14,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,10691.0159031312,30
-297158,2021-07-25T00:00:00Z,FALSE,yes,log-normal,253659,0.234,4,2021-08-21,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,10691.0159031312,30
+297158,2021-07-25T00:00:00Z,FALSE,yes,log-normal,275718.76,0.15,1,2021-07-31,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,30
+297158,2021-07-25T00:00:00Z,FALSE,yes,log-normal,265659.2,0.178,2,2021-08-07,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,30
+297158,2021-07-25T00:00:00Z,FALSE,yes,log-normal,258659,0.206,3,2021-08-14,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,30
+297158,2021-07-25T00:00:00Z,FALSE,yes,log-normal,253659,0.234,4,2021-08-21,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,30
 297158,2021-07-25T00:00:00Z,FALSE,yes,log-normal,610,0.2,1,2021-07-31,2021-07-26T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,1.95897959868113,30
 297158,2021-07-25T00:00:00Z,FALSE,yes,log-normal,750,0.233,2,2021-08-07,2021-07-26T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,1.95897959868113,30
 297158,2021-07-25T00:00:00Z,FALSE,yes,log-normal,870,0.267,3,2021-08-14,2021-07-26T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,1.95897959868113,30
 297158,2021-07-25T00:00:00Z,FALSE,yes,log-normal,970,0.3,4,2021-08-21,2021-07-26T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,1.95897959868113,30
-253412,2021-07-26T00:00:00Z,TRUE,yes,log-normal,286410.94,0.4,1,2021-07-31,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,602899.292681217,30
-253412,2021-07-26T00:00:00Z,TRUE,yes,log-normal,289207.96,0.533,2,2021-08-07,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,602899.292681217,30
-253412,2021-07-26T00:00:00Z,TRUE,yes,log-normal,285896.16,0.667,3,2021-08-14,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,602899.292681217,30
-253412,2021-07-26T00:00:00Z,TRUE,yes,log-normal,275494.13,0.8,4,2021-08-21,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,602899.292681217,30
+253412,2021-07-26T00:00:00Z,TRUE,yes,log-normal,286410.94,0.4,1,2021-07-31,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,30
+253412,2021-07-26T00:00:00Z,TRUE,yes,log-normal,289207.96,0.533,2,2021-08-07,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,30
+253412,2021-07-26T00:00:00Z,TRUE,yes,log-normal,285896.16,0.667,3,2021-08-14,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,30
+253412,2021-07-26T00:00:00Z,TRUE,yes,log-normal,275494.13,0.8,4,2021-08-21,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,30
 253412,2021-07-26T00:00:00Z,TRUE,yes,log-normal,664.67,0.2,1,2021-07-31,2021-07-26T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,58.738175868988,30
 253412,2021-07-26T00:00:00Z,TRUE,yes,log-normal,997.26,0.3,2,2021-08-07,2021-07-26T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,58.738175868988,30
 253412,2021-07-26T00:00:00Z,TRUE,yes,log-normal,1280.76,0.4,3,2021-08-14,2021-07-26T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,58.738175868988,30
 253412,2021-07-26T00:00:00Z,TRUE,yes,log-normal,1381.65,0.5,4,2021-08-21,2021-07-26T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,58.738175868988,30
-467474,2021-07-26T00:00:00Z,FALSE,yes,log-normal,282920,0.234,1,2021-07-31,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,607876.31304884,30
-467474,2021-07-26T00:00:00Z,FALSE,yes,log-normal,282920,0.567,2,2021-08-07,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,607876.31304884,30
-467474,2021-07-26T00:00:00Z,FALSE,yes,log-normal,282920,0.901,3,2021-08-14,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,607876.31304884,30
-467474,2021-07-26T00:00:00Z,FALSE,yes,log-normal,282920,1.234,4,2021-08-21,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,607876.31304884,30
+467474,2021-07-26T00:00:00Z,FALSE,yes,log-normal,282920,0.234,1,2021-07-31,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,30
+467474,2021-07-26T00:00:00Z,FALSE,yes,log-normal,282920,0.567,2,2021-08-07,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,30
+467474,2021-07-26T00:00:00Z,FALSE,yes,log-normal,282920,0.901,3,2021-08-14,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,30
+467474,2021-07-26T00:00:00Z,FALSE,yes,log-normal,282920,1.234,4,2021-08-21,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,30
 467474,2021-07-26T00:00:00Z,FALSE,yes,log-normal,700,0.23,1,2021-07-31,2021-07-26T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,29.2292146682739,30
 467474,2021-07-26T00:00:00Z,FALSE,yes,log-normal,1000,0.563,2,2021-08-07,2021-07-26T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,29.2292146682739,30
 467474,2021-07-26T00:00:00Z,FALSE,yes,log-normal,1000,0.897,3,2021-08-14,2021-07-26T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,29.2292146682739,30
@@ -383,10 +95,10 @@ forecaster_id,forecast_date,expert,leaderboard,distribution,median,width,horizon
 733288,2021-07-26T00:00:00Z,FALSE,yes,log-normal,495.34,0.269,2,2021-08-07,2021-07-26T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,,30
 733288,2021-07-26T00:00:00Z,FALSE,yes,log-normal,447,0.307,3,2021-08-14,2021-07-26T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,,30
 733288,2021-07-26T00:00:00Z,FALSE,yes,log-normal,399.84,0.346,4,2021-08-21,2021-07-26T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,,30
-427811,2021-07-26T00:00:00Z,FALSE,anonymous,log-normal,220000,0.12,1,2021-07-31,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,11276.7284675519,30
-427811,2021-07-26T00:00:00Z,FALSE,anonymous,log-normal,243000,0.163,2,2021-08-07,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,11276.7284675519,30
-427811,2021-07-26T00:00:00Z,FALSE,anonymous,log-normal,278000,0.207,3,2021-08-14,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,11276.7284675519,30
-427811,2021-07-26T00:00:00Z,FALSE,anonymous,log-normal,282000,0.25,4,2021-08-21,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,11276.7284675519,30
+427811,2021-07-26T00:00:00Z,FALSE,anonymous,log-normal,220000,0.12,1,2021-07-31,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,30
+427811,2021-07-26T00:00:00Z,FALSE,anonymous,log-normal,243000,0.163,2,2021-08-07,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,30
+427811,2021-07-26T00:00:00Z,FALSE,anonymous,log-normal,278000,0.207,3,2021-08-14,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,30
+427811,2021-07-26T00:00:00Z,FALSE,anonymous,log-normal,282000,0.25,4,2021-08-21,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,30
 427811,2021-07-26T00:00:00Z,FALSE,anonymous,log-normal,608,0.1,1,2021-07-31,2021-07-26T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,3.38395249048869,30
 427811,2021-07-26T00:00:00Z,FALSE,anonymous,log-normal,670,0.133,2,2021-08-07,2021-07-26T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,3.38395249048869,30
 427811,2021-07-26T00:00:00Z,FALSE,anonymous,log-normal,644,0.167,3,2021-08-14,2021-07-26T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,3.38395249048869,30
@@ -443,10 +155,10 @@ forecaster_id,forecast_date,expert,leaderboard,distribution,median,width,horizon
 680229,2021-07-26T00:00:00Z,FALSE,yes,log-normal,560,0.09,2,2021-08-07,2021-07-26T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,7.69513665040334,30
 680229,2021-07-26T00:00:00Z,FALSE,yes,log-normal,485,0.12,3,2021-08-14,2021-07-26T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,7.69513665040334,30
 680229,2021-07-26T00:00:00Z,FALSE,yes,log-normal,460,0.15,4,2021-08-21,2021-07-26T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,7.69513665040334,30
-515822,2021-07-26T00:00:00Z,TRUE,yes,log-normal,316084.2,0.3,1,2021-07-31,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,610668.460860729,30
-515822,2021-07-26T00:00:00Z,TRUE,yes,log-normal,384560.62,0.333,2,2021-08-07,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,610668.460860729,30
-515822,2021-07-26T00:00:00Z,TRUE,yes,log-normal,406413.36,0.367,3,2021-08-14,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,610668.460860729,30
-515822,2021-07-26T00:00:00Z,TRUE,yes,log-normal,397912.86,0.4,4,2021-08-21,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,610668.460860729,30
+515822,2021-07-26T00:00:00Z,TRUE,yes,log-normal,316084.2,0.3,1,2021-07-31,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,30
+515822,2021-07-26T00:00:00Z,TRUE,yes,log-normal,384560.62,0.333,2,2021-08-07,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,30
+515822,2021-07-26T00:00:00Z,TRUE,yes,log-normal,406413.36,0.367,3,2021-08-14,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,30
+515822,2021-07-26T00:00:00Z,TRUE,yes,log-normal,397912.86,0.4,4,2021-08-21,2021-07-26T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,30
 515822,2021-07-26T00:00:00Z,TRUE,yes,log-normal,620.69,0.1,1,2021-07-31,2021-07-26T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,31.1067991256714,30
 515822,2021-07-26T00:00:00Z,TRUE,yes,log-normal,927.23,0.167,2,2021-08-07,2021-07-26T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,31.1067991256714,30
 515822,2021-07-26T00:00:00Z,TRUE,yes,log-normal,1200.59,0.233,3,2021-08-14,2021-07-26T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,31.1067991256714,30
