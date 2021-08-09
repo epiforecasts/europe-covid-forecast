@@ -8,6 +8,7 @@ library(lubridate, quietly = TRUE)
 
 # Set target date ---------------------------------------------------------
 target_date <- get_forecast_date(dir = here("data-raw"), char = TRUE)
+print(target_date)
 
 # Update delays -----------------------------------------------------------
 generation_time <- readRDS(
