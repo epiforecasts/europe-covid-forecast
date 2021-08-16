@@ -1,0 +1,29 @@
+forecaster_id,forecast_date,expert,leaderboard,board_name,distribution,median,width,horizon,target_end_date,submission_date,region,target_type,forecast_duration,forecast_week
+297158,2021-08-15,FALSE,yes,CosmicDan,normal,1.232,0.1,1,2021-07-31,2021-08-16,United Kingdom,,,33
+297158,2021-08-15,FALSE,yes,CosmicDan,normal,0.977,0.15,2,2021-08-07,2021-08-16,United Kingdom,,,33
+297158,2021-08-15,FALSE,yes,CosmicDan,normal,1.065,0.2,3,2021-08-14,2021-08-16,United Kingdom,,,33
+297158,2021-08-15,FALSE,yes,CosmicDan,normal,1.065,0.25,4,2021-08-21,2021-08-16,United Kingdom,,,33
+297158,2021-08-15,FALSE,yes,CosmicDan,normal,1.065,0.3,5,2021-08-28,2021-08-16,United Kingdom,,,33
+297158,2021-08-15,FALSE,yes,CosmicDan,normal,1.065,0.35,6,2021-09-04,2021-08-16,United Kingdom,,,33
+297158,2021-08-15,FALSE,yes,CosmicDan,normal,1.065,0.4,7,2021-09-11,2021-08-16,United Kingdom,,,33
+515822,2021-08-16,TRUE,yes,seabbs,normal,1.198,0.01,1,2021-07-31,2021-08-16,Germany,,,33
+515822,2021-08-16,TRUE,yes,seabbs,normal,1.258,0.042,2,2021-08-07,2021-08-16,Germany,,,33
+515822,2021-08-16,TRUE,yes,seabbs,normal,1.24,0.073,3,2021-08-14,2021-08-16,Germany,,,33
+515822,2021-08-16,TRUE,yes,seabbs,normal,1.22,0.105,4,2021-08-21,2021-08-16,Germany,,,33
+515822,2021-08-16,TRUE,yes,seabbs,normal,1.12,0.137,5,2021-08-28,2021-08-16,Germany,,,33
+515822,2021-08-16,TRUE,yes,seabbs,normal,0.96,0.168,6,2021-09-04,2021-08-16,Germany,,,33
+515822,2021-08-16,TRUE,yes,seabbs,normal,0.85,0.2,7,2021-09-11,2021-08-16,Germany,,,33
+120249,2021-08-16,FALSE,yes,Layperson_21,normal,1.232,0.01,1,2021-07-31,2021-08-16,United Kingdom,,,33
+120249,2021-08-16,FALSE,yes,Layperson_21,normal,0.977,0.028,2,2021-08-07,2021-08-16,United Kingdom,,,33
+120249,2021-08-16,FALSE,yes,Layperson_21,normal,1.06,0.047,3,2021-08-14,2021-08-16,United Kingdom,,,33
+120249,2021-08-16,FALSE,yes,Layperson_21,normal,1,0.065,4,2021-08-21,2021-08-16,United Kingdom,,,33
+120249,2021-08-16,FALSE,yes,Layperson_21,normal,1.065,0.083,5,2021-08-28,2021-08-16,United Kingdom,,,33
+120249,2021-08-16,FALSE,yes,Layperson_21,normal,1.19,0.102,6,2021-09-04,2021-08-16,United Kingdom,,,33
+120249,2021-08-16,FALSE,yes,Layperson_21,normal,1.27,0.12,7,2021-09-11,2021-08-16,United Kingdom,,,33
+996366,2021-08-16,TRUE,yes,nib,normal,1.232,0.01,1,2021-07-31,2021-08-16,United Kingdom,,,33
+996366,2021-08-16,TRUE,yes,nib,normal,1.09,0.02,2,2021-08-07,2021-08-16,United Kingdom,,,33
+996366,2021-08-16,TRUE,yes,nib,normal,1.32,0.03,3,2021-08-14,2021-08-16,United Kingdom,,,33
+996366,2021-08-16,TRUE,yes,nib,normal,1.26,0.04,4,2021-08-21,2021-08-16,United Kingdom,,,33
+996366,2021-08-16,TRUE,yes,nib,normal,1.16,0.05,5,2021-08-28,2021-08-16,United Kingdom,,,33
+996366,2021-08-16,TRUE,yes,nib,normal,1.13,0.06,6,2021-09-04,2021-08-16,United Kingdom,,,33
+996366,2021-08-16,TRUE,yes,nib,normal,1.065,0.07,7,2021-09-11,2021-08-16,United Kingdom,,,33
