@@ -14,6 +14,8 @@ if (nextweek) {
   submission_date <- Sys.Date()
 }
 
+print(submission_date)
+
 check_dir(here("crowd-rt-forecast", "data-raw"))
 saveRDS(submission_date,
         here("crowd-rt-forecast", "data-raw", "submission_date.rds"))
@@ -91,3 +93,6 @@ deployApp(
   forceUpdate = TRUE,
   appFiles = c("data-raw", "app.R", ".secrets")
 )
+
+# remove old data
+unlink(here("crowd-rt-forecast", "data-raw"), recursive = TRUE)
