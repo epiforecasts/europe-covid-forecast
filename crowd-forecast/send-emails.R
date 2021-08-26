@@ -56,7 +56,7 @@ for (i in participants) {
     email,
     to = mail_address, from = "epiforecasts@gmail.com",
     credentials = creds_file(here(".secrets", "epiforecasts-email-creds")),
-    subject = paste("Crowd forecasting news and results from week 8")
+    subject = paste("Crowd forecasting news and updates")
     )
   print(i)
 }
