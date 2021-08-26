@@ -27,7 +27,7 @@ ids <- try_and_wait(read_sheet(ss = identification_sheet, sheet = "ids"))
 forecasts <- try_and_wait(read_sheet(ss = spread_sheet))
 
 # data will be deleted by the German Hub stuff that runs afterwards
-delete_data <- FALSE
+delete_data <- TRUE
 if (delete_data) {
   # add forecasts to backup sheet
   try_and_wait(

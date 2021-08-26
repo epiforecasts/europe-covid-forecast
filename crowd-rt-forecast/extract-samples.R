@@ -31,7 +31,7 @@ names_ids <- ids %>%
 	dplyr::select(c(forecaster_id, board_name)) %>%
 	unique()
 
-delete_data <- FALSE
+delete_data <- TRUE
 if (delete_data) {
   # add forecasts to backup sheet
   try_and_wait(sheet_append(ss = spread_sheet, sheet = "oldforecasts",

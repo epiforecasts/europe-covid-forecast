@@ -71,25 +71,10 @@ data <- scoringutils::merge_pred_and_obs(prediction_data, truth_data,
 
 ### Dear `r name`,
 
-The latest results from the last week of the UK Covid-19 Crowd Forecasting Challenge are in. If you like you can still join the challenge by simply submitting a forecast for the UK this week. 
-
-In addition to the app we created a small survey (2mins) that helps us learn more about how you made your predictions. Please check it out at https://forms.gle/aX5txdeng3DN7rjV9. Thank you very much!
-
-For more information on the project visit [here](https://www.crowdforecastr.org/2021/05/11/uk-challenge/). 
-
-Forecasts can be made between Sunday 12am and Monday 8pm UK time (we slightly changed these times so that we can check and process all forecasts). 
+Here are your weekly updates from the crowdforecastr project as well as a reminder to submit a forecast this week if you like. Forecasts can be made between Sunday 12am and Monday 8pm UK time (we slightly changed these times so that we can check and process all forecasts). 
 
 You can always find more information about the project on [www.crowdforecastr.org](https://www.crowdforecastr.org). 
 
-![](../../../crowdforecasting-challenge/Crowdforecasting-challenge-header.png)
-
-### UK Crowd Forecasting Challenge leaderboard
-
-Here are the current top 10 forecasters in the UK forecasting challenge: 
-
-![](../../../crowdforecasting-challenge/leaderboard-week-7.png). The entire leaderboard for the UK Crowd Forecasting Challenge is [here](https://epiforecasts.io/uk-challenge). 
-
-<br>
 
 ### Forecast and Performance overview
 
