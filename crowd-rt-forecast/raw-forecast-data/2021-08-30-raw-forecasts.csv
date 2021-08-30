@@ -1,0 +1,15 @@
+forecaster_id,forecast_date,expert,leaderboard,board_name,distribution,median,width,horizon,target_end_date,submission_date,region,target_type,forecast_duration,forecast_week
+215393,2021-08-30,TRUE,yes,seb,normal,1.431,0.01,1,2021-08-14,2021-08-30,Germany,,,35
+215393,2021-08-30,TRUE,yes,seb,normal,1.44,0.032,2,2021-08-21,2021-08-30,Germany,,,35
+215393,2021-08-30,TRUE,yes,seb,normal,1.39,0.053,3,2021-08-28,2021-08-30,Germany,,,35
+215393,2021-08-30,TRUE,yes,seb,normal,1.33,0.075,4,2021-09-04,2021-08-30,Germany,,,35
+215393,2021-08-30,TRUE,yes,seb,normal,1.26,0.097,5,2021-09-11,2021-08-30,Germany,,,35
+215393,2021-08-30,TRUE,yes,seb,normal,1.17,0.118,6,2021-09-18,2021-08-30,Germany,,,35
+215393,2021-08-30,TRUE,yes,seb,normal,1.09,0.14,7,2021-09-25,2021-08-30,Germany,,,35
+215393,2021-08-30,TRUE,yes,seb,normal,1.149,0.01,1,2021-08-14,2021-08-30,United Kingdom,,56.2415533065796,35
+215393,2021-08-30,TRUE,yes,seb,normal,1.02,0.02,2,2021-08-21,2021-08-30,United Kingdom,,56.2415533065796,35
+215393,2021-08-30,TRUE,yes,seb,normal,1.04,0.03,3,2021-08-28,2021-08-30,United Kingdom,,56.2415533065796,35
+215393,2021-08-30,TRUE,yes,seb,normal,1.04,0.04,4,2021-09-04,2021-08-30,United Kingdom,,56.2415533065796,35
+215393,2021-08-30,TRUE,yes,seb,normal,1.07,0.05,5,2021-09-11,2021-08-30,United Kingdom,,56.2415533065796,35
+215393,2021-08-30,TRUE,yes,seb,normal,1.09,0.06,6,2021-09-18,2021-08-30,United Kingdom,,56.2415533065796,35
+215393,2021-08-30,TRUE,yes,seb,normal,1.1,0.07,7,2021-09-25,2021-08-30,United Kingdom,,56.2415533065796,35
