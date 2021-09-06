@@ -1,0 +1,9 @@
+forecaster_id,forecast_date,expert,leaderboard,distribution,median,width,horizon,target_end_date,submission_date,location_name,target_type,location,inc_hosp,inc_case,inc_death,forecast_duration,forecast_week
+427811,2021-09-05T00:00:00Z,FALSE,anonymous,log-normal,265000,0.04,1,2021-09-11,2021-09-06T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,36
+427811,2021-09-05T00:00:00Z,FALSE,anonymous,log-normal,280000,0.073,2,2021-09-18,2021-09-06T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,36
+427811,2021-09-05T00:00:00Z,FALSE,anonymous,log-normal,3e+05,0.107,3,2021-09-25,2021-09-06T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,36
+427811,2021-09-05T00:00:00Z,FALSE,anonymous,log-normal,320000,0.14,4,2021-10-02,2021-09-06T00:00:00Z,United Kingdom,cases,GB,ECDC,JHU,JHU,,36
+427811,2021-09-05T00:00:00Z,FALSE,anonymous,log-normal,830,0.04,1,2021-09-11,2021-09-06T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,2.95659921169281,36
+427811,2021-09-05T00:00:00Z,FALSE,anonymous,log-normal,860,0.06,2,2021-09-18,2021-09-06T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,2.95659921169281,36
+427811,2021-09-05T00:00:00Z,FALSE,anonymous,log-normal,890,0.08,3,2021-09-25,2021-09-06T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,2.95659921169281,36
+427811,2021-09-05T00:00:00Z,FALSE,anonymous,log-normal,940,0.1,4,2021-10-02,2021-09-06T00:00:00Z,United Kingdom,deaths,GB,ECDC,JHU,JHU,2.95659921169281,36
