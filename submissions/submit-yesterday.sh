@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #define date
-ForecastDate=$(date +'%Y-%m-%d' -d 'yesterday')
+ForecastDate=$(date +'%Y-%m-%d' -d 'yesterday') # '2 days ago')
 
 # Clone the hub repository if not already present
 #git clone --depth 1 https://github.com/epiforecasts/covid19-forecast-hub-europe
@@ -19,6 +19,7 @@ git pull
 # Switch to submission branch
 git checkout -b submission4
 git merge -Xtheirs main
+git pull
 
 # Move back into forecast repository
 cd ../europe-covid-forecast
