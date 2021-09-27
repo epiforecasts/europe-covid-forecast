@@ -1,10 +1,12 @@
 ---
 title: "Analysis UK Crowd Forecasting Challenge"
 output: 
-  html_document: 
+  html_document:
     theme: journal
     number_sections: true
     self_contained: true
+  pdf_document:
+    number_sections: true
 ---
 
 This is an analysis of forecasts made by participants of the UK COVID-19 Crowd Forecasting Challenge. Over the course of 13 weeks (from May 24 2021 to August 16 2021) participants submitted forecasts using the [crowdforecastr prediction platform](https://crowdforecastr.org). 
