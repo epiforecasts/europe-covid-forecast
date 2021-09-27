@@ -1,0 +1,390 @@
+---
+title: "Analysis UK Crowd Forecasting Challenge"
+output: 
+  html_document: 
+    theme: journal
+    number_sections: true
+    self_contained: true
+---
+
+This is an analysis of forecasts made by participants of the UK COVID-19 Crowd Forecasting Challenge. Over the course of 13 weeks (from May 24 2021 to August 16 2021) participants submitted forecasts using the [crowdforecastr prediction platform](https://crowdforecastr.org). 
+
+These forecasts were aggregated by calculating the median prediction of all forecasts. These aggregated forecasts (later denoted as "epiforecasts-EpiExpert" or "Median ensemble") were submitted to the [European Forecast Hub](https://covid19forecasthub.eu/). 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, out.width = "100%")
+library(scoringutils)
+library(magrittr)
+library(dplyr)
+library(ggplot2)
+library(covid.ecdc.forecasts)
+library(kableExtra)
+
+make_table <- function(x) {
+  x %>%
+    kable() %>%
+    kable_styling()
+}
+
+```
+
+```{r}
+score_forecasts <- function(data) {
+  eval_forecasts(data, 
+                 summarise_by = c("model", "forecast_date", "target_type"), 
+                 by = c("forecast_date", "target_type", "horizon", "model"))[]
+}
+
+scores_participants <- 
+  score_forecasts(log_data[model %in% models[["participants"]]])
+scores_all <- score_forecasts(log_data)
+
+scores_participants_notlog <- 
+  score_forecasts(data[model %in% models[["participants"]]])
+scores_all_notlog <- score_forecasts(data)
+
+```
+
+```{r}
+# assign median score per forecast date if someone missed a forecast date
+complete_set <- expand.grid(forecast_date = study_dates$forecast_dates, 
+                            model = models[["participants"]], 
+                            target_type = c("Cases", "Deaths"))
+
+tournament_scores <- scores_participants %>% 
+  full_join(complete_set) %>%
+  group_by(forecast_date, target_type) %>%
+  mutate(interval_score = ifelse(is.na(interval_score), 
+                                 median(interval_score, na.rm = TRUE), 
+                                 interval_score)) %>%
+  group_by(model) %>%
+  summarise(interval_score = sum(interval_score)) %>%
+  arrange(interval_score) 
+```
+
+
+# Prediction targets and observed values
+
+Participants were asked to make one to four week ahead predictions of the weekly number of reported cases and deaths from COVID-19 in the UK. 
+
+Here is a visualisation of daily (bars) and weekly (line) reported numbers. 
+
+```{r}
+filter_truth <- function(df) {
+  df %>%
+    filter(target_end_date >= "2021-04-01", 
+           target_end_date <= "2021-09-11") %>%
+    arrange(target_end_date) %>%
+    mutate(target_type = ifelse(target_type == "case", 
+                                "Cases", "Deaths"))
+}
+
+dailydf <- filter_truth(dailytruth_data)
+weeklydf <- filter_truth(truth)  
+
+dailydf %>%
+  ggplot(aes(y = true_value, x = target_end_date)) + 
+  geom_col(fill = "lightsteelblue", color = "white") + 
+  geom_line(data = weeklydf, aes(y = true_value / 7)) + 
+  geom_point(data = weeklydf, aes(y = true_value / 7), size = 0.6) +
+  labs(y = "Observed values", x = "Date") + 
+  facet_wrap(~ target_type, ncol = 1, scale = "free") + 
+  theme_minimal() +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), 
+        panel.spacing = unit(3, "lines"))
+  
+```
+
+
+<br>
+<br>
+
+
+
+
+# Forecast evaluation
+
+Forecasts were evaluated using the “weighted interval score” (WIS). This ‘score’ is negatively oriented, meaning that a lower score is better. You can think of the weighted interval score as a ‘penalty’ for being less than perfect. 
+
+The weighted interval score is the sum of three components (i.e. three different types of penalties): “overprediction”, “underprediction” and “dispersion”. Overprediction and underprediction are penalties that occur if the true observed value falls outside of the range of values deemed plausible by a forecast. If a forecast is very uncertain, then the range of plausible values is larger and it is less likely to get penalties for over- and underprediction. The “dispersion” term on the other hand penalises a forecast for being overly uncertain.
+
+To make forecasts of deaths and reported infections more comparable, we took the logarithm of all forecasts as well as the logarithm of the “ground truth data” and then calculated the weighted interval score using these.
+
+This is different from the methodology used by the [European Forecast Hub](https://covid19forecasthub.eu/), which does not take the logarithm of forecasts and observed values. Taking the logarithm means that forecasts are scored in relative terms rather than absolute terms. On the natural scale it is important whether a forecast is e.g. 10 off or 1000, while on the logarithmic scale we score whether a forecast is 5% or 10% off - regardless of the absolute values. This may make more sense for a pandemic anyway where infections spread exponentially. It also allowed us to combine death forecasts and case forecasts and compute a single score to rank forecasters. 
+
+If a forecaster did not submit a forecast for a given forecast date, they were assigned the median score of all participants who submitted a forecast on that day. 
+
+
+## Leaderboard
+
+Here is the official leaderboard with overall performance summarised over all forecasts
+
+```{r}
+tournament_scores %>%
+  rename(Score = interval_score, 
+         Forecaster = model) %>%
+  mutate(Ranking = 1:nrow(tournament_scores)) %>%
+  select(Ranking, Forecaster, Score) %>%
+  head(10) %>%
+  make_table() 
+```
+
+<br>
+
+## Individual vs. ensemble performance over time
+
+Here is a visualisation of individual participants' scores together with scores from the median ensemble of all forecasts shown in red. 
+
+```{r}
+df <- scores_all %>%
+  filter(model %in% c(models$participants, "epiforecasts-EpiExpert")) %>%
+  mutate(Forecaster = ifelse(model %in% models$participants, 
+                     "Individual participant", "Median ensemble")) 
+df %>%
+  arrange(desc(Forecaster)) %>%
+  ggplot(aes(y = interval_score, x = forecast_date, 
+             colour = Forecaster, 
+             group = model)) + 
+  geom_line(aes(y = interval_score)) + 
+  geom_point(size = 0.4) + 
+  geom_line(data = filter(df, Forecaster == "Median ensemble"), 
+            color = "red", size = 1.1) + 
+  scale_color_manual(values = c("grey80", "red")) + 
+  theme_minimal() +
+  theme(legend.position = "bottom") + 
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), 
+        panel.spacing = unit(3, "lines")) + 
+  labs(y = "Combined interval score", x = "Forecast date") + 
+  facet_wrap(~target_type, scale = "free", ncol = 1)
+```
+
+<br>
+<br>
+
+
+## Comparison against the Forecast Hub
+
+This visualisation compares the ensemble of all forecasts from participants in the UK Crowd Forecasting Challenge ("epiforecasts-EpiExpert) against the ensemble of all forecasts from the European Forecast Hub (including our own forecasts) and the Forecast Hub baseline model. 
+
+```{r}
+models_to_compare <- c("epiforecasts-EpiExpert", 
+                      "EuroCOVIDhub-baseline", 
+                      "EuroCOVIDhub-ensemble")
+
+scores_all %>%
+  filter(model %in% models_to_compare) %>%
+  ggplot(aes(y = interval_score, x = forecast_date, 
+             colour = model, 
+             group = model)) + 
+  geom_line(aes(y = interval_score)) + 
+  geom_point(size = 0.4) + 
+  theme_minimal() +
+  theme(legend.position = "bottom") + 
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank()) + 
+  labs(y = "Combined interval score", x = "Forecast date") + 
+  facet_wrap(~ target_type, ncol = 1, scale = "free")
+```
+
+<br>
+
+Here is a summary of scores: 
+
+```{r}
+scores_all %>%
+  filter(model %in% models_to_compare) %>%  
+  group_by(model, target_type) %>%
+  summarise(score = sum(interval_score)) %>%
+  arrange(target_type, score) %>%
+  make_table() 
+
+```
+
+<br>
+<br>
+
+
+
+## Comparison of the different EpiExpert forecasts
+
+Users could submit two different forecasts. One was a direct forecast of cases and deaths. The median ensemble of these direct forecasts is called "EpiExpert_direct". The other one was a forecast of $R_t$, the effective reproduction number. This $R_t$ forecast was then mapped to cases and deaths using the so-called renewal equation, which models future cases as a weighted sum of past cases times $R_t$. The median ensemble that uses only these forecasts is called "EpiExpert_Rt". The "EpiExpert" ensemble is a median ensemble that used both regular as well as $R_t$ forecasts. 
+
+Here is a visualisation over time: 
+
+```{r}
+scores_all %>%
+  filter(grepl("epiforecasts", model)) %>%
+  ggplot(aes(y = interval_score, x = forecast_date, 
+             colour = model, 
+             group = model)) + 
+  geom_line(aes(y = interval_score)) + 
+  geom_point(size = 0.4) + 
+  theme_minimal() +
+  theme(legend.position = "bottom") + 
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), 
+        panel.spacing = unit(3, "lines")) + 
+  labs(y = "Combined interval score", x = "Forecast date") + 
+  facet_wrap(~target_type, scale = "free", ncol = 1)
+```
+
+<br>
+
+And a summary of scores: 
+
+```{r}
+scores_all %>%
+  filter(grepl("epiforecasts", model)) %>%
+  group_by(model, target_type) %>%
+  summarise(score = sum(interval_score)) %>%
+  arrange(target_type, score) %>%
+  make_table() 
+```
+
+<br>
+<br>
+
+
+
+
+
+
+
+# Number of available forecasts
+
+The following gives an overview of the number of forecasts made
+
+```{r}
+n_forecasts <- data %>%
+  filter(!is.na(forecast_date)) %>%
+  group_by(model) %>%
+  summarise(n_forecasts = length(unique(forecast_date))) %>%
+  arrange(-n_forecasts) %>%
+  filter(!grepl("epiforecasts", model), 
+         !grepl("EuroCOVIDhub", model)) 
+```
+
+## Number of forecasts per forecaster
+
+Here are the 10 most active forecasters: 
+
+```{r}
+n_forecasts %>% 
+  head(10) %>%
+  make_table()
+```
+
+And a summary of the number of forecasts made
+
+```{r}
+n_forecasts %>%
+  summarise(max = max(n_forecasts), 
+            min = min(n_forecasts), 
+            mean = mean(n_forecasts), 
+            median = median(n_forecasts)) %>%
+  make_table()
+```
+
+And a visualisation of the distribution of the number of forecasts made
+
+```{r}
+n_forecasts %>%
+  mutate(n_forecasts = as.factor(n_forecasts)) %>%
+  ggplot(aes(y = n_forecasts)) +
+  geom_histogram(stat = "count") + 
+  theme_minimal() +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank()) + 
+  labs(y = "Number of forecasts by a single forecaster", x = "Frequency")
+```
+
+## Number of forecasts per forecast date
+
+```{r}
+n_forecasts <- data %>%
+  filter(!is.na(forecast_date)) %>%
+  filter(!grepl("epiforecasts", model), 
+         !grepl("EuroCOVIDhub", model)) %>%
+  group_by(forecast_date) %>%
+  summarise(n_forecasts = length(unique(model))) %>%
+  arrange(forecast_date)
+```
+
+Here is a summary of the number of forecasts per forecast date
+
+```{r}
+n_forecasts %>%
+  summarise(max = max(n_forecasts), 
+            min = min(n_forecasts), 
+            mean = mean(n_forecasts), 
+            median = median(n_forecasts)) %>%
+  make_table() 
+```
+
+And the distribution of the number of forecasters over time
+
+```{r}
+n_forecasts %>%
+  ggplot(aes(y = n_forecasts, x = forecast_date)) + 
+  geom_bar(stat = "identity") + 
+  theme_minimal() +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank()) + 
+  labs(y = "Number of forecasts", x = "Forecast date")
+```
+
+
+
+<!-- ## Rank distribution -->
+
+```{r}
+# scores %>%
+#   group_by(forecast_date) %>%
+#   summarise(median = median(interval_score)) %>%
+#   mutate(sum = sum(median))
+```
+
+
+<!-- ## Sensitivity analysis -->
+<!-- Rankings between different models change depending on how you evaluate forecasts. If you score on an absolute, rather than a logarithmic scale, results change.  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
