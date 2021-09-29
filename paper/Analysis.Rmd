@@ -1,13 +1,15 @@
 ---
 title: "Analysis UK Crowd Forecasting Challenge"
 output: 
-  html_document:
-    theme: journal
-    number_sections: true
-    self_contained: true
-  pdf_document:
+  # bookdown::html_document2:
+  #   theme: journal
+  #   number_sections: true
+  #   self_contained: true
+  bookdown::pdf_document2:
     number_sections: true
 ---
+
+
 
 This is an analysis of forecasts made by participants of the UK COVID-19 Crowd Forecasting Challenge. Over the course of 13 weeks (from May 24 2021 to August 16 2021) participants submitted forecasts using the [crowdforecastr prediction platform](https://crowdforecastr.org). 
 
@@ -21,10 +23,15 @@ library(dplyr)
 library(ggplot2)
 library(covid.ecdc.forecasts)
 library(kableExtra)
+library(stringr)
+library(patchwork)
 
-make_table <- function(x) {
+make_table <- function(x, caption = "") {
   x %>%
-    kable() %>%
+    rename_all(gsub, pattern = "_", replacement = " ") %>%
+    rename_all(str_to_sentence) %>%
+    mutate_if(is.numeric, round, 2) %>%
+    kable(caption = caption) %>%
     kable_styling()
 }
 
@@ -67,9 +74,7 @@ tournament_scores <- scores_participants %>%
 
 # Prediction targets and observed values
 
-Participants were asked to make one to four week ahead predictions of the weekly number of reported cases and deaths from COVID-19 in the UK. 
-
-Here is a visualisation of daily (bars) and weekly (line) reported numbers. 
+Participants were asked to make one to four week ahead predictions of the weekly number of reported cases and deaths from COVID-19 in the UK. Figure \@ref(fig:data-viz) shows a visualisation of daily and weekly observed cases and deaths. 
 
 ```{r}
 filter_truth <- function(df) {
@@ -82,8 +87,14 @@ filter_truth <- function(df) {
 }
 
 dailydf <- filter_truth(dailytruth_data)
-weeklydf <- filter_truth(truth)  
+weeklydf <- filter_truth(truth)
+```
 
+```{r}
+caption <- "Visualisation of daily (bars) and weekly (line) reported numbers."
+```
+
+```{r data-viz, fig.cap = caption}
 dailydf %>%
   ggplot(aes(y = true_value, x = target_end_date)) + 
   geom_col(fill = "lightsteelblue", color = "white") + 
@@ -107,9 +118,9 @@ dailydf %>%
 
 # Forecast evaluation
 
-Forecasts were evaluated using the “weighted interval score” (WIS). This ‘score’ is negatively oriented, meaning that a lower score is better. You can think of the weighted interval score as a ‘penalty’ for being less than perfect. 
+Forecasts were evaluated using the Weighted interval score (WIS). This score is negatively oriented, meaning that a lower score is better. You can think of the weighted interval score as a penalty for being less than perfect. 
 
-The weighted interval score is the sum of three components (i.e. three different types of penalties): “overprediction”, “underprediction” and “dispersion”. Overprediction and underprediction are penalties that occur if the true observed value falls outside of the range of values deemed plausible by a forecast. If a forecast is very uncertain, then the range of plausible values is larger and it is less likely to get penalties for over- and underprediction. The “dispersion” term on the other hand penalises a forecast for being overly uncertain.
+The weighted interval score is the sum of three components (i.e. three different types of penalties): Over-prediction, under-prediction and dispersion. Over-prediction and under-prediction are penalties that occur if the true observed value falls outside of the range of values deemed plausible by a forecast. If a forecast is very uncertain, then the range of plausible values is larger and it is less likely to get penalties for over- and under-prediction. The dispersion term on the other hand penalises a forecast for being overly uncertain.
 
 To make forecasts of deaths and reported infections more comparable, we took the logarithm of all forecasts as well as the logarithm of the “ground truth data” and then calculated the weighted interval score using these.
 
@@ -120,25 +131,35 @@ If a forecaster did not submit a forecast for a given forecast date, they were a
 
 ## Leaderboard
 
-Here is the official leaderboard with overall performance summarised over all forecasts
+Table \@ref(tab:leaderboard) shows the overall leaderboard with scores summarised over different forecast dates, targets and horizons. In order to determine the winner of the forecasting competition, scores were averaged to obtain a single performance metric. However, this metric hides considerable variation in performance as will be explored in the following sections. Averaging across different forecast horizons also deviates from current Forecast Hub practices, as an average across different horizons does not lend itself to any meaningful interpretation. 
 
 ```{r}
+caption <- "Official leaderboard with performance summarised over all forecasts across all targets and horizons. Scores summarised across different targets and horizons were used to determine the winner of the competition."
+```
+
+
+```{r leaderboard}
 tournament_scores %>%
   rename(Score = interval_score, 
          Forecaster = model) %>%
   mutate(Ranking = 1:nrow(tournament_scores)) %>%
   select(Ranking, Forecaster, Score) %>%
   head(10) %>%
-  make_table() 
+  make_table(caption = caption) 
 ```
 
 <br>
 
 ## Individual vs. ensemble performance over time
 
-Here is a visualisation of individual participants' scores together with scores from the median ensemble of all forecasts shown in red. 
+Forecasts from individual participants were aggregated using a median. As can be seen in Figure \@ref(fig:indiv-forecasts-time), the median ensemble generally tended to perform better than the majority of individual forecasters (espcially for death forecasts). 
 
 ```{r}
+caption <- "Visualisation of individual participants' scores (grey) together with scores from the median ensemble of all forecasts (red) submitted to the European Forecast Hub. Scores per forecast date in this Figure are averaged across all forecast horizons (one to four weeks ahead) and are likely dominated by forecasts for longer horizons."
+```
+
+
+```{r indiv-forecasts-time, fig.cap=caption}
 df <- scores_all %>%
   filter(model %in% c(models$participants, "epiforecasts-EpiExpert")) %>%
   mutate(Forecaster = ifelse(model %in% models$participants, 
@@ -168,9 +189,12 @@ df %>%
 
 ## Comparison against the Forecast Hub
 
-This visualisation compares the ensemble of all forecasts from participants in the UK Crowd Forecasting Challenge ("epiforecasts-EpiExpert) against the ensemble of all forecasts from the European Forecast Hub (including our own forecasts) and the Forecast Hub baseline model. 
-
 ```{r}
+caption <- 'Visualisation of scores for the ensemble of all forecasts from participants in the UK Crowd Forecasting Challenge ("epiforecasts-EpiExpert") against the ensemble of all forecasts from the European Forecast Hub (including our own forecasts) and the Forecast Hub baseline model. Scores are averaged across all forecast horizons.'
+```
+
+
+```{r comparison-hub-ensemble, fig.cap=caption}
 models_to_compare <- c("epiforecasts-EpiExpert", 
                       "EuroCOVIDhub-baseline", 
                       "EuroCOVIDhub-ensemble")
@@ -192,15 +216,20 @@ scores_all %>%
 
 <br>
 
-Here is a summary of scores: 
+Table \@ref(tab:scores-hub-comparison) includes the numeric scores achieved by the crowd forecast ensemble, the Hub-ensemble and the Hub-baseline model. 
 
 ```{r}
+caption <- "Summary of scores achieved by the crowd forecast ensemble, the Hub-ensemble and the Hub-baseline model. Scores were averaged across all forecast dates and forecast horizons."
+```
+
+
+```{r scores-hub-comparison}
 scores_all %>%
   filter(model %in% models_to_compare) %>%  
   group_by(model, target_type) %>%
   summarise(score = sum(interval_score)) %>%
   arrange(target_type, score) %>%
-  make_table() 
+  make_table(caption = caption) 
 
 ```
 
@@ -213,9 +242,14 @@ scores_all %>%
 
 Users could submit two different forecasts. One was a direct forecast of cases and deaths. The median ensemble of these direct forecasts is called "EpiExpert_direct". The other one was a forecast of $R_t$, the effective reproduction number. This $R_t$ forecast was then mapped to cases and deaths using the so-called renewal equation, which models future cases as a weighted sum of past cases times $R_t$. The median ensemble that uses only these forecasts is called "EpiExpert_Rt". The "EpiExpert" ensemble is a median ensemble that used both regular as well as $R_t$ forecasts. 
 
-Here is a visualisation over time: 
+Figure \@ref(fig:ensemble-variants) shows scores for these three ensemble types over time. 
 
 ```{r}
+caption <- "Scores across time for the different crowd forecast ensembles. epiforecasts-EpiExpert_direct includes only direct case and death forecasts, epiforecasts-EpiExpert_Rt includes only forecasts made through the Rt app and epiforecasts-EpiExpert includes all forecasts. Scores are average scores across all forecast horizons."
+```
+
+
+```{r ensemble-variants, fig.cap = caption}
 scores_all %>%
   filter(grepl("epiforecasts", model)) %>%
   ggplot(aes(y = interval_score, x = forecast_date, 
@@ -234,15 +268,19 @@ scores_all %>%
 
 <br>
 
-And a summary of scores: 
+Summarised scores for the different versions of the crowd forecast ensemble are given in \@ref(tab:scores-ensemble-variants). 
 
 ```{r}
+caption <- "Summarised scores for the three variants of the crowd forecast ensemble."
+```
+
+```{r scores-ensemble-variants}
 scores_all %>%
   filter(grepl("epiforecasts", model)) %>%
   group_by(model, target_type) %>%
   summarise(score = sum(interval_score)) %>%
   arrange(target_type, score) %>%
-  make_table() 
+  make_table(caption = caption) 
 ```
 
 <br>
@@ -256,8 +294,6 @@ scores_all %>%
 
 # Number of available forecasts
 
-The following gives an overview of the number of forecasts made
-
 ```{r}
 n_forecasts <- data %>%
   filter(!is.na(forecast_date)) %>%
@@ -268,28 +304,31 @@ n_forecasts <- data %>%
          !grepl("EuroCOVIDhub", model)) 
 ```
 
-## Number of forecasts per forecaster
-
-Here are the 10 most active forecasters: 
+Table \@ref(tab:top-active) shows the ten most active forecasters. The average number of forecasts per participant was 2.74, while most participants dropped out after their first forecast (Table \@ref(tab:summary-active)). Only two participants submitted a forecast for all thirteen forecast dates. 
 
 ```{r}
-n_forecasts %>% 
-  head(10) %>%
-  make_table()
+caption <- "Ten most active forecasters by the number of forecast dates on which a participants made a forecast"
 ```
 
-And a summary of the number of forecasts made
+```{r top-active}
+n_forecasts %>% 
+  head(10) %>%
+  make_table(caption = caption)
+```
+
 
 ```{r}
+caption <- "Distribution of the number of forecasts made by any individual participant."
+```
+
+```{r summary-active}
 n_forecasts %>%
   summarise(max = max(n_forecasts), 
             min = min(n_forecasts), 
             mean = mean(n_forecasts), 
             median = median(n_forecasts)) %>%
-  make_table()
+  make_table(caption = caption)
 ```
-
-And a visualisation of the distribution of the number of forecasts made
 
 ```{r}
 n_forecasts %>%
@@ -302,7 +341,7 @@ n_forecasts %>%
   labs(y = "Number of forecasts by a single forecaster", x = "Frequency")
 ```
 
-## Number of forecasts per forecast date
+On average, 21.9 forecasts were submitted each week, with a minimum of 10 and a maximum of 57 (Table \@ref(tab:summary-freq-time)). The distribution of the number of forecasters over time is shown in Figure \@ref(fig:distr-freq-time).
 
 ```{r}
 n_forecasts <- data %>%
@@ -314,20 +353,16 @@ n_forecasts <- data %>%
   arrange(forecast_date)
 ```
 
-Here is a summary of the number of forecasts per forecast date
-
-```{r}
+```{r summary-freq-time}
 n_forecasts %>%
   summarise(max = max(n_forecasts), 
             min = min(n_forecasts), 
             mean = mean(n_forecasts), 
             median = median(n_forecasts)) %>%
-  make_table() 
+  make_table()
 ```
 
-And the distribution of the number of forecasters over time
-
-```{r}
+```{r distr-freq-time, fig.cap=caption}
 n_forecasts %>%
   ggplot(aes(y = n_forecasts, x = forecast_date)) + 
   geom_bar(stat = "identity") + 
@@ -336,6 +371,12 @@ n_forecasts %>%
         panel.grid.minor = element_blank()) + 
   labs(y = "Number of forecasts", x = "Forecast date")
 ```
+
+
+
+
+
+
 
 
 
