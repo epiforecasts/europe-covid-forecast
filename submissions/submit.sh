@@ -17,7 +17,7 @@ cd ../covid19-forecast-hub-europe
 git checkout main
 git pull 
 # Switch to submission branch
-git checkout -b submission2
+git checkout -b submission
 git merge -Xtheirs main
 
 # Move back into forecast repository
