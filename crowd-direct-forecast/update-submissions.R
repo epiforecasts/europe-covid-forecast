@@ -53,7 +53,7 @@ raw_forecasts <- forecasts %>%
 
 # use only the latest forecast from a given forecaster
 filtered_forecasts <- raw_forecasts %>%
-  # interesting question whether or not to include foracast_type here. 
+  # interesting question whether or not to include foracast_type here.
   # if someone reconnecs and then accidentally resubmits under a different
   # condition should that be removed or not? 
   group_by(forecaster_id, location, target_type) %>%
@@ -108,7 +108,7 @@ calculate_quantiles <- function(quantile_grid, median, width, forecast_type,
      mean = (as.numeric(median) ^ (1 / 3)), sd = as.numeric(width))
       ) ^ 3)
   } else if (distribution == "fifth-power-normal") {
-    values <- list((qnorm(quantile_grid, 
+    values <- list((qnorm(quantile_grid,
     mean = (as.numeric(median) ^ (1 / 5)), sd = as.numeric(width)
       )) ^ 5)
   } else if (distribution == "seventh-power-normal") {
