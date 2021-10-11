@@ -1,12 +1,12 @@
 ---
 title: "Analysis UK Crowd Forecasting Challenge"
 output: 
-  # bookdown::html_document2:
-  #   theme: journal
-  #   number_sections: true
-  #   self_contained: true
-  bookdown::pdf_document2:
+  bookdown::html_document2:
+    theme: journal
     number_sections: true
+    self_contained: true
+  # bookdown::pdf_document2:
+  #   number_sections: true
 ---
 
 
@@ -35,13 +35,42 @@ make_table <- function(x, caption = "") {
     kable_styling()
 }
 
+model_colors <- 
+  c(`epiforecasts-EpiExpert` = "#E41A1C", 
+    `Median ensemble` = "#E41A1C", 
+    "anonymous_Stingray" = "#003C30", #"#E7298A", 
+    "seb" = "#377EB8",  
+    "aen" = "#4DAF4A", 
+    "Trebuchet01" = "#984EA3", 
+    "habakuk (Rt)" = "#FF7F00", 
+    `epiforecasts-EpiExpert_direct` = "#5AB4AC", #FFFF33", 
+    `epiforecasts-EpiExpert_Rt` = "#A65628", 
+    `EuroCOVIDhub-baseline` = "#F781BF", 
+    `EuroCOVIDhub-ensemble` = "#1B9E77", 
+    `Individual participant` = "grey80", 
+    "Median score" = "blue") %>%
+  sort()
+
+subset_colors <- function(model_names) {
+  model_colors[names(model_colors) %in% model_names]
+}
+
+
+scale_fn <- function(x) {
+  ifelse(x >= 1000000, 
+         paste0(x / 1000000, "m"), 
+         ifelse(x >= 5000,
+                paste0(x / 1000, "k"),
+                x))
+}
+
 ```
 
 ```{r}
 score_forecasts <- function(data) {
   eval_forecasts(data, 
-                 summarise_by = c("model", "forecast_date", "target_type"), 
-                 by = c("forecast_date", "target_type", "horizon", "model"))[]
+                 summarise_by = c("model", "forecast_date", "target_type", "expert"), 
+                 by = c("forecast_date", "target_type", "horizon", "model", "expert"))[]
 }
 
 scores_participants <- 
@@ -60,15 +89,26 @@ complete_set <- expand.grid(forecast_date = study_dates$forecast_dates,
                             model = models[["participants"]], 
                             target_type = c("Cases", "Deaths"))
 
+add_median_to_scores <- function(df) {
+  df %>%
+    group_by(forecast_date, target_type) %>%
+    mutate(interval_score = ifelse(is.na(interval_score), 
+                                   median(interval_score, na.rm = TRUE), 
+                                   interval_score)) %>%
+    ungroup()
+}
+
 tournament_scores <- scores_participants %>% 
   full_join(complete_set) %>%
-  group_by(forecast_date, target_type) %>%
-  mutate(interval_score = ifelse(is.na(interval_score), 
-                                 median(interval_score, na.rm = TRUE), 
-                                 interval_score)) %>%
+  add_median_to_scores() %>%
   group_by(model) %>%
   summarise(interval_score = sum(interval_score)) %>%
   arrange(interval_score) 
+
+top5_forecasters <- tournament_scores %>%
+  pull(model) %>%
+  head(5)
+
 ```
 
 
@@ -112,6 +152,150 @@ dailydf %>%
 
 <br>
 <br>
+
+# Visualisation of forecasts
+
+Figure \@ref(fig:viz-forecast-all) shows the median predictions of all participants as well as the crowd ensemble. We can see that there is considerable disagreement between individual forecasters on most forecast dates. 
+
+```{r}
+caption <- "Median forecasts from all participants"
+```
+
+```{r viz-forecast-all, fig.cap=caption}
+models_included <- c("epiforecasts-EpiExpert", models$participants)
+cols <- subset_colors(c("epiforecasts-EpiExpert", "Individual participant"))
+
+zero_horizon <- weeklydf %>%
+  mutate(forecast_date = target_end_date + 2, 
+         horizon = 0, 
+         prediction = true_value, 
+         quantile = 0.5) %>%
+  full_join(data.frame(model = models_included), by = character())
+
+
+plot_df <- data %>%
+  filter(model %in% c(models_included),
+         horizon %in% c(1, 2, 3, 4)) %>%
+  full_join(zero_horizon) %>%
+  tidyr::pivot_wider(values_from = "prediction", names_from = "quantile") %>%
+  mutate(model_unique = model, 
+         model = ifelse(model %in% "epiforecasts-EpiExpert", model, "Individual participant")) 
+  
+plot_df %>%  
+  ggplot(aes(x = target_end_date)) + 
+  geom_line(aes(y = `0.5`, group = interaction(forecast_date, model_unique), color = model), 
+            alpha = 0.8, size = 0.2) +
+  geom_line(data = filter(plot_df, model == "epiforecasts-EpiExpert"), 
+            aes(y = `0.5`, color = model, group = forecast_date), 
+            size = 0.5) + 
+  scale_color_manual(values = cols, name = "Forecast") +
+  facet_wrap(~ target_type, ncol = 1, scale = "free") + 
+  theme_minimal() +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), 
+        panel.spacing = unit(3, "lines")) +  
+  geom_line(data = weeklydf, aes(y = true_value)) + 
+  geom_point(data = weeklydf, aes(y = true_value), size = 0.7) + 
+  scale_y_continuous(labels = scale_fn) + 
+  labs(y = "Median forecast and observed values", x = "Date") + 
+  theme(legend.position = "bottom")
+```
+
+
+Figure \@ref(fig:viz-forecast-ensemble) compares median predictions from the crowd ensemble against the Hub ensemble. The two ensembles are in closer agreements than the individual crowd forecasters. 
+
+```{r}
+caption <- "Visualsation of forecasts from the crowd ensemble and the Hub ensemble. Lines show the median forecast one to four weeks into the future for a given forecast date."
+```
+
+
+```{r viz-forecast-ensemble, fig.cap=caption}
+
+truth <- weeklydf %>%
+  filter(target_end_date >= study_dates$plot_dates[1],
+         target_end_date <= study_dates$plot_dates[2])
+
+models_included <- c("EuroCOVIDhub-ensemble", "epiforecasts-EpiExpert")
+
+zero_horizon <- weeklydf %>%
+  mutate(forecast_date = target_end_date + 2, 
+         horizon = 0, 
+         prediction = true_value, 
+         quantile = 0.5) %>%
+  full_join(data.frame(model = models_included), by = character())
+
+
+data %>%
+  filter(model %in% models_included,
+         horizon %in% c(1, 2, 3, 4)) %>%
+  full_join(zero_horizon) %>%
+  tidyr::pivot_wider(values_from = "prediction", names_from = "quantile") %>%
+  ggplot(aes(x = target_end_date)) + 
+  geom_line(aes(y = `0.5`, group = interaction(forecast_date, model), color = model), 
+            alpha = 0.4, size = 0.5) + 
+  scale_color_manual(values = subset_colors(models_included), name = "Forecast") +
+  facet_wrap(~ target_type, ncol = 1, scale = "free") + 
+  theme_minimal() +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), 
+        panel.spacing = unit(3, "lines")) +  
+  geom_line(data = truth, aes(y = true_value)) + 
+  geom_point(data = truth, aes(y = true_value), size = 0.7) + 
+  scale_y_continuous(labels = scale_fn) + 
+  labs(y = "Median forecast and observed values", x = "Date") + 
+  theme(legend.position = "bottom")
+```
+
+
+Figure \@ref(fig:viz-forecast-ensemble-bars) illustrates uncertainty around the predictions made by the crowd ensemble. For all two week ahead forecasts, the 50% (darker) and 95% (lighter) prediction intervals are shown. We see that observed values are outside of the prediction intervals regularly. 
+
+
+```{r}
+caption <- "Visualisation of 2 week ahead forecasts of the crowd forecast ensemble with 50% prediction intervals (dark) and 95% prediction intervals (light)."
+```
+
+
+```{r viz-forecast-ensemble-bars, fig.cap=caption}
+models_included <- c("epiforecasts-EpiExpert")
+
+zero_horizon <- weeklydf %>%
+  mutate(forecast_date = target_end_date + 2, 
+         horizon = 0, 
+         prediction = true_value, 
+         quantile = 0.5)
+
+data %>%
+  filter(model %in% models_included,
+         horizon %in% c(2)) %>%
+  full_join(zero_horizon) %>%
+  tidyr::pivot_wider(values_from = "prediction", names_from = "quantile") %>%
+  ggplot(aes(x = target_end_date)) + 
+  geom_linerange(aes(ymin = `0.025`, ymax = `0.975`, color = model), size = 1.5, 
+                 alpha = 0.3) + 
+  geom_linerange(aes(ymin = `0.25`, ymax = `0.75`, color = model), size = 1.5, 
+                 alpha = 0.4) + 
+  scale_color_manual(values = subset_colors(models_included), name = "Forecast") +
+  facet_wrap(~ target_type, ncol = 1, scale = "free") + 
+  theme_minimal() +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), 
+        panel.spacing = unit(3, "lines")) +  
+  geom_line(data = truth, aes(y = true_value)) + 
+  geom_point(data = truth, aes(y = true_value), size = 0.7) + 
+  scale_y_continuous(labels = scale_fn) + 
+  labs(y = "Median forecast and observed values", x = "Date") + 
+  theme(legend.position = "bottom")
+```
+
+
+<br>
+<br>
+
+```{r}
+
+```
+
+
 
 
 
@@ -160,10 +344,16 @@ caption <- "Visualisation of individual participants' scores (grey) together wit
 
 
 ```{r indiv-forecasts-time, fig.cap=caption}
+
+models_included <- c(models$participants, "epiforecasts-EpiExpert")
+
 df <- scores_all %>%
-  filter(model %in% c(models$participants, "epiforecasts-EpiExpert")) %>%
+  filter(model %in% models_included) %>%
   mutate(Forecaster = ifelse(model %in% models$participants, 
                      "Individual participant", "Median ensemble")) 
+
+cols <- model_colors[names(model_colors) %in% c("Individual participant", 
+                                                "Median ensemble")]
 df %>%
   arrange(desc(Forecaster)) %>%
   ggplot(aes(y = interval_score, x = forecast_date, 
@@ -172,8 +362,9 @@ df %>%
   geom_line(aes(y = interval_score)) + 
   geom_point(size = 0.4) + 
   geom_line(data = filter(df, Forecaster == "Median ensemble"), 
-            color = "red", size = 1.1) + 
-  scale_color_manual(values = c("grey80", "red")) + 
+            #color = "red", 
+            size = 1.1) + 
+  scale_color_manual(values=cols) + 
   theme_minimal() +
   theme(legend.position = "bottom") + 
   theme(panel.grid.major = element_blank(),
@@ -184,10 +375,162 @@ df %>%
 ```
 
 <br>
+
+
+Another interesting question is whether individual participants were able to beat the ensemble of all participant forecasts. We can see in Figure \@ref(fig:top5-comparison) that the top five forecasters often performed better than the ensemble, but not always. Espeically for deaths it seems like forecasters struggled to beat the ensemble consistently. 
+
+```{r}
+caption <- "Scores for the top five forecasters and the median ensemble (in red) across different forecast dates. Scores are summarised across all forecast horizons."
+```
+
+
+```{r, top5-comparison, fig.cap=caption}
+
+models_included <- c(top5_forecasters, "epiforecasts-EpiExpert")
+df <- scores_all %>%
+  filter(model %in% models_included) %>%
+  arrange(interval_score) 
+
+cols <- model_colors[names(model_colors) %in% models_included]
+
+df %>%
+  filter(model %in% c(top5_forecasters)) %>%
+  ggplot(aes(y = interval_score, x = forecast_date, 
+             colour = model, 
+             group = model)) + 
+  geom_line(aes(y = interval_score)) + 
+  geom_point(size = 0.8) + 
+  geom_line(data = filter(df, model == "epiforecasts-EpiExpert"),
+            size = 1.1) + 
+  theme_minimal() +
+  scale_color_manual(values = cols) + 
+  theme(legend.position = "bottom") + 
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), 
+        panel.spacing = unit(3, "lines")) + 
+  labs(y = "Combined interval score", x = "Forecast date") + 
+  facet_wrap(~target_type, scale = "free", ncol = 1)
+
+```
+
+
+<br>
+
+Or whether they were able to be better than the median forecaster each forecast date. It is interesting to see that even the top forecasters are not consistently better than the median forecaster, as is shown in Figure \@ref(fig:top5-comparison-median)
+
+```{r}
+caption <- "Scores for the top five forecasters, median score from all other participants (in blue) and score of the median ensemble (in red) across different forecast dates. Scores are summarised across all forecast horizons."
+```
+
+
+```{r, top5-comparison-median, fig.cap=caption}
+models_included <- c(top5_forecasters, "epiforecasts-EpiExpert")
+df <- scores_all %>%
+  filter(model %in% models_included) %>%
+  arrange(interval_score) 
+
+med <- scores_all %>%
+  filter(model %in% models$participants) %>%
+  group_by(forecast_date, target_type) %>%
+  summarise(interval_score = median(interval_score)) %>%
+  mutate(model = "Median score")
+
+cols <- model_colors[names(model_colors) %in% c(models_included, 
+                                                "Median score")]
+
+df %>%
+  filter(model != "epiforecasts-EpiExpert") %>%
+  ggplot(aes(y = interval_score, x = forecast_date, 
+             colour = model, 
+             group = model)) + 
+  geom_line(aes(y = interval_score)) + 
+  geom_point(size = 0.8) + 
+  geom_line(data = med,
+            size = 1.1) + 
+  geom_line(data = filter(df, model == "epiforecasts-EpiExpert"),
+            size = 1.1) + 
+  theme_minimal() +
+  scale_color_manual(values = cols, name = "Forecaster") + 
+  theme(legend.position = "bottom") + 
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), 
+        panel.spacing = unit(3, "lines")) + 
+  labs(y = "Combined interval score", x = "Forecast date") + 
+  facet_wrap(~target_type, scale = "free", ncol = 1)
+
+```
+
+<br>
 <br>
 
 
+## Forecast performance and participant characteristics
+
+Figure \@ref(fig:performance-number-forecasts) shows how well different forecasters did as a function of the number of forecasts they submitted. It suggests that more regular forecasters did slightly better in this competition. However, we don't know why this is the case. Regular forecasters maybe improve with practice and feedback, or it might be that better forecasters enjoy the task better and are therefore more likely to participate consistently.  
+
+```{r}
+caption <- "Mean weighted interval score vs. the number of forecasts made by any individual forecaster"
+```
+
+```{r performance-number-forecasts, fig.cap=caption}
+
+n_forecasts <- data %>%
+  filter(!is.na(forecast_date)) %>%
+  group_by(model) %>%
+  summarise(n_forecasts = length(unique(forecast_date))) %>%
+  arrange(-n_forecasts) %>%
+  filter(!grepl("epiforecasts", model), 
+         !grepl("EuroCOVIDhub", model)) 
+
+scores_participants %>%
+  group_by(model, target_type) %>%
+  summarise(score = mean(interval_score)) %>%
+  full_join(n_forecasts) %>%
+  ggplot(aes(y = score, x = n_forecasts)) + 
+  geom_point() + 
+  geom_smooth() + 
+  theme_minimal() + 
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), 
+        panel.spacing = unit(3, "lines")) + 
+  labs(y = "Weighted interval score", x = "Number of forecasts") + 
+  facet_wrap(~target_type, scale = "free", ncol = 1)
+  
+```
+
+
+We are also interested in whether self-identified 'experts' performed better than 'non-experts'. As Figure \@ref(fig:performance-expert) suggests, experts may not have a clear edge over non-experts. On the contrary, in this competition it seemed experts performed slightly worse than non-experts. Note that the distinction between 'expert' and 'non-expert' is by no means clear, as there are no fixed criteria for 'experts' and 'non-experts' and participants were asked to choose what they felt most appropriate. 
+
+```{r}
+caption <- "Distribution of weighted interval scores depending on whether or not participants self-identified as an 'expert'."
+```
+
+
+```{r performance-expert, fig.cap = caption}
+
+scores_participants %>%
+  group_by(model, target_type, expert) %>%
+  summarise(score = mean(interval_score)) %>%
+  mutate(expert = ifelse(is.na(expert), "Unknown", 
+                         ifelse(expert, "Expert", "Non-expert"))) %>%
+  ggplot(aes(y = score, x = expert)) + 
+  geom_violin(fill = "grey90", alpha = 0.6, color = NA) + 
+  geom_jitter(width = 0.1, size = 0.8, alpha = 0.8, color = "grey40") + 
+  geom_boxplot(alpha = 0.7, outlier.shape = NA) + 
+  theme_minimal() + 
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), 
+        panel.spacing = unit(3, "lines")) + 
+  labs(y = "Weighted interval score", x = "Expert status") + 
+  facet_wrap(~target_type, scale = "free", ncol = 1)
+
+```
+
+
+
 ## Comparison against the Forecast Hub
+
+Let's have a look at how the crowd forecast ensemble performed against the overall Forecast Hub. 
 
 ```{r}
 caption <- 'Visualisation of scores for the ensemble of all forecasts from participants in the UK Crowd Forecasting Challenge ("epiforecasts-EpiExpert") against the ensemble of all forecasts from the European Forecast Hub (including our own forecasts) and the Forecast Hub baseline model. Scores are averaged across all forecast horizons.'
@@ -199,6 +542,8 @@ models_to_compare <- c("epiforecasts-EpiExpert",
                       "EuroCOVIDhub-baseline", 
                       "EuroCOVIDhub-ensemble")
 
+cols <- subset_colors(models_to_compare)
+
 scores_all %>%
   filter(model %in% models_to_compare) %>%
   ggplot(aes(y = interval_score, x = forecast_date, 
@@ -207,6 +552,7 @@ scores_all %>%
   geom_line(aes(y = interval_score)) + 
   geom_point(size = 0.4) + 
   theme_minimal() +
+  scale_color_manual(values = cols, name = "Forecasting model") + 
   theme(legend.position = "bottom") + 
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank()) + 
@@ -250,6 +596,11 @@ caption <- "Scores across time for the different crowd forecast ensembles. epifo
 
 
 ```{r ensemble-variants, fig.cap = caption}
+
+models_included <- models$`Hub-submissions`[grepl("epi", models$`Hub-submissions`)]
+
+cols <- subset_colors(model_names = models_included)
+
 scores_all %>%
   filter(grepl("epiforecasts", model)) %>%
   ggplot(aes(y = interval_score, x = forecast_date, 
@@ -258,6 +609,7 @@ scores_all %>%
   geom_line(aes(y = interval_score)) + 
   geom_point(size = 0.4) + 
   theme_minimal() +
+  scale_color_manual(values = cols, name = "Ensemble variant") + 
   theme(legend.position = "bottom") + 
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(), 
@@ -317,20 +669,22 @@ n_forecasts %>%
 ```
 
 
-```{r}
-caption <- "Distribution of the number of forecasts made by any individual participant."
-```
-
 ```{r summary-active}
 n_forecasts %>%
   summarise(max = max(n_forecasts), 
             min = min(n_forecasts), 
             mean = mean(n_forecasts), 
             median = median(n_forecasts)) %>%
-  make_table(caption = caption)
+  make_table(caption = "Summary of the number of forecasts per participant.")
 ```
 
+
 ```{r}
+caption <- "Distribution of the number of forecasts made by any individual participant."
+```
+
+
+```{r number_forecasters, fig.cap=caption}
 n_forecasts %>%
   mutate(n_forecasts = as.factor(n_forecasts)) %>%
   ggplot(aes(y = n_forecasts)) +
@@ -359,10 +713,10 @@ n_forecasts %>%
             min = min(n_forecasts), 
             mean = mean(n_forecasts), 
             median = median(n_forecasts)) %>%
-  make_table()
+  make_table(caption = "Summary - number of forecasts available per forecast week")
 ```
 
-```{r distr-freq-time, fig.cap=caption}
+```{r distr-freq-time, fig.cap="Distribution of the number of available forecasts per forecast week"}
 n_forecasts %>%
   ggplot(aes(y = n_forecasts, x = forecast_date)) + 
   geom_bar(stat = "identity") + 
@@ -375,7 +729,58 @@ n_forecasts %>%
 
 
 
+# Sensitivity analysis
 
+Rankings between different models change depending on how you evaluate forecasts. For example, if you score on an absolute, rather than a logarithmic scale, results change. On the natural scale, it matters how far off a forecast is in absolute, rather than in relative terms. This implies that scores depend on the order of magnitude of the target one tries to forecast. For example, it is very easy to miss reported cases by 1000, whereas for deaths errors will rather be in the tens or hundreds. 
+
+If reported on the natural scale, the crowd forecasts no longer outperform the Hub ensemble, as can be seen in Figure \@ref(fig:comparison-hub-ensemble-natural) and in Table \@ref(tab:scores-hub-comparison-not-log). Crowd forecasts showed worse performance than the Hub ensemble around the peak of cases in July, where cases were highest, which results in a stronger penalty if scored on the natural rather than the log scale. 
+
+```{r}
+caption <- 'Visualisation of scores for the ensemble of all forecasts from participants in the UK Crowd Forecasting Challenge ("epiforecasts-EpiExpert") against the ensemble of all forecasts from the European Forecast Hub (including our own forecasts) and the Forecast Hub baseline model. Scores were calculated on the natural scale and averaged across all forecast horizons.' 
+```
+
+```{r comparison-hub-ensemble-natural, fig.cap=caption}
+models_to_compare <- c("epiforecasts-EpiExpert", 
+                      "EuroCOVIDhub-baseline", 
+                      "EuroCOVIDhub-ensemble")
+
+cols <- subset_colors(models_to_compare)
+
+scores_all_notlog %>%
+  filter(model %in% models_to_compare) %>%
+  ggplot(aes(y = interval_score, x = forecast_date, 
+             colour = model, 
+             group = model)) + 
+  geom_line(aes(y = interval_score)) + 
+  geom_point(size = 0.4) + 
+  theme_minimal() +
+  scale_color_manual(values = cols, name = "Forecasting model") + 
+  theme(legend.position = "bottom") + 
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank()) + 
+  labs(y = "Combined interval score", x = "Forecast date") + 
+  facet_wrap(~ target_type, ncol = 1, scale = "free")
+```
+
+<br>
+
+```{r}
+caption <- "Summary of scores achieved by the crowd forecast ensemble, the Hub-ensemble and the Hub-baseline model. Scores were calculated on the natural scale and averaged across all forecast dates and forecast horizons."
+```
+
+
+```{r scores-hub-comparison-not-log}
+scores_all_notlog %>%
+  filter(model %in% models_to_compare) %>%  
+  group_by(model, target_type) %>%
+  summarise(score = sum(interval_score)) %>%
+  arrange(target_type, score) %>%
+  make_table(caption = caption) 
+
+```
+
+<br>
+<br>
 
 
 
@@ -390,8 +795,7 @@ n_forecasts %>%
 ```
 
 
-<!-- ## Sensitivity analysis -->
-<!-- Rankings between different models change depending on how you evaluate forecasts. If you score on an absolute, rather than a logarithmic scale, results change.  -->
+
 
 
 

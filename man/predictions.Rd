@@ -5,7 +5,7 @@
 \alias{predictions}
 \title{Forecast data used for the paper}
 \format{
-An object of class \code{data.table} (inherits from \code{data.frame}) with 74060 rows and 10 columns.
+An object of class \code{data.table} (inherits from \code{data.frame}) with 74060 rows and 11 columns.
 }
 \usage{
 predictions

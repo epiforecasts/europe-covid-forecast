@@ -6,6 +6,7 @@ library(data.table)
 library(scoringutils)
 library(covidHubUtils)
 library(covid.ecdc.forecasts)
+library(tidyr)
 
 # ==============================================================================
 # ------------------------------ update data -----------------------------------
@@ -96,13 +97,33 @@ prediction_data_humans <-
                 model = board_name) %>%
   dplyr::mutate(horizon = as.numeric(substring(target, 1, 1))) %>%
   dplyr::filter(type == "quantile") %>%
-  dplyr::select(location, forecast_date, quantile, prediction, 
+  dplyr::select(location, forecast_date, quantile, prediction, expert,
                 horizon, model, target_end_date, target, target_type) %>%
   dplyr::left_join(locations) %>%
   dplyr::filter(forecast_date >= "2021-05-24") %>%
   dplyr::filter(model != "EpiNow2" & model != "EpiExpert-ensemble") %>%
   dplyr::mutate(forecast_date = as.Date(forecast_date)) %>%
   dplyr::filter(location == "GB")
+
+
+# fix expert status for Rt forecasts
+rt_names <- prediction_data_humans %>%
+  filter(is.na(expert)) %>%
+  pull(model) %>% unique() %>% sort()
+
+rt_names <- gsub(pattern = " \\(Rt\\)", replacement = "", x = rt_names)
+
+expert_status <- prediction_data_humans %>%
+  filter(model %in% rt_names) %>%
+  mutate(model = paste(model, "(Rt)")) %>%
+  rbind(prediction_data_humans %>% 
+          filter(!is.na(expert))) %>%
+  select(expert, model) %>%
+  unique()
+
+prediction_data_humans <- prediction_data_humans %>%
+  select(-expert) %>%
+  left_join(expert_status) 
 
 
 # combine predictions ----------------------------------------------------------

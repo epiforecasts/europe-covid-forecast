@@ -5,7 +5,7 @@
 \alias{data}
 \title{Combined forecast data for the paper}
 \format{
-An object of class \code{data.table} (inherits from \code{data.frame}) with 61296 rows and 12 columns.
+An object of class \code{data.table} (inherits from \code{data.frame}) with 61296 rows and 13 columns.
 }
 \usage{
 data

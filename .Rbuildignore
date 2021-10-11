@@ -13,3 +13,5 @@
 ^Rplots\.pdf$
 ^crowd-rt-forecast$
 ^crowd-direct-forecast$
+^paper
+^reports

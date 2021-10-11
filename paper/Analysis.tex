@@ -1,0 +1,321 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\title{Analysis UK Crowd Forecasting Challenge}
+\author{}
+\date{\vspace{-2.5em}}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Analysis UK Crowd Forecasting Challenge},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+This is an analysis of forecasts made by participants of the UK COVID-19 Crowd Forecasting Challenge. Over the course of 13 weeks (from May 24 2021 to August 16 2021) participants submitted forecasts using the \href{https://crowdforecastr.org}{crowdforecastr prediction platform}.
+
+These forecasts were aggregated by calculating the median prediction of all forecasts. These aggregated forecasts (later denoted as ``epiforecasts-EpiExpert'' or ``Median ensemble'') were submitted to the \href{https://covid19forecasthub.eu/}{European Forecast Hub}.
+
+\hypertarget{prediction-targets-and-observed-values}{%
+\section{Prediction targets and observed values}\label{prediction-targets-and-observed-values}}
+
+Participants were asked to make one to four week ahead predictions of the weekly number of reported cases and deaths from COVID-19 in the UK. Figure \ref{fig:data-viz} shows a visualisation of daily and weekly observed cases and deaths.
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{Analysis_files/figure-latex/data-viz-1} \caption{Visualisation of daily (bars) and weekly (line) reported numbers.}\label{fig:data-viz}
+\end{figure}
+
+\hypertarget{forecast-evaluation}{%
+\section{Forecast evaluation}\label{forecast-evaluation}}
+
+Forecasts were evaluated using the Weighted interval score (WIS). This score is negatively oriented, meaning that a lower score is better. You can think of the weighted interval score as a penalty for being less than perfect.
+
+The weighted interval score is the sum of three components (i.e.~three different types of penalties): Over-prediction, under-prediction and dispersion. Over-prediction and under-prediction are penalties that occur if the true observed value falls outside of the range of values deemed plausible by a forecast. If a forecast is very uncertain, then the range of plausible values is larger and it is less likely to get penalties for over- and under-prediction. The dispersion term on the other hand penalises a forecast for being overly uncertain.
+
+To make forecasts of deaths and reported infections more comparable, we took the logarithm of all forecasts as well as the logarithm of the ``ground truth data'' and then calculated the weighted interval score using these.
+
+This is different from the methodology used by the \href{https://covid19forecasthub.eu/}{European Forecast Hub}, which does not take the logarithm of forecasts and observed values. Taking the logarithm means that forecasts are scored in relative terms rather than absolute terms. On the natural scale it is important whether a forecast is e.g.~10 off or 1000, while on the logarithmic scale we score whether a forecast is 5\% or 10\% off - regardless of the absolute values. This may make more sense for a pandemic anyway where infections spread exponentially. It also allowed us to combine death forecasts and case forecasts and compute a single score to rank forecasters.
+
+If a forecaster did not submit a forecast for a given forecast date, they were assigned the median score of all participants who submitted a forecast on that day.
+
+\hypertarget{leaderboard}{%
+\subsection{Leaderboard}\label{leaderboard}}
+
+Table \ref{tab:leaderboard} shows the overall leaderboard with scores summarised over different forecast dates, targets and horizons. In order to determine the winner of the forecasting competition, scores were averaged to obtain a single performance metric. However, this metric hides considerable variation in performance as will be explored in the following sections. Averaging across different forecast horizons also deviates from current Forecast Hub practices, as an average across different horizons does not lend itself to any meaningful interpretation.
+
+\begin{table}
+
+\caption{\label{tab:leaderboard}Official leaderboard with performance summarised over all forecasts across all targets and horizons. Scores summarised across different targets and horizons were used to determine the winner of the competition.}
+\centering
+\begin{tabular}[t]{r|l|r}
+\hline
+Ranking & Forecaster & Score\\
+\hline
+1 & anonymous\_Stingray & 4.94\\
+\hline
+2 & seb & 6.41\\
+\hline
+3 & aen & 6.56\\
+\hline
+4 & Trebuchet01 & 6.68\\
+\hline
+5 & habakuk (Rt) & 6.70\\
+\hline
+6 & Gw3n & 6.75\\
+\hline
+7 & aurelwu & 6.77\\
+\hline
+8 & Cantabulous & 6.78\\
+\hline
+9 & seb (Rt) & 6.81\\
+\hline
+10 & olane (Rt) & 6.82\\
+\hline
+\end{tabular}
+\end{table}
+
+\hypertarget{individual-vs.-ensemble-performance-over-time}{%
+\subsection{Individual vs.~ensemble performance over time}\label{individual-vs.-ensemble-performance-over-time}}
+
+Forecasts from individual participants were aggregated using a median. As can be seen in Figure \ref{fig:indiv-forecasts-time}, the median ensemble generally tended to perform better than the majority of individual forecasters (espcially for death forecasts).
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{Analysis_files/figure-latex/indiv-forecasts-time-1} \caption{Visualisation of individual participants' scores (grey) together with scores from the median ensemble of all forecasts (red) submitted to the European Forecast Hub. Scores per forecast date in this Figure are averaged across all forecast horizons (one to four weeks ahead) and are likely dominated by forecasts for longer horizons.}\label{fig:indiv-forecasts-time}
+\end{figure}
+
+Another interesting question is whether individual participants were able to beat the ensemble of all participant forecasts. We can see in Figure \ref{fig:top5-comparison} that the top five forecasters often performed better than the ensemble, but not always. Espeically for deaths it seems like forecasters struggled to beat the ensemble consistently.
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{Analysis_files/figure-latex/top5-comparison-1} \caption{Scores for the top five forecasters and the median ensemble (in red) across different forecast dates. Scores are summarised across all forecast horizons.}\label{fig:top5-comparison}
+\end{figure}
+
+Or whether they were able to be better than the median forecaster each forecast date. It is interesting to see that even the top forecasters are not consistently better than the median forecaster, as is shown in Figure \ref{fig:top5-comparison-median}
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{Analysis_files/figure-latex/top5-comparison-median-1} \caption{Scores for the top five forecasters, median score from all other participants (in blue) and score of the median ensemble (in red) across different forecast dates. Scores are summarised across all forecast horizons.}\label{fig:top5-comparison-median}
+\end{figure}
+
+\hypertarget{comparison-against-the-forecast-hub}{%
+\subsection{Comparison against the Forecast Hub}\label{comparison-against-the-forecast-hub}}
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{Analysis_files/figure-latex/comparison-hub-ensemble-1} \caption{Visualisation of scores for the ensemble of all forecasts from participants in the UK Crowd Forecasting Challenge ("epiforecasts-EpiExpert") against the ensemble of all forecasts from the European Forecast Hub (including our own forecasts) and the Forecast Hub baseline model. Scores are averaged across all forecast horizons.}\label{fig:comparison-hub-ensemble}
+\end{figure}
+
+Table \ref{tab:scores-hub-comparison} includes the numeric scores achieved by the crowd forecast ensemble, the Hub-ensemble and the Hub-baseline model.
+
+\begin{table}
+
+\caption{\label{tab:scores-hub-comparison}Summary of scores achieved by the crowd forecast ensemble, the Hub-ensemble and the Hub-baseline model. Scores were averaged across all forecast dates and forecast horizons.}
+\centering
+\begin{tabular}[t]{l|l|r}
+\hline
+Model & Target type & Score\\
+\hline
+epiforecasts-EpiExpert & Cases & 3.72\\
+\hline
+EuroCOVIDhub-ensemble & Cases & 3.82\\
+\hline
+EuroCOVIDhub-baseline & Cases & 6.62\\
+\hline
+epiforecasts-EpiExpert & Deaths & 1.84\\
+\hline
+EuroCOVIDhub-ensemble & Deaths & 1.96\\
+\hline
+EuroCOVIDhub-baseline & Deaths & 10.97\\
+\hline
+\end{tabular}
+\end{table}
+
+\hypertarget{comparison-of-the-different-epiexpert-forecasts}{%
+\subsection{Comparison of the different EpiExpert forecasts}\label{comparison-of-the-different-epiexpert-forecasts}}
+
+Users could submit two different forecasts. One was a direct forecast of cases and deaths. The median ensemble of these direct forecasts is called ``EpiExpert\_direct''. The other one was a forecast of \(R_t\), the effective reproduction number. This \(R_t\) forecast was then mapped to cases and deaths using the so-called renewal equation, which models future cases as a weighted sum of past cases times \(R_t\). The median ensemble that uses only these forecasts is called ``EpiExpert\_Rt''. The ``EpiExpert'' ensemble is a median ensemble that used both regular as well as \(R_t\) forecasts.
+
+Figure \ref{fig:ensemble-variants} shows scores for these three ensemble types over time.
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{Analysis_files/figure-latex/ensemble-variants-1} \caption{Scores across time for the different crowd forecast ensembles. epiforecasts-EpiExpert_direct includes only direct case and death forecasts, epiforecasts-EpiExpert_Rt includes only forecasts made through the Rt app and epiforecasts-EpiExpert includes all forecasts. Scores are average scores across all forecast horizons.}\label{fig:ensemble-variants}
+\end{figure}
+
+Summarised scores for the different versions of the crowd forecast ensemble are given in \ref{tab:scores-ensemble-variants}.
+
+\begin{table}
+
+\caption{\label{tab:scores-ensemble-variants}Summarised scores for the three variants of the crowd forecast ensemble.}
+\centering
+\begin{tabular}[t]{l|l|r}
+\hline
+Model & Target type & Score\\
+\hline
+epiforecasts-EpiExpert & Cases & 3.72\\
+\hline
+epiforecasts-EpiExpert\_Rt & Cases & 3.85\\
+\hline
+epiforecasts-EpiExpert\_direct & Cases & 3.87\\
+\hline
+epiforecasts-EpiExpert & Deaths & 1.84\\
+\hline
+epiforecasts-EpiExpert\_direct & Deaths & 2.12\\
+\hline
+epiforecasts-EpiExpert\_Rt & Deaths & 3.19\\
+\hline
+\end{tabular}
+\end{table}
+
+\hypertarget{number-of-available-forecasts}{%
+\section{Number of available forecasts}\label{number-of-available-forecasts}}
+
+Table \ref{tab:top-active} shows the ten most active forecasters. The average number of forecasts per participant was 2.74, while most participants dropped out after their first forecast (Table \ref{tab:summary-active}). Only two participants submitted a forecast for all thirteen forecast dates.
+
+\begin{table}
+
+\caption{\label{tab:top-active}Ten most active forecasters by the number of forecast dates on which a participants made a forecast}
+\centering
+\begin{tabular}[t]{l|r}
+\hline
+Model & N forecasts\\
+\hline
+anonymous\_Stingray & 13\\
+\hline
+seabbs & 13\\
+\hline
+seabbs (Rt) & 12\\
+\hline
+2e10e122 & 10\\
+\hline
+BQuilty & 10\\
+\hline
+aurelwu & 8\\
+\hline
+RitwikP & 8\\
+\hline
+seb & 8\\
+\hline
+seb (Rt) & 8\\
+\hline
+Sophia & 8\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}
+
+\caption{\label{tab:summary-active}Distribution of the number of forecasts made by any individual participant.}
+\centering
+\begin{tabular}[t]{r|r|r|r}
+\hline
+Max & Min & Mean & Median\\
+\hline
+13 & 1 & 2.74 & 1\\
+\hline
+\end{tabular}
+\end{table}
+
+\includegraphics[width=1\linewidth]{Analysis_files/figure-latex/unnamed-chunk-16-1}
+
+On average, 21.9 forecasts were submitted each week, with a minimum of 10 and a maximum of 57 (Table \ref{tab:summary-freq-time}). The distribution of the number of forecasters over time is shown in Figure \ref{fig:distr-freq-time}.
+
+\begin{table}
+
+\caption{\label{tab:summary-freq-time}}
+\centering
+\begin{tabular}[t]{r|r|r|r}
+\hline
+Max & Min & Mean & Median\\
+\hline
+57 & 10 & 21.92 & 21\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{Analysis_files/figure-latex/distr-freq-time-1} \caption{Distribution of the number of forecasts made by any individual participant.}\label{fig:distr-freq-time}
+\end{figure}
+
+\end{document}
