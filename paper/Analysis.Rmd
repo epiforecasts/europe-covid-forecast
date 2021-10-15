@@ -51,6 +51,10 @@ model_colors <-
     "Median score" = "blue") %>%
   sort()
 
+expert_colours <- c("Expert" = "red", 
+                    "Non-expert" = "black", 
+                    "Unknown" = "grey50")
+
 subset_colors <- function(model_names) {
   model_colors[names(model_colors) %in% model_names]
 }
@@ -342,7 +346,6 @@ Forecasts from individual participants were aggregated using a median. As can be
 caption <- "Visualisation of individual participants' scores (grey) together with scores from the median ensemble of all forecasts (red) submitted to the European Forecast Hub. Scores per forecast date in this Figure are averaged across all forecast horizons (one to four weeks ahead) and are likely dominated by forecasts for longer horizons."
 ```
 
-
 ```{r indiv-forecasts-time, fig.cap=caption}
 
 models_included <- c(models$participants, "epiforecasts-EpiExpert")
@@ -466,7 +469,7 @@ df %>%
 
 ## Forecast performance and participant characteristics
 
-Figure \@ref(fig:performance-number-forecasts) shows how well different forecasters did as a function of the number of forecasts they submitted. It suggests that more regular forecasters did slightly better in this competition. However, we don't know why this is the case. Regular forecasters maybe improve with practice and feedback, or it might be that better forecasters enjoy the task better and are therefore more likely to participate consistently.  
+Figure \@ref(fig:performance-number-forecasts) shows how well different forecasters did as a function of the number of forecasts they submitted. Overall there doesn't seem to be a strong effect. More regular forecasters maybe did slightly better in this competition on deaths, but the results are inconclusive.   
 
 ```{r}
 caption <- "Mean weighted interval score vs. the number of forecasts made by any individual forecaster"
@@ -483,18 +486,20 @@ n_forecasts <- data %>%
          !grepl("EuroCOVIDhub", model)) 
 
 scores_participants %>%
-  group_by(model, target_type) %>%
+  group_by(model, target_type, expert) %>%
   summarise(score = mean(interval_score)) %>%
   full_join(n_forecasts) %>%
   ggplot(aes(y = score, x = n_forecasts)) + 
-  geom_point() + 
+  geom_point(aes(color = expert)) + 
   geom_smooth() + 
   theme_minimal() + 
+  scale_color_manual(values = expert_colours, name = "Expert status") +
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(), 
         panel.spacing = unit(3, "lines")) + 
   labs(y = "Weighted interval score", x = "Number of forecasts") + 
-  facet_wrap(~target_type, scale = "free", ncol = 1)
+  facet_wrap(~target_type, scale = "free", ncol = 1) + 
+  theme(legend.position = "bottom")
   
 ```
 
@@ -511,8 +516,6 @@ caption <- "Distribution of weighted interval scores depending on whether or not
 scores_participants %>%
   group_by(model, target_type, expert) %>%
   summarise(score = mean(interval_score)) %>%
-  mutate(expert = ifelse(is.na(expert), "Unknown", 
-                         ifelse(expert, "Expert", "Non-expert"))) %>%
   ggplot(aes(y = score, x = expert)) + 
   geom_violin(fill = "grey90", alpha = 0.6, color = NA) + 
   geom_jitter(width = 0.1, size = 0.8, alpha = 0.8, color = "grey40") + 
@@ -525,6 +528,40 @@ scores_participants %>%
   facet_wrap(~target_type, scale = "free", ncol = 1)
 
 ```
+
+
+
+```{r}
+caption <- "Scores for 'experts' and 'non-experts' over time. Thick line is the mean score. "
+```
+
+```{r performance-expert2, fig.cap = caption}
+df <- scores_all %>%
+  filter(model %in% models$participants, 
+         expert != "Unknown") 
+
+mean_perf <- df %>%
+  group_by(expert, forecast_date) %>%
+  summarise(interval_score = mean(interval_score))
+
+df %>%
+  ggplot(aes(y = interval_score, x = forecast_date, 
+             colour = expert)) + 
+  geom_line(aes(y = interval_score, group = model), size = 0.1) + 
+  geom_point(size = 0.4) + 
+  geom_line(data = mean_perf,
+            size = 1.1) +
+  scale_color_manual(values=expert_colours, name = "Expert status") + 
+  theme_minimal() +
+  theme(legend.position = "bottom") + 
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), 
+        panel.spacing = unit(3, "lines")) + 
+  labs(y = "Combined interval score", x = "Forecast date") + 
+  facet_wrap(~target_type, scale = "free", ncol = 1)
+```
+
+
 
 
 
