@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ $(date +'%A') = 'Monday']; then
+if [ $(date +'%A') = 'Monday' ]; then
   LAST_MONDAY=$(date +'%Y-%m-%d')
 else
   LAST_MONDAY=$(date --date='last Mon' +'%Y-%m-%d')
