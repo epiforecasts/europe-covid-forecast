@@ -1,0 +1,5 @@
+forecaster_id,forecast_date,expert,leaderboard,distribution,median,width,horizon,target_end_date,submission_date,location_name,target_type,location,inc_hosp,inc_case,inc_death,forecast_duration,forecast_week
+921311,2021-12-13T00:00:00Z,FALSE,yes,log-normal,332772.91,0.182,1,2021-12-18,2021-12-13T00:00:00Z,Germany,cases,DE,,JHU,JHU,,50
+921311,2021-12-13T00:00:00Z,FALSE,yes,log-normal,318147.02,0.203,2,2021-12-25,2021-12-13T00:00:00Z,Germany,cases,DE,,JHU,JHU,,50
+921311,2021-12-13T00:00:00Z,FALSE,yes,log-normal,272848.77,0.225,3,2022-01-01,2021-12-13T00:00:00Z,Germany,cases,DE,,JHU,JHU,,50
+921311,2021-12-13T00:00:00Z,FALSE,yes,log-normal,407349.72,0.246,4,2022-01-08,2021-12-13T00:00:00Z,Germany,cases,DE,,JHU,JHU,,50
