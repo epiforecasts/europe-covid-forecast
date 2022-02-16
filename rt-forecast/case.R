@@ -38,7 +38,7 @@ rt <- opts_list(
 )
 # add population adjustment for each country
 loc_names <- names(rt)
-rt <- lapply(loc_names,  function(loc, proc_pop = 0.6) {
+rt <- lapply(loc_names,  function(loc, proc_pop = 1) {
   rt_loc <- rt[[loc]]
   rt_loc$pop <- locations[location_name %in% loc, ]$population
   rt_loc$pop <- as.integer(rt_loc$pop * proc_pop)
@@ -53,7 +53,7 @@ regional_epinow(
   rt = rt,
   stan = stan_opts(samples = 3000, warmup = 500,
                    chains = 4, cores = no_cores),
-  obs = obs_opts(scale = list(mean = 0.2, sd = 0.025)),
+  obs = obs_opts(scale = list(mean = 0.4, sd = 0.025)),
   horizon = 30,
   output = c("region", "summary", "timing", "samples", "fit"),
   target_date = target_date,
