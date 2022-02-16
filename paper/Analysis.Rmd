@@ -71,15 +71,23 @@ scale_fn <- function(x) {
 ```
 
 ```{r}
-score_forecasts <- function(data) {
+score_forecasts <- function(data, 
+                            summarise_by = c("model", "forecast_date", 
+                                             "target_type", "expert")) {
   eval_forecasts(data, 
-                 summarise_by = c("model", "forecast_date", "target_type", "expert"), 
-                 by = c("forecast_date", "target_type", "horizon", "model", "expert"))[]
+                 summarise_by = summarise_by, 
+                 by = c("forecast_date", "target_type", 
+                        "horizon", "model", "expert"))[]
 }
 
 scores_participants <- 
   score_forecasts(log_data[model %in% models[["participants"]]])
 scores_all <- score_forecasts(log_data)
+
+scores_all_range <- score_forecasts(log_data, 
+                                    summarise_by = c("model", "forecast_date", 
+                                                     "target_type", "expert", 
+                                                     "range"))
 
 scores_participants_notlog <- 
   score_forecasts(data[model %in% models[["participants"]]])
@@ -295,10 +303,6 @@ data %>%
 <br>
 <br>
 
-```{r}
-
-```
-
 
 
 
@@ -465,6 +469,55 @@ df %>%
 
 <br>
 <br>
+
+## Navigating Uncertainty
+
+```{r}
+
+df <- 
+
+plot_coverage <- function(df, interval = 50, target = "Cases") {
+  df <- scores_all_range %>%
+    group_by(target_type, model, range) %>%
+    summarise(coverage = mean(coverage)) %>%
+    filter(range %in% interval, 
+           target_type == target) 
+  
+  df %>%
+  ggplot(aes(y = coverage, x = reorder(model, -coverage), 
+             group = range)) + 
+  geom_point(color = "grey50", size = 0.9) + 
+  geom_point(data = df %>%
+               filter(model == "EuroCOVIDhub-ensemble"), 
+             color = "black", size = 3) + 
+  geom_point(data = df %>%
+               filter(model == "epiforecasts-EpiExpert"), 
+             size = 3, color = "red") + 
+  theme_minimal() + 
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), 
+        panel.spacing = unit(3, "lines"), 
+        axis.text.x = element_blank()) + 
+  theme(legend.position = "bottom")
+}
+
+plot_coverage(df, interval = 90)
+
+  
+
+  
+  
+  filter(model %in% models$participants) %>%
+  
+  
+  
+  
+  summarise(interval_score = median(interval_score)) %>%
+  mutate(model = "Median score")
+
+```
+
+
 
 
 ## Forecast performance and participant characteristics
@@ -691,6 +744,8 @@ n_forecasts <- data %>%
   arrange(-n_forecasts) %>%
   filter(!grepl("epiforecasts", model), 
          !grepl("EuroCOVIDhub", model)) 
+
+n_forecasts$model %>% unique() %>% length()
 ```
 
 Table \@ref(tab:top-active) shows the ten most active forecasters. The average number of forecasts per participant was 2.74, while most participants dropped out after their first forecast (Table \@ref(tab:summary-active)). Only two participants submitted a forecast for all thirteen forecast dates. 
