@@ -253,6 +253,7 @@ if (window.hljs) {
 
 
 
+
 <style type="text/css">
 .main-container {
   max-width: 940px;
@@ -273,6 +274,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -374,7 +378,7 @@ function getMonday(d) {
 
 function getURL(report, country) { 
 var str = 'reports/'; 
-str = str.concat(report, '-report-', '2022-02-28'); 
+str = str.concat(report, '-report-', '2022-03-07'); 
 if (!(report === 'ensemble')) { 
   str = str.concat('-', country); 
 } 
@@ -416,7 +420,7 @@ body{
 </style>
 <hr>
 <!-- "style=\"height: calc(100vh - 205px);\" ", -->
-<iframe width="100%" id="reportFrame" src="reports/ensemble-report-2022-02-28.html" style="height: calc(100vh - 245px);" onload="resizeIframe(this)" frameborder="0">
+<iframe width="100%" id="reportFrame" src="reports/ensemble-report-2022-03-07.html" style="height: calc(100vh - 245px);" onload="resizeIframe(this)" frameborder="0">
 </iframe>
 
 
