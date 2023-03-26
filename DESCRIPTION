@@ -32,7 +32,8 @@ Imports:
     googledrive,
     googlesheets4,
     here,
-    grates
+    grates,
+    gh
 Suggests:
     covidregionaldata,
     future,
@@ -55,7 +56,7 @@ Suggests:
     shinyjs,
     shredder
 Remotes:
-  epiforecasts/EpiNow2,
+  epiforecasts/EpiNow2@estimate-truncation-freq,
   epiforecasts/scoringutils,
   epiforecasts/crowdforecastr,
   epiforecasts/forecasthubutils,

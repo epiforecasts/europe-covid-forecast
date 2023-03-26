@@ -1,0 +1,2227 @@
+region,date,strat,type,median,mean,sd,lower_90,lower_50,lower_20,upper_20,upper_50,upper_90
+Belgium,2022-12-28,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2022-12-29,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2022-12-30,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Belgium,2022-12-31,,estimate,243,408.1,485.6,9,91,177,333.4,548.8,1328.1
+Belgium,2023-01-01,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-01-02,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Belgium,2023-01-03,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-01-04,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-01-05,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-01-06,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-01-07,,estimate,200,334.5,394.7,10,78,145,270,441.2,1086.3
+Belgium,2023-01-08,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Belgium,2023-01-09,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-01-10,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-01-11,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-01-12,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Belgium,2023-01-13,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-01-14,,estimate,207,335.5,391.5,9,75,148.6,274.4,444.5,1144.2
+Belgium,2023-01-15,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-01-16,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-01-17,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-01-18,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-01-19,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Belgium,2023-01-20,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-01-21,,estimate,200.5,341.8,423.3,12,82,146.6,288,455.2,1120.1
+Belgium,2023-01-22,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-01-23,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-01-24,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-01-25,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Belgium,2023-01-26,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Belgium,2023-01-27,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-01-28,,estimate,223,348.1,420.2,11,82,160,305.4,460.5,1080.4
+Belgium,2023-01-29,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-01-30,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-01-31,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-02-01,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Belgium,2023-02-02,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Belgium,2023-02-03,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-02-04,,estimate,225.5,363.1,414.2,9.9,87,165,310.8,484.2,1187.1
+Belgium,2023-02-05,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-02-06,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-02-07,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-02-08,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Belgium,2023-02-09,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-02-10,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Belgium,2023-02-11,,estimate,226.5,353,404.5,13,90,165,301.4,470,1104.2
+Belgium,2023-02-12,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-02-13,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Belgium,2023-02-14,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-02-15,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Belgium,2023-02-16,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-02-17,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-02-18,,estimate,232,383.9,448.6,11,86,168,331.4,524.2,1251.5
+Belgium,2023-02-19,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Belgium,2023-02-20,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-02-21,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Belgium,2023-02-22,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-02-23,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-02-24,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-02-25,,estimate based on partial data,249.5,421.7,516.8,13.9,102.8,183.6,351,548.2,1367.2
+Belgium,2023-02-26,,estimate based on partial data,0,0.1,0.5,0,0,0,0,0,1
+Belgium,2023-02-27,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-02-28,,estimate based on partial data,0,0.2,0.5,0,0,0,0,0,1
+Belgium,2023-03-01,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Belgium,2023-03-02,,estimate based on partial data,0,0.1,0.5,0,0,0,0,0,1
+Belgium,2023-03-03,,estimate based on partial data,0,0.2,0.6,0,0,0,0,0,1
+Belgium,2023-03-04,,estimate based on partial data,295.5,480.4,591.8,13,105.8,205,402.8,631,1565.2
+Belgium,2023-03-05,,estimate based on partial data,0,0.2,0.5,0,0,0,0,0,1
+Belgium,2023-03-06,,estimate based on partial data,0,0.2,0.5,0,0,0,0,0,1
+Belgium,2023-03-07,,estimate based on partial data,0,0.2,0.6,0,0,0,0,0,1
+Belgium,2023-03-08,,estimate based on partial data,0,0.1,0.5,0,0,0,0,0,1
+Belgium,2023-03-09,,estimate based on partial data,0,0.2,0.5,0,0,0,0,0,1
+Belgium,2023-03-10,,estimate based on partial data,0,0.2,0.6,0,0,0,0,0,1
+Belgium,2023-03-11,,estimate based on partial data,302.5,541.9,717.5,17,107,206,411,703.2,1870.7
+Belgium,2023-03-12,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Belgium,2023-03-13,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Belgium,2023-03-14,,forecast,0,0.2,0.9,0,0,0,0,0,1
+Belgium,2023-03-15,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Belgium,2023-03-16,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Belgium,2023-03-17,,forecast,0,0.2,0.7,0,0,0,0,0,1
+Belgium,2023-03-18,,forecast,327,656.2,1052.3,15,119,234,465,796,2227.2
+Belgium,2023-03-19,,forecast,0,0.3,0.9,0,0,0,0,0,1
+Belgium,2023-03-20,,forecast,0,0.2,0.8,0,0,0,0,0,1
+Belgium,2023-03-21,,forecast,0,0.3,0.8,0,0,0,0,0,1
+Belgium,2023-03-22,,forecast,0,0.2,0.7,0,0,0,0,0,1
+Belgium,2023-03-23,,forecast,0,0.2,0.7,0,0,0,0,0,1
+Belgium,2023-03-24,,forecast,0,0.2,0.8,0,0,0,0,0,1
+Belgium,2023-03-25,,forecast,359.5,742.4,1315,17,131,248.6,503.4,837,2596.1
+Belgium,2023-03-26,,forecast,0,0.3,1,0,0,0,0,0,2
+Belgium,2023-03-27,,forecast,0,0.3,0.9,0,0,0,0,0,2
+Belgium,2023-03-28,,forecast,0,0.3,1.2,0,0,0,0,0,2
+Belgium,2023-03-29,,forecast,0,0.3,1,0,0,0,0,0,1
+Belgium,2023-03-30,,forecast,0,0.2,0.8,0,0,0,0,0,1
+Belgium,2023-03-31,,forecast,0,0.3,1,0,0,0,0,0,1
+Belgium,2023-04-01,,forecast,389.5,1002.7,2147.4,14,134.8,269,557,1010.5,3904.4
+Belgium,2023-04-02,,forecast,0,0.4,1.6,0,0,0,0,0,2
+Belgium,2023-04-03,,forecast,0,0.4,3.9,0,0,0,0,0,2
+Belgium,2023-04-04,,forecast,0,0.4,2.4,0,0,0,0,0,2
+Belgium,2023-04-05,,forecast,0,0.4,1.7,0,0,0,0,0,2
+Belgium,2023-04-06,,forecast,0,0.3,1.2,0,0,0,0,0,2
+Belgium,2023-04-07,,forecast,0,0.4,1.4,0,0,0,0,0,2
+Belgium,2023-04-08,,forecast,389,1238.3,3326,22.9,142.8,267,585.4,1088.2,4343.1
+Belgium,2023-04-09,,forecast,0,0.5,2.1,0,0,0,0,0,2
+Belgium,2023-04-10,,forecast,0,0.5,2.6,0,0,0,0,0,2
+Belgium,2023-04-11,,forecast,0,0.5,3.5,0,0,0,0,0,2
+Belgium,2023-04-12,,forecast,0,0.5,2.8,0,0,0,0,0,2
+Belgium,2023-04-13,,forecast,0,0.4,2.3,0,0,0,0,0,2
+Belgium,2023-04-14,,forecast,0,0.4,1.7,0,0,0,0,0,2
+Belgium,2023-04-15,,forecast,427,1584.5,6615.8,16,133,277.6,651.4,1257.2,5836.1
+Belgium,2023-04-16,,forecast,0,0.6,2.4,0,0,0,0,0,3
+Belgium,2023-04-17,,forecast,0,0.6,4.9,0,0,0,0,0,2
+Belgium,2023-04-18,,forecast,0,0.7,4.9,0,0,0,0,0,3
+Belgium,2023-04-19,,forecast,0,0.6,3.2,0,0,0,0,0,2
+Cyprus,2022-12-28,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Cyprus,2022-12-29,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Cyprus,2022-12-30,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Cyprus,2022-12-31,,estimate,8,9.3,6.9,1,4,7,10,12,22
+Cyprus,2023-01-01,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Cyprus,2023-01-02,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Cyprus,2023-01-03,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Cyprus,2023-01-04,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Cyprus,2023-01-05,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-01-06,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Cyprus,2023-01-07,,estimate,7,8.2,5.5,1,4,6,9,11,18
+Cyprus,2023-01-08,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Cyprus,2023-01-09,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Cyprus,2023-01-10,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Cyprus,2023-01-11,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Cyprus,2023-01-12,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Cyprus,2023-01-13,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-01-14,,estimate,7,7.7,6,1,4,5,8,10,18
+Cyprus,2023-01-15,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Cyprus,2023-01-16,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Cyprus,2023-01-17,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-01-18,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-01-19,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-01-20,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-01-21,,estimate,6,6.7,4.7,1,3,5,7,9,15
+Cyprus,2023-01-22,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-01-23,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-01-24,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-01-25,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-01-26,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-01-27,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-01-28,,estimate,5,6.2,4.5,1,3,4,6,8,14
+Cyprus,2023-01-29,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-01-30,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-01-31,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-02-01,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-02-02,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-02-03,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-02-04,,estimate,5,5.7,4.3,0,3,4,6,8,13
+Cyprus,2023-02-05,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-02-06,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-02-07,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-02-08,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-02-09,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-02-10,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-02-11,,estimate,4,4.9,3.8,0,2,3,5,7,12
+Cyprus,2023-02-12,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-02-13,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-02-14,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-02-15,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-02-16,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-02-17,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-02-18,,estimate,4,4.8,3.8,0,2,3,5,7,12
+Cyprus,2023-02-19,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-02-20,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-02-21,,estimate,0,0.1,0.2,0,0,0,0,0,1
+Cyprus,2023-02-22,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-02-23,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-02-24,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-02-25,,estimate,4,4.5,3.5,0,2,3,5,6,11
+Cyprus,2023-02-26,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-02-27,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-02-28,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-03-01,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-03-02,,estimate,0,0.1,0.3,0,0,0,0,0,0
+Cyprus,2023-03-03,,estimate,0,0.1,0.2,0,0,0,0,0,1
+Cyprus,2023-03-04,,estimate based on partial data,3,4.1,3.3,0,2,3,4,6,10
+Cyprus,2023-03-05,,estimate based on partial data,0,0.1,0.2,0,0,0,0,0,0
+Cyprus,2023-03-06,,estimate based on partial data,0,0,0.2,0,0,0,0,0,0
+Cyprus,2023-03-07,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-03-08,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-03-09,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-03-10,,estimate based on partial data,0,0,0.2,0,0,0,0,0,0
+Cyprus,2023-03-11,,estimate based on partial data,3,3.7,3.3,0,1,2,4,5,10
+Cyprus,2023-03-12,,estimate based on partial data,0,0,0.2,0,0,0,0,0,0
+Cyprus,2023-03-13,,estimate based on partial data,0,0.1,0.2,0,0,0,0,0,1
+Cyprus,2023-03-14,,estimate based on partial data,0,0.1,0.2,0,0,0,0,0,1
+Cyprus,2023-03-15,,estimate based on partial data,0,0.1,0.2,0,0,0,0,0,0
+Cyprus,2023-03-16,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-03-17,,estimate based on partial data,0,0,0.2,0,0,0,0,0,0
+Cyprus,2023-03-18,,estimate based on partial data,3,3.6,3.3,0,1,2,4,5,10
+Cyprus,2023-03-19,,forecast,0,0,0.2,0,0,0,0,0,0
+Cyprus,2023-03-20,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-03-21,,forecast,0,0.1,0.2,0,0,0,0,0,1
+Cyprus,2023-03-22,,forecast,0,0,0.2,0,0,0,0,0,0
+Cyprus,2023-03-23,,forecast,0,0,0.2,0,0,0,0,0,0
+Cyprus,2023-03-24,,forecast,0,0,0.2,0,0,0,0,0,0
+Cyprus,2023-03-25,,forecast,2,3.4,3.7,0,1,2,3,5,10
+Cyprus,2023-03-26,,forecast,0,0,0.3,0,0,0,0,0,0
+Cyprus,2023-03-27,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-03-28,,forecast,0,0,0.2,0,0,0,0,0,0
+Cyprus,2023-03-29,,forecast,0,0,0.2,0,0,0,0,0,0
+Cyprus,2023-03-30,,forecast,0,0,0.2,0,0,0,0,0,0
+Cyprus,2023-03-31,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-04-01,,forecast,2,3.4,4.2,0,1,2,3,4,10
+Cyprus,2023-04-02,,forecast,0,0,0.2,0,0,0,0,0,0
+Cyprus,2023-04-03,,forecast,0,0,0.2,0,0,0,0,0,0
+Cyprus,2023-04-04,,forecast,0,0,0.2,0,0,0,0,0,0
+Cyprus,2023-04-05,,forecast,0,0,0.2,0,0,0,0,0,0
+Cyprus,2023-04-06,,forecast,0,0,0.2,0,0,0,0,0,0
+Cyprus,2023-04-07,,forecast,0,0,0.3,0,0,0,0,0,0
+Cyprus,2023-04-08,,forecast,2,3.3,4.5,0,1,2,3,4,11
+Cyprus,2023-04-09,,forecast,0,0,0.2,0,0,0,0,0,0
+Cyprus,2023-04-10,,forecast,0,0,0.2,0,0,0,0,0,0
+Cyprus,2023-04-11,,forecast,0,0,0.2,0,0,0,0,0,0
+Cyprus,2023-04-12,,forecast,0,0.1,0.3,0,0,0,0,0,0
+Cyprus,2023-04-13,,forecast,0,0,0.2,0,0,0,0,0,0
+Cyprus,2023-04-14,,forecast,0,0.1,0.3,0,0,0,0,0,0
+Cyprus,2023-04-15,,forecast,2,3.4,7.9,0,1,1,3,4,11
+Cyprus,2023-04-16,,forecast,0,0,0.3,0,0,0,0,0,0
+Cyprus,2023-04-17,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Cyprus,2023-04-18,,forecast,0,0,0.2,0,0,0,0,0,0
+Cyprus,2023-04-19,,forecast,0,0.1,0.3,0,0,0,0,0,0
+Czechia,2022-12-28,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2022-12-29,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Czechia,2022-12-30,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Czechia,2022-12-31,,estimate,262,432.9,519.5,15,104.8,191.8,367.4,560,1433
+Czechia,2023-01-01,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Czechia,2023-01-02,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-01-03,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-01-04,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Czechia,2023-01-05,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Czechia,2023-01-06,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-01-07,,estimate,238,380.9,459.3,12.9,84.8,173,316,490.2,1225.1
+Czechia,2023-01-08,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-01-09,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-01-10,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Czechia,2023-01-11,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-01-12,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Czechia,2023-01-13,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-01-14,,estimate,251,411.7,507.6,10.9,97,179.6,337.4,557.2,1296.3
+Czechia,2023-01-15,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-01-16,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-01-17,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-01-18,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Czechia,2023-01-19,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-01-20,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-01-21,,estimate,255.5,386.6,455.8,14,84.8,180.6,358,518.2,1181.8
+Czechia,2023-01-22,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-01-23,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Czechia,2023-01-24,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-01-25,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Czechia,2023-01-26,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-01-27,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-01-28,,estimate,238.5,369.1,388.1,16,96.8,172.6,327.2,511.2,1167
+Czechia,2023-01-29,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-01-30,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-01-31,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-02-01,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Czechia,2023-02-02,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Czechia,2023-02-03,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-02-04,,estimate,266.5,399.2,453.5,16.9,100,172.6,345,525.2,1266.7
+Czechia,2023-02-05,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-02-06,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-02-07,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-02-08,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-02-09,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Czechia,2023-02-10,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-02-11,,estimate,264,402.1,447.3,15,101.8,190.2,347.4,548.2,1247.2
+Czechia,2023-02-12,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-02-13,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-02-14,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-02-15,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-02-16,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Czechia,2023-02-17,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-02-18,,estimate,246.5,415.9,485.2,14,96,179,356.8,549,1334.7
+Czechia,2023-02-19,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-02-20,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-02-21,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-02-22,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-02-23,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Czechia,2023-02-24,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-02-25,,estimate,283,449.6,501.1,13,109,207,381.4,633.5,1419.7
+Czechia,2023-02-26,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-02-27,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-02-28,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Czechia,2023-03-01,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-03-02,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Czechia,2023-03-03,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-03-04,,estimate based on partial data,308.5,472.4,515.7,20,117.8,213,413.4,642.2,1456.3
+Czechia,2023-03-05,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-03-06,,estimate based on partial data,0,0.2,0.5,0,0,0,0,0,1
+Czechia,2023-03-07,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-03-08,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-03-09,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Czechia,2023-03-10,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-03-11,,estimate based on partial data,343,564.6,674.3,20.9,136,236.6,463.4,741.5,1855.2
+Czechia,2023-03-12,,estimate based on partial data,0,0.1,0.5,0,0,0,0,0,1
+Czechia,2023-03-13,,estimate based on partial data,0,0.2,0.5,0,0,0,0,0,1
+Czechia,2023-03-14,,estimate based on partial data,0,0.2,0.6,0,0,0,0,0,1
+Czechia,2023-03-15,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Czechia,2023-03-16,,estimate based on partial data,0,0.1,0.5,0,0,0,0,0,1
+Czechia,2023-03-17,,estimate based on partial data,0,0.2,0.5,0,0,0,0,0,1
+Czechia,2023-03-18,,estimate based on partial data,326,565.5,725.4,18,122,233.6,460.4,735.2,1806.1
+Czechia,2023-03-19,,forecast,0,0.2,0.5,0,0,0,0,0,1
+Czechia,2023-03-20,,forecast,0,0.2,0.5,0,0,0,0,0,1
+Czechia,2023-03-21,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Czechia,2023-03-22,,forecast,0,0.2,0.5,0,0,0,0,0,1
+Czechia,2023-03-23,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Czechia,2023-03-24,,forecast,0,0.2,0.5,0,0,0,0,0,1
+Czechia,2023-03-25,,forecast,376,688.7,989.2,15.9,127,265.8,520,820.5,2381.1
+Czechia,2023-03-26,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Czechia,2023-03-27,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Czechia,2023-03-28,,forecast,0,0.2,0.7,0,0,0,0,0,1
+Czechia,2023-03-29,,forecast,0,0.2,0.7,0,0,0,0,0,1
+Czechia,2023-03-30,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Czechia,2023-03-31,,forecast,0,0.2,0.8,0,0,0,0,0,1
+Czechia,2023-04-01,,forecast,435,878.9,1776.4,21.9,154.8,299.6,634,965.8,2980.8
+Czechia,2023-04-02,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Czechia,2023-04-03,,forecast,0,0.3,0.8,0,0,0,0,0,1
+Czechia,2023-04-04,,forecast,0,0.3,0.9,0,0,0,0,0,1
+Czechia,2023-04-05,,forecast,0,0.2,0.8,0,0,0,0,0,1
+Czechia,2023-04-06,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Czechia,2023-04-07,,forecast,0,0.2,0.7,0,0,0,0,0,1
+Czechia,2023-04-08,,forecast,440,1020.7,2207.3,12.9,173,302.8,643.4,1091.8,3722.5
+Czechia,2023-04-09,,forecast,0,0.2,0.8,0,0,0,0,0,1
+Czechia,2023-04-10,,forecast,0,0.3,1,0,0,0,0,0,2
+Czechia,2023-04-11,,forecast,0,0.3,1.1,0,0,0,0,0,2
+Czechia,2023-04-12,,forecast,0,0.3,1.3,0,0,0,0,0,1
+Czechia,2023-04-13,,forecast,0,0.2,0.7,0,0,0,0,0,1
+Czechia,2023-04-14,,forecast,0,0.4,2.5,0,0,0,0,0,1
+Czechia,2023-04-15,,forecast,460,1105.8,2252.5,21.9,161.8,323,655.4,1224,3902.2
+Czechia,2023-04-16,,forecast,0,0.3,1,0,0,0,0,0,2
+Czechia,2023-04-17,,forecast,0,0.3,0.9,0,0,0,0,0,2
+Czechia,2023-04-18,,forecast,0,0.4,1.4,0,0,0,0,0,2
+Czechia,2023-04-19,,forecast,0,0.3,1,0,0,0,0,0,2
+Denmark,2022-12-28,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Denmark,2022-12-29,,estimate,0,0.2,0.7,0,0,0,0,0,1
+Denmark,2022-12-30,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Denmark,2022-12-31,,estimate,210,341.5,400.3,11,81,153.2,289.4,450.2,1114.1
+Denmark,2023-01-01,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Denmark,2023-01-02,,estimate,0,0.2,0.7,0,0,0,0,0,1
+Denmark,2023-01-03,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Denmark,2023-01-04,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Denmark,2023-01-05,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Denmark,2023-01-06,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Denmark,2023-01-07,,estimate,184,283.5,311.6,9,72,132,248,384.2,938.1
+Denmark,2023-01-08,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Denmark,2023-01-09,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Denmark,2023-01-10,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Denmark,2023-01-11,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Denmark,2023-01-12,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Denmark,2023-01-13,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Denmark,2023-01-14,,estimate,163,254.4,287.2,10,64,118,225,343.2,768.2
+Denmark,2023-01-15,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Denmark,2023-01-16,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Denmark,2023-01-17,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Denmark,2023-01-18,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Denmark,2023-01-19,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-01-20,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Denmark,2023-01-21,,estimate,137,212.8,239,8,55,101,183,285.2,668
+Denmark,2023-01-22,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Denmark,2023-01-23,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Denmark,2023-01-24,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-01-25,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-01-26,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-01-27,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Denmark,2023-01-28,,estimate,129.5,198.2,218.2,7,48,91,177.4,272.2,625
+Denmark,2023-01-29,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-01-30,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Denmark,2023-01-31,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-02-01,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-02-02,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-02-03,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-02-04,,estimate,115,174.4,188.3,6,48,82,155,234,563.2
+Denmark,2023-02-05,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-02-06,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-02-07,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-02-08,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-02-09,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-02-10,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-02-11,,estimate,104,162.5,185.2,5,40,75,140,218,521.1
+Denmark,2023-02-12,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-02-13,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-02-14,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Denmark,2023-02-15,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-02-16,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Denmark,2023-02-17,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Denmark,2023-02-18,,estimate,92,151.9,175.8,5,39.8,66.6,127,204,486.1
+Denmark,2023-02-19,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-02-20,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-02-21,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-02-22,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Denmark,2023-02-23,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Denmark,2023-02-24,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Denmark,2023-02-25,,estimate based on partial data,91,144.2,160.6,6,37,64.6,122,193,459
+Denmark,2023-02-26,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Denmark,2023-02-27,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-02-28,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-03-01,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Denmark,2023-03-02,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-03-03,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-03-04,,estimate based on partial data,88,136.4,161.1,4,34,62,117,179.2,445
+Denmark,2023-03-05,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-03-06,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-03-07,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-03-08,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-03-09,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Denmark,2023-03-10,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Denmark,2023-03-11,,estimate based on partial data,83.5,138.1,174.3,3,29.8,58,112,177,470.1
+Denmark,2023-03-12,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Denmark,2023-03-13,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-03-14,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-03-15,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Denmark,2023-03-16,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Denmark,2023-03-17,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-03-18,,forecast,80,144.9,205,5,31,59,108.4,176.2,511.2
+Denmark,2023-03-19,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-03-20,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-03-21,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Denmark,2023-03-22,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-03-23,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Denmark,2023-03-24,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-03-25,,forecast,74,158.5,269.3,4,28,53,107,182.2,570
+Denmark,2023-03-26,,forecast,0,0.1,0.6,0,0,0,0,0,1
+Denmark,2023-03-27,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-03-28,,forecast,0,0.1,0.6,0,0,0,0,0,1
+Denmark,2023-03-29,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-03-30,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-03-31,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Denmark,2023-04-01,,forecast,71,167.2,331.8,4,25,51.6,104.4,177,619.1
+Denmark,2023-04-02,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Denmark,2023-04-03,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Denmark,2023-04-04,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Denmark,2023-04-05,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Denmark,2023-04-06,,forecast,0,0.1,1.2,0,0,0,0,0,1
+Denmark,2023-04-07,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Denmark,2023-04-08,,forecast,71,198.9,497.5,2,23,47,102,184,745.4
+Denmark,2023-04-09,,forecast,0,0.1,0.6,0,0,0,0,0,1
+Denmark,2023-04-10,,forecast,0,0.1,0.7,0,0,0,0,0,1
+Denmark,2023-04-11,,forecast,0,0.2,0.8,0,0,0,0,0,1
+Denmark,2023-04-12,,forecast,0,0.1,0.6,0,0,0,0,0,1
+Denmark,2023-04-13,,forecast,0,0.1,0.9,0,0,0,0,0,1
+Denmark,2023-04-14,,forecast,0,0.1,0.6,0,0,0,0,0,1
+Denmark,2023-04-15,,forecast,65.5,244.5,883.6,2,22,44.6,96,182,858.7
+Denmark,2023-04-16,,forecast,0,0.2,3.6,0,0,0,0,0,1
+Denmark,2023-04-17,,forecast,0,0.1,0.7,0,0,0,0,0,1
+Denmark,2023-04-18,,forecast,0,0.2,1.1,0,0,0,0,0,1
+Denmark,2023-04-19,,forecast,0,0.2,0.9,0,0,0,0,0,1
+Estonia,2022-12-28,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Estonia,2022-12-29,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Estonia,2022-12-30,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Estonia,2022-12-31,,estimate,212,211,55.9,119.9,175,198,223,244,300
+Estonia,2023-01-01,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Estonia,2023-01-02,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Estonia,2023-01-03,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Estonia,2023-01-04,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-01-05,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-01-06,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Estonia,2023-01-07,,estimate,189,189.7,49,110,161,179,200,217,266
+Estonia,2023-01-08,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Estonia,2023-01-09,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Estonia,2023-01-10,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Estonia,2023-01-11,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Estonia,2023-01-12,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-01-13,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-01-14,,estimate,163,166.4,44.5,102,139,154,173,189,240
+Estonia,2023-01-15,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-01-16,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Estonia,2023-01-17,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-01-18,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-01-19,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-01-20,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-01-21,,estimate,143,145.2,39.2,90,120,135,151,165,208
+Estonia,2023-01-22,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-01-23,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-01-24,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-01-25,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-01-26,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-01-27,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-01-28,,estimate,128,130.5,36.1,80.9,108,121,136,149,189
+Estonia,2023-01-29,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-01-30,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-01-31,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-02-01,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-02-02,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-02-03,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-02-04,,estimate,120,122.6,33.5,75,102,113,127,139,178
+Estonia,2023-02-05,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-02-06,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-02-07,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-02-08,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-02-09,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-02-10,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-02-11,,estimate,114,115.5,30.6,69,97,107,120,132,168
+Estonia,2023-02-12,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-02-13,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-02-14,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-02-15,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-02-16,,estimate,0,0.1,0.2,0,0,0,0,0,1
+Estonia,2023-02-17,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-02-18,,estimate,110,111.7,29.9,68,93,104,116,127,162
+Estonia,2023-02-19,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-02-20,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-02-21,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-02-22,,estimate,0,0.1,0.2,0,0,0,0,0,1
+Estonia,2023-02-23,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-02-24,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-02-25,,estimate,108,109.9,28.2,68,92,102,114,126,157
+Estonia,2023-02-26,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-02-27,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-02-28,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-01,,estimate,0,0.1,0.2,0,0,0,0,0,1
+Estonia,2023-03-02,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-03,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-04,,estimate based on partial data,107,108.2,30.2,64.9,91,101,113,124,155
+Estonia,2023-03-05,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-06,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-07,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-08,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-09,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-10,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-11,,estimate based on partial data,104,105.5,30,61.9,88,97,111,121,152
+Estonia,2023-03-12,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-13,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-14,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-15,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-16,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-17,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-18,,estimate based on partial data,102,104.1,31.5,56,84,96,109,121,156
+Estonia,2023-03-19,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-20,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-21,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-22,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-23,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-24,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-25,,forecast,99,101.5,33,54.9,81,92,106,119,157
+Estonia,2023-03-26,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-27,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-28,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-29,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-03-30,,forecast,0,0.1,0.2,0,0,0,0,0,1
+Estonia,2023-03-31,,forecast,0,0.1,0.2,0,0,0,0,0,1
+Estonia,2023-04-01,,forecast,95,99.9,38.4,50,75,87,104,119,164
+Estonia,2023-04-02,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-04-03,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-04-04,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-04-05,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-04-06,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-04-07,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-04-08,,forecast,93,99.5,44.1,45,70,84,102,119,181
+Estonia,2023-04-09,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-04-10,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-04-11,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-04-12,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-04-13,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-04-14,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-04-15,,forecast,90,99.6,53,40,66.8,80,100,118,194
+Estonia,2023-04-16,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-04-17,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-04-18,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2023-04-19,,forecast,0,0.1,0.2,0,0,0,0,0,1
+France,2022-12-28,,estimate,0,0.2,0.7,0,0,0,0,0,1
+France,2022-12-29,,estimate,0,0.2,0.7,0,0,0,0,0,1
+France,2022-12-30,,estimate,0,0.2,0.5,0,0,0,0,0,1
+France,2022-12-31,,estimate,1877.5,3152.7,4166.9,79.9,650.5,1316,2529.2,3958,10870
+France,2023-01-01,,estimate,0,0.2,0.7,0,0,0,0,0,1
+France,2023-01-02,,estimate,0,0.2,0.7,0,0,0,0,0,1
+France,2023-01-03,,estimate,0,0.2,0.6,0,0,0,0,0,1
+France,2023-01-04,,estimate,0,0.2,0.5,0,0,0,0,0,1
+France,2023-01-05,,estimate,0,0.2,0.5,0,0,0,0,0,1
+France,2023-01-06,,estimate,0,0.1,0.5,0,0,0,0,0,1
+France,2023-01-07,,estimate,1618.5,2795,3391.1,78.9,613.2,1158.6,2295.8,3671.8,9559.5
+France,2023-01-08,,estimate,0,0.2,0.5,0,0,0,0,0,1
+France,2023-01-09,,estimate,0,0.2,0.6,0,0,0,0,0,1
+France,2023-01-10,,estimate,0,0.2,0.6,0,0,0,0,0,1
+France,2023-01-11,,estimate,0,0.1,0.5,0,0,0,0,0,1
+France,2023-01-12,,estimate,0,0.1,0.5,0,0,0,0,0,1
+France,2023-01-13,,estimate,0,0.1,0.5,0,0,0,0,0,1
+France,2023-01-14,,estimate,1462,2351.1,2787.3,56,508.8,1038.6,1953.8,3062.5,8057
+France,2023-01-15,,estimate,0,0.2,0.5,0,0,0,0,0,1
+France,2023-01-16,,estimate,0,0.2,0.6,0,0,0,0,0,1
+France,2023-01-17,,estimate,0,0.2,0.5,0,0,0,0,0,1
+France,2023-01-18,,estimate,0,0.1,0.4,0,0,0,0,0,1
+France,2023-01-19,,estimate,0,0.1,0.5,0,0,0,0,0,1
+France,2023-01-20,,estimate,0,0.1,0.5,0,0,0,0,0,1
+France,2023-01-21,,estimate,1254,2050.7,2456.6,65.9,450,864.6,1726.6,2844,6605
+France,2023-01-22,,estimate,0,0.1,0.5,0,0,0,0,0,1
+France,2023-01-23,,estimate,0,0.1,0.5,0,0,0,0,0,1
+France,2023-01-24,,estimate,0,0.1,0.4,0,0,0,0,0,1
+France,2023-01-25,,estimate,0,0.1,0.4,0,0,0,0,0,1
+France,2023-01-26,,estimate,0,0.1,0.4,0,0,0,0,0,1
+France,2023-01-27,,estimate,0,0.1,0.4,0,0,0,0,0,1
+France,2023-01-28,,estimate,1331,2086.8,2394.3,63.9,490,907.6,1788,2878,6605.2
+France,2023-01-29,,estimate,0,0.1,0.4,0,0,0,0,0,1
+France,2023-01-30,,estimate,0,0.1,0.5,0,0,0,0,0,1
+France,2023-01-31,,estimate,0,0.1,0.4,0,0,0,0,0,1
+France,2023-02-01,,estimate,0,0.1,0.4,0,0,0,0,0,1
+France,2023-02-02,,estimate,0,0.1,0.4,0,0,0,0,0,1
+France,2023-02-03,,estimate,0,0.1,0.4,0,0,0,0,0,1
+France,2023-02-04,,estimate,1120.5,1852.1,2179.5,54,437.5,789.8,1517.4,2496.5,6105.2
+France,2023-02-05,,estimate,0,0.1,0.4,0,0,0,0,0,1
+France,2023-02-06,,estimate,0,0.1,0.5,0,0,0,0,0,1
+France,2023-02-07,,estimate,0,0.1,0.4,0,0,0,0,0,1
+France,2023-02-08,,estimate,0,0.1,0.3,0,0,0,0,0,1
+France,2023-02-09,,estimate,0,0.1,0.4,0,0,0,0,0,1
+France,2023-02-10,,estimate,0,0.1,0.4,0,0,0,0,0,1
+France,2023-02-11,,estimate,990.5,1668.1,2104.8,38,330.8,665.2,1344.8,2183.5,5582.6
+France,2023-02-12,,estimate,0,0.1,0.4,0,0,0,0,0,1
+France,2023-02-13,,estimate,0,0.1,0.4,0,0,0,0,0,1
+France,2023-02-14,,estimate,0,0.1,0.4,0,0,0,0,0,1
+France,2023-02-15,,estimate,0,0.1,0.4,0,0,0,0,0,1
+France,2023-02-16,,estimate,0,0.1,0.3,0,0,0,0,0,1
+France,2023-02-17,,estimate,0,0.1,0.4,0,0,0,0,0,1
+France,2023-02-18,,estimate,954,1609.3,2019.8,44,340.5,682.6,1346,2151.5,5332
+France,2023-02-19,,estimate,0,0.1,0.5,0,0,0,0,0,1
+France,2023-02-20,,estimate,0,0.1,0.5,0,0,0,0,0,1
+France,2023-02-21,,estimate,0,0.1,0.5,0,0,0,0,0,1
+France,2023-02-22,,estimate,0,0.1,0.4,0,0,0,0,0,1
+France,2023-02-23,,estimate,0,0.1,0.3,0,0,0,0,0,1
+France,2023-02-24,,estimate,0,0.1,0.3,0,0,0,0,0,1
+France,2023-02-25,,estimate based on partial data,878.5,1445.1,1791.1,35,312.2,615.6,1185.4,1846.2,4783.1
+France,2023-02-26,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+France,2023-02-27,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+France,2023-02-28,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+France,2023-03-01,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+France,2023-03-02,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+France,2023-03-03,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+France,2023-03-04,,estimate based on partial data,834.5,1394.3,1739.6,37.9,293,574.6,1139,1867.5,4597.2
+France,2023-03-05,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+France,2023-03-06,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+France,2023-03-07,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+France,2023-03-08,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+France,2023-03-09,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+France,2023-03-10,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+France,2023-03-11,,estimate based on partial data,732,1428.4,1982.1,30.9,261.8,523.2,1083.2,1853.2,5146.8
+France,2023-03-12,,forecast,0,0.1,0.3,0,0,0,0,0,1
+France,2023-03-13,,forecast,0,0.1,0.4,0,0,0,0,0,1
+France,2023-03-14,,forecast,0,0.1,0.4,0,0,0,0,0,1
+France,2023-03-15,,forecast,0,0.1,0.3,0,0,0,0,0,1
+France,2023-03-16,,forecast,0,0.1,0.4,0,0,0,0,0,1
+France,2023-03-17,,forecast,0,0.1,0.3,0,0,0,0,0,1
+France,2023-03-18,,forecast,689.5,1298.5,1960.8,29.9,222,468.6,1000.4,1666.2,4332.7
+France,2023-03-19,,forecast,0,0.1,0.4,0,0,0,0,0,1
+France,2023-03-20,,forecast,0,0.1,0.5,0,0,0,0,0,1
+France,2023-03-21,,forecast,0,0.1,0.4,0,0,0,0,0,1
+France,2023-03-22,,forecast,0,0.1,0.3,0,0,0,0,0,1
+France,2023-03-23,,forecast,0,0.1,0.3,0,0,0,0,0,1
+France,2023-03-24,,forecast,0,0.1,0.4,0,0,0,0,0,1
+France,2023-03-25,,forecast,640.5,1394.5,2665.6,28,226,442,917,1558.5,4903.2
+France,2023-03-26,,forecast,0,0.1,0.4,0,0,0,0,0,1
+France,2023-03-27,,forecast,0,0.1,0.4,0,0,0,0,0,1
+France,2023-03-28,,forecast,0,0.1,0.4,0,0,0,0,0,1
+France,2023-03-29,,forecast,0,0.1,0.5,0,0,0,0,0,1
+France,2023-03-30,,forecast,0,0.1,0.5,0,0,0,0,0,1
+France,2023-03-31,,forecast,0,0.1,0.5,0,0,0,0,0,1
+France,2023-04-01,,forecast,595,1513.7,3542.7,22,201.8,411,850.8,1489.2,5117
+France,2023-04-02,,forecast,0,0.1,0.6,0,0,0,0,0,1
+France,2023-04-03,,forecast,0,0.1,0.4,0,0,0,0,0,1
+France,2023-04-04,,forecast,0,0.1,0.4,0,0,0,0,0,1
+France,2023-04-05,,forecast,0,0.1,0.5,0,0,0,0,0,1
+France,2023-04-06,,forecast,0,0.1,1.6,0,0,0,0,0,1
+France,2023-04-07,,forecast,0,0.2,2.4,0,0,0,0,0,1
+France,2023-04-08,,forecast,516,1612.4,6464.7,21,164.8,346,721.4,1486.2,6020.1
+France,2023-04-09,,forecast,0,0.1,1,0,0,0,0,0,1
+France,2023-04-10,,forecast,0,0.1,0.7,0,0,0,0,0,1
+France,2023-04-11,,forecast,0,0.1,1,0,0,0,0,0,1
+France,2023-04-12,,forecast,0,0.1,0.6,0,0,0,0,0,1
+France,2023-04-13,,forecast,0,0.1,0.6,0,0,0,0,0,1
+France,2023-04-14,,forecast,0,0.1,0.6,0,0,0,0,0,1
+France,2023-04-15,,forecast,509,1786.3,8278.4,14.9,142.5,331.6,770.4,1410.2,5472.1
+France,2023-04-16,,forecast,0,0.1,1,0,0,0,0,0,1
+France,2023-04-17,,forecast,0,0.1,0.7,0,0,0,0,0,1
+France,2023-04-18,,forecast,0,0.1,1,0,0,0,0,0,1
+France,2023-04-19,,forecast,0,0.1,0.7,0,0,0,0,0,1
+Germany,2022-12-28,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Germany,2022-12-29,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2022-12-30,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2022-12-31,,estimate,3304,5498.7,6453.8,145.9,1329.2,2415.6,4547.2,7418,17692.6
+Germany,2023-01-01,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-01-02,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Germany,2023-01-03,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-01-04,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Germany,2023-01-05,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-01-06,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-01-07,,estimate,2891.5,5022.2,6649.3,121,971.2,1916.8,4033.6,6242.2,18099.9
+Germany,2023-01-08,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-01-09,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Germany,2023-01-10,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-01-11,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-01-12,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-01-13,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Germany,2023-01-14,,estimate,2711,4658.1,5730.8,128,1009.5,1900,3882.8,6043,15073.6
+Germany,2023-01-15,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Germany,2023-01-16,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-01-17,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-01-18,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-01-19,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-01-20,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-01-21,,estimate,2693.5,4624.1,5544.5,111.9,1022.2,1972.4,3750.4,6082.2,15426.6
+Germany,2023-01-22,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-01-23,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-01-24,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-01-25,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-01-26,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-01-27,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-01-28,,estimate,2917,4666.7,5524.9,116,939.2,1978.8,3988,6119.2,15324.4
+Germany,2023-01-29,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-01-30,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-01-31,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Germany,2023-02-01,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-02-02,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-02-03,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-02-04,,estimate,2693.5,4471.3,5247.5,134.9,1025.5,1984,3712.6,6166,14199.3
+Germany,2023-02-05,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Germany,2023-02-06,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-02-07,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-02-08,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-02-09,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-02-10,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-02-11,,estimate,2664.5,4553.2,5571.9,121.9,1009,1929.6,3640,5918.5,15959.6
+Germany,2023-02-12,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-02-13,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-02-14,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-02-15,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-02-16,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-02-17,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-02-18,,estimate,2792,4509,5392,112.9,992.2,1931,3739.4,6130.2,14565
+Germany,2023-02-19,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Germany,2023-02-20,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-02-21,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-02-22,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Germany,2023-02-23,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-02-24,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-02-25,,estimate,2712,4490.4,5351.2,126,1022,1988.4,3730.8,6011.8,14823.4
+Germany,2023-02-26,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-02-27,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-02-28,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-03-01,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-03-02,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-03-03,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-03-04,,estimate based on partial data,2762.5,4694.8,5639.8,110,1015,1910.6,3969.8,6389,15736.9
+Germany,2023-03-05,,estimate based on partial data,0,0.1,0.5,0,0,0,0,0,1
+Germany,2023-03-06,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-03-07,,estimate based on partial data,0,0.1,0.5,0,0,0,0,0,1
+Germany,2023-03-08,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-03-09,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-03-10,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-03-11,,estimate based on partial data,2671.5,4528.9,5535.7,96.8,890.5,1838,3799.4,6084.5,15303.8
+Germany,2023-03-12,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-03-13,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-03-14,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-03-15,,estimate based on partial data,0,0.1,0.5,0,0,0,0,0,1
+Germany,2023-03-16,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-03-17,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-03-18,,estimate based on partial data,2673,4834.9,6221.7,124,1036.8,1839,3621.8,6194.8,16999.3
+Germany,2023-03-19,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-03-20,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-03-21,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Germany,2023-03-22,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-03-23,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-03-24,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Germany,2023-03-25,,forecast,2812.5,5497.2,8273,99.8,948.5,1974.6,3948.4,6660.8,19340.5
+Germany,2023-03-26,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Germany,2023-03-27,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-03-28,,forecast,0,0.2,0.7,0,0,0,0,0,1
+Germany,2023-03-29,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-03-30,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Germany,2023-03-31,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Germany,2023-04-01,,forecast,2943,5982.9,10596.9,116,968,1998,4151.8,6902,20884.8
+Germany,2023-04-02,,forecast,0,0.1,0.6,0,0,0,0,0,1
+Germany,2023-04-03,,forecast,0,0.1,0.6,0,0,0,0,0,1
+Germany,2023-04-04,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Germany,2023-04-05,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Germany,2023-04-06,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Germany,2023-04-07,,forecast,0,0.1,0.7,0,0,0,0,0,1
+Germany,2023-04-08,,forecast,2790,6523.2,13313.3,99,876,1780,4014.6,7361,23984.4
+Germany,2023-04-09,,forecast,0,0.2,0.9,0,0,0,0,0,1
+Germany,2023-04-10,,forecast,0,0.2,0.7,0,0,0,0,0,1
+Germany,2023-04-11,,forecast,0,0.2,1.1,0,0,0,0,0,1
+Germany,2023-04-12,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Germany,2023-04-13,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Germany,2023-04-14,,forecast,0,0.2,0.7,0,0,0,0,0,1
+Germany,2023-04-15,,forecast,2748,7203.3,16515.7,102,844.5,1872.8,3892.4,6887.5,26048.7
+Germany,2023-04-16,,forecast,0,0.2,1,0,0,0,0,0,1
+Germany,2023-04-17,,forecast,0,0.2,0.8,0,0,0,0,0,1
+Germany,2023-04-18,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Germany,2023-04-19,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Greece,2022-12-28,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2022-12-29,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2022-12-30,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2022-12-31,,estimate,1351,1401.2,376.2,890.9,1175.8,1282,1426,1575.2,2078.4
+Greece,2023-01-01,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Greece,2023-01-02,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Greece,2023-01-03,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Greece,2023-01-04,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-01-05,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Greece,2023-01-06,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-01-07,,estimate,1453,1469.4,353.3,932,1258.8,1378,1521,1651.2,2075.1
+Greece,2023-01-08,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Greece,2023-01-09,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Greece,2023-01-10,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Greece,2023-01-11,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-01-12,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-01-13,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-01-14,,estimate,1469.5,1477,340.6,935,1268,1399.6,1545,1675.2,2009
+Greece,2023-01-15,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-01-16,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Greece,2023-01-17,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Greece,2023-01-18,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Greece,2023-01-19,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Greece,2023-01-20,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-01-21,,estimate,1438,1440,339.7,917,1236.8,1352.6,1514,1634,1977.1
+Greece,2023-01-22,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-01-23,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Greece,2023-01-24,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Greece,2023-01-25,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Greece,2023-01-26,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-01-27,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-01-28,,estimate,1315,1318.3,309.2,834.9,1132,1249,1384,1488,1812.3
+Greece,2023-01-29,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-01-30,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-01-31,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-02-01,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-02-02,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-02-03,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-02-04,,estimate,1135,1156.9,277.6,757.9,984.8,1083.6,1193,1296.5,1620.1
+Greece,2023-02-05,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-02-06,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-02-07,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-02-08,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-02-09,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-02-10,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-02-11,,estimate,1008,1036,254.4,679,879,955,1063,1170.2,1475.2
+Greece,2023-02-12,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-02-13,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-02-14,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-02-15,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-02-16,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-02-17,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-02-18,,estimate,933.5,958.3,241.8,618.9,808.8,887,981,1073.2,1381
+Greece,2023-02-19,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-02-20,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-02-21,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-02-22,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-02-23,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-02-24,,estimate,0,0.1,0.2,0,0,0,0,0,0
+Greece,2023-02-25,,estimate,914,931.6,223.6,608,801,872.6,957,1040.5,1302.1
+Greece,2023-02-26,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-02-27,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-02-28,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-03-01,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-03-02,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-03-03,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-03-04,,estimate based on partial data,904,906.8,223.2,581,781,858,946.4,1024,1238
+Greece,2023-03-05,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-03-06,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-03-07,,estimate based on partial data,0,0.1,0.2,0,0,0,0,0,1
+Greece,2023-03-08,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-03-09,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-03-10,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-03-11,,estimate based on partial data,853,860.6,210.1,553,745,815.6,891,956,1179
+Greece,2023-03-12,,estimate based on partial data,0,0.1,0.2,0,0,0,0,0,1
+Greece,2023-03-13,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-03-14,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-03-15,,estimate based on partial data,0,0.1,0.2,0,0,0,0,0,0
+Greece,2023-03-16,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-03-17,,estimate based on partial data,0,0,0.2,0,0,0,0,0,0
+Greece,2023-03-18,,estimate based on partial data,782,800.3,208.3,495.9,676,743,824,899,1175
+Greece,2023-03-19,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-03-20,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-03-21,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-03-22,,forecast,0,0.1,0.2,0,0,0,0,0,1
+Greece,2023-03-23,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-03-24,,forecast,0,0.1,0.2,0,0,0,0,0,0
+Greece,2023-03-25,,forecast,724.5,748.4,216.9,439,609,679,771,858.2,1138.1
+Greece,2023-03-26,,forecast,0,0.1,0.2,0,0,0,0,0,1
+Greece,2023-03-27,,forecast,0,0.1,0.2,0,0,0,0,0,0
+Greece,2023-03-28,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-03-29,,forecast,0,0.1,0.2,0,0,0,0,0,1
+Greece,2023-03-30,,forecast,0,0.1,0.2,0,0,0,0,0,0
+Greece,2023-03-31,,forecast,0,0,0.2,0,0,0,0,0,0
+Greece,2023-04-01,,forecast,670.5,708,274.2,386,545,619,721,820,1164
+Greece,2023-04-02,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Greece,2023-04-03,,forecast,0,0.1,0.2,0,0,0,0,0,1
+Greece,2023-04-04,,forecast,0,0,0.2,0,0,0,0,0,0
+Greece,2023-04-05,,forecast,0,0,0.2,0,0,0,0,0,0
+Greece,2023-04-06,,forecast,0,0.1,0.2,0,0,0,0,0,1
+Greece,2023-04-07,,forecast,0,0,0.2,0,0,0,0,0,0
+Greece,2023-04-08,,forecast,620.5,668.2,295.2,316,478,560,681.4,791.2,1176
+Greece,2023-04-09,,forecast,0,0.1,0.2,0,0,0,0,0,0
+Greece,2023-04-10,,forecast,0,0,0.2,0,0,0,0,0,0
+Greece,2023-04-11,,forecast,0,0.1,0.2,0,0,0,0,0,1
+Greece,2023-04-12,,forecast,0,0,0.2,0,0,0,0,0,0
+Greece,2023-04-13,,forecast,0,0,0.2,0,0,0,0,0,0
+Greece,2023-04-14,,forecast,0,0,0.2,0,0,0,0,0,0
+Greece,2023-04-15,,forecast,566,627,312.5,264,423,511,626.4,751,1200.2
+Greece,2023-04-16,,forecast,0,0.1,0.2,0,0,0,0,0,0
+Greece,2023-04-17,,forecast,0,0,0.2,0,0,0,0,0,0
+Greece,2023-04-18,,forecast,0,0,0.2,0,0,0,0,0,0
+Greece,2023-04-19,,forecast,0,0,0.2,0,0,0,0,0,0
+Hungary,2023-01-18,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Hungary,2023-01-19,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-01-20,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-01-21,,estimate,32,36.1,25.2,5,19,27,37,48,78
+Hungary,2023-01-22,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Hungary,2023-01-23,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Hungary,2023-01-24,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-01-25,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-01-26,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-01-27,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-01-28,,estimate,31,34.2,23.1,5,19,26,36,45,75
+Hungary,2023-01-29,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Hungary,2023-01-30,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-01-31,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-02-01,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-02-02,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-02-03,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-02-04,,estimate,31,35.3,23.6,5,19,26,36,46,80
+Hungary,2023-02-05,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Hungary,2023-02-06,,estimate,0,0.2,0.4,0,0,0,0,0,1
+Hungary,2023-02-07,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-02-08,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-02-09,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-02-10,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-02-11,,estimate,32,35.1,22.8,5,20,27,37,46,76
+Hungary,2023-02-12,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-02-13,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-02-14,,estimate,0,0.2,0.4,0,0,0,0,0,1
+Hungary,2023-02-15,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-02-16,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-02-17,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-02-18,,estimate,33,36.1,22.6,6,21,28,38,47,74
+Hungary,2023-02-19,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Hungary,2023-02-20,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Hungary,2023-02-21,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Hungary,2023-02-22,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-02-23,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-02-24,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-02-25,,estimate based on partial data,35,37.8,24.2,5,21,29,41,50,81
+Hungary,2023-02-26,,estimate based on partial data,0,0.2,0.5,0,0,0,0,0,1
+Hungary,2023-02-27,,estimate based on partial data,0,0.2,0.5,0,0,0,0,0,1
+Hungary,2023-02-28,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-03-01,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Hungary,2023-03-02,,estimate based on partial data,0,0.1,0.5,0,0,0,0,0,1
+Hungary,2023-03-03,,estimate based on partial data,0,0.1,0.5,0,0,0,0,0,1
+Hungary,2023-03-04,,estimate based on partial data,39,41.9,27.1,6,24,33,45,54,86
+Hungary,2023-03-05,,estimate based on partial data,0,0.2,0.6,0,0,0,0,0,1
+Hungary,2023-03-06,,estimate based on partial data,0,0.2,0.5,0,0,0,0,0,1
+Hungary,2023-03-07,,estimate based on partial data,0,0.2,0.5,0,0,0,0,0,1
+Hungary,2023-03-08,,estimate based on partial data,0,0.2,0.5,0,0,0,0,0,1
+Hungary,2023-03-09,,estimate based on partial data,0,0.1,0.5,0,0,0,0,0,1
+Hungary,2023-03-10,,estimate based on partial data,0,0.2,0.4,0,0,0,0,0,1
+Hungary,2023-03-11,,estimate based on partial data,40.5,44.9,31.4,6,24,34,48,58,98
+Hungary,2023-03-12,,forecast,0,0.2,0.5,0,0,0,0,0,1
+Hungary,2023-03-13,,forecast,0,0.2,0.5,0,0,0,0,0,1
+Hungary,2023-03-14,,forecast,0,0.2,0.7,0,0,0,0,0,1
+Hungary,2023-03-15,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Hungary,2023-03-16,,forecast,0,0.2,0.5,0,0,0,0,0,1
+Hungary,2023-03-17,,forecast,0,0.2,0.5,0,0,0,0,0,1
+Hungary,2023-03-18,,forecast,42,51,44.3,6,25,35.6,49,65,122
+Hungary,2023-03-19,,forecast,0,0.2,0.7,0,0,0,0,0,1
+Hungary,2023-03-20,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Hungary,2023-03-21,,forecast,0,0.3,0.8,0,0,0,0,0,1
+Hungary,2023-03-22,,forecast,0,0.2,0.5,0,0,0,0,0,1
+Hungary,2023-03-23,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Hungary,2023-03-24,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Hungary,2023-03-25,,forecast,46,59.3,59.5,6,26,37,55,75,150
+Hungary,2023-03-26,,forecast,0,0.3,0.7,0,0,0,0,0,1
+Hungary,2023-03-27,,forecast,0,0.3,0.7,0,0,0,0,0,1
+Hungary,2023-03-28,,forecast,0,0.3,0.7,0,0,0,0,0,1
+Hungary,2023-03-29,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Hungary,2023-03-30,,forecast,0,0.2,0.7,0,0,0,0,0,1
+Hungary,2023-03-31,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Hungary,2023-04-01,,forecast,48,67.6,76.9,6,27,39,59,83,178.1
+Hungary,2023-04-02,,forecast,0,0.3,0.8,0,0,0,0,0,2
+Hungary,2023-04-03,,forecast,0,0.3,0.8,0,0,0,0,0,2
+Hungary,2023-04-04,,forecast,0,0.3,1.5,0,0,0,0,0,2
+Hungary,2023-04-05,,forecast,0,0.2,0.7,0,0,0,0,0,1
+Hungary,2023-04-06,,forecast,0,0.3,0.9,0,0,0,0,0,1
+Hungary,2023-04-07,,forecast,0,0.3,0.8,0,0,0,0,0,1
+Hungary,2023-04-08,,forecast,51,79.8,130.3,7,26,40,65,91,222
+Hungary,2023-04-09,,forecast,0,0.3,1.1,0,0,0,0,0,2
+Hungary,2023-04-10,,forecast,0,0.3,0.9,0,0,0,0,0,2
+Hungary,2023-04-11,,forecast,0,0.4,1.7,0,0,0,0,0,2
+Hungary,2023-04-12,,forecast,0,0.3,1,0,0,0,0,0,2
+Hungary,2023-04-13,,forecast,0,0.4,1.6,0,0,0,0,0,2
+Hungary,2023-04-14,,forecast,0,0.3,1,0,0,0,0,0,2
+Hungary,2023-04-15,,forecast,53,89.6,141.8,5,26,40,69,100,278
+Hungary,2023-04-16,,forecast,0,0.5,2,0,0,0,0,0,2
+Hungary,2023-04-17,,forecast,0,0.4,1.2,0,0,0,0,0,2
+Hungary,2023-04-18,,forecast,0,0.5,3.1,0,0,0,0,0,2
+Hungary,2023-04-19,,forecast,0,0.4,1.8,0,0,0,0,0,2
+Iceland,2022-12-28,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Iceland,2022-12-29,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2022-12-30,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2022-12-31,,estimate,8,12.2,14.1,0,3,6,11,16,39
+Iceland,2023-01-01,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Iceland,2023-01-02,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Iceland,2023-01-03,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Iceland,2023-01-04,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-01-05,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-01-06,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-01-07,,estimate,7,11,12.9,0,3,5,9,15,37
+Iceland,2023-01-08,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Iceland,2023-01-09,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Iceland,2023-01-10,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-01-11,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-01-12,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-01-13,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-01-14,,estimate,6,10.1,11.8,0,2,4,9,14,33
+Iceland,2023-01-15,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-01-16,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-01-17,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-01-18,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-01-19,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-01-20,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-01-21,,estimate,6,9.2,11.3,0,2,4,8,13,29
+Iceland,2023-01-22,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-01-23,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-01-24,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-01-25,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-01-26,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-01-27,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-01-28,,estimate,5,8.3,9.7,0,2,4,7,11,26
+Iceland,2023-01-29,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-01-30,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-01-31,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-02-01,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-02-02,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-02-03,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-02-04,,estimate,5,8.1,9.4,0,2,4,7,11,25
+Iceland,2023-02-05,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-02-06,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-02-07,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-02-08,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-02-09,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-02-10,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-02-11,,estimate,5,7.5,8.6,0,2,3,7,10,25
+Iceland,2023-02-12,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-02-13,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-02-14,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-02-15,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-02-16,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-02-17,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-02-18,,estimate,5,7,8.2,0,2,3,6,10,22
+Iceland,2023-02-19,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-02-20,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-02-21,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-02-22,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-02-23,,estimate,0,0.1,0.2,0,0,0,0,0,1
+Iceland,2023-02-24,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-02-25,,estimate,4,6.7,7.6,0,1,3,6,9,22
+Iceland,2023-02-26,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-02-27,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-02-28,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-03-01,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-03-02,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-03-03,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-03-04,,estimate based on partial data,4,6.4,7.4,0,1,3,5.4,9,20
+Iceland,2023-03-05,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-03-06,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-03-07,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-03-08,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-03-09,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-03-10,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-03-11,,estimate based on partial data,4,6.5,8.1,0,1,3,5,9,21
+Iceland,2023-03-12,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-03-13,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-03-14,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-03-15,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-03-16,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-03-17,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-03-18,,estimate based on partial data,4,6.5,8.9,0,1,2,5,8,22
+Iceland,2023-03-19,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-03-20,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-03-21,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-03-22,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-03-23,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-03-24,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-03-25,,forecast,3,6.4,9.5,0,1,2,5,8,22
+Iceland,2023-03-26,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-03-27,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-03-28,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-03-29,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-03-30,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-03-31,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-04-01,,forecast,3,6.8,12.2,0,1,2,5,8,25
+Iceland,2023-04-02,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-04-03,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-04-04,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Iceland,2023-04-05,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-04-06,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-04-07,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Iceland,2023-04-08,,forecast,3,7.6,21.2,0,1,2,4,8,27
+Iceland,2023-04-09,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Iceland,2023-04-10,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-04-11,,forecast,0,0.1,0.6,0,0,0,0,0,1
+Iceland,2023-04-12,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-04-13,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-04-14,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-04-15,,forecast,3,7.9,20.8,0,1,2,4,8,29
+Iceland,2023-04-16,,forecast,0,0.1,0.7,0,0,0,0,0,1
+Iceland,2023-04-17,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Iceland,2023-04-18,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Iceland,2023-04-19,,forecast,0,0.1,0.7,0,0,0,0,0,1
+Ireland,2022-12-28,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Ireland,2022-12-29,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Ireland,2022-12-30,,estimate,0,0.2,0.4,0,0,0,0,0,1
+Ireland,2022-12-31,,estimate,646,650.5,235,299,500,592,695,780,1024
+Ireland,2023-01-01,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Ireland,2023-01-02,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Ireland,2023-01-03,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Ireland,2023-01-04,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Ireland,2023-01-05,,estimate,0,0.2,0.4,0,0,0,0,0,1
+Ireland,2023-01-06,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Ireland,2023-01-07,,estimate,571,578.2,197.9,263.9,451,530,614,695,888.2
+Ireland,2023-01-08,,estimate,0,0.2,0.4,0,0,0,0,0,1
+Ireland,2023-01-09,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Ireland,2023-01-10,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Ireland,2023-01-11,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Ireland,2023-01-12,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Ireland,2023-01-13,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Ireland,2023-01-14,,estimate,481,489,165.8,234,383,445,516,581,765
+Ireland,2023-01-15,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Ireland,2023-01-16,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Ireland,2023-01-17,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Ireland,2023-01-18,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Ireland,2023-01-19,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-01-20,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-01-21,,estimate,391,400,131.4,204.9,317.8,363,419,469,617
+Ireland,2023-01-22,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Ireland,2023-01-23,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-01-24,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-01-25,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-01-26,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-01-27,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-01-28,,estimate,308,319.5,109.5,170.9,250,284,333,377.2,502
+Ireland,2023-01-29,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-01-30,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-01-31,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-02-01,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-02-02,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-02-03,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-02-04,,estimate,263,276.7,100.8,141.9,215,245,284,323,450.1
+Ireland,2023-02-05,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-02-06,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-02-07,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-02-08,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-02-09,,estimate,0,0.1,0.2,0,0,0,0,0,0
+Ireland,2023-02-10,,estimate,0,0.1,0.2,0,0,0,0,0,1
+Ireland,2023-02-11,,estimate,232,243.5,88.2,126,190,216,252,282,389
+Ireland,2023-02-12,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-02-13,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-02-14,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-02-15,,estimate,0,0.1,0.2,0,0,0,0,0,1
+Ireland,2023-02-16,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-02-17,,estimate,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-02-18,,estimate,216,223.6,77.7,116,177,201,231,261,354
+Ireland,2023-02-19,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-02-20,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-02-21,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-02-22,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-02-23,,estimate,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-02-24,,estimate,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-02-25,,estimate,199,205.7,71.8,106,162,186,214,240,330
+Ireland,2023-02-26,,estimate,0,0.1,0.2,0,0,0,0,0,0
+Ireland,2023-02-27,,estimate,0,0.1,0.3,0,0,0,0,0,0
+Ireland,2023-02-28,,estimate,0,0.1,0.2,0,0,0,0,0,1
+Ireland,2023-03-01,,estimate,0,0.1,0.2,0,0,0,0,0,1
+Ireland,2023-03-02,,estimate,0,0.1,0.2,0,0,0,0,0,0
+Ireland,2023-03-03,,estimate,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-03-04,,estimate based on partial data,185,190.2,64.4,93.9,150,171,200,223,299.1
+Ireland,2023-03-05,,estimate based on partial data,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-03-06,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Ireland,2023-03-07,,estimate based on partial data,0,0.1,0.2,0,0,0,0,0,1
+Ireland,2023-03-08,,estimate based on partial data,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-03-09,,estimate based on partial data,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-03-10,,estimate based on partial data,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-03-11,,estimate based on partial data,168,172.6,61.2,82,134,155,181,205,280
+Ireland,2023-03-12,,estimate based on partial data,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-03-13,,estimate based on partial data,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-03-14,,estimate based on partial data,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-03-15,,estimate based on partial data,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-03-16,,estimate based on partial data,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-03-17,,estimate based on partial data,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-03-18,,estimate based on partial data,154,161.4,63.4,73,123,141,167.4,190,269
+Ireland,2023-03-19,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-03-20,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-03-21,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-03-22,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-03-23,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-03-24,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-03-25,,forecast,138,149,72.4,66,107,126,150,175,270
+Ireland,2023-03-26,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-03-27,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-03-28,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-03-29,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-03-30,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-03-31,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-04-01,,forecast,125,140.3,89.9,54,93,113,139,167,265.1
+Ireland,2023-04-02,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-04-03,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-04-04,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-04-05,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-04-06,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-04-07,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-04-08,,forecast,115,132.5,88.7,45,80,101.6,129,161,262
+Ireland,2023-04-09,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-04-10,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-04-11,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-04-12,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-04-13,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-04-14,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-04-15,,forecast,102,127,158,38,69,88,119,149,278
+Ireland,2023-04-16,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-04-17,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-04-18,,forecast,0,0,0.2,0,0,0,0,0,0
+Ireland,2023-04-19,,forecast,0,0,0.3,0,0,0,0,0,0
+Italy,2022-12-28,,estimate,0,0.2,0.7,0,0,0,0,0,1
+Italy,2022-12-29,,estimate,0,0.2,0.7,0,0,0,0,0,1
+Italy,2022-12-30,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Italy,2022-12-31,,estimate,1107.5,1812.3,2188.9,55.9,387,761,1496,2436,5835.1
+Italy,2023-01-01,,estimate,0,0.3,1.1,0,0,0,0,0,1
+Italy,2023-01-02,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Italy,2023-01-03,,estimate,0,0.2,0.7,0,0,0,0,0,1
+Italy,2023-01-04,,estimate,0,0.2,0.7,0,0,0,0,0,1
+Italy,2023-01-05,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Italy,2023-01-06,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Italy,2023-01-07,,estimate,974.5,1660.6,1986.4,37.9,349.8,703,1383.8,2236.2,5563.6
+Italy,2023-01-08,,estimate,0,0.3,0.9,0,0,0,0,0,2
+Italy,2023-01-09,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Italy,2023-01-10,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Italy,2023-01-11,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Italy,2023-01-12,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Italy,2023-01-13,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Italy,2023-01-14,,estimate,899.5,1435.6,1741.8,37,315,623.6,1202.4,1958.5,4707
+Italy,2023-01-15,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Italy,2023-01-16,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Italy,2023-01-17,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Italy,2023-01-18,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Italy,2023-01-19,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-01-20,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Italy,2023-01-21,,estimate,874.5,1370.5,1634.5,32,306,579,1157,1803.2,4490.2
+Italy,2023-01-22,,estimate,0,0.2,0.7,0,0,0,0,0,1
+Italy,2023-01-23,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Italy,2023-01-24,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Italy,2023-01-25,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-01-26,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Italy,2023-01-27,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-01-28,,estimate,710,1203.7,1452.2,30,252.8,494,990.2,1658.5,3961
+Italy,2023-01-29,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Italy,2023-01-30,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Italy,2023-01-31,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Italy,2023-02-01,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-02-02,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-02-03,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-02-04,,estimate,657,1130.9,1416.5,33.9,237,475.6,906,1564.2,3654.3
+Italy,2023-02-05,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Italy,2023-02-06,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-02-07,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Italy,2023-02-08,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-02-09,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-02-10,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-02-11,,estimate,603,990.2,1142.8,26,228,423,846.2,1368,3221.8
+Italy,2023-02-12,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-02-13,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-02-14,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-02-15,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-02-16,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-02-17,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-02-18,,estimate based on partial data,537,915.4,1152.1,22,191,381.6,734,1184.5,3211.2
+Italy,2023-02-19,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-02-20,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Italy,2023-02-21,,estimate based on partial data,0,0.1,0.5,0,0,0,0,0,1
+Italy,2023-02-22,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Italy,2023-02-23,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-02-24,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-02-25,,estimate based on partial data,441.5,785.3,1035.2,21.9,161.8,312.6,632.4,1045.2,2618.3
+Italy,2023-02-26,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-02-27,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-02-28,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-03-01,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Italy,2023-03-02,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-03-03,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Italy,2023-03-04,,estimate based on partial data,426,766.5,1006.7,18,159,303.6,596,957.2,2630.6
+Italy,2023-03-05,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Italy,2023-03-06,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Italy,2023-03-07,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-03-08,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-03-09,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Italy,2023-03-10,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Italy,2023-03-11,,forecast,375.5,735.6,1250.3,15.9,118,256,522.4,867.2,2571
+Italy,2023-03-12,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-03-13,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Italy,2023-03-14,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-03-15,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Italy,2023-03-16,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-03-17,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Italy,2023-03-18,,forecast,315,750.7,1604.3,11,108.8,219,478.4,847,2662.7
+Italy,2023-03-19,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Italy,2023-03-20,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Italy,2023-03-21,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-03-22,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-03-23,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-03-24,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Italy,2023-03-25,,forecast,276.5,638.4,1026.8,11.9,101,197,402.4,749.8,2440.2
+Italy,2023-03-26,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-03-27,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-03-28,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-03-29,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-03-30,,forecast,0,0.1,0.3,0,0,0,0,0,0
+Italy,2023-03-31,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Italy,2023-04-01,,forecast,241.5,680.1,1595.6,7,80.8,164,367.4,675.2,2654.5
+Italy,2023-04-02,,forecast,0,0.1,0.6,0,0,0,0,0,1
+Italy,2023-04-03,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Italy,2023-04-04,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-04-05,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-04-06,,forecast,0,0.1,0.7,0,0,0,0,0,0
+Italy,2023-04-07,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Italy,2023-04-08,,forecast,243,631.9,1457.3,6,77.8,160.6,347.4,624.2,2412.3
+Italy,2023-04-09,,forecast,0,0.1,0.6,0,0,0,0,0,1
+Italy,2023-04-10,,forecast,0,0.1,0.6,0,0,0,0,0,1
+Italy,2023-04-11,,forecast,0,0.1,0.6,0,0,0,0,0,1
+Italy,2023-04-12,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-04-13,,forecast,0,0.1,0.5,0,0,0,0,0,0
+Italy,2023-04-14,,forecast,0,0.1,0.5,0,0,0,0,0,0
+Italy,2023-04-15,,forecast,201.5,746,2939.1,4,57,129,302.4,578.5,2750.3
+Italy,2023-04-16,,forecast,0,0.1,0.7,0,0,0,0,0,1
+Italy,2023-04-17,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Italy,2023-04-18,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Italy,2023-04-19,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Latvia,2022-12-28,,estimate,0,0.2,0.4,0,0,0,0,0,1
+Latvia,2022-12-29,,estimate,0,0.2,0.4,0,0,0,0,0,1
+Latvia,2022-12-30,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Latvia,2022-12-31,,estimate,303,300.9,77.5,170,257,288,318,345,422
+Latvia,2023-01-01,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Latvia,2023-01-02,,estimate,0,0.2,0.4,0,0,0,0,0,1
+Latvia,2023-01-03,,estimate,0,0.2,0.4,0,0,0,0,0,1
+Latvia,2023-01-04,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Latvia,2023-01-05,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Latvia,2023-01-06,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Latvia,2023-01-07,,estimate,264,264.4,68.6,148.9,224.8,250,279,304.2,374
+Latvia,2023-01-08,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Latvia,2023-01-09,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Latvia,2023-01-10,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Latvia,2023-01-11,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Latvia,2023-01-12,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Latvia,2023-01-13,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-01-14,,estimate,210.5,211.6,52.9,131,180,199,221,240,297
+Latvia,2023-01-15,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Latvia,2023-01-16,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Latvia,2023-01-17,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-01-18,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-01-19,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-01-20,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-01-21,,estimate,169,173.6,46.9,107.9,145,160,178,195,252
+Latvia,2023-01-22,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-01-23,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-01-24,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-01-25,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-01-26,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-01-27,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-01-28,,estimate,143,148.5,42,93.9,124,136,151,168,219
+Latvia,2023-01-29,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-01-30,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-01-31,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-02-01,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-02-02,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-02-03,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-02-04,,estimate,129,133.9,38.5,83,111,123,136,150,199
+Latvia,2023-02-05,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-02-06,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-02-07,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-02-08,,estimate,0,0.1,0.2,0,0,0,0,0,1
+Latvia,2023-02-09,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-02-10,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-02-11,,estimate,121,124.8,34.2,78,105,115,128,141,182
+Latvia,2023-02-12,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-02-13,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-02-14,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-02-15,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-02-16,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-02-17,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-02-18,,estimate,119,121.6,32.1,74,102.8,113,126,137,175
+Latvia,2023-02-19,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-02-20,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-02-21,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-02-22,,estimate,0,0.1,0.2,0,0,0,0,0,1
+Latvia,2023-02-23,,estimate,0,0.1,0.2,0,0,0,0,0,1
+Latvia,2023-02-24,,estimate,0,0.1,0.2,0,0,0,0,0,1
+Latvia,2023-02-25,,estimate,119,120.6,33.3,74,101,112,126,137,171
+Latvia,2023-02-26,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-02-27,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-02-28,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-01,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-02,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-03,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-04,,estimate based on partial data,122,123.4,32,73.9,104,115,128,140,176
+Latvia,2023-03-05,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-06,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-07,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-08,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-09,,estimate based on partial data,0,0.1,0.2,0,0,0,0,0,1
+Latvia,2023-03-10,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-11,,estimate based on partial data,127,128.6,35.9,76.9,108,120,134,146,184
+Latvia,2023-03-12,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-13,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-14,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-15,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-16,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-17,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-18,,estimate based on partial data,134,135.2,40.4,72.9,111,125,142,156,199
+Latvia,2023-03-19,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-20,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-21,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-22,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-23,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-24,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-25,,forecast,139,143.2,50.1,72,113,129,149,168,221
+Latvia,2023-03-26,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-27,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-28,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-29,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-30,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-03-31,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-04-01,,forecast,145,150.6,61.7,67,112,132,157,180,256
+Latvia,2023-04-02,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-04-03,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-04-04,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-04-05,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-04-06,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-04-07,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-04-08,,forecast,151,164.3,89.8,64,112,136,166,199,301
+Latvia,2023-04-09,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-04-10,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-04-11,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-04-12,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-04-13,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-04-14,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-04-15,,forecast,157.5,176.6,116.2,58,110,138,179,215,346
+Latvia,2023-04-16,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Latvia,2023-04-17,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Latvia,2023-04-18,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Latvia,2023-04-19,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Liechtenstein,2022-12-28,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Liechtenstein,2022-12-29,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Liechtenstein,2022-12-30,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Liechtenstein,2022-12-31,,estimate,0,0.5,1,0,0,0,0,1,2
+Liechtenstein,2023-01-01,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Liechtenstein,2023-01-02,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Liechtenstein,2023-01-03,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Liechtenstein,2023-01-04,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Liechtenstein,2023-01-05,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Liechtenstein,2023-01-06,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Liechtenstein,2023-01-07,,estimate,0,0.4,0.9,0,0,0,0,1,2
+Liechtenstein,2023-01-08,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Liechtenstein,2023-01-09,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Liechtenstein,2023-01-10,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Liechtenstein,2023-01-11,,estimate,0,0.1,0.3,0,0,0,0,0,0
+Liechtenstein,2023-01-12,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Liechtenstein,2023-01-13,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Liechtenstein,2023-01-14,,estimate,0,0.3,0.7,0,0,0,0,0,2
+Liechtenstein,2023-01-15,,estimate,0,0.1,0.3,0,0,0,0,0,0
+Liechtenstein,2023-01-16,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Liechtenstein,2023-01-17,,estimate,0,0.1,0.2,0,0,0,0,0,0
+Liechtenstein,2023-01-18,,estimate,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-01-19,,estimate,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-01-20,,estimate,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-01-21,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Liechtenstein,2023-01-22,,estimate,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-01-23,,estimate,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-01-24,,estimate,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-01-25,,estimate,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-01-26,,estimate,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-01-27,,estimate,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-01-28,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Liechtenstein,2023-01-29,,estimate,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-01-30,,estimate,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-01-31,,estimate,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-02-01,,estimate,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-02-02,,estimate,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-02-03,,estimate,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-02-04,,estimate based on partial data,0,0.1,0.5,0,0,0,0,0,1
+Liechtenstein,2023-02-05,,estimate based on partial data,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-02-06,,estimate based on partial data,0,0,0.1,0,0,0,0,0,0
+Liechtenstein,2023-02-07,,estimate based on partial data,0,0,0.1,0,0,0,0,0,0
+Liechtenstein,2023-02-08,,estimate based on partial data,0,0,0.1,0,0,0,0,0,0
+Liechtenstein,2023-02-09,,estimate based on partial data,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-02-10,,estimate based on partial data,0,0,0.1,0,0,0,0,0,0
+Liechtenstein,2023-02-11,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Liechtenstein,2023-02-12,,estimate based on partial data,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-02-13,,estimate based on partial data,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-02-14,,estimate based on partial data,0,0,0.1,0,0,0,0,0,0
+Liechtenstein,2023-02-15,,estimate based on partial data,0,0,0.1,0,0,0,0,0,0
+Liechtenstein,2023-02-16,,estimate based on partial data,0,0,0.1,0,0,0,0,0,0
+Liechtenstein,2023-02-17,,estimate based on partial data,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-02-18,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Liechtenstein,2023-02-19,,forecast,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-02-20,,forecast,0,0,0.1,0,0,0,0,0,0
+Liechtenstein,2023-02-21,,forecast,0,0,0.1,0,0,0,0,0,0
+Liechtenstein,2023-02-22,,forecast,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-02-23,,forecast,0,0,0.1,0,0,0,0,0,0
+Liechtenstein,2023-02-24,,forecast,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-02-25,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Liechtenstein,2023-02-26,,forecast,0,0,0.1,0,0,0,0,0,0
+Liechtenstein,2023-02-27,,forecast,0,0,0.1,0,0,0,0,0,0
+Liechtenstein,2023-02-28,,forecast,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-03-01,,forecast,0,0,0.1,0,0,0,0,0,0
+Liechtenstein,2023-03-02,,forecast,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-03-03,,forecast,0,0,0.1,0,0,0,0,0,0
+Liechtenstein,2023-03-04,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Liechtenstein,2023-03-05,,forecast,0,0,0.1,0,0,0,0,0,0
+Liechtenstein,2023-03-06,,forecast,0,0,0.1,0,0,0,0,0,0
+Liechtenstein,2023-03-07,,forecast,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-03-08,,forecast,0,0,0.1,0,0,0,0,0,0
+Liechtenstein,2023-03-09,,forecast,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-03-10,,forecast,0,0,0.1,0,0,0,0,0,0
+Liechtenstein,2023-03-11,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Liechtenstein,2023-03-12,,forecast,0,0,0.1,0,0,0,0,0,0
+Liechtenstein,2023-03-13,,forecast,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-03-14,,forecast,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-03-15,,forecast,0,0,0.1,0,0,0,0,0,0
+Liechtenstein,2023-03-16,,forecast,0,0,0.1,0,0,0,0,0,0
+Liechtenstein,2023-03-17,,forecast,0,0,0.4,0,0,0,0,0,0
+Liechtenstein,2023-03-18,,forecast,0,0.1,0.7,0,0,0,0,0,1
+Liechtenstein,2023-03-19,,forecast,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-03-20,,forecast,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-03-21,,forecast,0,0,0.3,0,0,0,0,0,0
+Liechtenstein,2023-03-22,,forecast,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-03-23,,forecast,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-03-24,,forecast,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-03-25,,forecast,0,0.1,1.1,0,0,0,0,0,1
+Liechtenstein,2023-03-26,,forecast,0,0,0.3,0,0,0,0,0,0
+Liechtenstein,2023-03-27,,forecast,0,0,0.3,0,0,0,0,0,0
+Liechtenstein,2023-03-28,,forecast,0,0,0.3,0,0,0,0,0,0
+Liechtenstein,2023-03-29,,forecast,0,0,0.5,0,0,0,0,0,0
+Liechtenstein,2023-03-30,,forecast,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-03-31,,forecast,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-04-01,,forecast,0,0.2,2.2,0,0,0,0,0,1
+Liechtenstein,2023-04-02,,forecast,0,0,0.3,0,0,0,0,0,0
+Liechtenstein,2023-04-03,,forecast,0,0,0.3,0,0,0,0,0,0
+Liechtenstein,2023-04-04,,forecast,0,0,0.2,0,0,0,0,0,0
+Liechtenstein,2023-04-05,,forecast,0,0,0.4,0,0,0,0,0,0
+Liechtenstein,2023-04-06,,forecast,0,0,0.4,0,0,0,0,0,0
+Liechtenstein,2023-04-07,,forecast,0,0,0.5,0,0,0,0,0,0
+Liechtenstein,2023-04-08,,forecast,0,0.2,2.7,0,0,0,0,0,1
+Liechtenstein,2023-04-09,,forecast,0,0,0.4,0,0,0,0,0,0
+Liechtenstein,2023-04-10,,forecast,0,0,0.5,0,0,0,0,0,0
+Liechtenstein,2023-04-11,,forecast,0,0,0.5,0,0,0,0,0,0
+Liechtenstein,2023-04-12,,forecast,0,0.1,1.4,0,0,0,0,0,0
+Liechtenstein,2023-04-13,,forecast,0,0,0.3,0,0,0,0,0,0
+Liechtenstein,2023-04-14,,forecast,0,0.1,1.1,0,0,0,0,0,0
+Liechtenstein,2023-04-15,,forecast,0,0.4,5,0,0,0,0,0,1
+Liechtenstein,2023-04-16,,forecast,0,0.1,1.6,0,0,0,0,0,0
+Liechtenstein,2023-04-17,,forecast,0,0.1,1.1,0,0,0,0,0,0
+Liechtenstein,2023-04-18,,forecast,0,0,0.5,0,0,0,0,0,0
+Liechtenstein,2023-04-19,,forecast,0,0.1,1.4,0,0,0,0,0,0
+Luxembourg,2022-12-28,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2022-12-29,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2022-12-30,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2022-12-31,,estimate,16,18.2,12,3,10,14,19,24,40
+Luxembourg,2023-01-01,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-01-02,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-01-03,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-01-04,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-01-05,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-01-06,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-01-07,,estimate,15,16.2,10.7,3,9,12,17,21,36
+Luxembourg,2023-01-08,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-01-09,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-01-10,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-01-11,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-01-12,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-01-13,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-01-14,,estimate,14,15,10.1,2,8,11,16,19,33
+Luxembourg,2023-01-15,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-01-16,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-01-17,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-01-18,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-01-19,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-01-20,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-01-21,,estimate,13,14,8.9,3,8,11,15,18,30
+Luxembourg,2023-01-22,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-01-23,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-01-24,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-01-25,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-01-26,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-01-27,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-01-28,,estimate,12,13,8.2,2,7,10,13,17,29
+Luxembourg,2023-01-29,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-01-30,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-01-31,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-02-01,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-02-02,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-02-03,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-02-04,,estimate,11,13,8.7,2,7,10,13,17,29
+Luxembourg,2023-02-05,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-02-06,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-02-07,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-02-08,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-02-09,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-02-10,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-02-11,,estimate,11,12.8,8.5,2,7,10,13,17,28
+Luxembourg,2023-02-12,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-02-13,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-02-14,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-02-15,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-02-16,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-02-17,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-02-18,,estimate,12,13.3,8.6,2,7,10,14,18,30
+Luxembourg,2023-02-19,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-02-20,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-02-21,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-02-22,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-02-23,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-02-24,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-02-25,,estimate,12,13.8,9.1,3,8,10,14,18,31
+Luxembourg,2023-02-26,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-02-27,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-02-28,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-03-01,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-03-02,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-03-03,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-03-04,,estimate based on partial data,13,14.2,9.3,3,8,11,15,18,31
+Luxembourg,2023-03-05,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-03-06,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-03-07,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-03-08,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-03-09,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-03-10,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-03-11,,estimate based on partial data,13,15.1,10.3,3,8,11,15,20,34
+Luxembourg,2023-03-12,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-03-13,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-03-14,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-03-15,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-03-16,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-03-17,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-03-18,,estimate based on partial data,14,15.8,11.2,3,8,11,16,20,38
+Luxembourg,2023-03-19,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-03-20,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-03-21,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-03-22,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-03-23,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-03-24,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-03-25,,forecast,14,17.7,15.4,2,8,12,17,22,45
+Luxembourg,2023-03-26,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-03-27,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-03-28,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-03-29,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-03-30,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-03-31,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Luxembourg,2023-04-01,,forecast,14,19,19,2,8,11,17,24,52
+Luxembourg,2023-04-02,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-04-03,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Luxembourg,2023-04-04,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-04-05,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-04-06,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-04-07,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-04-08,,forecast,15,20.9,24.7,2,8,12,18,26,57
+Luxembourg,2023-04-09,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Luxembourg,2023-04-10,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-04-11,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-04-12,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Luxembourg,2023-04-13,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Luxembourg,2023-04-14,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Luxembourg,2023-04-15,,forecast,15,23.9,36.7,2,7,11.6,19,27,69
+Luxembourg,2023-04-16,,forecast,0,0.2,0.7,0,0,0,0,0,1
+Luxembourg,2023-04-17,,forecast,0,0.2,0.5,0,0,0,0,0,1
+Luxembourg,2023-04-18,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Luxembourg,2023-04-19,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Malta,2022-12-28,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Malta,2022-12-29,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Malta,2022-12-30,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Malta,2022-12-31,,estimate,20,23.7,16.8,4,12,17,25,31,55
+Malta,2023-01-01,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-01-02,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-01-03,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-01-04,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-01-05,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-01-06,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-01-07,,estimate,18,20.8,15.2,2.9,10,15,22,28,47
+Malta,2023-01-08,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-01-09,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-01-10,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-01-11,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-01-12,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-01-13,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-01-14,,estimate,16,18.2,13.6,2,9,13,18,24,43
+Malta,2023-01-15,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-01-16,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-01-17,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-01-18,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-01-19,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-01-20,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-01-21,,estimate,14,16.2,11.6,2,8,11.6,17,22,37
+Malta,2023-01-22,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-01-23,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-01-24,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-01-25,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-01-26,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-01-27,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-01-28,,estimate,13,14.9,10.7,2,8,11,15,20,34
+Malta,2023-01-29,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-01-30,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-01-31,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-02-01,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-02-02,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-02-03,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-02-04,,estimate,11,13.3,10.2,2,6,9,13,17,33
+Malta,2023-02-05,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-02-06,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-02-07,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-02-08,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-02-09,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-02-10,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-02-11,,estimate,11,12.7,9.5,2,6,9,13,17,31
+Malta,2023-02-12,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-02-13,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-02-14,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-02-15,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-02-16,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-02-17,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-02-18,,estimate,11,13.2,10.1,2,7,9,13,18,30
+Malta,2023-02-19,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-02-20,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-02-21,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-02-22,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-02-23,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-02-24,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-02-25,,estimate,12,14.3,10.8,2,7,10,14,19,35
+Malta,2023-02-26,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-02-27,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-02-28,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-03-01,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-03-02,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-03-03,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-03-04,,estimate based on partial data,13,15,10.8,2,7,11,15,20,35
+Malta,2023-03-05,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-03-06,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-03-07,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-03-08,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-03-09,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-03-10,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-03-11,,estimate based on partial data,14,17.3,14.1,2,8,12,17,23,41
+Malta,2023-03-12,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-03-13,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-03-14,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-03-15,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-03-16,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-03-17,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-03-18,,estimate based on partial data,15.5,18.9,15,2,9,13,19,25,47
+Malta,2023-03-19,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Malta,2023-03-20,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-03-21,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-03-22,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-03-23,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-03-24,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-03-25,,forecast,16,21.5,20,2,9,13,20,28,58
+Malta,2023-03-26,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-03-27,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-03-28,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-03-29,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-03-30,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-03-31,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-04-01,,forecast,18,25.1,27.3,2,9,14,22,31,71
+Malta,2023-04-02,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Malta,2023-04-03,,forecast,0,0.2,0.5,0,0,0,0,0,1
+Malta,2023-04-04,,forecast,0,0.2,0.5,0,0,0,0,0,1
+Malta,2023-04-05,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Malta,2023-04-06,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Malta,2023-04-07,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Malta,2023-04-08,,forecast,19,31.6,63.1,2,10,15,25,37,88
+Malta,2023-04-09,,forecast,0,0.2,0.7,0,0,0,0,0,1
+Malta,2023-04-10,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Malta,2023-04-11,,forecast,0,0.2,0.5,0,0,0,0,0,1
+Malta,2023-04-12,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Malta,2023-04-13,,forecast,0,0.2,0.8,0,0,0,0,0,1
+Malta,2023-04-14,,forecast,0,0.2,0.7,0,0,0,0,0,1
+Malta,2023-04-15,,forecast,20,37.5,70.1,2,9,15,26,42,116.1
+Malta,2023-04-16,,forecast,0,0.3,1.2,0,0,0,0,0,1
+Malta,2023-04-17,,forecast,0,0.2,0.7,0,0,0,0,0,1
+Malta,2023-04-18,,forecast,0,0.2,0.7,0,0,0,0,0,1
+Malta,2023-04-19,,forecast,0,0.2,0.7,0,0,0,0,0,1
+Netherlands,2023-01-10,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Netherlands,2023-01-11,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Netherlands,2023-01-12,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Netherlands,2023-01-13,,estimate,195,336.5,401.8,9,73,135,276.4,441.2,1116.2
+Netherlands,2023-01-14,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Netherlands,2023-01-15,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Netherlands,2023-01-16,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Netherlands,2023-01-17,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Netherlands,2023-01-18,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Netherlands,2023-01-19,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Netherlands,2023-01-20,,estimate,184,296.8,357.7,7.9,65,123,251,402,964.5
+Netherlands,2023-01-21,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Netherlands,2023-01-22,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Netherlands,2023-01-23,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Netherlands,2023-01-24,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Netherlands,2023-01-25,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Netherlands,2023-01-26,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Netherlands,2023-01-27,,estimate,189,303.7,338.9,9,70,133,263.4,428.2,970.2
+Netherlands,2023-01-28,,estimate,0,0.1,0.6,0,0,0,0,0,1
+Netherlands,2023-01-29,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Netherlands,2023-01-30,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Netherlands,2023-01-31,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Netherlands,2023-02-01,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Netherlands,2023-02-02,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Netherlands,2023-02-03,,estimate,199,317.2,346.5,9,74,144,274,432.5,1014.3
+Netherlands,2023-02-04,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Netherlands,2023-02-05,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Netherlands,2023-02-06,,estimate,0,0.1,0.6,0,0,0,0,0,1
+Netherlands,2023-02-07,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Netherlands,2023-02-08,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Netherlands,2023-02-09,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Netherlands,2023-02-10,,estimate,203,325.5,363.9,10,77.8,148,280.4,438,1069.3
+Netherlands,2023-02-11,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Netherlands,2023-02-12,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Netherlands,2023-02-13,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Netherlands,2023-02-14,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Netherlands,2023-02-15,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Netherlands,2023-02-16,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Netherlands,2023-02-17,,estimate,225.5,366,444.7,8.9,80.8,160,312,477.2,1202.1
+Netherlands,2023-02-18,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Netherlands,2023-02-19,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Netherlands,2023-02-20,,estimate,0,0.1,0.6,0,0,0,0,0,1
+Netherlands,2023-02-21,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Netherlands,2023-02-22,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Netherlands,2023-02-23,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Netherlands,2023-02-24,,estimate,251.5,405.4,466.4,12,95.8,178,353.4,538,1312.1
+Netherlands,2023-02-25,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Netherlands,2023-02-26,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Netherlands,2023-02-27,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Netherlands,2023-02-28,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Netherlands,2023-03-01,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Netherlands,2023-03-02,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Netherlands,2023-03-03,,estimate based on partial data,272,445.2,532.4,15,111.8,191.6,362.4,584.2,1477
+Netherlands,2023-03-04,,estimate based on partial data,0,0.2,0.6,0,0,0,0,0,1
+Netherlands,2023-03-05,,estimate based on partial data,0,0.2,0.5,0,0,0,0,0,1
+Netherlands,2023-03-06,,estimate based on partial data,0,0.2,0.6,0,0,0,0,0,1
+Netherlands,2023-03-07,,estimate based on partial data,0,0.2,0.6,0,0,0,0,0,1
+Netherlands,2023-03-08,,estimate based on partial data,0,0.2,0.6,0,0,0,0,0,1
+Netherlands,2023-03-09,,estimate based on partial data,0,0.2,0.5,0,0,0,0,0,1
+Netherlands,2023-03-10,,estimate based on partial data,324,521.3,620.7,14,115.8,224,433.4,696.2,1740
+Netherlands,2023-03-11,,estimate based on partial data,0,0.2,0.6,0,0,0,0,0,1
+Netherlands,2023-03-12,,estimate based on partial data,0,0.2,0.6,0,0,0,0,0,1
+Netherlands,2023-03-13,,estimate based on partial data,0,0.2,1,0,0,0,0,0,1
+Netherlands,2023-03-14,,estimate based on partial data,0,0.2,0.6,0,0,0,0,0,1
+Netherlands,2023-03-15,,estimate based on partial data,0,0.2,0.7,0,0,0,0,0,1
+Netherlands,2023-03-16,,estimate based on partial data,0,0.2,0.6,0,0,0,0,0,1
+Netherlands,2023-03-17,,estimate based on partial data,357,648.8,931.5,15,131,259.6,478.4,824,2255.8
+Netherlands,2023-03-18,,forecast,0,0.3,0.8,0,0,0,0,0,1
+Netherlands,2023-03-19,,forecast,0,0.3,1.1,0,0,0,0,0,2
+Netherlands,2023-03-20,,forecast,0,0.2,0.7,0,0,0,0,0,1
+Netherlands,2023-03-21,,forecast,0,0.2,1,0,0,0,0,0,1
+Netherlands,2023-03-22,,forecast,0,0.3,1,0,0,0,0,0,1
+Netherlands,2023-03-23,,forecast,0,0.2,0.7,0,0,0,0,0,1
+Netherlands,2023-03-24,,forecast,404,781.9,1234.2,16,134,280,564,978.8,2671.4
+Netherlands,2023-03-25,,forecast,0,0.3,1.1,0,0,0,0,0,2
+Netherlands,2023-03-26,,forecast,0,0.3,1,0,0,0,0,0,2
+Netherlands,2023-03-27,,forecast,0,0.3,0.9,0,0,0,0,0,2
+Netherlands,2023-03-28,,forecast,0,0.3,1.1,0,0,0,0,0,2
+Netherlands,2023-03-29,,forecast,0,0.3,0.8,0,0,0,0,0,2
+Netherlands,2023-03-30,,forecast,0,0.3,0.9,0,0,0,0,0,2
+Netherlands,2023-03-31,,forecast,499.5,1042.6,1921.1,19,172,332,726.2,1209,3623
+Netherlands,2023-04-01,,forecast,0,0.4,1.5,0,0,0,0,0,2
+Netherlands,2023-04-02,,forecast,0,0.4,1.4,0,0,0,0,0,2
+Netherlands,2023-04-03,,forecast,0,0.5,1.8,0,0,0,0,0,2
+Netherlands,2023-04-04,,forecast,0,0.5,2.5,0,0,0,0,0,2
+Netherlands,2023-04-05,,forecast,0,0.5,2.1,0,0,0,0,0,2
+Netherlands,2023-04-06,,forecast,0,0.4,1.4,0,0,0,0,0,2
+Netherlands,2023-04-07,,forecast,502.5,1444,6453.1,20,155.8,334.6,721,1360.8,4850.6
+Netherlands,2023-04-08,,forecast,0,0.6,2.1,0,0,0,0,0,3
+Netherlands,2023-04-09,,forecast,0,0.6,5,0,0,0,0,0,3
+Netherlands,2023-04-10,,forecast,0,0.5,1.6,0,0,0,0,0,3
+Netherlands,2023-04-11,,forecast,0,0.5,2.4,0,0,0,0,0,3
+Netherlands,2023-04-12,,forecast,0,0.5,1.9,0,0,0,0,0,3
+Netherlands,2023-04-13,,forecast,0,0.5,2.3,0,0,0,0,0,2
+Netherlands,2023-04-14,,forecast,604,2003.1,6895,22,203.5,409,869.2,1636.8,7179.2
+Netherlands,2023-04-15,,forecast,0,0.8,3.4,0,0,0,0,0,3
+Netherlands,2023-04-16,,forecast,0,0.9,8.2,0,0,0,0,1,4
+Netherlands,2023-04-17,,forecast,0,0.9,5.4,0,0,0,0,1,3
+Netherlands,2023-04-18,,forecast,0,0.7,2.8,0,0,0,0,0,3
+Netherlands,2023-04-19,,forecast,0,0.9,3.6,0,0,0,0,1,4
+Slovakia,2022-12-28,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2022-12-29,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2022-12-30,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2022-12-31,,estimate,196,197.4,68.8,91,152,180,211,237,312
+Slovakia,2023-01-01,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-01-02,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-01-03,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-01-04,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-01-05,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-01-06,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-01-07,,estimate,183,185.2,63.3,89,144,169,195,219,291
+Slovakia,2023-01-08,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-01-09,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-01-10,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-01-11,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-01-12,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-01-13,,estimate,0,0.1,0.2,0,0,0,0,0,1
+Slovakia,2023-01-14,,estimate,164,170.7,59.3,90,137,153,176,198,267
+Slovakia,2023-01-15,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-01-16,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-01-17,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-01-18,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-01-19,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-01-20,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-01-21,,estimate,154,160.2,54.5,86,126,143,165,186,258
+Slovakia,2023-01-22,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-01-23,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-01-24,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-01-25,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-01-26,,estimate,0,0.1,0.2,0,0,0,0,0,1
+Slovakia,2023-01-27,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-01-28,,estimate,150,157.6,56.6,83,123,139,160,182,258
+Slovakia,2023-01-29,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-01-30,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-01-31,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-02-01,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-02-02,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-02-03,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-02-04,,estimate,162,169.5,57.1,91,132,151,174,198,271
+Slovakia,2023-02-05,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-02-06,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-02-07,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-02-08,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-02-09,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-02-10,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-02-11,,estimate,190,194.5,63.9,101.9,154,176,202,227,303
+Slovakia,2023-02-12,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-02-13,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-02-14,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-02-15,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-02-16,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-02-17,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-02-18,,estimate,222,225.7,72.3,115.9,182,206,237,266.2,347
+Slovakia,2023-02-19,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-02-20,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-02-21,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-02-22,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-02-23,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-02-24,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-02-25,,estimate,248,251.3,80.7,123,201,232,266,297,380
+Slovakia,2023-02-26,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-02-27,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-02-28,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-03-01,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovakia,2023-03-02,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-03-03,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-03-04,,estimate based on partial data,272,274.4,91.2,137.9,220,250.6,289,320,425
+Slovakia,2023-03-05,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-03-06,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-03-07,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-03-08,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-03-09,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-03-10,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-03-11,,estimate based on partial data,284,289.4,100.2,147,230,262,304.4,340,453
+Slovakia,2023-03-12,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-03-13,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-03-14,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-03-15,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-03-16,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-03-17,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-03-18,,estimate based on partial data,298,310.1,116.6,150,241,274,323,365,502
+Slovakia,2023-03-19,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-03-20,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-03-21,,forecast,0,0.2,0.4,0,0,0,0,0,1
+Slovakia,2023-03-22,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-03-23,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-03-24,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-03-25,,forecast,311,333.8,147.2,151,241,286,340,395,580.1
+Slovakia,2023-03-26,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-03-27,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-03-28,,forecast,0,0.2,0.4,0,0,0,0,0,1
+Slovakia,2023-03-29,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-03-30,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-03-31,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-04-01,,forecast,329.5,364.3,189.2,140.9,248,298.6,366.4,439,679
+Slovakia,2023-04-02,,forecast,0,0.2,0.5,0,0,0,0,0,1
+Slovakia,2023-04-03,,forecast,0,0.2,0.4,0,0,0,0,0,1
+Slovakia,2023-04-04,,forecast,0,0.2,0.5,0,0,0,0,0,1
+Slovakia,2023-04-05,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-04-06,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-04-07,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Slovakia,2023-04-08,,forecast,349,395.5,248.2,131.9,247,309,389,476.2,800
+Slovakia,2023-04-09,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Slovakia,2023-04-10,,forecast,0,0.2,0.5,0,0,0,0,0,1
+Slovakia,2023-04-11,,forecast,0,0.2,0.5,0,0,0,0,0,1
+Slovakia,2023-04-12,,forecast,0,0.2,0.5,0,0,0,0,0,1
+Slovakia,2023-04-13,,forecast,0,0.2,0.5,0,0,0,0,0,1
+Slovakia,2023-04-14,,forecast,0,0.2,0.5,0,0,0,0,0,1
+Slovakia,2023-04-15,,forecast,356.5,427.4,340.5,123,243.8,309.6,412.4,515,917.1
+Slovakia,2023-04-16,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Slovakia,2023-04-17,,forecast,0,0.2,0.5,0,0,0,0,0,1
+Slovakia,2023-04-18,,forecast,0,0.2,0.6,0,0,0,0,0,1
+Slovakia,2023-04-19,,forecast,0,0.2,0.5,0,0,0,0,0,1
+Slovenia,2022-12-28,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Slovenia,2022-12-29,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Slovenia,2022-12-30,,estimate,0,0.2,0.4,0,0,0,0,0,1
+Slovenia,2022-12-31,,estimate,131,130.8,51.2,50,97,119,141,159,218
+Slovenia,2023-01-01,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Slovenia,2023-01-02,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Slovenia,2023-01-03,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Slovenia,2023-01-04,,estimate,0,0.2,0.4,0,0,0,0,0,1
+Slovenia,2023-01-05,,estimate,0,0.2,0.4,0,0,0,0,0,1
+Slovenia,2023-01-06,,estimate,0,0.2,0.4,0,0,0,0,0,1
+Slovenia,2023-01-07,,estimate,120,121,48.7,43,90,109,131.4,149,198
+Slovenia,2023-01-08,,estimate,0,0.2,0.4,0,0,0,0,0,1
+Slovenia,2023-01-09,,estimate,0,0.2,0.4,0,0,0,0,0,1
+Slovenia,2023-01-10,,estimate,0,0.2,0.4,0,0,0,0,0,1
+Slovenia,2023-01-11,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Slovenia,2023-01-12,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Slovenia,2023-01-13,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Slovenia,2023-01-14,,estimate,102,102.2,40.1,37,77,93,111,126,167
+Slovenia,2023-01-15,,estimate,0,0.2,0.4,0,0,0,0,0,1
+Slovenia,2023-01-16,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Slovenia,2023-01-17,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Slovenia,2023-01-18,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Slovenia,2023-01-19,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-01-20,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Slovenia,2023-01-21,,estimate,81,82.2,32.3,33,63,74,87.4,99,136
+Slovenia,2023-01-22,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-01-23,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Slovenia,2023-01-24,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Slovenia,2023-01-25,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-01-26,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-01-27,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-01-28,,estimate,62,64.4,27.9,26,47,56,68,77,112
+Slovenia,2023-01-29,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-01-30,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-01-31,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-02-01,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-02-02,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-02-03,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-02-04,,estimate,46,49.4,22.2,21,36,42,50,58,88
+Slovenia,2023-02-05,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-02-06,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-02-07,,estimate,0,0.1,0.2,0,0,0,0,0,1
+Slovenia,2023-02-08,,estimate,0,0,0.2,0,0,0,0,0,0
+Slovenia,2023-02-09,,estimate,0,0.1,0.2,0,0,0,0,0,1
+Slovenia,2023-02-10,,estimate,0,0.1,0.2,0,0,0,0,0,0
+Slovenia,2023-02-11,,estimate,37,39.9,20.2,16,28,33,40,48,73
+Slovenia,2023-02-12,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-02-13,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-02-14,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-02-15,,estimate,0,0.1,0.2,0,0,0,0,0,0
+Slovenia,2023-02-16,,estimate,0,0,0.2,0,0,0,0,0,0
+Slovenia,2023-02-17,,estimate,0,0,0.2,0,0,0,0,0,0
+Slovenia,2023-02-18,,estimate,33,36.2,17.9,15,25,30,36.4,43,66
+Slovenia,2023-02-19,,estimate,0,0.1,0.2,0,0,0,0,0,1
+Slovenia,2023-02-20,,estimate,0,0,0.2,0,0,0,0,0,0
+Slovenia,2023-02-21,,estimate,0,0,0.2,0,0,0,0,0,0
+Slovenia,2023-02-22,,estimate,0,0,0.2,0,0,0,0,0,0
+Slovenia,2023-02-23,,estimate,0,0,0.2,0,0,0,0,0,0
+Slovenia,2023-02-24,,estimate,0,0,0.2,0,0,0,0,0,0
+Slovenia,2023-02-25,,estimate,33,35,15.5,15,25,30,36,42,63
+Slovenia,2023-02-26,,estimate,0,0,0.2,0,0,0,0,0,0
+Slovenia,2023-02-27,,estimate,0,0,0.2,0,0,0,0,0,0
+Slovenia,2023-02-28,,estimate,0,0,0.2,0,0,0,0,0,0
+Slovenia,2023-03-01,,estimate,0,0,0.2,0,0,0,0,0,0
+Slovenia,2023-03-02,,estimate,0,0,0.2,0,0,0,0,0,0
+Slovenia,2023-03-03,,estimate,0,0,0.2,0,0,0,0,0,0
+Slovenia,2023-03-04,,estimate based on partial data,35,37.4,16.7,15,27,32,39,45,67
+Slovenia,2023-03-05,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,0
+Slovenia,2023-03-06,,estimate based on partial data,0,0.1,0.2,0,0,0,0,0,0
+Slovenia,2023-03-07,,estimate based on partial data,0,0.1,0.2,0,0,0,0,0,1
+Slovenia,2023-03-08,,estimate based on partial data,0,0,0.2,0,0,0,0,0,0
+Slovenia,2023-03-09,,estimate based on partial data,0,0.1,0.2,0,0,0,0,0,0
+Slovenia,2023-03-10,,estimate based on partial data,0,0,0.2,0,0,0,0,0,0
+Slovenia,2023-03-11,,estimate based on partial data,39,40.9,19.5,14,29,36,43,49,73
+Slovenia,2023-03-12,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-03-13,,estimate based on partial data,0,0.1,0.2,0,0,0,0,0,0
+Slovenia,2023-03-14,,estimate based on partial data,0,0.1,0.2,0,0,0,0,0,1
+Slovenia,2023-03-15,,estimate based on partial data,0,0.1,0.2,0,0,0,0,0,0
+Slovenia,2023-03-16,,estimate based on partial data,0,0.1,0.2,0,0,0,0,0,1
+Slovenia,2023-03-17,,estimate based on partial data,0,0.1,0.2,0,0,0,0,0,1
+Slovenia,2023-03-18,,estimate based on partial data,43,44.6,21,14,31,38,48,56,82
+Slovenia,2023-03-19,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-03-20,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-03-21,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-03-22,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-03-23,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-03-24,,forecast,0,0.1,0.2,0,0,0,0,0,1
+Slovenia,2023-03-25,,forecast,48,51,29.7,13,32,41,54,64,101
+Slovenia,2023-03-26,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-03-27,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-03-28,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-03-29,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-03-30,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-03-31,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-04-01,,forecast,52,59.3,43,12,32,44,60,75,131
+Slovenia,2023-04-02,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-04-03,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-04-04,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Slovenia,2023-04-05,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-04-06,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-04-07,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Slovenia,2023-04-08,,forecast,56,70.1,61.5,10.9,31,46,67,89,177
+Slovenia,2023-04-09,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Slovenia,2023-04-10,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Slovenia,2023-04-11,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Slovenia,2023-04-12,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Slovenia,2023-04-13,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Slovenia,2023-04-14,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Slovenia,2023-04-15,,forecast,59,83.3,104.1,10,31,48,73,104,220
+Slovenia,2023-04-16,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Slovenia,2023-04-17,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Slovenia,2023-04-18,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Slovenia,2023-04-19,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Spain,2022-12-28,,estimate,0,0.2,0.7,0,0,0,0,0,1
+Spain,2022-12-29,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Spain,2022-12-30,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Spain,2022-12-31,,estimate,984.5,1682.9,2166,39,339.8,685.2,1344.2,2182.2,5799.8
+Spain,2023-01-01,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Spain,2023-01-02,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Spain,2023-01-03,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Spain,2023-01-04,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Spain,2023-01-05,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Spain,2023-01-06,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Spain,2023-01-07,,estimate,864,1536.4,1972.4,44,320,605,1197.8,1978.5,5266
+Spain,2023-01-08,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Spain,2023-01-09,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Spain,2023-01-10,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Spain,2023-01-11,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Spain,2023-01-12,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Spain,2023-01-13,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-01-14,,estimate,883.5,1426.4,1666.2,45,326.2,619,1219.4,1913,4649.1
+Spain,2023-01-15,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Spain,2023-01-16,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Spain,2023-01-17,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Spain,2023-01-18,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Spain,2023-01-19,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Spain,2023-01-20,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Spain,2023-01-21,,estimate,810,1290.7,1524,37,305.8,577.8,1108,1713.5,3992.2
+Spain,2023-01-22,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Spain,2023-01-23,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Spain,2023-01-24,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Spain,2023-01-25,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Spain,2023-01-26,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Spain,2023-01-27,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-01-28,,estimate,698.5,1112.4,1267.9,29,247,488,961.4,1503.5,3630.3
+Spain,2023-01-29,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Spain,2023-01-30,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-01-31,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Spain,2023-02-01,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-02-02,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-02-03,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-02-04,,estimate,651.5,1051.1,1201.3,29,230,458,884.8,1425.2,3527.4
+Spain,2023-02-05,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Spain,2023-02-06,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Spain,2023-02-07,,estimate,0,0.1,0.5,0,0,0,0,0,1
+Spain,2023-02-08,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-02-09,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-02-10,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-02-11,,estimate,547.5,911.4,1114,30,196,392,759.8,1229.2,3004.2
+Spain,2023-02-12,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-02-13,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-02-14,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-02-15,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-02-16,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-02-17,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-02-18,,estimate based on partial data,519.5,856.2,1024.8,26,176.8,358.6,721,1156.2,2739.4
+Spain,2023-02-19,,estimate based on partial data,0,0.1,0.5,0,0,0,0,0,1
+Spain,2023-02-20,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-02-21,,estimate based on partial data,0,0.1,0.5,0,0,0,0,0,1
+Spain,2023-02-22,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-02-23,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Spain,2023-02-24,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-02-25,,estimate based on partial data,468.5,794.9,1038.9,22.9,166,324.6,655,1037.5,2524.2
+Spain,2023-02-26,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-02-27,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-02-28,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-03-01,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-03-02,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-03-03,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Spain,2023-03-04,,estimate based on partial data,455,778.8,1072.3,20,157,313.6,626,1010.5,2493.8
+Spain,2023-03-05,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-03-06,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-03-07,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-03-08,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-03-09,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-03-10,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-03-11,,forecast,372.5,792.7,1809.4,16.9,136,265.6,523.4,887.2,2687.9
+Spain,2023-03-12,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-03-13,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-03-14,,forecast,0,0.1,0.6,0,0,0,0,0,1
+Spain,2023-03-15,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-03-16,,forecast,0,0.1,0.3,0,0,0,0,0,1
+Spain,2023-03-17,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-03-18,,forecast,351.5,828.4,3222.9,11,106,236.6,492,867.5,2670.3
+Spain,2023-03-19,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-03-20,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Spain,2023-03-21,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Spain,2023-03-22,,forecast,0,0.1,1,0,0,0,0,0,1
+Spain,2023-03-23,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-03-24,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-03-25,,forecast,300,804.4,2638.5,12,103,211,448.4,815.2,2834.3
+Spain,2023-03-26,,forecast,0,0.1,0.6,0,0,0,0,0,1
+Spain,2023-03-27,,forecast,0,0.1,0.6,0,0,0,0,0,1
+Spain,2023-03-28,,forecast,0,0.2,2.1,0,0,0,0,0,1
+Spain,2023-03-29,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Spain,2023-03-30,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Spain,2023-03-31,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Spain,2023-04-01,,forecast,300.5,1426.2,28602.4,12.9,99,201.6,419,730.5,2986.3
+Spain,2023-04-02,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Spain,2023-04-03,,forecast,0,0.1,1.1,0,0,0,0,0,1
+Spain,2023-04-04,,forecast,0,0.2,3.7,0,0,0,0,0,1
+Spain,2023-04-05,,forecast,0,0.1,1.3,0,0,0,0,0,1
+Spain,2023-04-06,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Spain,2023-04-07,,forecast,0,0.1,0.7,0,0,0,0,0,1
+Spain,2023-04-08,,forecast,255.5,1086.3,5412.4,9,73,158,387,722.2,3608.7
+Spain,2023-04-09,,forecast,0,0.1,1,0,0,0,0,0,1
+Spain,2023-04-10,,forecast,0,0.1,0.6,0,0,0,0,0,1
+Spain,2023-04-11,,forecast,0,0.1,1.4,0,0,0,0,0,1
+Spain,2023-04-12,,forecast,0,0.1,0.9,0,0,0,0,0,1
+Spain,2023-04-13,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Spain,2023-04-14,,forecast,0,0.1,0.6,0,0,0,0,0,1
+Spain,2023-04-15,,forecast,236,1170.8,9470.7,7,66,139.6,352,711.2,3361.9
+Spain,2023-04-16,,forecast,0,0.1,0.6,0,0,0,0,0,1
+Spain,2023-04-17,,forecast,0,0.1,0.9,0,0,0,0,0,1
+Spain,2023-04-18,,forecast,0,0.2,1,0,0,0,0,0,1
+Spain,2023-04-19,,forecast,0,0.1,0.9,0,0,0,0,0,1
