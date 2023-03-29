@@ -94,6 +94,7 @@ format_forecast <- function(forecasts,
   forecasts_format <- forecasts_format[
     target_end_date > forecast_date - 7 * cutoff_weeks 
   ]
+  forecasts_format[, cutoff_weeks := NULL]
   forecasts_format[, 
     horizon := round(as.numeric((target_end_date - forecast_date) / 7))
   ]
