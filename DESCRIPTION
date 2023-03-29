@@ -62,7 +62,7 @@ Remotes:
   epiforecasts/forecasthubutils,
   yonicd/shredder
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.3
 Biarch: true
 Depends: 
   R (>= 3.4.0)

@@ -10,12 +10,12 @@
 #' @importFrom data.table fread setnames setorder
 get_observations <- function(dir, target_date = Sys.Date(),
                              weeks = 8, locs) {
-  deaths <- fread(file.path(dir, "daily-incidence-deaths.csv"))
-  cases <- fread(file.path(dir, "daily-incidence-cases.csv"))
+  deaths <- fread(file.path(dir, "weekly-incident-deaths.csv"))
+  hosp <- fread(file.path(dir, "weekly-incident-hospitalizations.csv"))
   deaths <- setnames(deaths, "value", "secondary")
-  cases <- setnames(cases, "value", "primary")
+  hosp <- setnames(hosp, "value", "primary")
   obs <- merge(
-    cases, deaths,
+    hosp, deaths,
     by = c("location", "location_name", "date")
   )
   obs <- obs[,

@@ -4,7 +4,7 @@
 Rscript data-raw/update.R
 
 # Update cases forecast
-Rscript rt-forecast/hosp.R
+Rscript rt-forecast/case-hosp.R
 
 # Update submissions
 Rscript rt-forecast/submission.R
