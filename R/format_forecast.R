@@ -21,13 +21,26 @@ format_forecast <- function(forecasts,
                             forecast_date = NULL,
                             submission_date = NULL,
                             CrI_samples = 1,
+                            frequency = "daily",
                             target_value = NULL,
                             max_value = 1e7) {
 
-  # Filter to full epiweeks
+  frequency <- match.arg(frequency, choices = c("daily", "weekly"))
+
+  if (frequency == "weekly") {
+    forecasts <- forecasts[, 
+      date := as.Date(target_date) + (date - as.Date(target_date)) * 7
+    ]
+  }
+
   forecasts <- dates_to_epiweek(forecasts)
-  forecasts <- forecasts[epiweek_full == TRUE]
+  if (frequency == "daily") {
+    # Filter to full epiweeks
+    forecasts <- forecasts[epiweek_full == TRUE]
+  }
   forecasts <- forecasts[,  epiweek := epiweek(date)]
+
+  forecasts <- forecasts[!is.na(value)]
 
   # Aggregate to weekly incidence
   weekly_forecasts_inc <- forecasts[,.(value = sum(value, na.rm = TRUE),
@@ -66,11 +79,25 @@ format_forecast <- function(forecasts,
 
   # drop unnecessary columns
   forecasts_format <- forecasts_format[, !c("epiweek", "region")]
-  forecasts_format <- forecasts_format[target_end_date > forecast_date]
-  forecasts_format[, horizon := 1 + as.numeric(target_end_date -
-                               min(target_end_date)) / 7]
+
+  # filter dates
+  recommended_cutoffs <- fread(here::here("data-raw", "recommended-cutoffs.csv"))
+  recommended_cutoffs <- recommended_cutoffs[
+    target_variable == paste("inc", target_value), 
+    list(location, cutoff_weeks)
+  ]
+  forecasts_format <- merge( 
+    forecasts_format, recommended_cutoffs, by = "location", all.x = TRUE
+  )
+  forecasts_format <- forecasts_format[is.na(cutoff_weeks), cutoff_weeks := 0]
+  forecasts_format <- forecasts_format[, forecast_date := as.Date(forecast_date)]
+  forecasts_format <- forecasts_format[
+    target_end_date > forecast_date - 7 * cutoff_weeks 
+  ]
+  forecasts_format[, 
+    horizon := round(as.numeric((target_end_date - forecast_date) / 7))
+  ]
   forecasts_format[, target := paste0(horizon, " wk ahead inc ", target_value)]
-  setorder(forecasts_format, location_name, horizon, quantile)
 
   setorder(forecasts_format, location, target, horizon)
   # Set column order

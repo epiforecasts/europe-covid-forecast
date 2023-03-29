@@ -17,7 +17,7 @@ check_dir <- function(dir) {
 #' @export
 #' @importFrom dplyr filter group_by count left_join mutate
 #' @importFrom tibble tibble
-#' @importFrom lubridate epiweek
+#' @importFrom lubridate epiweek epiyear
 #' @importFrom tidyr unnest
 dates_to_epiweek <- function(df){
 

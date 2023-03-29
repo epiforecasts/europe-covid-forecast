@@ -22,7 +22,7 @@ onset_to_report <- readRDS(
   )
 
 # Get hospitalizations  ---------------------------------------------------------------
-hosp <- fread(file.path("data-raw", "weekly-incident-hosp.csv"))
+hosp <- fread(file.path("data-raw", "weekly-incident-hospitalizations.csv"))
 hosp <- hosp[, .(region = as.character(location_name),
                  date = as.Date(date), confirm = value)]
 hosp <- hosp[confirm < 0, confirm := 0]
@@ -43,7 +43,7 @@ no_cutoff <- setdiff(hosp$region, cutoffs$location_name)
 trunc_loc <- lapply(unique(cutoffs$location_name), function(loc) {
   loc_snapshots <- lapply(snapshots, function(x) {
     x <- x[location_name == loc][, list(date, confirm = value)]
-    if (nrow(x) > 0) x <- x[date > max(date) - 16 * 7]
+    if (nrow(x) > 0) x <- x[date > as.Date(target_date) - lubridate::weeks(20)]
   })
   safe_estimate_truncation <- purrr::safely(estimate_truncation)
   est <- safe_estimate_truncation(loc_snapshots, trunc_max = 28, chains = 2)
@@ -57,7 +57,7 @@ names(trunc_loc) <- cutoff_names
 
 trunc <- opts_list(trunc_opts(), hosp)
 trunc[cutoff_names] <- lapply(trunc_loc, trunc_opts)
-trunc[!failed_cutoff_names] <- NULL
+trunc[failed_cutoff_names] <- NULL
 
 loc_names <- names(trunc)
 hosp <- hosp[region %in% loc_names]

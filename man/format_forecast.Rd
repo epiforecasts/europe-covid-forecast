@@ -10,6 +10,7 @@ format_forecast(
   forecast_date = NULL,
   submission_date = NULL,
   CrI_samples = 1,
+  frequency = "daily",
   target_value = NULL,
   max_value = 1e+07
 )
