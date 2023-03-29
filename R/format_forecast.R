@@ -28,8 +28,9 @@ format_forecast <- function(forecasts,
   frequency <- match.arg(frequency, choices = c("daily", "weekly"))
 
   if (frequency == "weekly") {
+    ## Saturday
     forecasts <- forecasts[, 
-      date := as.Date(target_date) + (date - as.Date(target_date)) * 7
+      date := as.Date(target_date) + (date - as.Date(target_date)) * 7 - 2
     ]
   }
 
