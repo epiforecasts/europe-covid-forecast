@@ -1,0 +1,37 @@
+region,estimate,median,mean,sd,lower_90,lower_50,lower_20,upper_20,upper_50,upper_90,metric,Expected change in daily cases,prob_control
+Germany,43905 (28740 -- 99307),43905,51682,23804,28740,35568,40793,48347,60010,99307,New confirmed cases by infection date,Decreasing,1
+France,43610 (20111 -- 117367),43610,52439,36411,20111,31312,38307,48989,61412,117367,New confirmed cases by infection date,Stable,0.55
+Spain,36242 (20456 -- 73219),36242,40807,19357,20456,28272,33204,40645,48460,73219,New confirmed cases by infection date,Stable,0.43
+Italy,21539 (14181 -- 39163),21539,23338,7902,14181,17788,19850,23600,26902,39163,New confirmed cases by infection date,Likely decreasing,0.71
+Denmark,17273 (7941 -- 40298),17273,19700,10743,7941,12503,15185,19232,23758,40298,New confirmed cases by infection date,Likely increasing,0.083
+Belgium,15533 (7348 -- 38522),15533,18103,10181,7348,11390,13662,17681,21703,38522,New confirmed cases by infection date,Likely decreasing,0.84
+Netherlands,11390 (3098 -- 54166),11390,18164,25059,3098,6722,9313,14457,20549,54166,New confirmed cases by infection date,Likely decreasing,0.73
+Greece,11215 (6800 -- 20300),11215,12154,4617,6800,8983,10417,12205,14246,20300,New confirmed cases by infection date,Likely decreasing,0.91
+Czechia,8519 (4420 -- 19987),8519,9867,4934,4420,6605,7732,9614,11703,19987,New confirmed cases by infection date,Decreasing,0.98
+Ireland,6380 (3486 -- 13686),6380,7206,3530,3486,4870,5754,7173,8504,13686,New confirmed cases by infection date,Likely increasing,0.32
+Latvia,4122 (2161 -- 8719),4122,4612,2168,2161,3103,3725,4584,5525,8719,New confirmed cases by infection date,Likely increasing,0.16
+Slovakia,3758 (1699 -- 9130),3758,4448,2690,1699,2758,3342,4291,5460,9130,New confirmed cases by infection date,Likely decreasing,0.91
+Estonia,2961 (1723 -- 5930),2961,3268,1300,1723,2351,2710,3270,3877,5930,New confirmed cases by infection date,Likely increasing,0.094
+Slovenia,1766 (721 -- 4922),1766,2162,1459,721,1218,1556,2094,2653,4922,New confirmed cases by infection date,Likely increasing,0.12
+Hungary,1736 (711 -- 4408),1736,2046,1336,711,1221,1519,1978,2519,4408,New confirmed cases by infection date,Likely increasing,0.23
+Malta,465 (164 -- 1411),465,598,488,164,301,402,557,729,1411,New confirmed cases by infection date,Stable,0.47
+Luxembourg,348 (144 -- 912),348,412,253,144,242,305,399,503,912,New confirmed cases by infection date,Stable,0.44
+Iceland,170 (68 -- 497),170,209,144,68,118,147,200,260,497,New confirmed cases by infection date,Stable,0.42
+Denmark,1.1 (0.98 -- 1.3),1.1,1.1,0.098,0.98,1.1,1.1,1.1,1.2,1.3,Effective reproduction no.,Likely increasing,0.083
+Estonia,1.1 (0.98 -- 1.2),1.1,1.1,0.066,0.98,1,1.1,1.1,1.1,1.2,Effective reproduction no.,Likely increasing,0.094
+Hungary,1.1 (0.91 -- 1.3),1.1,1.1,0.11,0.91,1,1,1.1,1.1,1.3,Effective reproduction no.,Likely increasing,0.23
+Latvia,1.1 (0.94 -- 1.2),1.1,1.1,0.076,0.94,1,1,1.1,1.1,1.2,Effective reproduction no.,Likely increasing,0.16
+Slovenia,1.1 (0.95 -- 1.4),1.1,1.1,0.13,0.95,1.1,1.1,1.2,1.2,1.4,Effective reproduction no.,Likely increasing,0.12
+Iceland,1 (0.84 -- 1.3),1,1,0.13,0.84,0.95,0.99,1.1,1.1,1.3,Effective reproduction no.,Stable,0.42
+Ireland,1 (0.91 -- 1.1),1,1,0.072,0.91,0.99,1,1,1.1,1.1,Effective reproduction no.,Likely increasing,0.32
+Luxembourg,1 (0.84 -- 1.2),1,1,0.12,0.84,0.95,0.99,1,1.1,1.2,Effective reproduction no.,Stable,0.44
+Malta,1 (0.82 -- 1.2),1,1,0.12,0.82,0.94,0.98,1,1.1,1.2,Effective reproduction no.,Stable,0.47
+Spain,1 (0.91 -- 1.1),1,1,0.06,0.91,0.97,1,1,1,1.1,Effective reproduction no.,Stable,0.43
+France,0.99 (0.83 -- 1.2),0.99,1,0.12,0.83,0.93,0.97,1,1.1,1.2,Effective reproduction no.,Stable,0.55
+Italy,0.98 (0.91 -- 1.1),0.98,0.98,0.044,0.91,0.96,0.97,0.99,1,1.1,Effective reproduction no.,Likely decreasing,0.71
+Greece,0.94 (0.86 -- 1),0.94,0.94,0.051,0.86,0.91,0.93,0.95,0.97,1,Effective reproduction no.,Likely decreasing,0.91
+Netherlands,0.92 (0.69 -- 1.2),0.92,0.93,0.15,0.69,0.84,0.89,0.96,1,1.2,Effective reproduction no.,Likely decreasing,0.73
+Belgium,0.89 (0.71 -- 1.1),0.89,0.89,0.11,0.71,0.8,0.86,0.92,0.97,1.1,Effective reproduction no.,Likely decreasing,0.84
+Slovakia,0.86 (0.66 -- 1),0.86,0.85,0.12,0.66,0.77,0.82,0.89,0.94,1,Effective reproduction no.,Likely decreasing,0.91
+Czechia,0.79 (0.65 -- 0.95),0.79,0.8,0.093,0.65,0.73,0.77,0.82,0.86,0.95,Effective reproduction no.,Decreasing,0.98
+Germany,0.75 (0.68 -- 0.88),0.75,0.76,0.059,0.68,0.72,0.74,0.76,0.78,0.88,Effective reproduction no.,Decreasing,1
