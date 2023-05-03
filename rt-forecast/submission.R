@@ -7,7 +7,7 @@ library(purrr)
 
 # Dates -------------------------------------------------------------------
 target_date <- get_forecast_date(dir = here("data-raw"))
-target_variables <- c(cases = "case", hospitalizations = "hosp")
+target_variables <- c(cases = "case", hospitalizations = "hosp", deaths = "death")
 
 # Locations ---------------------------------------------------------------
 base_url <- "https://raw.githubusercontent.com/epiforecasts/"
@@ -17,7 +17,7 @@ locations <- fread(paste0(
  )
 
 # Get forecasts -----------------------------------------------------------
-forecasts <- purrr::map(c("cases", "hospitalizations"), \(x) { 
+forecasts <- purrr::map(c("cases", "hospitalizations", "deaths"), \(x) { 
   suppressWarnings(res <- get_regional_results(
     results_dir = here("rt-forecast", "data", "samples", x),
     date = target_date, forecast = TRUE,
