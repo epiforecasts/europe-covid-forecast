@@ -61,6 +61,7 @@ for (target in c("cases", "hospitalizations", "deaths")) {
   )
   cases <- cases[, .(region = as.character(location_name),
                    date = as.Date(date), confirm = value)]
+  cases <- cases[!is.na(confirm)]
   cases <- cases[confirm < 0, confirm := 0]
   cases <- cases[date >= (max(date) - weeks(12))]
   ## rescale dates

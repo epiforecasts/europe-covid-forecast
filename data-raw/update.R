@@ -98,5 +98,5 @@ cutoffs <- cutoffs[is.na(target_variable), target_variable := "inc hosp"]
 fwrite(cutoffs, here("data-raw", "recommended-cutoffs.csv"))
 
  # Forecast date ---------------------------------------------------------------
-forecast_date <- ceiling_date(Sys.Date() - 1, unit = "week", week_start = 1)
+forecast_date <- floor_date(today(), unit = "week", week_start = 6) + 2
 fwrite(list(forecast_date), here("data-raw", "forecast-date.csv"))
