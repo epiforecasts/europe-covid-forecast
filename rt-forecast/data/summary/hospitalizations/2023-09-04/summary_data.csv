@@ -1,0 +1,19 @@
+region,estimate,median,mean,sd,lower_90,lower_50,lower_20,upper_20,upper_50,upper_90,metric,Expected change in daily cases,prob_control
+Greece,16933 (9339 -- 35909),16933,19041,9336,9339,13082,15340,18840,22589,35909,New confirmed cases by infection date,Increasing,0.009
+Ireland,10865 (4506 -- 26944),10865,12852,8752,4506,7528,9462,12374,15532,26944,New confirmed cases by infection date,Likely increasing,0.058
+Italy,6957 (3486 -- 16049),6957,7998,4606,3486,5183,6221,7805,9314,16049,New confirmed cases by infection date,Likely increasing,0.19
+Netherlands,3402 (2003 -- 6468),3402,3711,1463,2003,2725,3112,3729,4345,6468,New confirmed cases by infection date,Increasing,0.034
+Malta,1141 (564 -- 2664),1141,1337,792,564,838,1014,1293,1607,2664,New confirmed cases by infection date,Likely increasing,0.14
+Czechia,649 (288 -- 1491),649,741,420,288,472,575,735,908,1491,New confirmed cases by infection date,Increasing,0.042
+Latvia,291 (140 -- 698),291,345,202,140,217,262,335,412,698,New confirmed cases by infection date,Stable,0.56
+Slovakia,146 (63 -- 382),146,175,115,63,103,129,168,207,382,New confirmed cases by infection date,Stable,0.58
+Estonia,96 (35 -- 300),96,124,106,35,65,82,114,146,300,New confirmed cases by infection date,Likely decreasing,0.79
+Czechia,1.2 (1 -- 1.5),1.2,1.2,0.16,1,1.1,1.2,1.3,1.3,1.5,Effective reproduction no.,Increasing,0.042
+Greece,1.2 (1.1 -- 1.4),1.2,1.2,0.094,1.1,1.1,1.2,1.2,1.3,1.4,Effective reproduction no.,Increasing,0.009
+Ireland,1.2 (0.99 -- 1.4),1.2,1.2,0.14,0.99,1.1,1.1,1.2,1.3,1.4,Effective reproduction no.,Likely increasing,0.058
+Italy,1.1 (0.94 -- 1.3),1.1,1.1,0.13,0.94,1,1.1,1.1,1.2,1.3,Effective reproduction no.,Likely increasing,0.19
+Malta,1.1 (0.95 -- 1.2),1.1,1.1,0.093,0.95,1,1.1,1.1,1.1,1.2,Effective reproduction no.,Likely increasing,0.14
+Netherlands,1.1 (1 -- 1.2),1.1,1.1,0.07,1,1.1,1.1,1.1,1.2,1.2,Effective reproduction no.,Increasing,0.034
+Latvia,0.99 (0.86 -- 1.2),0.99,1,0.1,0.86,0.94,0.97,1,1,1.2,Effective reproduction no.,Stable,0.56
+Slovakia,0.98 (0.83 -- 1.3),0.98,1,0.14,0.83,0.92,0.96,1,1.1,1.3,Effective reproduction no.,Stable,0.58
+Estonia,0.92 (0.74 -- 1.1),0.92,0.93,0.12,0.74,0.86,0.9,0.95,0.99,1.1,Effective reproduction no.,Likely decreasing,0.79
