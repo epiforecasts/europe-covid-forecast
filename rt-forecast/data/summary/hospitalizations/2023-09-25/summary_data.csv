@@ -1,0 +1,19 @@
+region,estimate,median,mean,sd,lower_90,lower_50,lower_20,upper_20,upper_50,upper_90,metric,Expected change in daily cases,prob_control
+Italy,47797 (16000 -- 126005),47797,57819,44655,16000,31629,41673,56456,71839,126005,New confirmed cases by infection date,Increasing,0.018
+Greece,28763 (12236 -- 71002),28763,33494,20391,12236,20447,25333,32232,40862,71002,New confirmed cases by infection date,Likely increasing,0.19
+Ireland,14353 (4635 -- 47817),14353,18634,16352,4635,8973,11972,17466,23231,47817,New confirmed cases by infection date,Likely increasing,0.26
+Netherlands,9475 (5523 -- 19145),9475,10608,4593,5523,7537,8677,10397,12595,19145,New confirmed cases by infection date,Increasing,0
+Czechia,5845 (1686 -- 18702),5845,7402,5750,1686,3599,4776,7049,9462,18702,New confirmed cases by infection date,Increasing,0.005
+Malta,867 (353 -- 2450),867,1094,959,353,602,745,1009,1303,2450,New confirmed cases by infection date,Likely decreasing,0.64
+Latvia,698 (307 -- 1622),698,806,484,307,493,610,791,970,1622,New confirmed cases by infection date,Likely increasing,0.074
+Slovakia,562 (223 -- 1423),562,677,500,223,388,496,645,821,1423,New confirmed cases by infection date,Increasing,0.038
+Estonia,259 (93 -- 842),259,347,322,93,169,223,309,420,842,New confirmed cases by infection date,Likely increasing,0.18
+Czechia,1.5 (1.2 -- 1.9),1.5,1.5,0.21,1.2,1.3,1.4,1.5,1.6,1.9,Effective reproduction no.,Increasing,0.005
+Italy,1.3 (1.1 -- 1.5),1.3,1.3,0.14,1.1,1.2,1.3,1.3,1.4,1.5,Effective reproduction no.,Increasing,0.018
+Slovakia,1.3 (1 -- 1.6),1.3,1.3,0.2,1,1.2,1.2,1.3,1.4,1.6,Effective reproduction no.,Increasing,0.038
+Netherlands,1.2 (1.1 -- 1.3),1.2,1.2,0.06,1.1,1.2,1.2,1.2,1.2,1.3,Effective reproduction no.,Increasing,0
+Estonia,1.1 (0.92 -- 1.5),1.1,1.1,0.18,0.92,1,1.1,1.1,1.2,1.5,Effective reproduction no.,Likely increasing,0.18
+Greece,1.1 (0.92 -- 1.3),1.1,1.1,0.11,0.92,1,1.1,1.1,1.2,1.3,Effective reproduction no.,Likely increasing,0.19
+Ireland,1.1 (0.86 -- 1.3),1.1,1.1,0.13,0.86,1,1,1.1,1.1,1.3,Effective reproduction no.,Likely increasing,0.26
+Latvia,1.1 (0.98 -- 1.5),1.1,1.2,0.15,0.98,1.1,1.1,1.2,1.2,1.5,Effective reproduction no.,Likely increasing,0.074
+Malta,0.96 (0.76 -- 1.1),0.96,0.96,0.12,0.76,0.89,0.94,0.99,1,1.1,Effective reproduction no.,Likely decreasing,0.64
