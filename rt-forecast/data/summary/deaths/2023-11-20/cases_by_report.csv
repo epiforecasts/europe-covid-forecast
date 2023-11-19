@@ -1,0 +1,295 @@
+region,date,strat,type,median,mean,sd,lower_90,lower_50,lower_20,upper_20,upper_50,upper_90
+Bulgaria,2023-11-09,,estimate,4,6.2,6.8,0,2,4,6,8,18
+Bulgaria,2023-11-10,,estimate,5,6.7,6.5,0,2,4,6,9,19
+Bulgaria,2023-11-11,,estimate,5,7.1,7.4,1,3,4,7,9,20
+Bulgaria,2023-11-12,,estimate,6,7.7,6.8,0,3,5,8,10,21
+Bulgaria,2023-11-13,,estimate,7,9.2,8.8,1,4,6,9,12,24
+Bulgaria,2023-11-14,,estimate,8.5,10.9,9.4,1,5,7,11,14,30
+Bulgaria,2023-11-15,,estimate,10,12.2,9.6,1,5,8,12,16.2,30
+Bulgaria,2023-11-16,,estimate,13,15.9,13.2,2,7,10,16,21,41
+Bulgaria,2023-11-17,,estimate based on partial data,15,19.2,16,2,8,13,19,25,49
+Bulgaria,2023-11-18,,estimate based on partial data,19,24.9,23.2,2,10,15,24,32,67
+Bulgaria,2023-11-19,,estimate based on partial data,24,32.8,39.6,4,13,20,30,40.2,87
+Bulgaria,2023-11-20,,forecast,30.5,47.2,68.7,4,15,24,38,55,141
+Bulgaria,2023-11-21,,forecast,40,64.9,101.1,4.9,18,30,50,76,193
+Bulgaria,2023-11-22,,forecast,48,93.4,212,5,21,34,62,100,303.2
+Bulgaria,2023-11-23,,forecast,58,144.2,399.4,6,25,42,78,128,479
+Bulgaria,2023-11-24,,forecast,70,213.2,851.4,5,29,49,98,167.2,698.2
+Croatia,2023-11-09,,estimate,11,13.1,9.6,2.9,7,9,13,17,31
+Croatia,2023-11-10,,estimate,12,13.6,9.2,3,7,10,14,17,31
+Croatia,2023-11-11,,estimate,12,13.6,9.2,3,8,10,14,17,30
+Croatia,2023-11-12,,estimate,13,14.3,9.4,3,8,11,15,19,30
+Croatia,2023-11-13,,estimate,13,14.6,9.6,3,8,11,15,19,31
+Croatia,2023-11-14,,estimate,14,15.6,10.2,3,9,12,16,20,34
+Croatia,2023-11-15,,estimate,14,15.8,9.9,4,9,12,16,20,34
+Croatia,2023-11-16,,estimate,15,16.6,10.1,4,10,13,17,21,34
+Croatia,2023-11-17,,estimate based on partial data,16,18,13.1,4,10,13,18,23,40
+Croatia,2023-11-18,,estimate based on partial data,17,18.8,12.7,4,10,14,19,24,41
+Croatia,2023-11-19,,estimate based on partial data,17,20.4,16.2,4,11,14,20,26,47
+Croatia,2023-11-20,,forecast,18,22.8,19,4,11,15,22,29,60
+Croatia,2023-11-21,,forecast,18,24.7,22.6,4,11,15,22,31,68
+Croatia,2023-11-22,,forecast,20,26.9,27.7,4,11,16,24,33,74
+Croatia,2023-11-23,,forecast,21,31.9,45.7,3,11,17,25,38,92
+Croatia,2023-11-24,,forecast,21,35.7,53.2,3,11,17,27,41.2,107
+Czechia,2023-11-09,,estimate,6,6.8,5,1,3,5,7,9,16
+Czechia,2023-11-10,,estimate,7,7.6,5.8,1,4,6,8,10,17
+Czechia,2023-11-11,,estimate,7,8.4,6.1,2,5,6,9,11,19
+Czechia,2023-11-12,,estimate,8,9.3,6.3,2,5,7,9,12,20
+Czechia,2023-11-13,,estimate,10,10.8,7,2,6,8,11,14,23
+Czechia,2023-11-14,,estimate,12,12.8,7.6,3,8,10,13,16,27
+Czechia,2023-11-15,,estimate,14,15.2,9.2,4,9,12,16,19,31
+Czechia,2023-11-16,,estimate,17,18.3,12,4.9,11,15,19,23.2,35
+Czechia,2023-11-17,,estimate based on partial data,20,22,13.4,5,13,17,23,28,44
+Czechia,2023-11-18,,estimate based on partial data,25,28.1,19.9,7,17,22,28,35,60
+Czechia,2023-11-19,,estimate based on partial data,30,34.3,23.1,9,20,26,34,42,75
+Czechia,2023-11-20,,forecast,37,44.4,37.7,9,23,31,43,55,101
+Czechia,2023-11-21,,forecast,45,58.7,69.4,10,28,37,53,71,141.1
+Czechia,2023-11-22,,forecast,51,74.7,101.9,12,32,43,61,86,189
+Czechia,2023-11-23,,forecast,64,103,195.1,13,37,53.6,78,112,294.1
+Czechia,2023-11-24,,forecast,77,139.8,249.4,14,41,63,99,148.2,461.2
+Denmark,2023-11-09,,estimate,12,15.7,13.6,2,6,10,15,21,41
+Denmark,2023-11-10,,estimate,13,16.9,14.9,2,7,10,16,22,44
+Denmark,2023-11-11,,estimate,14,17.5,15.7,2,8,11,17,23,45
+Denmark,2023-11-12,,estimate,14,17.6,14.4,2,7,11,17,24,45
+Denmark,2023-11-13,,estimate,15,18.3,16.8,2,8,12,18,24,47
+Denmark,2023-11-14,,estimate,15,19.3,16.2,2,9,13,19,26,48
+Denmark,2023-11-15,,estimate,16,20,16.5,2,9,13,20,27,51
+Denmark,2023-11-16,,estimate,17,20.6,16.5,2,9,13,20,28,54
+Denmark,2023-11-17,,estimate based on partial data,18,22.4,19.7,3,9,14,22,29,57
+Denmark,2023-11-18,,estimate based on partial data,19,23.8,23.6,3,10,14,23,31,63
+Denmark,2023-11-19,,estimate based on partial data,18,25.3,26.4,2,9,15,23,32,69
+Denmark,2023-11-20,,forecast,18,26.4,29.2,2,10,15,23,32,78
+Denmark,2023-11-21,,forecast,19,30.4,47.8,2,9,15,24,36,87
+Denmark,2023-11-22,,forecast,19,33.6,50.9,2,9,14,25,37,115
+Denmark,2023-11-23,,forecast,20,43.3,102.6,2,8,15,26,43,145
+Denmark,2023-11-24,,forecast,20,47.3,164.2,1,8,15,27,45,152.2
+Estonia,2023-11-14,,estimate,1,1.9,2.6,0,0,1,2,3,7
+Estonia,2023-11-15,,estimate,1,2,2.4,0,0,1,2,3,7
+Estonia,2023-11-16,,estimate,1,2.2,2.8,0,0,1,2,3,7
+Estonia,2023-11-17,,estimate based on partial data,1,2.3,2.9,0,0,1,2,3,8
+Estonia,2023-11-18,,estimate based on partial data,2,2.7,3.5,0,0,1,2,4,9
+Estonia,2023-11-19,,estimate based on partial data,2,3.1,3.9,0,1,1,3,4,11
+Estonia,2023-11-20,,forecast,2,3.5,5.2,0,1,1,3,5,12
+Estonia,2023-11-21,,forecast,2,4.6,9.8,0,1,1,3,5,15
+Estonia,2023-11-22,,forecast,2,6.1,19.3,0,1,1,3,6,22
+Estonia,2023-11-23,,forecast,2,8,25.9,0,1,2,4,7,27
+Estonia,2023-11-24,,forecast,3,13.4,66.5,0,1,2,4,7,39
+Finland,2023-11-09,,estimate,15,21.1,20,1,8,12,20,28,59
+Finland,2023-11-10,,estimate based on partial data,16,22.2,21.9,1,8,13,20.4,29,60
+Finland,2023-11-11,,estimate based on partial data,16,22.2,22.7,1,8,13,20,29,65
+Finland,2023-11-12,,estimate based on partial data,17,23.1,22.5,2,9,14,21,30,64
+Finland,2023-11-13,,forecast,17,24.9,26.4,2,8,13,22,32.2,75
+Finland,2023-11-14,,forecast,17,25,29.2,1,8,13,22,32,74
+Finland,2023-11-15,,forecast,17,28.4,39.9,1,7,12,22,35,88
+Finland,2023-11-16,,forecast,16,32,63.7,1,7,12,21,35,104
+Finland,2023-11-17,,forecast,16,38.3,123.4,1,7,12,22,36,125
+Finland,2023-11-18,,forecast,17,45.2,152.7,1,6,12,24,39,144
+Finland,2023-11-19,,forecast,17,55.7,256.1,1,6,12,24,43,173.1
+Finland,2023-11-20,,forecast,17,69.1,302.6,1,6,12,25,49,220.1
+Finland,2023-11-21,,forecast,17,84.3,390.4,0,5,11,25,47,278.3
+Finland,2023-11-22,,forecast,16,138.8,1489.4,0,5,11,26,51,303
+Finland,2023-11-23,,forecast,17,172.9,2006.8,0,5,10,27,57,362
+Finland,2023-11-24,,forecast,17,222.8,2486.1,0,4,10,28,60,481.2
+Greece,2023-11-09,,estimate,41,42.9,14.9,24,33,38,44,50,69
+Greece,2023-11-10,,estimate,43,44.4,14.4,25,35,40,46,52,70
+Greece,2023-11-11,,estimate,45,45.7,14.4,25,36,41,48,53,70
+Greece,2023-11-12,,estimate,47,48.1,15.1,26,39,44,50,56,74
+Greece,2023-11-13,,estimate,49,50.1,14.9,29,40,46,52,58,75
+Greece,2023-11-14,,estimate,51,52.8,16.6,30,43,48,55,61,78
+Greece,2023-11-15,,estimate,54,55.3,16.4,31,45,50.6,58,64,83
+Greece,2023-11-16,,estimate,56,57.4,17.7,32.9,47,53,60,67,84
+Greece,2023-11-17,,estimate based on partial data,57,58.6,17.5,33,48,53,61,68,89
+Greece,2023-11-18,,estimate based on partial data,59,61.2,19.7,35,49,55,63,71,92
+Greece,2023-11-19,,estimate based on partial data,59,61.6,22.4,33,48,54,64,72,96
+Greece,2023-11-20,,forecast,61,63.8,24.5,32,48,56,67,75,106
+Greece,2023-11-21,,forecast,61,65.1,28.1,30,48,56,67,78,110
+Greece,2023-11-22,,forecast,63,68.6,35.8,28,47,57,70,82,123
+Greece,2023-11-23,,forecast,65,72.4,46.3,26,47,58,72,86,137
+Greece,2023-11-24,,forecast,65,75.1,55.1,23,46,57,73,89,154
+Hungary,2023-11-09,,estimate,2,3,3.5,0,1,1,3,4,9
+Hungary,2023-11-10,,estimate,2,3,3.3,0,1,1,3,4,9
+Hungary,2023-11-11,,estimate,2,3.3,3.5,0,1,2,3,4,10
+Hungary,2023-11-12,,estimate,2,3.5,4,0,1,2,3,5,10
+Hungary,2023-11-13,,estimate,3,3.6,3.7,0,1,2,3,5,10
+Hungary,2023-11-14,,estimate,3,3.9,3.9,0,1,2,4,5,12
+Hungary,2023-11-15,,estimate,3,4.5,4.5,0,1,2,4,6,13
+Hungary,2023-11-16,,estimate,4,4.9,4.9,0,1,3,5,7,14
+Hungary,2023-11-17,,estimate based on partial data,4,5.6,6.1,0,2,3,5,8,15
+Hungary,2023-11-18,,estimate based on partial data,5,6.6,7.9,0,2,4,6,9,18
+Hungary,2023-11-19,,estimate based on partial data,5,7.8,10.4,0,2,4,6,10,24
+Hungary,2023-11-20,,forecast,6,9.3,12.8,0,2,4,7,11,30
+Hungary,2023-11-21,,forecast,6,12,20.3,0,2,5,8,14,43
+Hungary,2023-11-22,,forecast,7,16.1,39.1,0,3,5,9,16,57
+Hungary,2023-11-23,,forecast,8,20.4,53.9,0,3,5,10,18,72
+Hungary,2023-11-24,,forecast,8,26.5,79.9,0,3,6,12,20,104.1
+Ireland,2023-11-09,,estimate,9,11.8,10.3,1,5,7,11,16,31
+Ireland,2023-11-10,,estimate,9,11.1,9.8,1,4,7,11,15,29
+Ireland,2023-11-11,,estimate,9,11.5,10.4,1,5,7,11,15,29
+Ireland,2023-11-12,,estimate,9,10.8,9.1,1,5,7,11,15,27
+Ireland,2023-11-13,,estimate,8,10.4,8.9,1,4,7,10,14,26
+Ireland,2023-11-14,,estimate,7,9.3,8,1,4,6,9,12,23
+Ireland,2023-11-15,,estimate,7,8.5,7.1,1,4,6,9,12,22
+Ireland,2023-11-16,,estimate,6,7.8,7.1,0,3,5,8,11,21
+Ireland,2023-11-17,,estimate based on partial data,6,7.2,7.3,0,3,4,7,9,19
+Ireland,2023-11-18,,estimate based on partial data,4,6.2,7,0,2,3,6,8,18
+Ireland,2023-11-19,,estimate based on partial data,4,5.7,6.6,0,2,3,5,7,18
+Ireland,2023-11-20,,forecast,3,5.6,9.7,0,1,2,4,7,18
+Ireland,2023-11-21,,forecast,3,5.6,13.5,0,1,2,4,6,18
+Ireland,2023-11-22,,forecast,2,5.3,15.5,0,1,1,3,5,18
+Ireland,2023-11-23,,forecast,2,5.4,22.9,0,0,1,3,5,17
+Ireland,2023-11-24,,forecast,2,5.3,16.7,0,0,1,3,5,19
+Italy,2023-11-09,,estimate,169,215.4,189.8,27,86,133,207,281.2,559
+Italy,2023-11-10,,estimate,158,201,181.8,23,86,125,190,261,523.1
+Italy,2023-11-11,,estimate,162,203.3,168.9,26,84,133,196,266.2,532
+Italy,2023-11-12,,estimate,153,190.2,152.3,26,83,122,187.4,251,485
+Italy,2023-11-13,,estimate,146,176.4,140.4,23,82,116.6,173,234,431.1
+Italy,2023-11-14,,estimate,132,163.5,139.2,19,70,105,159,212,423.1
+Italy,2023-11-15,,estimate,118,150.6,131.4,18,61,95,148,199,395
+Italy,2023-11-16,,estimate based on partial data,101,131.9,115.1,14,55,80,126.4,176,343.1
+Italy,2023-11-17,,estimate based on partial data,91,127.1,128.4,11.9,47,73,113,161,352.1
+Italy,2023-11-18,,estimate based on partial data,77,113.5,129,9,39,62,96,142,331
+Italy,2023-11-19,,forecast,64,103.1,134,8,30,49,83,124.2,323
+Italy,2023-11-20,,forecast,57,98,138.1,6,24,42,75,117,326
+Italy,2023-11-21,,forecast,47,97.5,223.9,4,19,34,64,105,324.2
+Italy,2023-11-22,,forecast,40,92.2,191,2,14,28,56,94,318.2
+Italy,2023-11-23,,forecast,35,99.8,286.2,2,11,23,54,93,369
+Italy,2023-11-24,,forecast,31,103.2,356.7,1,8,20,47,87,350.1
+Latvia,2023-11-09,,estimate,2,2.2,2.4,0,1,1,2,3,7
+Latvia,2023-11-10,,estimate,2,2.4,3.1,0,1,1,2,3,7
+Latvia,2023-11-11,,estimate,2,2.6,2.8,0,1,1,2,4,8
+Latvia,2023-11-12,,estimate,2,2.8,2.8,0,1,2,3,4,8
+Latvia,2023-11-13,,estimate,2,3.2,3.2,0,1,2,3,4,9
+Latvia,2023-11-14,,estimate,3,3.9,3.7,0,1,2,4,6,11
+Latvia,2023-11-15,,estimate,4,4.7,4.3,0,2,3,4,6,13
+Latvia,2023-11-16,,estimate,5,6,5.5,0,2,4,6,8,16
+Latvia,2023-11-17,,estimate based on partial data,6,7.2,6.6,0,3,5,7,10,19
+Latvia,2023-11-18,,estimate based on partial data,7,9.3,11.7,1,3,5,9,12,24
+Latvia,2023-11-19,,estimate based on partial data,9,12.5,14.8,1,5,7,11,16,34
+Latvia,2023-11-20,,forecast,12,17.3,21.6,1,6,10,15,22,49
+Latvia,2023-11-21,,forecast,15,25.3,47.2,1,7,11,19,28,75
+Latvia,2023-11-22,,forecast,19,35.3,76.2,2,9,14,24.4,38,112
+Latvia,2023-11-23,,forecast,23,50.3,110.9,2,10,17,30,49,166
+Latvia,2023-11-24,,forecast,29,89.3,383.9,2,12,21,39,70,250
+Lithuania,2023-11-10,,estimate,1,1.4,2,0,0,1,1,2,5
+Lithuania,2023-11-11,,estimate,1,1.5,1.9,0,0,1,1,2,5
+Lithuania,2023-11-12,,estimate,1,1.5,2,0,0,1,1,2,5
+Lithuania,2023-11-13,,estimate,1,1.7,2.1,0,0,1,2,2,6
+Lithuania,2023-11-14,,estimate,1,1.8,2.1,0,0,1,2,3,6
+Lithuania,2023-11-15,,estimate,1,2,2.4,0,0,1,2,3,7
+Lithuania,2023-11-16,,estimate,1,2.3,2.7,0,0,1,2,3,8
+Lithuania,2023-11-17,,estimate based on partial data,2,2.7,3.4,0,0,1,2,4,9
+Lithuania,2023-11-18,,estimate based on partial data,2,3.2,4.1,0,1,1,3,4,10
+Lithuania,2023-11-19,,estimate based on partial data,2,3.8,4.6,0,1,2,3,5,13
+Lithuania,2023-11-20,,forecast,3,5.3,11.1,0,1,2,4,6,18
+Lithuania,2023-11-21,,forecast,3,6.6,12.8,0,1,2,4,8,23
+Lithuania,2023-11-22,,forecast,4,9.8,30.8,0,1,2,5,9,31
+Lithuania,2023-11-23,,forecast,4,14.4,51.6,0,1,3,6,11,49
+Lithuania,2023-11-24,,forecast,5,18.7,69.9,0,1,3,7,14,67
+Malta,2023-11-09,,estimate,1,1.1,1.4,0,0,0,1,2,4
+Malta,2023-11-10,,estimate,1,1,1.3,0,0,0,1,1,4
+Malta,2023-11-11,,estimate,0,1,1.4,0,0,0,1,1,4
+Malta,2023-11-12,,estimate,0,0.9,1.3,0,0,0,1,1,3
+Malta,2023-11-13,,estimate,0,0.9,1.3,0,0,0,1,1,3
+Malta,2023-11-14,,estimate,0,0.8,1.2,0,0,0,1,1,3
+Malta,2023-11-15,,estimate,0,0.7,1.2,0,0,0,1,1,3
+Malta,2023-11-16,,estimate,0,0.7,1.1,0,0,0,0,1,3
+Malta,2023-11-17,,estimate based on partial data,0,0.7,1.2,0,0,0,0,1,3
+Malta,2023-11-18,,estimate based on partial data,0,0.7,1.3,0,0,0,0,1,3
+Malta,2023-11-19,,estimate based on partial data,0,0.6,1.2,0,0,0,0,1,3
+Malta,2023-11-20,,forecast,0,0.7,1.8,0,0,0,0,1,3
+Malta,2023-11-21,,forecast,0,0.8,1.7,0,0,0,0,1,3
+Malta,2023-11-22,,forecast,0,0.8,2.3,0,0,0,0,1,4
+Malta,2023-11-23,,forecast,0,0.9,3,0,0,0,0,1,4
+Malta,2023-11-24,,forecast,0,1,3.7,0,0,0,0,1,4
+Poland,2023-11-09,,estimate,2,2.6,2.9,0,1,1,2,4,8
+Poland,2023-11-10,,estimate,2,2.8,2.9,0,1,1,3,4,8
+Poland,2023-11-11,,estimate,2,3.2,3.3,0,1,2,3,4,9
+Poland,2023-11-12,,estimate,3,3.4,3.5,0,1,2,3,5,10
+Poland,2023-11-13,,estimate,3,4.1,3.8,0,1,2,4,6,11
+Poland,2023-11-14,,estimate,4,4.9,4.5,0,2,3,5,7,14
+Poland,2023-11-15,,estimate,5,6.3,6,0,2,4,6,8,17
+Poland,2023-11-16,,estimate,6,8.4,7.7,0,3,5,8,11,22
+Poland,2023-11-17,,estimate based on partial data,8,11.1,10.6,1,4,7,10,15,29
+Poland,2023-11-18,,estimate based on partial data,12,16.5,16.8,1,7,10,15,21,43
+Poland,2023-11-19,,estimate based on partial data,16,23,25.4,2,8,13,21,29,65
+Poland,2023-11-20,,forecast,24,36.1,41.8,2,12,19,30,46,109
+Poland,2023-11-21,,forecast,34,59.1,97.2,3,15,27,44,68,184
+Poland,2023-11-22,,forecast,48,92.5,207.3,4.9,22,36,62,102,281
+Poland,2023-11-23,,forecast,65,177.9,938,6,26,48,91,152.2,537.1
+Poland,2023-11-24,,forecast,91,298,1537.9,7,34,63,130,249.2,1003.3
+Portugal,2023-11-09,,estimate,58,61.4,26.5,28,45,54,63,74,105
+Portugal,2023-11-10,,estimate,58,60.1,24.8,26,45,53,63,71,102
+Portugal,2023-11-11,,estimate,56,57.7,22.5,26,43,51,60,68,98
+Portugal,2023-11-12,,estimate,53,55.3,21.3,25,42,49,58,66,92
+Portugal,2023-11-13,,estimate,49,51.5,20.2,23,39,45,54,62,86
+Portugal,2023-11-14,,estimate,44,45.4,17.9,20,34,40,48,55,74
+Portugal,2023-11-15,,estimate,39,40.7,15.9,19,31,36,43,48,67
+Portugal,2023-11-16,,estimate,33,34.7,14.9,15,25.8,30,36,42,60
+Portugal,2023-11-17,,estimate based on partial data,28,29,12.4,13,21,25,30,35,51
+Portugal,2023-11-18,,estimate based on partial data,22,24.2,12.9,10,17,20,25,29,44
+Portugal,2023-11-19,,estimate based on partial data,18,20.1,12.2,7,13,16,20,24,39
+Portugal,2023-11-20,,forecast,14,16.8,14.4,5,10,13,16,20,35
+Portugal,2023-11-21,,forecast,12,14.2,12.7,3,8,10,13,17,32
+Portugal,2023-11-22,,forecast,9,11.8,12,2,6,8,11,14,30
+Portugal,2023-11-23,,forecast,7,10.5,14.6,1,4,6,9,12.2,28
+Portugal,2023-11-24,,forecast,6,9.1,14.2,1,3,5,7,10,26
+Romania,2023-11-09,,estimate,12,14.4,11.8,3,7,10,14,18,33
+Romania,2023-11-10,,estimate,12,14.4,10.2,3,8,10,14,19,33
+Romania,2023-11-11,,estimate,13,15.2,11.3,3,8,11,15,19,36
+Romania,2023-11-12,,estimate,14,15.6,10.7,3,9,11,16,20,35
+Romania,2023-11-13,,estimate,14,15.7,10.8,3,9,12,16,20,34
+Romania,2023-11-14,,estimate,15,16.5,10.2,4,9,13,17,22,35
+Romania,2023-11-15,,estimate,15,17,11,4,10,13,18,22,37
+Romania,2023-11-16,,estimate,15,17.1,11.1,4,9,13,18,22,37
+Romania,2023-11-17,,estimate based on partial data,16,18.2,12.7,4,10,14,19,23,39
+Romania,2023-11-18,,estimate based on partial data,16,18.2,12.7,4,10,13,18,23,40
+Romania,2023-11-19,,estimate based on partial data,16,18.6,13.4,3,10,13,18,24,43
+Romania,2023-11-20,,forecast,16,19.6,17.6,3,9,13,19,24,47
+Romania,2023-11-21,,forecast,16,20.6,19.7,3,9,13,19,26,51
+Romania,2023-11-22,,forecast,16,22.3,27.6,3,9,13,19,26,61
+Romania,2023-11-23,,forecast,16,24.6,40.1,2,8,13,20,29,65
+Romania,2023-11-24,,forecast,16,28,77.3,2,8,12,20,30,76
+Slovakia,2023-11-13,,estimate,1,1.5,1.8,0,0,1,1,2,5
+Slovakia,2023-11-14,,estimate,1,1.5,2,0,0,1,1,2,5
+Slovakia,2023-11-15,,estimate,1,1.6,2.2,0,0,1,1,2,5
+Slovakia,2023-11-16,,estimate,1,1.5,1.9,0,0,1,1,2,5
+Slovakia,2023-11-17,,estimate based on partial data,1,1.5,2,0,0,1,1,2,5
+Slovakia,2023-11-18,,estimate based on partial data,1,1.6,2.1,0,0,1,1,2,5
+Slovakia,2023-11-19,,estimate based on partial data,1,1.7,2.3,0,0,1,1,2,6
+Slovakia,2023-11-20,,forecast,1,1.9,3.3,0,0,1,1,2,7
+Slovakia,2023-11-21,,forecast,1,2.2,5.3,0,0,1,1,3,9
+Slovakia,2023-11-22,,forecast,1,2.3,5,0,0,1,1,3,9
+Slovakia,2023-11-23,,forecast,1,3.4,27.5,0,0,1,1,3,9
+Slovakia,2023-11-24,,forecast,1,4.4,40.2,0,0,0,1,3,14
+Slovenia,2023-11-09,,estimate,8,12.7,14.2,0,3,6,11,17,40
+Slovenia,2023-11-10,,estimate,9,13.1,13.9,0,4,7,12,18,40
+Slovenia,2023-11-11,,estimate,8,12.5,14,0,3,6,11,17,40
+Slovenia,2023-11-12,,estimate,8,12.5,14,0,3,6,11,16,41
+Slovenia,2023-11-13,,estimate,9,14,15.5,1,4,7,13,19,42
+Slovenia,2023-11-14,,estimate,10,13.9,14.7,0,4,7,12.4,19,41
+Slovenia,2023-11-15,,estimate,10,14.6,15.1,1,4,7,13,19,46
+Slovenia,2023-11-16,,estimate,10,14.6,15,0,5,8,13,20,44
+Slovenia,2023-11-17,,estimate based on partial data,11,15.5,16.4,0,5,8,14,20,47
+Slovenia,2023-11-18,,estimate based on partial data,11,16.4,18.5,0,5,8,14,22,51
+Slovenia,2023-11-19,,estimate based on partial data,11,16.8,20.3,1,5,8,15,22,49
+Slovenia,2023-11-20,,forecast,12,18,24.5,0,5,9,15,23,56
+Slovenia,2023-11-21,,forecast,11,19,29.3,1,5,8,15,23,60
+Slovenia,2023-11-22,,forecast,11,21.9,46,0,5,8,14,23,67
+Slovenia,2023-11-23,,forecast,11,26.7,61.5,0,4,8,15,25,95
+Slovenia,2023-11-24,,forecast,11,33.2,165.6,0,4,8,15,25,98
+Sweden,2023-11-09,,estimate,28,37.7,36.3,3,14,22,35,50,106
+Sweden,2023-11-10,,estimate,30,39.1,40.4,3,15,23,36,50,105
+Sweden,2023-11-11,,estimate,30,40.1,37,4,15,24,37,53,109
+Sweden,2023-11-12,,estimate,31,40.4,35.5,3,16,25,39,54,105
+Sweden,2023-11-13,,estimate,32,42.3,36.3,4,16,26,41,58,115
+Sweden,2023-11-14,,estimate,36,45.3,38.7,4,18,29,44,60,122
+Sweden,2023-11-15,,estimate,36,46,40.4,5,18,28,44,62,121
+Sweden,2023-11-16,,estimate,37,49.8,46.7,5,19,29,46,66,138
+Sweden,2023-11-17,,estimate based on partial data,41,54,49,5,21,32.6,50,70,150
+Sweden,2023-11-18,,estimate based on partial data,42.5,59.7,68.3,5,21,33,52,73,168
+Sweden,2023-11-19,,estimate based on partial data,44,65.7,80.4,5,21,34,57,85,192
+Sweden,2023-11-20,,forecast,43,71.5,93.3,5,21,34,56.4,86.2,220
+Sweden,2023-11-21,,forecast,48,83.5,146.1,4,21,35,63,93,261.1
+Sweden,2023-11-22,,forecast,49,101.4,218.9,4,23,37,66,109,313.1
+Sweden,2023-11-23,,forecast,50,123.1,322.5,4,20,36,69,117,432.3
+Sweden,2023-11-24,,forecast,51,150.8,405.1,3,20.8,37,74,127.2,531.1
