@@ -46,14 +46,14 @@ generation_time <- scale_gamma(generation_time, 1/7)
 incubation_period <- scale_lognormal(incubation_period, 1/7)
 onset_to_report <- scale_lognormal(onset_to_report, 1/7)
 
-dir <- c(cases = "ECDC", hospitalizations = "OWID", deaths = "ECDC")
-target_variables <- c(cases = "inc case", hospitalizations = "inc hosp", deaths = "inc death")
+dir <- c(hospitalizations = "OWID", deaths = "ECDC")
+target_variables <- c(hospitalizations = "inc hosp", deaths = "inc death")
 
 recommended_cutoffs <- fread(
   here::here("data-raw", "recommended-cutoffs.csv")
 )
 
-for (target in c("cases", "hospitalizations", "deaths")) {
+for (target in c("hospitalizations", "deaths")) {
 
   # Get data ---------------------------------------------------------------
   cases <- fread(
