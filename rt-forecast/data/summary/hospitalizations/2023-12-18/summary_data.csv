@@ -1,0 +1,15 @@
+region,estimate,median,mean,sd,lower_90,lower_50,lower_20,upper_20,upper_50,upper_90,metric,Expected change in daily cases,prob_control
+Italy,63770 (41830 -- 138663),63770,73418,32526,41830,53083,59005,69790,82123,138663,New confirmed cases by infection date,Increasing,0.019
+Czechia,34764 (16227 -- 71950),34764,38569,17754,16227,26489,31137,38962,46960,71950,New confirmed cases by infection date,Increasing,0.038
+Netherlands,27118 (14520 -- 55550),27118,30021,13057,14520,21054,24472,30239,36118,55550,New confirmed cases by infection date,Increasing,0.042
+Greece,21739 (9911 -- 48937),21739,24713,13112,9911,16004,19338,24578,30339,48937,New confirmed cases by infection date,Stable,0.47
+Ireland,3915 (1802 -- 8598),3915,4420,2317,1802,2792,3449,4426,5443,8598,New confirmed cases by infection date,Stable,0.56
+Slovakia,2473 (1229 -- 5742),2473,2866,1652,1229,1857,2232,2767,3384,5742,New confirmed cases by infection date,Stable,0.49
+Estonia,699 (314 -- 1675),699,805,475,314,496,612,786,972,1675,New confirmed cases by infection date,Stable,0.47
+Italy,1.2 (1 -- 1.3),1.2,1.2,0.092,1,1.1,1.2,1.2,1.2,1.3,Effective reproduction no.,Increasing,0.019
+Czechia,1.1 (1 -- 1.3),1.1,1.1,0.078,1,1.1,1.1,1.1,1.2,1.3,Effective reproduction no.,Increasing,0.038
+Netherlands,1.1 (1 -- 1.2),1.1,1.1,0.059,1,1.1,1.1,1.1,1.1,1.2,Effective reproduction no.,Increasing,0.042
+Estonia,1 (0.83 -- 1.3),1,1,0.15,0.83,0.93,0.98,1,1.1,1.3,Effective reproduction no.,Stable,0.47
+Greece,1 (0.83 -- 1.2),1,1,0.13,0.83,0.93,0.98,1,1.1,1.2,Effective reproduction no.,Stable,0.47
+Slovakia,1 (0.83 -- 1.2),1,1,0.13,0.83,0.93,0.98,1,1.1,1.2,Effective reproduction no.,Stable,0.49
+Ireland,0.98 (0.78 -- 1.2),0.98,0.99,0.14,0.78,0.9,0.95,1,1.1,1.2,Effective reproduction no.,Stable,0.56
