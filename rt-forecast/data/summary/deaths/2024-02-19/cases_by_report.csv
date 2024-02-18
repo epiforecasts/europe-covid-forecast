@@ -1,0 +1,103 @@
+region,date,strat,type,median,mean,sd,lower_90,lower_50,lower_20,upper_20,upper_50,upper_90
+Bulgaria,2024-02-07,,estimate,13,14.5,9.3,3,8,11,15,19,32
+Bulgaria,2024-02-08,,estimate,12,13.7,8.8,3,8,10,14,18,29
+Bulgaria,2024-02-09,,estimate,12,13.6,9.2,3,7,10,14,17,30
+Bulgaria,2024-02-10,,estimate,12,13.4,8.8,3,8,10,14,17,28
+Bulgaria,2024-02-11,,estimate,11,12.5,7.7,3,7,10,13,16,26
+Bulgaria,2024-02-12,,estimate,11,12.1,7.9,2,7,9,12.4,16,26
+Bulgaria,2024-02-13,,estimate,10,11.8,7.5,3,6.8,9,12,15,25
+Bulgaria,2024-02-14,,estimate,10,10.9,7.9,2,6,8,11,14,23
+Bulgaria,2024-02-15,,estimate based on partial data,9,10.4,7.2,2,6,8,11,13,23
+Bulgaria,2024-02-16,,estimate based on partial data,9,9.9,7,2,5,7,10,13,23
+Bulgaria,2024-02-17,,estimate based on partial data,8,9.6,7.9,1,5,7,10,12,23
+Bulgaria,2024-02-18,,forecast,7,9.3,8.3,1,4,6,9,12,24
+Bulgaria,2024-02-19,,forecast,7,9,13.5,1,4,5,8,11,23
+Bulgaria,2024-02-20,,forecast,6,9,16,1,3,5,8,11,26
+Bulgaria,2024-02-21,,forecast,6,8.6,11.7,0,3,4,7,11,25
+Bulgaria,2024-02-22,,forecast,5,8.8,14.3,0,3,4,7,10,27
+Bulgaria,2024-02-23,,forecast,5,9.1,20.7,0,2,4,7,10,27
+Croatia,2024-02-07,,estimate,33,40.6,34.8,4.9,18,27,39,52.2,106
+Croatia,2024-02-08,,estimate,33,40.4,33,6,19,27,39.4,52,101
+Croatia,2024-02-09,,estimate,32,39.4,32.8,4,17,26,39,52,99
+Croatia,2024-02-10,,estimate based on partial data,33,40.3,33.3,5,18,27,40,52.2,99
+Croatia,2024-02-11,,estimate based on partial data,31,38.8,31.2,5,17,26,38,51,97
+Croatia,2024-02-12,,estimate based on partial data,30,39,34.8,4,16,24,37,51,101
+Croatia,2024-02-13,,forecast,32,43.7,50.7,4,16,25,38,54,124.1
+Croatia,2024-02-14,,forecast,29,46.2,72.3,4,15,23,37,54,135
+Croatia,2024-02-15,,forecast,29,49.4,93.2,3,14,22,37,56,146.1
+Croatia,2024-02-16,,forecast,28,54.7,112.2,2,12,21,37,57,177
+Croatia,2024-02-17,,forecast,27,64.5,191.2,2,11,20,36,59,207.1
+Croatia,2024-02-18,,forecast,27,85,417,2,10,19.6,37,62.2,266.1
+Croatia,2024-02-19,,forecast,25,104.6,636.6,1,9,18,35,67.2,280
+Croatia,2024-02-20,,forecast,25,141.1,1189.9,1,9,17,36,68,347
+Croatia,2024-02-21,,forecast,26,175.1,1398.2,1,8,17,38,71,399.5
+Croatia,2024-02-22,,forecast,25,207.8,2092.7,1,7,15.6,37,77,474.2
+Croatia,2024-02-23,,forecast,23,198.4,1035.1,0,6,14.6,36,85,585
+Estonia,2024-02-07,,estimate,8,10.1,9.4,1,4,6,10,13,29
+Estonia,2024-02-08,,estimate,7,9.7,8.7,0,4,6,9,13,26
+Estonia,2024-02-09,,estimate,7,9.2,8.3,1,3,5.6,9,12,25
+Estonia,2024-02-10,,estimate,7,8.5,7.8,0,3,5,8,12,23
+Estonia,2024-02-11,,estimate,6,7.5,7,0,3,5,7,10,21
+Estonia,2024-02-12,,estimate,5,6.8,6.1,0,2,4,7,9,19
+Estonia,2024-02-13,,estimate,5,6.1,5.5,0,2,4,6,8,16
+Estonia,2024-02-14,,estimate,4,5.3,5.5,0,2,3,5,7,15
+Estonia,2024-02-15,,estimate based on partial data,3,4.4,4.7,0,1,2,4,6,13
+Estonia,2024-02-16,,estimate based on partial data,3,4.1,4.8,0,1,2,4,6,12
+Estonia,2024-02-17,,estimate based on partial data,2,3.7,4.6,0,1,2,3,5,12
+Estonia,2024-02-18,,forecast,2,3.3,5.3,0,0,1,3,4,11
+Estonia,2024-02-19,,forecast,2,3.2,5.8,0,0,1,2,4,11
+Estonia,2024-02-20,,forecast,1,3,6.6,0,0,1,2,3,10
+Estonia,2024-02-21,,forecast,1,3,8.5,0,0,1,2,3,10
+Estonia,2024-02-22,,forecast,1,2.7,6.3,0,0,0,1,3,11
+Estonia,2024-02-23,,forecast,1,3.1,11.5,0,0,0,1,3,11
+Lithuania,2024-02-07,,estimate,1,2.5,3.5,0,0,1,2,3,9
+Lithuania,2024-02-08,,estimate,1,2.4,3.1,0,0,1,2,4,8
+Lithuania,2024-02-09,,estimate,1,2.5,3.2,0,0,1,2,4,9
+Lithuania,2024-02-10,,estimate,2,2.8,3.7,0,0,1,2,4,9
+Lithuania,2024-02-11,,estimate,2,2.7,3.8,0,0,1,2,4,9
+Lithuania,2024-02-12,,estimate,2,2.9,3.9,0,0,1,2,4,11
+Lithuania,2024-02-13,,estimate,2,3.2,3.9,0,0,1,3,4,11
+Lithuania,2024-02-14,,estimate,2,3.4,4.1,0,1,1,3,5,12
+Lithuania,2024-02-15,,estimate based on partial data,2,3.9,4.8,0,1,2,3,5,13
+Lithuania,2024-02-16,,estimate based on partial data,3,4.7,6.9,0,1,2,4,6,17
+Lithuania,2024-02-17,,estimate based on partial data,3,6,13.3,0,1,2,4,7.2,21
+Lithuania,2024-02-18,,forecast,3,7.2,15.9,0,1,2,4,8,25
+Lithuania,2024-02-19,,forecast,4,9.9,38.5,0,1,2,5,10,33
+Lithuania,2024-02-20,,forecast,4,14.5,49.8,0,1,3,6,12,53
+Lithuania,2024-02-21,,forecast,4,26.2,159.3,0,1,3,7,14,70
+Lithuania,2024-02-22,,forecast,5,32.4,196.7,0,1,3,8,16,101
+Lithuania,2024-02-23,,forecast,5,59.4,469.7,0,1,3,9,19,144
+Poland,2024-02-07,,estimate,83,113.3,103.5,13,47,68,104,148,308.1
+Poland,2024-02-08,,estimate,84,112,103,14,45,66,104,141,320.1
+Poland,2024-02-09,,estimate,81,107.6,93.7,11,44,65,101,143,299
+Poland,2024-02-10,,estimate,83,103.4,84.2,14,45,67.6,101,139,255
+Poland,2024-02-11,,estimate,81,99.3,79.6,14,44,65,99,133,244
+Poland,2024-02-12,,estimate,75,96.1,83.1,10,40,60,93,127.2,248
+Poland,2024-02-13,,estimate,71,88.7,72.8,12.9,39,57,86,118,224
+Poland,2024-02-14,,estimate,65,83.2,77.6,9,35,53,80,107,212
+Poland,2024-02-15,,estimate based on partial data,57,75,68.2,7,30,46,70,100,201
+Poland,2024-02-16,,estimate based on partial data,52,70.7,68.5,8.9,28,42,65,90,190
+Poland,2024-02-17,,estimate based on partial data,43,62.5,65.7,6,23,35,56,81,175.1
+Poland,2024-02-18,,forecast,38,61.1,91.8,5,19,30,49,73.2,182
+Poland,2024-02-19,,forecast,34,59.1,95.7,4,15,25,44,68.2,188.1
+Poland,2024-02-20,,forecast,28,54.6,93.6,2,12,21,39,63,181
+Poland,2024-02-21,,forecast,27,60.7,126.7,2,10,19,37,63,209
+Poland,2024-02-22,,forecast,23,63.7,251.7,1,8,16,33,56.2,205
+Poland,2024-02-23,,forecast,20,56.8,178.8,1,7,13,29,52,189
+Romania,2024-02-07,,estimate,10,11.8,10,2,6,8,11,15,29
+Romania,2024-02-08,,estimate,9.5,11.5,9,2,5,8,11,15,28
+Romania,2024-02-09,,estimate,10,12.1,9.8,2,6,8,12,16,29
+Romania,2024-02-10,,estimate,9,11.3,9.4,1,5,8,11,15,27
+Romania,2024-02-11,,estimate,10,11.7,9.2,2,6,8,12,15,28
+Romania,2024-02-12,,estimate,10,11.9,9.3,2,6,8,12,16,28
+Romania,2024-02-13,,estimate,10,11.5,8.7,2,5.8,8,12,15,27
+Romania,2024-02-14,,estimate,9,10.9,8,2,5,8,11,15,25
+Romania,2024-02-15,,estimate based on partial data,9,11.2,8.9,2,5,7,11,15,27
+Romania,2024-02-16,,estimate based on partial data,9,11,9,2,5,7,11,14,27
+Romania,2024-02-17,,estimate based on partial data,9,11.1,10.6,1,5,7,11,14,28
+Romania,2024-02-18,,forecast,8,10.8,12.4,1,4,6,10,13,29
+Romania,2024-02-19,,forecast,8,11.2,13.2,1,4,6,9,14,33
+Romania,2024-02-20,,forecast,8,11.7,16.7,0.9,3,6,9.4,14,34
+Romania,2024-02-21,,forecast,7,12.2,23,0,3,5,9,14,37
+Romania,2024-02-22,,forecast,7,12.3,19.4,0,3,5,9,15,41
+Romania,2024-02-23,,forecast,6,14.5,47.1,0,3,4,9,14,49
