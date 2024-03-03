@@ -1,0 +1,11 @@
+region,estimate,median,mean,sd,lower_90,lower_50,lower_20,upper_20,upper_50,upper_90,metric,Expected change in daily cases,prob_control
+Poland,188 (80 -- 546),188,235,173,80,132,165,219,283,546,New confirmed cases by infection date,Decreasing,0.99
+Lithuania,86 (21 -- 474),86,162,413,21,47,68,109,169,474,New confirmed cases by infection date,Likely increasing,0.27
+Romania,83 (34 -- 210),83,99,68,34,59,74,95,120,210,New confirmed cases by infection date,Likely decreasing,0.93
+Bulgaria,32 (6 -- 131),32,46,60,6,18,26,39,55,131,New confirmed cases by infection date,Decreasing,0.98
+Estonia,11 (2 -- 52),11,18,20,2,6,9,15,23,52,New confirmed cases by infection date,Decreasing,0.97
+Lithuania,1.1 (0.84 -- 1.5),1.1,1.1,0.2,0.84,0.99,1,1.1,1.2,1.5,Effective reproduction no.,Likely increasing,0.27
+Romania,0.87 (0.67 -- 1),0.87,0.86,0.11,0.67,0.8,0.84,0.89,0.93,1,Effective reproduction no.,Likely decreasing,0.93
+Estonia,0.73 (0.47 -- 0.96),0.73,0.72,0.15,0.47,0.61,0.69,0.77,0.83,0.96,Effective reproduction no.,Decreasing,0.97
+Poland,0.72 (0.57 -- 0.91),0.72,0.73,0.11,0.57,0.65,0.7,0.75,0.8,0.91,Effective reproduction no.,Decreasing,0.99
+Bulgaria,0.71 (0.47 -- 0.95),0.71,0.71,0.15,0.47,0.61,0.67,0.75,0.81,0.95,Effective reproduction no.,Decreasing,0.98
