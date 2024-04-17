@@ -1,0 +1,5 @@
+region,estimate,median,mean,sd,lower_90,lower_50,lower_20,upper_20,upper_50,upper_90,metric,Expected change in daily cases,prob_control
+Italy,2828 (1330 -- 7431),2828,3417,2177,1330,2007,2459,3300,4141,7431,New confirmed cases by infection date,Likely decreasing,0.81
+Netherlands,1269 (370 -- 5067),1269,1793,1771,370,752,1043,1550,2170,5067,New confirmed cases by infection date,Likely decreasing,0.85
+Italy,0.89 (0.71 -- 1.1),0.89,0.9,0.13,0.71,0.81,0.86,0.92,0.98,1.1,Effective reproduction no.,Likely decreasing,0.81
+Netherlands,0.89 (0.68 -- 1.1),0.89,0.88,0.13,0.68,0.8,0.86,0.92,0.96,1.1,Effective reproduction no.,Likely decreasing,0.85
