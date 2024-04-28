@@ -1,0 +1,8 @@
+Region,New confirmed cases by infection date,Expected change in daily cases,Effective reproduction no.,Rate of growth,Doubling/halving time (days)
+Bulgaria,8 (0 -- 54),Likely decreasing,0.81 (0.46 -- 1.1),-0.26 (-0.93 -- 0.087),-2.7 (7.9 -- -0.74)
+Croatia,2 (0 -- 17),Likely decreasing,0.86 (0.42 -- 1.2),-0.19 (-1 -- 0.18),-3.6 (3.8 -- -0.67)
+Estonia,4 (0 -- 24),Likely decreasing,0.84 (0.49 -- 1.1),-0.23 (-0.86 -- 0.13),-3.1 (5.5 -- -0.8)
+France,31 (12 -- 80),Stable,1 (0.8 -- 1.3),-0.00079 (-0.29 -- 0.29),-880 (2.4 -- -2.4)
+Lithuania,7 (1 -- 38),Likely decreasing,0.87 (0.57 -- 1.1),-0.18 (-0.68 -- 0.16),-3.8 (4.3 -- -1)
+Portugal,73 (29 -- 229),Stable,1 (0.84 -- 1.3),0.0017 (-0.22 -- 0.31),400 (2.2 -- -3.2)
+Romania,31 (8 -- 115),Likely decreasing,0.92 (0.7 -- 1.2),-0.11 (-0.45 -- 0.18),-6.5 (3.8 -- -1.6)
