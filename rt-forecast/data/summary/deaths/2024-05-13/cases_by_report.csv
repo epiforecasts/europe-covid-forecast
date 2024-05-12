@@ -1,0 +1,103 @@
+region,date,strat,type,median,mean,sd,lower_90,lower_50,lower_20,upper_20,upper_50,upper_90
+Bulgaria,2024-05-01,,estimate,1,2,2.5,0,0,1,2,3,7
+Bulgaria,2024-05-02,,estimate,1,1.8,2.4,0,0,1,2,3,6
+Bulgaria,2024-05-03,,estimate,1,1.7,2.3,0,0,1,1,2,6
+Bulgaria,2024-05-04,,estimate,1,1.5,2,0,0,1,1,2,6
+Bulgaria,2024-05-05,,estimate,1,1.3,2,0,0,0,1,2,5
+Bulgaria,2024-05-06,,estimate,1,1.2,1.7,0,0,0,1,2,4
+Bulgaria,2024-05-07,,estimate,0,0.9,1.5,0,0,0,1,1,4
+Bulgaria,2024-05-08,,estimate,0,0.7,1.2,0,0,0,0,1,3
+Bulgaria,2024-05-09,,estimate based on partial data,0,0.6,1.2,0,0,0,0,1,3
+Bulgaria,2024-05-10,,estimate based on partial data,0,0.5,1.1,0,0,0,0,1,2
+Bulgaria,2024-05-11,,estimate based on partial data,0,0.4,1.1,0,0,0,0,1,2
+Bulgaria,2024-05-12,,forecast,0,0.4,1.1,0,0,0,0,0,2
+Bulgaria,2024-05-13,,forecast,0,0.4,1.6,0,0,0,0,0,2
+Bulgaria,2024-05-14,,forecast,0,0.5,3.7,0,0,0,0,0,2
+Bulgaria,2024-05-15,,forecast,0,0.5,3.1,0,0,0,0,0,2
+Bulgaria,2024-05-16,,forecast,0,0.4,1.4,0,0,0,0,0,2
+Bulgaria,2024-05-17,,forecast,0,0.4,2.8,0,0,0,0,0,2
+Estonia,2024-05-01,,estimate,0,0.6,1.1,0,0,0,0,1,3
+Estonia,2024-05-02,,estimate,0,0.6,1.1,0,0,0,0,1,3
+Estonia,2024-05-03,,estimate,0,0.6,1,0,0,0,0,1,3
+Estonia,2024-05-04,,estimate,0,0.6,1,0,0,0,0,1,2
+Estonia,2024-05-05,,estimate,0,0.5,0.8,0,0,0,0,1,2
+Estonia,2024-05-06,,estimate,0,0.4,0.8,0,0,0,0,1,2
+Estonia,2024-05-07,,estimate,0,0.4,0.8,0,0,0,0,1,2
+Estonia,2024-05-08,,estimate,0,0.3,0.8,0,0,0,0,0,2
+Estonia,2024-05-09,,estimate based on partial data,0,0.3,0.7,0,0,0,0,0,2
+Estonia,2024-05-10,,estimate based on partial data,0,0.3,0.7,0,0,0,0,0,2
+Estonia,2024-05-11,,estimate based on partial data,0,0.3,0.7,0,0,0,0,0,1
+Estonia,2024-05-12,,forecast,0,0.3,0.8,0,0,0,0,0,2
+Estonia,2024-05-13,,forecast,0,0.3,0.9,0,0,0,0,0,2
+Estonia,2024-05-14,,forecast,0,0.3,0.9,0,0,0,0,0,1
+Estonia,2024-05-15,,forecast,0,0.3,1.8,0,0,0,0,0,2
+Estonia,2024-05-16,,forecast,0,0.4,1.8,0,0,0,0,0,2
+Estonia,2024-05-17,,forecast,0,0.6,7.1,0,0,0,0,0,2
+France,2024-05-01,,estimate based on partial data,1,1.6,1.9,0,0,1,1,2,5
+France,2024-05-02,,estimate based on partial data,1,1.5,2,0,0,1,1,2,5
+France,2024-05-03,,estimate based on partial data,1,1.6,2.1,0,0,1,1,2,5
+France,2024-05-04,,forecast,1,1.7,2.2,0,0,1,1,2,6
+France,2024-05-05,,forecast,1,1.7,2.6,0,0,1,1,2,6
+France,2024-05-06,,forecast,1,1.9,3,0,0,1,1,2,7
+France,2024-05-07,,forecast,1,2,3.2,0,0,1,1,3,8
+France,2024-05-08,,forecast,1,2.1,3.7,0,0,1,1,3,8
+France,2024-05-09,,forecast,1,2.2,3.8,0,0,1,1,3,9
+France,2024-05-10,,forecast,1,2.9,9.3,0,0,1,2,3,11
+France,2024-05-11,,forecast,1,3,7.6,0,0,1,2,3,11
+France,2024-05-12,,forecast,1,3.3,7.6,0,0,1,2,3,14
+France,2024-05-13,,forecast,1,4.3,24.2,0,0,0,2,3,16
+France,2024-05-14,,forecast,1,6,59.2,0,0,0,1,3,19
+France,2024-05-15,,forecast,1,14.6,395,0,0,1,2,4,23
+France,2024-05-16,,forecast,1,13.7,330.1,0,0,0,2,4,27
+France,2024-05-17,,forecast,1,11.3,161.2,0,0,0.6,2,4,32
+Lithuania,2024-05-01,,estimate,1,1.2,1.7,0,0,0,1,2,4
+Lithuania,2024-05-02,,estimate,1,1.2,1.7,0,0,0,1,2,4
+Lithuania,2024-05-03,,estimate,1,1.1,1.5,0,0,0,1,2,4
+Lithuania,2024-05-04,,estimate,1,1,1.4,0,0,0,1,2,4
+Lithuania,2024-05-05,,estimate,0,1,1.4,0,0,0,1,1,4
+Lithuania,2024-05-06,,estimate,0,0.9,1.4,0,0,0,1,1,4
+Lithuania,2024-05-07,,estimate,0,0.8,1.3,0,0,0,1,1,3
+Lithuania,2024-05-08,,estimate,0,0.8,1.2,0,0,0,1,1,3
+Lithuania,2024-05-09,,estimate based on partial data,0,0.8,1.2,0,0,0,1,1,3
+Lithuania,2024-05-10,,estimate based on partial data,0,0.7,1.2,0,0,0,0,1,3
+Lithuania,2024-05-11,,estimate based on partial data,0,0.7,1.4,0,0,0,0,1,3
+Lithuania,2024-05-12,,forecast,0,0.7,1.5,0,0,0,0,1,3
+Lithuania,2024-05-13,,forecast,0,0.8,2.5,0,0,0,0,1,4
+Lithuania,2024-05-14,,forecast,0,0.8,2.2,0,0,0,0,1,3
+Lithuania,2024-05-15,,forecast,0,0.9,3.3,0,0,0,0,1,4
+Lithuania,2024-05-16,,forecast,0,1.1,4.8,0,0,0,0,1,4
+Lithuania,2024-05-17,,forecast,0,1.2,5.7,0,0,0,0,1,4
+Portugal,2024-05-01,,estimate,3,3.5,3.2,0,1,2,4,5,10
+Portugal,2024-05-02,,estimate,3,3.4,3.2,0,1,2,3,5,10
+Portugal,2024-05-03,,estimate,3,3.5,3.2,0,1,2,4,5,10
+Portugal,2024-05-04,,estimate,3,3.7,3.2,0,1,2,4,5,10
+Portugal,2024-05-05,,estimate,3,3.7,3.3,0,1,2,4,5,10
+Portugal,2024-05-06,,estimate,3,3.9,3.5,0,1,3,4,5,10
+Portugal,2024-05-07,,estimate,3,3.9,3.4,0,2,2,4,5,10
+Portugal,2024-05-08,,estimate,3,4.2,3.6,0,2,3,4,6,11
+Portugal,2024-05-09,,estimate based on partial data,3,4.4,4,0,2,3,4,6,12
+Portugal,2024-05-10,,estimate based on partial data,4,5.2,5.1,0,2,3,5,7,14
+Portugal,2024-05-11,,estimate based on partial data,4,5.2,5.1,0,2,3,5,7,14
+Portugal,2024-05-12,,forecast,4,6.2,8.6,0,2,3,5,8,17
+Portugal,2024-05-13,,forecast,5,7.1,10.9,0,2,3,6,9,21
+Portugal,2024-05-14,,forecast,5,8.5,14.3,0,2,4,6,10,26
+Portugal,2024-05-15,,forecast,5,9.8,20.2,0,2,4,7,10.2,30
+Portugal,2024-05-16,,forecast,5,12.3,31.5,0,2,4,7,12,42
+Portugal,2024-05-17,,forecast,6,15.8,58.8,0,2,4,8,13,51
+Romania,2024-05-01,,estimate,2,3.1,3.7,0,1,1,3,4,10
+Romania,2024-05-02,,estimate,2,3.2,4.1,0,1,1,3,4,10
+Romania,2024-05-03,,estimate,2,2.9,3.6,0,0,1,3,4,10
+Romania,2024-05-04,,estimate,2,2.7,3.4,0,0,1,2,4,9
+Romania,2024-05-05,,estimate,1,2.4,3,0,0,1,2,3,8
+Romania,2024-05-06,,estimate,1,2.3,2.8,0,0,1,2,3,8
+Romania,2024-05-07,,estimate,1,2.2,2.7,0,0,1,2,3,7
+Romania,2024-05-08,,estimate,1,2,2.7,0,0,1,2,3,7
+Romania,2024-05-09,,estimate based on partial data,1,1.8,2.5,0,0,1,1,2,7
+Romania,2024-05-10,,estimate based on partial data,1,1.7,2.7,0,0,0,1,2,7
+Romania,2024-05-11,,estimate based on partial data,1,1.7,2.8,0,0,0,1,2,6
+Romania,2024-05-12,,forecast,1,1.7,3.5,0,0,0,1,2,7
+Romania,2024-05-13,,forecast,1,1.9,8.9,0,0,0,1,2,6
+Romania,2024-05-14,,forecast,0,1.9,9.6,0,0,0,1,2,7
+Romania,2024-05-15,,forecast,0,2.4,22.8,0,0,0,1,2,8
+Romania,2024-05-16,,forecast,0,2.2,11,0,0,0,1,2,8
+Romania,2024-05-17,,forecast,0,2.6,14.7,0,0,0,1,1,9
