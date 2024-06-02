@@ -1,0 +1,3 @@
+region,estimate,median,mean,sd,lower_90,lower_50,lower_20,upper_20,upper_50,upper_90,metric,Expected change in daily cases,prob_control
+Netherlands,1616 (540 -- 6381),1616,2486,5271,540,996,1351,1931,2647,6381,New confirmed cases by infection date,Likely increasing,0.28
+Netherlands,1.1 (0.86 -- 1.5),1.1,1.1,0.21,0.86,0.99,1,1.1,1.2,1.5,Effective reproduction no.,Likely increasing,0.28
