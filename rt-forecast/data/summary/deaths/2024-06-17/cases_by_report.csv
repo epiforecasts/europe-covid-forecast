@@ -1,0 +1,118 @@
+region,date,strat,type,median,mean,sd,lower_90,lower_50,lower_20,upper_20,upper_50,upper_90
+Bulgaria,2024-06-05,,estimate,0,0.6,1.1,0,0,0,0,1,3
+Bulgaria,2024-06-06,,estimate,0,0.6,1,0,0,0,0,1,2
+Bulgaria,2024-06-07,,estimate,0,0.5,0.9,0,0,0,0,1,2
+Bulgaria,2024-06-08,,estimate,0,0.4,0.8,0,0,0,0,1,2
+Bulgaria,2024-06-09,,estimate,0,0.3,0.7,0,0,0,0,0,2
+Bulgaria,2024-06-10,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Bulgaria,2024-06-11,,estimate,0,0.2,0.6,0,0,0,0,0,1
+Bulgaria,2024-06-12,,estimate,0,0.2,0.5,0,0,0,0,0,1
+Bulgaria,2024-06-13,,estimate based on partial data,0,0.1,0.5,0,0,0,0,0,1
+Bulgaria,2024-06-14,,estimate based on partial data,0,0.1,0.5,0,0,0,0,0,1
+Bulgaria,2024-06-15,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Bulgaria,2024-06-16,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Bulgaria,2024-06-17,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Bulgaria,2024-06-18,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Bulgaria,2024-06-19,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Bulgaria,2024-06-20,,forecast,0,0.1,0.5,0,0,0,0,0,1
+Bulgaria,2024-06-21,,forecast,0,0.1,0.7,0,0,0,0,0,1
+Denmark,2024-06-05,,estimate,2,2.3,2.5,0,1,1,2,3,7
+Denmark,2024-06-06,,estimate,2,2.3,2.5,0,1,1,2,3,7
+Denmark,2024-06-07,,estimate,2,2.3,2.5,0,1,1,2,3,7
+Denmark,2024-06-08,,estimate based on partial data,2,2.2,2.5,0,0,1,2,3,7
+Denmark,2024-06-09,,estimate based on partial data,2,2.3,2.8,0,0,1,2,3,7
+Denmark,2024-06-10,,estimate based on partial data,2,2.4,3.1,0,0,1,2,3,8
+Denmark,2024-06-11,,forecast,1,2.4,3.4,0,0,1,2,3,8
+Denmark,2024-06-12,,forecast,2,2.8,5.3,0,0,1,2,4,9
+Denmark,2024-06-13,,forecast,1,2.8,4.8,0,0,1,2,4,10
+Denmark,2024-06-14,,forecast,2,4.2,28.1,0,0,1,2,4,12
+Denmark,2024-06-15,,forecast,1,4.1,15,0,0,1,2,4,14
+Denmark,2024-06-16,,forecast,1,4.7,17.6,0,0,1,2,4,16
+Denmark,2024-06-17,,forecast,1,7,46.4,0,0,1,2,5,21
+Denmark,2024-06-18,,forecast,1,8.5,60.7,0,0,1,2,4,26
+Denmark,2024-06-19,,forecast,1,11.7,117.3,0,0,1,2,5,30
+Denmark,2024-06-20,,forecast,1,29.5,737.7,0,0,1,2,5,37
+Denmark,2024-06-21,,forecast,1,24,403.6,0,0,1,2,5,39.1
+Estonia,2024-06-05,,estimate,0,0.2,0.4,0,0,0,0,0,1
+Estonia,2024-06-06,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Estonia,2024-06-07,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Estonia,2024-06-08,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Estonia,2024-06-09,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Estonia,2024-06-10,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Estonia,2024-06-11,,estimate,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2024-06-12,,estimate,0,0.1,0.4,0,0,0,0,0,1
+Estonia,2024-06-13,,estimate based on partial data,0,0.1,0.3,0,0,0,0,0,1
+Estonia,2024-06-14,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Estonia,2024-06-15,,estimate based on partial data,0,0.1,0.4,0,0,0,0,0,1
+Estonia,2024-06-16,,forecast,0,0.1,0.4,0,0,0,0,0,1
+Estonia,2024-06-17,,forecast,0,0.1,0.8,0,0,0,0,0,1
+Estonia,2024-06-18,,forecast,0,0.2,0.9,0,0,0,0,0,1
+Estonia,2024-06-19,,forecast,0,0.2,1.5,0,0,0,0,0,1
+Estonia,2024-06-20,,forecast,0,0.2,1.3,0,0,0,0,0,1
+Estonia,2024-06-21,,forecast,0,0.5,6.4,0,0,0,0,0,1
+Latvia,2024-06-07,,estimate based on partial data,2,3.3,3.8,0,1,1,3,5,11
+Latvia,2024-06-08,,estimate based on partial data,2,3.2,3.7,0,1,1,3,4,10
+Latvia,2024-06-09,,forecast,2,3.4,4.3,0,1,2,3,5,11
+Latvia,2024-06-10,,forecast,2,3.5,4.3,0,1,2,3,5,12
+Latvia,2024-06-11,,forecast,2,3.4,4.6,0,1,1,3,4,12
+Latvia,2024-06-12,,forecast,2,3.7,5,0,1,2,3,5,13
+Latvia,2024-06-13,,forecast,2,4,6.5,0,1,1,3,5,14
+Latvia,2024-06-14,,forecast,2,4.3,7.3,0,1,1,3,5,16
+Latvia,2024-06-15,,forecast,2,4.8,9.7,0,1,1,3,5,18
+Latvia,2024-06-16,,forecast,2,5,10.1,0,1,1,3,6,20
+Latvia,2024-06-17,,forecast,2,5.5,12.1,0,0,1,3,6,21
+Latvia,2024-06-18,,forecast,2,6.1,14.3,0,0,1,3,6,26
+Latvia,2024-06-19,,forecast,2,6.7,15.5,0,0,1,3,6,26
+Latvia,2024-06-20,,forecast,2,7.3,21,0,0,1,3,6,32
+Latvia,2024-06-21,,forecast,2,9,29.4,0,0,1,3,7,36
+Lithuania,2024-06-05,,estimate,0,0.6,0.9,0,0,0,0,1,2
+Lithuania,2024-06-06,,estimate,0,0.5,0.9,0,0,0,0,1,2
+Lithuania,2024-06-07,,estimate,0,0.5,0.9,0,0,0,0,1,2
+Lithuania,2024-06-08,,estimate,0,0.5,0.8,0,0,0,0,1,2
+Lithuania,2024-06-09,,estimate,0,0.4,0.8,0,0,0,0,1,2
+Lithuania,2024-06-10,,estimate,0,0.4,0.8,0,0,0,0,1,2
+Lithuania,2024-06-11,,estimate,0,0.4,0.8,0,0,0,0,1,2
+Lithuania,2024-06-12,,estimate,0,0.4,0.8,0,0,0,0,1,2
+Lithuania,2024-06-13,,estimate based on partial data,0,0.3,0.6,0,0,0,0,0,2
+Lithuania,2024-06-14,,estimate based on partial data,0,0.3,0.8,0,0,0,0,0,1
+Lithuania,2024-06-15,,estimate based on partial data,0,0.3,0.7,0,0,0,0,0,1
+Lithuania,2024-06-16,,forecast,0,0.3,0.7,0,0,0,0,0,2
+Lithuania,2024-06-17,,forecast,0,0.3,0.9,0,0,0,0,0,2
+Lithuania,2024-06-18,,forecast,0,0.3,1.2,0,0,0,0,0,2
+Lithuania,2024-06-19,,forecast,0,0.3,1.1,0,0,0,0,0,2
+Lithuania,2024-06-20,,forecast,0,0.4,1.8,0,0,0,0,0,2
+Lithuania,2024-06-21,,forecast,0,0.5,3.6,0,0,0,0,0,2
+Portugal,2024-06-05,,estimate,3,3.9,4.1,0,1,2,4,5,11
+Portugal,2024-06-06,,estimate,3,4,4.1,0,1,2,4,5,11
+Portugal,2024-06-07,,estimate,3,4.2,4.3,0,1,2,4,6,12
+Portugal,2024-06-08,,estimate,3,4.5,4.6,0,1,3,4,6,13
+Portugal,2024-06-09,,estimate,4,5.3,5.5,0,2,3,5,7,15
+Portugal,2024-06-10,,estimate,4,5.5,5.1,0,2,3,5,8,15
+Portugal,2024-06-11,,estimate,5,6.8,6.3,0,3,4,7,9,18
+Portugal,2024-06-12,,estimate,7,9.1,7.8,1,4,6,9,12,24
+Portugal,2024-06-13,,estimate based on partial data,9,11.7,10.6,1,5,7,11,15,30
+Portugal,2024-06-14,,estimate based on partial data,12,16.2,15.2,1,6,10,15,21,44
+Portugal,2024-06-15,,estimate based on partial data,18,24.3,23.7,2,9,14,22,32,68
+Portugal,2024-06-16,,forecast,25,36,41.6,3,13,19,32,45,96
+Portugal,2024-06-17,,forecast,33,55.8,85.1,3,15,25,43.4,67,174.1
+Portugal,2024-06-18,,forecast,46,91.3,151.5,4,20,34,63,99,309.2
+Portugal,2024-06-19,,forecast,64,158.2,408.6,4,26,44,91.4,160,559.2
+Portugal,2024-06-20,,forecast,83,266.1,727.4,5,31,56,119,239,1053.3
+Portugal,2024-06-21,,forecast,127,515.1,2130.5,7,39,81,182.4,354,1740.1
+Romania,2024-06-05,,estimate,1,2.1,2.7,0,0,1,2,3,7
+Romania,2024-06-06,,estimate,1,1.9,2.4,0,0,1,2,3,7
+Romania,2024-06-07,,estimate,1,1.8,2.3,0,0,1,2,3,6
+Romania,2024-06-08,,estimate,1,1.7,2.1,0,0,1,1,2,6
+Romania,2024-06-09,,estimate,1,1.6,2.1,0,0,1,1,2,6
+Romania,2024-06-10,,estimate,1,1.4,1.8,0,0,0,1,2,5
+Romania,2024-06-11,,estimate,1,1.1,1.7,0,0,0,1,2,4
+Romania,2024-06-12,,estimate,1,1.1,1.6,0,0,0,1,1,4
+Romania,2024-06-13,,estimate based on partial data,0,0.9,1.5,0,0,0,1,1,4
+Romania,2024-06-14,,estimate based on partial data,0,0.8,1.4,0,0,0,1,1,3
+Romania,2024-06-15,,estimate based on partial data,0,0.7,1.2,0,0,0,0,1,3
+Romania,2024-06-16,,forecast,0,0.7,1.5,0,0,0,0,1,3
+Romania,2024-06-17,,forecast,0,0.7,1.6,0,0,0,0,1,3
+Romania,2024-06-18,,forecast,0,0.6,1.7,0,0,0,0,1,3
+Romania,2024-06-19,,forecast,0,0.7,2.9,0,0,0,0,1,3
+Romania,2024-06-20,,forecast,0,0.8,3.9,0,0,0,0,0,3
+Romania,2024-06-21,,forecast,0,0.7,3.1,0,0,0,0,0,3
