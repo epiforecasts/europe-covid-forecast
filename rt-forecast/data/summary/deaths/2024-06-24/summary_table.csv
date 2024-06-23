@@ -1,0 +1,7 @@
+Region,New confirmed cases by infection date,Expected change in daily cases,Effective reproduction no.,Rate of growth,Doubling/halving time (days)
+Denmark,35 (12 -- 94),Stable,1 (0.76 -- 1.3),-0.0056 (-0.34 -- 0.3),-120 (2.3 -- -2)
+Latvia,59 (29 -- 124),Stable,0.99 (0.85 -- 1.2),-0.0075 (-0.21 -- 0.21),-93 (3.3 -- -3.3)
+Lithuania,7 (1 -- 41),Stable,0.99 (0.71 -- 1.3),-0.015 (-0.43 -- 0.34),-47 (2 -- -1.6)
+Poland,6 (0 -- 37),Likely decreasing,0.92 (0.61 -- 1.2),-0.11 (-0.6 -- 0.25),-6.5 (2.7 -- -1.2)
+Portugal,1127 (368 -- 3791),Increasing,1.6 (1.2 -- 2.2),0.59 (0.24 -- 1),1.2 (0.67 -- 2.9)
+Romania,5 (0 -- 38),Likely decreasing,0.8 (0.45 -- 1.1),-0.29 (-0.97 -- 0.1),-2.4 (6.6 -- -0.71)
