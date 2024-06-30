@@ -1,0 +1,17 @@
+region,date,strat,type,median,mean,sd,lower_90,lower_50,lower_20,upper_20,upper_50,upper_90
+Netherlands,2024-06-20,,estimate,38,72,95.9,1,13,27,56,94,257
+Netherlands,2024-06-21,,estimate,40,74.4,101.9,1,13,27,55,92,264.1
+Netherlands,2024-06-22,,estimate,43,73.7,91.2,1,14,29,60,98,246
+Netherlands,2024-06-23,,estimate,42,76.5,101.1,1,14,28.6,58,98,273
+Netherlands,2024-06-24,,estimate,38,73,95.5,1,12,27,57,95,267.2
+Netherlands,2024-06-25,,estimate based on partial data,41.5,78.2,114,1,13,28,59,99,257
+Netherlands,2024-06-26,,estimate based on partial data,42,81.4,113.1,1,14,28,61,105,309.1
+Netherlands,2024-06-27,,estimate based on partial data,40,89.2,165.7,1,14,27,61,103,320
+Netherlands,2024-06-28,,forecast,41,92.6,195.5,1,12,27,60,98,326
+Netherlands,2024-06-29,,forecast,39,109.6,283,1,11,26,57,108.2,412.3
+Netherlands,2024-06-30,,forecast,38,136,590.7,1,12,25,58,116,473
+Netherlands,2024-07-01,,forecast,39,212,1768.7,0,9,24,59,116,535.4
+Netherlands,2024-07-02,,forecast,37,342.7,4565.8,0,10,24,61,120.5,753.3
+Netherlands,2024-07-03,,forecast,34.5,378.1,3729.9,1,9,21,55,132,769.9
+Netherlands,2024-07-04,,forecast,39.5,375.8,3106.2,0,8,22,62,139.5,1164.6
+Netherlands,2024-07-05,,forecast,36,594.9,5328.5,0,8,20,59,148,1458.2
