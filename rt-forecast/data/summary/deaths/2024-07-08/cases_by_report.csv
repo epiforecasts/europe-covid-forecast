@@ -1,0 +1,95 @@
+region,date,strat,type,median,mean,sd,lower_90,lower_50,lower_20,upper_20,upper_50,upper_90
+Denmark,2024-06-27,,estimate,1,1.9,2.1,0,0,1,2,3,6
+Denmark,2024-06-28,,estimate,1,2,2.3,0,0,1,2,3,6
+Denmark,2024-06-29,,estimate,2,2.1,2.2,0,0,1,2,3,6
+Denmark,2024-06-30,,estimate,2,2.1,2.2,0,0,1,2,3,6
+Denmark,2024-07-01,,estimate,2,2.3,2.5,0,1,1,2,3,7
+Denmark,2024-07-02,,estimate,2,2.5,2.4,0,1,1,2,4,7
+Denmark,2024-07-03,,estimate,2,2.9,2.9,0,1,2,3,4,8
+Denmark,2024-07-04,,estimate based on partial data,3,3.4,3.3,0,1,2,3,5,10
+Denmark,2024-07-05,,estimate based on partial data,3,4,4.2,0,1,2,4,5,11
+Denmark,2024-07-06,,estimate based on partial data,4,4.7,4.9,0,2,3,5,6,14
+Denmark,2024-07-07,,forecast,4,6.5,16.1,0,2,3,6,8,18
+Denmark,2024-07-08,,forecast,5,8.6,22.7,0,2,4,7,10,26
+Denmark,2024-07-09,,forecast,6,13.9,132.8,0,2,4,8,13,37
+Denmark,2024-07-10,,forecast,7,17.6,57.8,0,2,5,9,16,56
+Denmark,2024-07-11,,forecast,8,41.9,832.2,0,3,6,11,22,87
+Denmark,2024-07-12,,forecast,9.5,43.3,388.4,0,3,6,14,27,126
+Greece,2024-06-27,,estimate,3,3.5,3.3,0,1,2,3,5,10
+Greece,2024-06-28,,estimate,3,3.7,3.4,0,1,2,4,5,10
+Greece,2024-06-29,,estimate,3,3.6,3.3,0,1,2,4,5,9
+Greece,2024-06-30,,estimate,3,4.1,3.9,0,1,2,4,6,11
+Greece,2024-07-01,,estimate,4,4.7,4.3,0,2,3,4,6,13
+Greece,2024-07-02,,estimate,4,5.3,4.7,0,2,3,5,7,14
+Greece,2024-07-03,,estimate,5,6.3,5.5,0,3,4,6,8,16
+Greece,2024-07-04,,estimate,7,7.8,6.1,1,3,5,8,10,19
+Greece,2024-07-05,,estimate based on partial data,9,10.2,8.6,1,5,7,10,14,25
+Greece,2024-07-06,,estimate based on partial data,11,13.9,15.1,2,6,9,13,18,33
+Greece,2024-07-07,,estimate based on partial data,15,18.9,17.7,2,9,12,18,24,47
+Greece,2024-07-08,,forecast,21,29,42.1,3,11,16,25,35,76
+Greece,2024-07-09,,forecast,28,43.2,60,4,13,21.6,35,52,126
+Greece,2024-07-10,,forecast,37,67.5,122.4,4,17,27,49,76,205.1
+Greece,2024-07-11,,forecast,51,116.6,358.6,5,21,36,69,108.2,374.1
+Greece,2024-07-12,,forecast,66.5,204.3,814.7,5,26,46,95.4,169,699.1
+Lithuania,2024-06-29,,estimate,0,0.3,0.7,0,0,0,0,0,2
+Lithuania,2024-06-30,,estimate,0,0.3,0.7,0,0,0,0,0,2
+Lithuania,2024-07-01,,estimate,0,0.3,0.7,0,0,0,0,0,2
+Lithuania,2024-07-02,,estimate,0,0.3,0.7,0,0,0,0,0,2
+Lithuania,2024-07-03,,estimate,0,0.3,0.7,0,0,0,0,0,2
+Lithuania,2024-07-04,,estimate,0,0.4,0.7,0,0,0,0,1,2
+Lithuania,2024-07-05,,estimate based on partial data,0,0.4,0.9,0,0,0,0,0,2
+Lithuania,2024-07-06,,estimate based on partial data,0,0.4,0.9,0,0,0,0,1,2
+Lithuania,2024-07-07,,estimate based on partial data,0,0.5,1.1,0,0,0,0,1,2
+Lithuania,2024-07-08,,forecast,0,0.6,1.8,0,0,0,0,1,3
+Lithuania,2024-07-09,,forecast,0,0.7,1.9,0,0,0,0,1,3
+Lithuania,2024-07-10,,forecast,0,1,6.6,0,0,0,0,1,4
+Lithuania,2024-07-11,,forecast,0,1.5,9.9,0,0,0,0,1,5
+Lithuania,2024-07-12,,forecast,0,1.9,11.7,0,0,0,0,1,7
+Poland,2024-06-27,,estimate,0,0.4,0.7,0,0,0,0,1,2
+Poland,2024-06-28,,estimate,0,0.3,0.7,0,0,0,0,1,2
+Poland,2024-06-29,,estimate,0,0.3,0.7,0,0,0,0,0,2
+Poland,2024-06-30,,estimate,0,0.4,0.7,0,0,0,0,1,2
+Poland,2024-07-01,,estimate,0,0.4,0.7,0,0,0,0,0.2,2
+Poland,2024-07-02,,estimate,0,0.4,0.7,0,0,0,0,1,2
+Poland,2024-07-03,,estimate,0,0.4,0.8,0,0,0,0,1,2
+Poland,2024-07-04,,estimate based on partial data,0,0.4,0.9,0,0,0,0,1,2
+Poland,2024-07-05,,estimate based on partial data,0,0.5,0.9,0,0,0,0,1,2
+Poland,2024-07-06,,estimate based on partial data,0,0.5,1.2,0,0,0,0,1,3
+Poland,2024-07-07,,forecast,0,0.6,1.7,0,0,0,0,1,3
+Poland,2024-07-08,,forecast,0,0.7,1.8,0,0,0,0,1,3
+Poland,2024-07-09,,forecast,0,0.9,4.6,0,0,0,0,1,4
+Poland,2024-07-10,,forecast,0,1.2,4.8,0,0,0,0,1,5
+Poland,2024-07-11,,forecast,0,2.1,18.3,0,0,0,0,1,6
+Poland,2024-07-12,,forecast,0,2.5,14.2,0,0,0,0,1,8
+Portugal,2024-06-27,,estimate,5,8.3,9.9,0,3,4,7,10,26
+Portugal,2024-06-28,,estimate,6,8.5,10.3,1,3,5,8,10,22
+Portugal,2024-06-29,,estimate,7,9.2,10.1,1,3,5,8,12,27
+Portugal,2024-06-30,,estimate,8,11,11.2,1,4,6,10,14,30
+Portugal,2024-07-01,,estimate,10,13.5,12.7,1,5,8,13,17,36
+Portugal,2024-07-02,,estimate,14,18.6,17.2,2,8,12,17,24,49
+Portugal,2024-07-03,,estimate,20,24.8,21.3,3,11,16,24,32,63
+Portugal,2024-07-04,,estimate,28,35.9,30.1,4,16,24,34.4,46.2,92
+Portugal,2024-07-05,,estimate based on partial data,43,52.2,41.9,6,24,35,52,68,129
+Portugal,2024-07-06,,estimate based on partial data,65,84.4,81.1,9,36,52,78,109,217
+Portugal,2024-07-07,,estimate based on partial data,101,142.3,148.7,16,54,81,125.4,179,408.1
+Portugal,2024-07-08,,forecast,149,231.6,298.6,19,73,115,193,280,706.1
+Portugal,2024-07-09,,forecast,222.5,438.3,964.3,24.9,103,169,293,458.8,1478.7
+Portugal,2024-07-10,,forecast,339,782.6,1814.9,31,141,244,453,762.5,2832
+Portugal,2024-07-11,,forecast,508,1349.7,3117.2,39,203,352.6,731.4,1277.2,4978.7
+Portugal,2024-07-12,,forecast,739.5,2509.6,9060.7,53,273.8,519.6,1065.4,1950.5,9730.3
+Romania,2024-06-27,,estimate,0,0.7,1.1,0,0,0,1,1,3
+Romania,2024-06-28,,estimate,0,0.7,1.1,0,0,0,0,1,3
+Romania,2024-06-29,,estimate,0,0.7,1.1,0,0,0,0,1,3
+Romania,2024-06-30,,estimate,0,0.6,1,0,0,0,1,1,3
+Romania,2024-07-01,,estimate,0,0.7,1.1,0,0,0,1,1,3
+Romania,2024-07-02,,estimate,0,0.7,1.1,0,0,0,1,1,3
+Romania,2024-07-03,,estimate,0,0.7,1.1,0,0,0,1,1,3
+Romania,2024-07-04,,estimate,0,0.8,1.2,0,0,0,1,1,3
+Romania,2024-07-05,,estimate based on partial data,0,0.9,1.4,0,0,0,1,1,4
+Romania,2024-07-06,,estimate based on partial data,0,1,1.6,0,0,0,1,1,4
+Romania,2024-07-07,,estimate based on partial data,0,1.1,1.9,0,0,0,1,1,5
+Romania,2024-07-08,,forecast,1,1.4,2.7,0,0,0,1,2,5
+Romania,2024-07-09,,forecast,1,1.5,2.9,0,0,0,1,2,6
+Romania,2024-07-10,,forecast,1,2.1,5,0,0,0,1,2,8
+Romania,2024-07-11,,forecast,1,3.2,12.9,0,0,0,1,2,12
+Romania,2024-07-12,,forecast,1,4.2,18.5,0,0,0,1,3,15
