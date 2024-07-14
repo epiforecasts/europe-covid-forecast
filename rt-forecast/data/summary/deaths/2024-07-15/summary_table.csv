@@ -1,0 +1,7 @@
+Region,New confirmed cases by infection date,Expected change in daily cases,Effective reproduction no.,Rate of growth,Doubling/halving time (days)
+Denmark,91 (31 -- 327),Likely increasing,1.2 (0.97 -- 1.6),0.22 (-0.045 -- 0.64),3.2 (1.1 -- -15)
+Greece,697 (248 -- 2371),Increasing,1.4 (1.1 -- 1.8),0.42 (0.14 -- 0.79),1.6 (0.88 -- 5.1)
+Lithuania,15 (3 -- 84),Likely increasing,1.1 (0.89 -- 1.7),0.18 (-0.15 -- 0.74),3.9 (0.94 -- -4.8)
+Poland,24 (6 -- 120),Likely increasing,1.2 (0.92 -- 1.7),0.19 (-0.1 -- 0.72),3.7 (0.97 -- -6.9)
+Portugal,7559 (1276 -- 41348),Increasing,1.4 (1 -- 1.9),0.4 (0.059 -- 0.83),1.8 (0.83 -- 12)
+Romania,18 (4 -- 74),Likely increasing,1.1 (0.83 -- 1.4),0.071 (-0.24 -- 0.41),9.7 (1.7 -- -2.9)
