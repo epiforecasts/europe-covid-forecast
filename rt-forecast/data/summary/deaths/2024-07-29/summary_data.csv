@@ -1,0 +1,13 @@
+region,estimate,median,mean,sd,lower_90,lower_50,lower_20,upper_20,upper_50,upper_90,metric,Expected change in daily cases,prob_control
+Portugal,4029 (895 -- 20777),4029,6745,9570,895,2119,3202,5175,7730,20777,New confirmed cases by infection date,Likely increasing,0.2
+Greece,1346 (434 -- 4472),1346,1761,1471,434,860,1123,1610,2183,4472,New confirmed cases by infection date,Increasing,0.009
+Denmark,116 (40 -- 501),116,181,259,40,76,98,140,196,501,New confirmed cases by infection date,Likely increasing,0.25
+Romania,56 (16 -- 271),56,93,131,16,33,46,70,105,271,New confirmed cases by infection date,Likely increasing,0.062
+Poland,19 (4 -- 101),19,34,89,4,10,15,24,35,101,New confirmed cases by infection date,Likely increasing,0.18
+Lithuania,8 (1 -- 58),8,18,37,1,4,6,11,18,58,New confirmed cases by infection date,Likely increasing,0.24
+Greece,1.3 (1.1 -- 1.7),1.3,1.4,0.19,1.1,1.2,1.3,1.4,1.5,1.7,Effective reproduction no.,Increasing,0.009
+Romania,1.3 (0.99 -- 1.8),1.3,1.3,0.27,0.99,1.1,1.2,1.3,1.5,1.8,Effective reproduction no.,Likely increasing,0.062
+Denmark,1.1 (0.88 -- 1.6),1.1,1.1,0.23,0.88,1,1.1,1.1,1.2,1.6,Effective reproduction no.,Likely increasing,0.25
+Lithuania,1.1 (0.84 -- 1.6),1.1,1.2,0.25,0.84,1,1.1,1.2,1.3,1.6,Effective reproduction no.,Likely increasing,0.24
+Poland,1.1 (0.88 -- 1.6),1.1,1.2,0.24,0.88,1,1.1,1.2,1.3,1.6,Effective reproduction no.,Likely increasing,0.18
+Portugal,1.1 (0.88 -- 1.5),1.1,1.1,0.18,0.88,1,1.1,1.2,1.2,1.5,Effective reproduction no.,Likely increasing,0.2
