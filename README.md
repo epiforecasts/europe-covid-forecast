@@ -1,5 +1,7 @@
 # Crowd sourced and model derived forecasts of Covid-19 for the ECDC forecasting hub
 
+> **Archived.** No longer maintained; last updated January 2025.
+
 *Nikos Bosse\*, Sam Abbott\*, EpiForecasts, and Sebastian Funk*
 
 *\* contributed unequally*
